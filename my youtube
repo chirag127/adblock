@@ -1,8 +1,9 @@
-! Title: my youtube
+! Title: Only tube
 ! Expires: 2 days
 
 ||www.youtube.com/s/notifications/
 ||www.youtube.com/youtubei/v1/notification/
+! header scroll+ chip on the homepage
 youtube.com###header > ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer
 ! top bar side button 
 !youtube apps youtubeapps button
@@ -14,43 +15,48 @@ www.youtube.com##.notification-button-style-type-default
 !guide menu of the side
 ! yourvideo
 www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(2)
-! www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="studio.youtube.com/channel/UCxt4zKmqNwMrUcqT_SxEThg/videos"])
 ! Removes Side Menu Playlists and Subscription List (Can be accessed in library)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
 ! Put that "More from YouTube" somewhere else, since you stuff the important stuff at the BOTTOM.
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 !SettingsReport historyHelpSend feedback
-www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
 ! footer AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new features+ copyright
-www.youtube.com###guide-links-primary,#guide-links-secondary,#copyright
+youtube.com###guide-links-primary,#guide-links-secondary,#copyright
 !pop up when clicked
 youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="studio.youtube.com"]
-!    youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="channel/UCxt4zKmqNwMrUcqT_SxEThg"]
+youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="paid_memberships?"]
 ! For the last time stop pushing us your memberships.
 youtube.com##a#endpoint[href="/paid_memberships"]
 youtube.com###offer-module
 !side chat!clarify box!donation self!join button,notification after subscription
-www.youtube.com###chat,#clarify-box,#donation-shelf,#sponsor-button,#notification-preference-button
+youtube.com###chat,#clarify-box,#donation-shelf,#sponsor-button,#notification-preference-button
 !scoll above related videos
 www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 ! menu
-www.youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
+youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
 ! banner channel
-www.youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
+youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
 ! Mixes are pointless. Just add an option for their appearance, or remove them.
 youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
 youtube.com##ytd-radio-renderer, ytd-compact-radio-renderer
 !search and home page
+!call icall suicide help line 
+youtube.com##.ytd-emergency-onebox-renderer
+! restricted mode is on 
+youtube.com###contents > ytd-clarification-renderer
+! don't waht 
 youtube.com##ytd-primetime-promo-renderer
-youtube.com##ytd-rich-shelf-renderer:has(button[aria-label="Not interested"])
-youtube.com##ytd-rich-shelf-renderer:has-text(/Latest YouTube posts|Free to watch/i)
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related to your search/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/People also watched/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Learn while you're at home/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Watch again/i))
-www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/For you/i))
+
+!youtube.com##ytd-rich-shelf-renderer:has(button[aria-label="Not interested"])
+!youtube.com##ytd-rich-shelf-renderer:has-text(/Latest YouTube posts|Free to watch/i)
+youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related to your search/i))
+youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/People also watched/i))
+youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Learn while you're at home/i))
+youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Watch again/i))
+youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/For you/i))
 www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Top news/i))
-www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Searches related to/i))
+youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Searches related to/i))
 ! experien speed
 youtube.com###speedyg
 !restricted mode is on
