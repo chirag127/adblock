@@ -130,3 +130,11 @@ www.youtube.com###header > ytd-text-header-renderer.style-scope.ytd-section-list
 
 ! Removes unnecesary stuff
 www.youtube.com##ytd-horizontal-card-list-renderer, ytd-rich-section-renderer, ytd-mini-guide-renderer
+
+! tracking paremeter 
+||youtube.com^$removeparam=referrer
+! https://www.youtube.com/watch?v=ACb-3n4tRGE&ab_channel=BillyO%27Reilly (07/12/2020)
+||youtube.com^$removeparam=ab_channel
+! https://www.youtube.com/watch?v=7yk3WDZRcTM&feature=youtu.be (28/11/2020)
+||youtube.com^$removeparam=feature
+
