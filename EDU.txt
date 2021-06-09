@@ -22,23 +22,23 @@ google.com##.dobdf
 google.com##.w7DnQb
 
 
-||google.*/search$removeparam=source
-||google.*/search$removeparam=sourceid
-||google.*/search$removeparam=rlz
-||google.*/search$removeparam=ei
-||google.*/search$removeparam=oq
-||google.*/search$removeparam=gs_[a-zA-Z]*
-||google.*/search$removeparam=aqs
-||google.*/search$removeparam=sxsrf
-
-
-
-||google.$removeparam=sxsrf
-||google.$removeparam=dpr
-||google.$removeparam=cad
-||google.$removeparam=zx
-||google.$removeparam=atyp
-||google.$removeparam=ved
+||www.google.com$removeparam=atyp
+||www.google.com/search$removeparam=aqs
+||www.google.com$removeparam=cad
+||www.google.com$removeparam=dpr
+||www.google.com$removeparam=ei
+||www.google.com$removeparam=gs_[a-zA-Z]*
+||www.google.com$removeparam=oq
+||www.google.com$removeparam=rlz
+||www.google.com$removeparam=source
+||www.google.com$removeparam=sourceid
+||www.google.com$removeparam=sxsrf
+||www.google.$removeparam=zx
+!#if env_chromium
+||www.google.$removeparam=ved
+@@||wwww.google.com/url?$removeparam=ved
+$removeparam=usg,domain=~translate.googleusercontent.com|~translate.google.*
+!#endif
 
 
 duckduckgo.com##footer
