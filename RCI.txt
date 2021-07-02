@@ -118,3 +118,106 @@ reddit.com##._3lfTEmyI7x9ib1wz4e8RWP
 ! given avards 
 reddit.com##._3XoW0oYd5806XiOr24gGdb
 
+! Title: YT
+! Expires: 2 days
+! Homepage: https://github.com/chirag127/adblock/
+
+!s youtube
+||www.youtube.com/s/notifications/
+||www.youtube.com/youtubei/v1/notification/
+! header scroll+ chip on the homepage
+www.youtube.com###header > ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer
+! top bar side button 
+!youtube apps youtubeapps button
+www.youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-scope > .ytd-topbar-menu-button-renderer.style-scope
+! create button
+www.youtube.com###buttons > ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default:first-child
+! notification buttons
+www.youtube.com##.notification-button-style-type-default
+
+! Mixes are pointless. Just add an option for their appearance, or remove them.
+www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-radio-renderer, ytd-compact-radio-renderer
+
+!guide menu of the side
+! yourvideo
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer.style-scope:nth-of-type(2)
+!your clips
+www.youtube.com###section-items > ytd-guide-entry-renderer.style-scope.ytd-guide-collapsible-section-entry-renderer:nth-child(4)
+! Removes Side Menu Playlists and Subscription List (Can be accessed in library)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
+! Put that "More from YouTube" somewhere else, since you stuff the important stuff at the BOTTOM.
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+!SettingsReport historyHelpSend feedback
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+! footer  + 
+www.youtube.com###guide-links-primary
+!usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresAboutPressCopyrightContact
+youtube.com###guide-links-secondary
+!copyright
+www.youtube.com###copyright
+
+! the report search prediction in omni box 
+www.youtube.com##.sbfl_b
+!report search predictions
+www.youtube.com##.sbfl_b
+
+
+!pop up when clicked
+! Your channel
+
+! Appearance: Device theme
+!www.youtube.com###items > ytd-toggle-theme-compact-link-renderer.style-scope.yt-multi-page-menu-section-renderer:first-child
+!www.youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="studio.youtube.com"]
+!www.youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="paid_memberships?"]
+!! For the last time stop pushing us your memberships.
+!www.youtube.com##a#endpoint[href="/paid_memberships"]
+!www.youtube.com###offer-module
+
+!side chat box
+www.youtube.com###chat
+!clarify
+www.youtube.com###clarify-box
+!donation self
+www.youtube.com###donation-shelf
+!join button
+www.youtube.com###sponsor-button
+!notification after subscription
+www.youtube.com###notification-preference-button
+!scoll above related videos
+www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
+! menu
+www.youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
+
+! banner channel
+www.youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
+
+!search and home page
+!call icall suicide help line 
+www.youtube.com##.ytd-emergency-onebox-renderer
+! restricted mode is on 
+www.youtube.com###contents > ytd-clarification-renderer
+
+! don't know
+www.youtube.com##ytd-primetime-promo-renderer
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Related to your search/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/People also watched/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Learn while you're at home/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Watch again/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/For you/i))
+www.youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Top news/i))
+www.youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Searches related to/i))
+
+!restricted mode is on warning on the search result. I don't want to turn off restricted mode in any condition then this is not needed.
+www.youtube.com###header > ytd-text-header-renderer.style-scope.ytd-section-list-renderer
+
+! Removes unnecesary stuff
+www.youtube.com##ytd-horizontal-card-list-renderer, ytd-rich-section-renderer, ytd-mini-guide-renderer
+
+! tracking paremeter 
+||youtube.com^$removeparam=feature
+||youtube.com^$removeparam=kw
+||youtube.com^$removeparam=gclid
+||youtube.com^$removeparam=referrer
+||youtube.com^$removeparam=index
+
