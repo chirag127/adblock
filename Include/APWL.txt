@@ -4,3 +4,23 @@
 
 !#include https://raw.githubusercontent.com/chirag127/miscfilters/master/antipaywall.txt
 !#include https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt
+
+cnn.com##[data-testid="preview-component"]
+fortune.com##.paywall:style(filter: none !important;)
+fortune.com##p:has([id^="offer"])
+https://s3-prod.autonews.com/s3fs-public/js/js_WTmgcF6xZivpS-TUSmoAd8GqFXyeEn0XUDFDZ5nnDH4.js
+mediapost.com###accesswall-modal, .modal-backdrop
+mediapost.com##body:style(overflow: auto !important;)
+mediapost.com##div:style(filter: none !important;)
+newrepublic.com###pwPopups
+slate.com##.slate-paywall
+telegraph.co.uk##.martech-modal-component-overlay
+telegraph.co.uk##body:style(overflow-y: auto !important;)
+telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.5-76--1.js
+telegraph.co.uk/martech/js/core.min.js
+theatlantic.com##[class^="Paywall_root__"]
+time.com##iframe[title="registration-form"], .registration-wall
+washingtonpost.com##[id^="paywall"]
+washingtontimes.com##.tp-modal
+||buy.tinypass.com/$subdocument
+||cdn.tinypass.com^$script
