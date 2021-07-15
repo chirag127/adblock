@@ -1,7 +1,7 @@
 ! Description it is only for my personal use.This list breaks the things that I don't use. 
 ! Title : most used tracking parameters.
-! ||google.*^$removeparam=ved break redirected
 !||google.*^$removeparam=sec_act
+!||google.*^$removeparam=usg # break redirected
 ||accounts.firefox.com^$removeparam=context
 ||accounts.firefox.com^$removeparam=entrypoint
 ||accounts.firefox.com^$removeparam=form_type
@@ -78,7 +78,6 @@
 ||github.com^$removeparam=email_token
 ||google.*/search$removeparam=client
 ||google.*/search$removeparam=sclient
-||google.*/search$removeparam=ved
 ||google.*^$removeparam=_u
 ||google.*^$removeparam=aqs
 ||google.*^$removeparam=atyp
@@ -104,12 +103,12 @@
 ||google.*^$removeparam=safe
 ||google.*^$removeparam=sei
 ||google.*^$removeparam=site
-!||google.*^$removeparam=source
+||google.*^$removeparam=source
 ||google.*^$removeparam=sourceid
 ||google.*^$removeparam=spell
 ||google.*^$removeparam=sxsrf
 ||google.*^$removeparam=uact
-!||google.*^$removeparam=usg
+||google.*^$removeparam=ved
 ||google.*^$removeparam=vet
 ||google.*^$removeparam=zx
 ||imdb.com^$removeparam=pf_rd_[a-zA-Z]*
