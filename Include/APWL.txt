@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/chirag127/adblock/
 
 !#include https://raw.githubusercontent.com/chirag127/miscfilters/master/antipaywall.txt
-!#include https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt
+!!#include https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt
 
 cnn.com##[data-testid="preview-component"]
 fortune.com##.paywall:style(filter: none !important;)
@@ -24,4 +24,3 @@ washingtonpost.com##[id^="paywall"]
 washingtontimes.com##.tp-modal
 ||buy.tinypass.com/$subdocument
 ||cdn.tinypass.com^$script
-@@||businessinsider.com^$elemhide,badfilter
