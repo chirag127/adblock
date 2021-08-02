@@ -2,14 +2,35 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/chirag127/adblock/
 
-my.nextdns.io###root > div.px-3.text-center:last-child
-aktu.prutor.ai##.products
-my.rkgitlms.in###page-header
-my.rkgitlms.in##.c2,.c1,.c3
-@@||collectcdn.com^$domain=wheebox.com
-youtube.com###alerts
+
+
+
+! homepage
+!youtube.com###primary > ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer
+! explore
+!youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+
+!side chat box
+youtube.com###chat
+!clarify
+youtube.com###clarify-box
+!donation self
+youtube.com###donation-shelf
+!join button
+youtube.com###sponsor-button
+!notification after subscription
+youtube.com###notification-preference-button
+!scoll above related videos
+youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
+! menu
+youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
 youtube.com##.ytp-miniplayer-button
 
+
+! wl
+! add video to wl
+youtube.com###items > ytd-menu-service-item-renderer.style-scope.ytd-menu-popup-renderer.iron-selected:first-child > tp-yt-paper-item.style-scope.ytd-menu-service-item-renderer
+youtube.com###alerts
 
 !s youtube
 ||youtube.com/s/notifications/
@@ -23,6 +44,7 @@ youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-sc
 youtube.com###buttons > ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default:first-child
 ! notification buttons
 youtube.com##.notification-button-style-type-default
+
 
 ! Mixes are pointless. Just add an option for their appearance, or remove them.
 www.youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
@@ -56,20 +78,7 @@ youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.styl
 youtube.com##a#endpoint[href="/paid_memberships"]
 youtube.com###offer-module
 
-!side chat box
-youtube.com###chat
-!clarify
-youtube.com###clarify-box
-!donation self
-youtube.com###donation-shelf
-!join button
-youtube.com###sponsor-button
-!notification after subscription
-youtube.com###notification-preference-button
-!scoll above related videos
-youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
-! menu
-youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
+
 
 ! banner channel
 youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
@@ -79,6 +88,9 @@ youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
 www.youtube.com##.ytd-emergency-onebox-renderer
 ! restricted mode is on 
 www.youtube.com###contents > ytd-clarification-renderer
+youtube.com##ytd-movie-renderer
+!suicide
+youtube.com##ytd-emergency-onebox-renderer
 
 ! don't know
 youtube.com##ytd-primetime-promo-renderer
