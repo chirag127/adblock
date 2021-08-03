@@ -5,7 +5,10 @@ torrentfreak.com##.widget_text, .o-widget--rotated.o-widget, .comments, .footer_
 ghacks.net###comments, [href*="/#comments"], .tag-sponsored, [id^="snhb-snhb_ghacks_bottom-"], .widget_stackcommerce_widget:remove()
 developer.mozilla.org##.mdn-cta-container, [class^="notification"]:remove()
 dnsleaktest.com##p[style="padding-bottom: 100px"]:remove()
-||dnsleaktest.com^$elemhide,important
+
+@@||dnsleaktest.com^$content,elemhide,jsinject,badfilter
+
+@@||dnsleaktest.com^$content,jsinject
 
 
 indianexpress.com##p:has(strong:has-text(Read))
