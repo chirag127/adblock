@@ -6,59 +6,33 @@
 ||pr-cy.ru^$cookie=avc
 
 
-
-
-||a.nel.cloudflare.com^
-||beacons.gcp.gvt2.com^
-||beacons.gvt2.com^
-||blueconic.net^
-||collector.githubapp.com^
-||doubleclick.net^
-||google-analytics.com^
-||intake-logging.wikimedia.org^
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-||api.aws.parking.godaddy.com/*/parking/*
-
-!-------------------------------------------------------------------------------!
-!-------------- Tracking servers list  -----------------------------------------!
-!-------------------------------------------------------------------------------!
+!!-------------------------------------------------------------------------------!
+!!-------------- Tracking servers list  -----------------------------------------!
+!!-------------------------------------------------------------------------------!
+!!
+!! Blocking Firebase crash reporting is quite problematic:
+!! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
+!||app-measurement.com^
+!! Crashlytics is commented by @ameshkov.
+!! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
+!! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
+!! reported to devs, otherwise they won't learn about the issue and won't fix it.
+!! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
+!! ||e.crashlytics.com^
+!! ||settings.crashlytics.com^
+!!
+!! The list of bug-tracker services(Sentry, etc.)
+!! Add as commented rules. Will be used in additional list and/or strict DNS
+!||crashlyticsreports-pa.googleapis.com^
+!||e.crashlytics.com^
+!||settings.crashlytics.com^
+!||sessions.bugsnag.com^
+!||notify.bugsnag.com^
+!||crashlytics2.l.google.com^
+!||crashlyticsreports-pa.googleapis.com^
+!||bugly.qcloud.com^
+!||admob-app-id-*.firebaseio.com^
+!||events.split.io^
+!||apptrace.com^
+!||opentelemetry.io^
 !
-! Blocking Firebase crash reporting is quite problematic:
-! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
-||app-measurement.com^
-! Crashlytics is commented by @ameshkov.
-! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
-! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
-! reported to devs, otherwise they won't learn about the issue and won't fix it.
-! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
-! ||e.crashlytics.com^
-! ||settings.crashlytics.com^
-!
-! The list of bug-tracker services(Sentry, etc.)
-! Add as commented rules. Will be used in additional list and/or strict DNS
-||crashlyticsreports-pa.googleapis.com^
-||e.crashlytics.com^
-||settings.crashlytics.com^
-||sessions.bugsnag.com^
-||notify.bugsnag.com^
-||crashlytics2.l.google.com^
-||crashlyticsreports-pa.googleapis.com^
-||bugly.qcloud.com^
-||admob-app-id-*.firebaseio.com^
-||events.split.io^
-||apptrace.com^
-||opentelemetry.io^
