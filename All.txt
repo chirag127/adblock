@@ -42,3 +42,12 @@ www.google.com##.w7DnQb
 www.google.com##.jYyFuf
 ! feedback pop up about snippet
 www.google.com###dfo
+
+
+
+!Reddit RPAN
+! Hide Reddit 'Top Broadcast Now' & 'Top livestream'
+reddit.com##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
+! Block downloading. Please report back if does not work or causes issues
+||redd.it/*.m3u8^$xhr,domain=reddit.com
+||strapi.reddit.com^$xhr,domain=reddit.com
