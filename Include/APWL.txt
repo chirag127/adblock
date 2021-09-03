@@ -1,10 +1,8 @@
-! Title: APW
 ! Expires: 2 days
 ! Homepage: https://github.com/chirag127/adblock/
-
-!#include https://raw.githubusercontent.com/chirag127/miscfilters/master/antipaywall.txt
+! Title: APW
 !!#include https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt
-
+!#include https://raw.githubusercontent.com/chirag127/miscfilters/master/antipaywall.txt
 cnn.com##[data-testid="preview-component"]
 fortune.com##.paywall:style(filter: none !important;)
 fortune.com##p:has([id^="offer"])
@@ -24,19 +22,11 @@ washingtonpost.com##[id^="paywall"]
 washingtontimes.com##.tp-modal
 ||buy.tinypass.com/$subdocument
 ||cdn.tinypass.com^$script
-||mindtools.com^$cookie=count_cookie
-
-||scientificamerican.com^$cookie
-
+||lumendatabase.org$cookie
 ||medium.com^$cookie
+||mindtools.com^$cookie=count_cookie
 ||nytimes.com^$cookie
+||pr-cy.ru^$cookie=avc
+||scientificamerican.com^$cookie
 ||swarajyamag.com^$cookie=at-meter
 ||towardsdatascience.com^$cookie
-||pr-cy.ru^$cookie=avc
-||lumendatabase.org$cookie
-
-
-
-
-
-
