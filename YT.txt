@@ -8,6 +8,17 @@ youtube.com##.yt-tooltip-renderer
 ||youtube.com^*/annotations_module.js
 youtube.com##ytd-compact-movie-renderer
 
+! Mixes are pointless. Just add an option for their appearance, or remove them.
+! Removes Mixes from the Main Page
+youtube.com##ytd-rich-item-renderer #video-title-link[title*="Mix"][href$="start_radio=1"]:upward(ytd-rich-item-renderer)
+! Removes Mixes from the right side panel
+youtube.com##ytd-compact-radio-renderer
+! Removes Mixes from search results
+youtube.com##ytd-radio-renderer
+
+! Removes "YouTube" (Music) playlists from the right side panel
+youtube.com##ytd-compact-playlist-renderer .ytd-channel-name:has-text(/^YouTube/):upward(ytd-compact-playlist-renderer)
+
 
 ! homepage
 !youtube.com###primary > ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer
@@ -50,9 +61,6 @@ youtube.com###buttons > ytd-topbar-menu-button-renderer.style-scope.ytd-masthead
 youtube.com##.notification-button-style-type-default
 
 
-! Mixes are pointless. Just add an option for their appearance, or remove them.
-youtube.com###video-title-link[href*="start_radio=1"]:upward(ytd-rich-item-renderer)
-youtube.com##ytd-radio-renderer, ytd-compact-radio-renderer
 
 !guide menu of the side
 
