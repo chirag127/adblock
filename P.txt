@@ -1,17 +1,13 @@
-||userscript.zone^$removeparam=source
-||udemy.com^$removeparam=kw
-
-! Description: best list
-$removeparam=__cf_chl_jschl_tk__
+! Description: Personal list for removing parameter
 ! Title: most used tracking parameters.
 !||google.*$removeparam=btn[a-zA-Z]* btnI=I%27m+Feeling+Lucky breaks https://www.google.com/search?q=india&btnI=I%27m+Feeling+Lucky&newwindow=1&sxsrf=ALeKk03gtx0M9L2Pnh9j69mrMxGoxTZOHw%3A1626810064280&source=hp&ei=0Cb3YN7tDqPhz7sPsJ6_0AI&iflsig=AINFCbYAAAAAYPc04Mk1Agw6gRHehtMTYz0hyjGJoMYE
 !||google.*$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give.
 !||google.*$removeparam=sa # breaks redirected see https://webmasters.stackexchange.com/questions/116854/what-causes-redirect-notice-in-google-search
 !||google.*^$removeparam=usg # break redirected
+$removeparam=__cf_chl_jschl_tk__
 ||accounts.firefox.com^$removeparam=context
 ||accounts.firefox.com^$removeparam=entrypoint
 ||accounts.firefox.com^$removeparam=form_type
-||chrome.google.com^$removeparam=hl
 ||adguard.com^$removeparam=aid
 ||adguard.com^$removeparam=cid
 ||amazon.$removeparam=/^cv_ct_/
@@ -64,6 +60,7 @@ $removeparam=__cf_chl_jschl_tk__
 ||bing.com^$removeparam=sc
 ||bing.com^$removeparam=sk
 ||bing.com^$removeparam=sp
+||chrome.google.com^$removeparam=hl
 ||cnet.com^$removeparam=ftag
 ||facebook.com^$removeparam=[a-zA-Z]*ref[a-zA-Z]*
 ||facebook.com^$removeparam=__tn__
@@ -145,6 +142,8 @@ $removeparam=__cf_chl_jschl_tk__
 ||twitter.com^$removeparam=cn
 ||twitter.com^$removeparam=ref_url
 ||twitter.com^$removeparam=s
+||udemy.com^$removeparam=kw
+||userscript.zone^$removeparam=source
 ||youtube.com^$removeparam=feature
 ||youtube.com^$removeparam=gclid
 ||youtube.com^$removeparam=kw
