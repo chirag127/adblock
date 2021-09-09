@@ -1,0 +1,85 @@
+! ! using RegEx in this style :has-text(/^blah blah/) doesn't appear to work for some reason
+! www.youtube.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.yt-lockup-tile,.video-list-item,.watchable-tile:-abp-contains(CORONA)
+! www.youtube.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.yt-lockup-tile,.video-list-item,.watchable-tile:-abp-contains(COVID)
+! www.youtube.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.yt-lockup-tile,.video-list-item,.watchable-tile:-abp-contains(Nursery)
+! www.youtube.com#?##dismissable,[lockup],ytd-metadata-row-renderer,.yt-lockup-tile,.video-list-item,.watchable-tile:-abp-contains(Unbox)
+! youtube.com##ytd-rich-section-renderer:has-text(Breaking news)
+! youtube.com##ytd-rich-section-renderer:has-text(COVID)
+! youtube.com##ytd-rich-section-renderer:has-text(Latest YouTube posts)
+! youtube.com##ytd-rich-section-renderer:has-text(Ready to vote?)
+! youtube.com##ytd-rich-section-renderer:has-text(Recommended movies)
+! youtube.com##ytd-rich-section-renderer:has-text(What did you think of this video?)
+###navBackToTop
+##.ad-center
+##.ad_box_flipkart
+/cdn-cgi/apps/head/*$script,~third-party
+/optimizelyjs/*
+||flipkart.d1.sc.omtrdc.net^
+ads.cloud.flipkart.com
+ads.flipkart.com
+affiliate.flipkart.com
+amazon.*##.nav-signin-tt.nav-flyout, .aaAlert.aaAlertWarning
+amazon.*#$##nav-main { transform: none !important; }
+amazon.*#$#body { overflow-x: hidden !important; overflow-y: scroll !important; padding-top: 0 !important; margin-right: 0 !important; }
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es###swf-sheet-facebook
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es###swf-sheet-pinterest
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es###swf-sheet-twitter
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es###swf-sheet-whatsapp
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.it,amazon.es###smart-app-banner
+amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.it,amazon.es##div.afap-above-nav#afap-above-nav
+amazon.in###ape_detail_btf_detail-mWeb_wrapper
+amazon.in###ape_detail_mobile-hero-quick-promo_mweb_wrapper
+amazon.in###mobile-ad-container
+amazon.in#?#.s-result-item:-abp-has(h5.s-sponsored-header)
+co-operative.coop,couchsurfing.com,fullscreen.com,haymarketbooks.org,oceanmata.com,pluralsight.com,securitylab.github.com,usatoday.com##.banner
+flipkart.com##.keep_in_touch
+flipkart.com##.pbo-sticky
+flipkart.com##div[data-id][style] > div[data-tkid^="en_"]
+flipkart.com#?#div[style="transform: translateX(0px);"] > div[style="width: 220px;"]:has(> div[data-tkid$="=="] > div > span:contains(/^Ad$/))
+flipkart.com#?#div[style] > div[class*="col-"] > div[class] > div[data-id][style]:has(> div[data-tkid^="en_"])
+github.blog##.post__social-share
+github.com##.js-cookie-consent-banner
+github.com##.repository-content [data-prompt="signup"]
+github.com##.signup-prompt
+gitlab.com###sticky-banner
+twitter.com##.r-13qz1uu.r-tvv088.css-1dbjc4n
+twitter.com#?##layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
+twitter.com#?#div[data-testid="eventHero"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสัมพันธ์|प्रचारित|বিজ্ঞাপিত|تشہیر شدہ|مُروَّج|تبلیغی|מקודם/)
+twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสัมพันธ์|प्रचारित|বিজ্ঞাপিত|تشہیر شدہ|مُروَّج|تبلیغی|מקודם/))
+twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสัมพันธ์|प्रचारित|বিজ্ঞাপিত|تشہیر شدہ|مُروَّج|تبلیغی|מקודם/)
+twitter.com#?#div[data-testid="UserCell"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสัมพันธ์|प्रचारित|বিজ্ঞাপিত|تشہیر شدہ|مُروَّج|تبلیغی|מקודם/))
+twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสัมพันธ์|प्रचारित|বিজ্ঞাপিত|تشہیر شدہ|مُروَّج|تبلیغی|מקודם/)
+twitter.com#?#section:only-child > h1[id][aria-level="1"] + div[aria-label] > div[style] > div[style] div[class^=css-] > h2 > div[dir=auto][style^=-webkit-line-clamp]> span:contains(プロモツイート):upward(3)
+www.amazon.in##.s-left-ads-item
+www.flipkart.com##._2fZkbP
+||api.twitter.com/*/count.json$third-party
+||api.twitter.com^*/count.json?$third-party
+||api.twitter.com^*/show.json?$third-party,domain=~twimg.com
+||api.twitter.com^*/user_timeline$third-party
+||cdn.segment.com/analytics.js
+||cdn.widgets.webengage.com/js/widget/$domain=flipkart.com
+||collector-cdn.github.com^
+||flipkart.com/?affid=$subdocument,third-party
+||flipkart.com/affiliateWidget/$third-party
+||flipkart.com/ajaxlog/visitIdlog?
+||flipkart.com/bbeacon.php?
+||flipkart.com/dl/?affid=$subdocument,third-party
+||flipkart.com^*/collector/
+||fls-*.amazon.
+||github.com/_private/browser/stats
+||github.com/_stats
+||js-agent.newrelic.com^
+||ssl-images-amazon.com/images/*/DAsf-
+||twitter.com/*statuses/user_timeline/$third-party
+||twitter.com/1.1/jot/client_event.json
+||twitter.com/home?status=$third-party
+||twitter.com/i/csp_report?
+||twitter.com/i/jot
+||twitter.com/javascripts/$third-party
+||twitter.com/js/timeline.$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||twitter.com/js/timeline.$script,third-party
+||twitter.com/metrics
+||twitter.com/oct.js
+||twitter.com/scribe/
+||twitter.com/share$third-party
+~tectalk.co,~timesnownews.com,~emlakkulisi.com,~reformal.ru,~flex.orange.pl,~europapress.es,~norton.com,~avast.com,~sptrans.com.br,~linuxbabe.com,~backerclub.co,~germs.io,~kioskla.co,~minutouno.com,~domashniy.ru,~playboyrussia.com,~softhome.ru,~xn--90ablmekqdsdu6h.xn--p1ai,~licardo.cn,~breakbrunch.com,~ichip.ru,~popcornnews.ru,~autorambler.ru,~passion.ru,~quto.ru,~surfer.com,~ctvnews.ca,~merriam-webster.com,~expedia.com,~postnauka.ru,~dailystar.co.uk,~elderscrollsonline.com,~bombardir.ru,~letidor.ru,~pozdravtenas.ru,~rbkgames.com,~ferra.ru,~mvideo.ru,~anup.nz,~stradivarius.com,~iarex.ru,~speedtest.net,~pikabu.ru,~theatlantic.com,~ok.ru,~bett1.de,~gofeminin.de,~avito.ru,~cbsnews.com,~hh.ru,~spotify.com,~am-play.de##.social-icon
