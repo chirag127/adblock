@@ -1,14 +1,10 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: APW
-!!#include https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt
-!#include https://raw.githubusercontent.com/chirag127/miscfilters/master/antipaywall.txt
+!#include https://raw.githubusercontent.com/llacb47/miscfilters/master/antipaywall.txt
 cnn.com##[data-testid="preview-component"]
 fortune.com##.paywall:style(filter: none !important;)
 fortune.com##p:has([id^="offer"])
-
-||builtin.com^$cookie
-||thediplomat.com^$cookie
 https://s3-prod.autonews.com/s3fs-public/js/js_WTmgcF6xZivpS-TUSmoAd8GqFXyeEn0XUDFDZ5nnDH4.js
 mediapost.com###accesswall-modal, .modal-backdrop
 mediapost.com##body:style(overflow: auto !important;)
@@ -20,16 +16,19 @@ telegraph.co.uk##body:style(overflow-y: auto !important;)
 telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.5-76--1.js
 telegraph.co.uk/martech/js/core.min.js
 theatlantic.com##[class^="Paywall_root__"]
-time.com##iframe[title="registration-form"], .registration-wall
+time.com##.registration-wall
+time.com##iframe[title="registration-form"]
 washingtonpost.com##[id^="paywall"]
 washingtontimes.com##.tp-modal
+||builtin.com^$cookie
 ||buy.tinypass.com/$subdocument
 ||cdn.tinypass.com^$script
 ||lumendatabase.org$cookie
 ||medium.com^$cookie
 ||mindtools.com^$cookie=count_cookie
 ||nytimes.com^$cookie
-||pr-cy.ru^$cookie=avc
+||pr-cy.ru^$cookie
 ||scientificamerican.com^$cookie
 ||swarajyamag.com^$cookie=at-meter
+||thediplomat.com^$cookie
 ||towardsdatascience.com^$cookie
