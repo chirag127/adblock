@@ -1,11 +1,11 @@
 ! Description: Personal list for removing parameter
 ! Title: most used tracking parameters.
+!! @@||google.*/complete/search?q=*$removeparam=client to protect the breaking of the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give
 !||google.*$removeparam=btn[a-zA-Z]* btnI=I%27m+Feeling+Lucky breaks https://www.google.com/search?q=india&btnI=I%27m+Feeling+Lucky&newwindow=1&sxsrf=ALeKk03gtx0M9L2Pnh9j69mrMxGoxTZOHw%3A1626810064280&source=hp&ei=0Cb3YN7tDqPhz7sPsJ6_0AI&iflsig=AINFCbYAAAAAYPc04Mk1Agw6gRHehtMTYz0hyjGJoMYE
 !||google.*$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give.
 !||google.*$removeparam=sa # breaks redirected see https://webmasters.stackexchange.com/questions/116854/what-causes-redirect-notice-in-google-search
-!||google.*^$removeparam=usg # break redirected
 !||google.*/search$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give
-!! @@||google.*/complete/search?q=*$removeparam=client to protect the breaking of the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give
+!||google.*^$removeparam=usg # break redirected
 $removeparam=__cf_chl_jschl_tk__
 ||accounts.firefox.com^$removeparam=context
 ||accounts.firefox.com^$removeparam=entrypoint
@@ -117,7 +117,9 @@ $removeparam=__cf_chl_jschl_tk__
 ||google.*/search$removeparam=zx
 ||google.*/search?$removeparam=sa
 ||google.*/search?$removeparam=usg
+||google.*/search?q=$removeparam=dpr
 ||google.*^$removeparam=sec_act
+||google.com/search?q=$removeparam=client
 ||imdb.com^$removeparam=pf_rd_[a-zA-Z]*
 ||imdb.com^$removeparam=ref_
 ||linkedin.com^$removeparam=li[a-zA-Z]{2}
