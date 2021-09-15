@@ -7,6 +7,7 @@
 !||google.*/search$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give
 !||google.*^$removeparam=usg # break redirected
 $removeparam=__cf_chl_jschl_tk__
+@@||google.*/complete/search?q=*$removeparam=client
 ||accounts.firefox.com^$removeparam=context
 ||accounts.firefox.com^$removeparam=entrypoint
 ||accounts.firefox.com^$removeparam=form_type
@@ -115,11 +116,11 @@ $removeparam=__cf_chl_jschl_tk__
 ||google.*/search$removeparam=ved
 ||google.*/search$removeparam=vet
 ||google.*/search$removeparam=zx
-||google.*/search?$removeparam=sa
-||google.*/search?$removeparam=usg
-||google.*/search?q=$removeparam=dpr
-||google.*^$removeparam=sec_act
-||google.com/search?q=$removeparam=client
+||google.*/search$removeparam=sa
+||google.*/search$removeparam=usg
+||google.*/search$removeparam=dpr
+||google.*/search$removeparam=sec_act
+||google.*/search$removeparam=client
 ||imdb.com^$removeparam=pf_rd_[a-zA-Z]*
 ||imdb.com^$removeparam=ref_
 ||linkedin.com^$removeparam=li[a-zA-Z]{2}
