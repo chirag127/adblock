@@ -4,6 +4,7 @@
 !||google.*$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give.
 !||google.*$removeparam=sa # breaks redirected see https://webmasters.stackexchange.com/questions/116854/what-causes-redirect-notice-in-google-search
 !||google.*^$removeparam=usg # break redirected
+!||google.*/search$removeparam=client breaks the suggestion maybe as they do not know which device i'm using so they can't find which suggestion to give
 $removeparam=__cf_chl_jschl_tk__
 ||accounts.firefox.com^$removeparam=context
 ||accounts.firefox.com^$removeparam=entrypoint
