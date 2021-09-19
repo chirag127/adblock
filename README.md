@@ -1,6 +1,6 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 
-# Adguard-Personal-Filters
+# Chirag-Personal-Filters
 
 A personal filterlist of mine with additional filters for Adguard to block third-party, tracking, annoyances, anti-adblock, popunders, resource-abuse and all other unwarranted resources.
 
