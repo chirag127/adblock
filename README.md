@@ -14,9 +14,9 @@ Contains filters specific to Adguard and some filters that have not yet been add
 
 #### Chirag's Anti-paywall list <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/SP/APWL.txt&title=Chirag%20Anti-paywall%20list">Subscribe</a>
 
-#### AdGuard Tracking Protection List without domains
+#### AdGuard Tracking Protection List without domains <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt">Subscribe</a>
+
 ###### People using dns blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are blocked Adguard dns + oisd list.
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt&title=AdGuard Tracking Protection List without domains">Subscribe</a>
 
 
 # Disclaimer 
