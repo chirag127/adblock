@@ -7,6 +7,10 @@ A personal filterlist of mine with additional filters for Adguard to block third
 
 Contains filters specific to Adguard and some filters that have not yet been added to other filterlists.
 
+# Requirements
+There just have one requirement to use this lists that AdGuard AdBlocker extension should be already installed.
+
+You can install the extension [here](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
 # Lists
 
