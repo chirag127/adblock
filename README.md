@@ -10,7 +10,7 @@ Contains filters specific to Adguard and some filters that have not yet been add
 # Requirements
 The requirements to use these lists in chromium based desktop browser is that AdGuard AdBlocker extension should be already installed on a chromium based desktop browser.
 
-You can install the extension [here](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
+You can install the extension from [here](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
 # Lists
 
