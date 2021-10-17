@@ -14,6 +14,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 # Lists
 
+#### Chirag's YouTube Annoyance list <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt">Subscribe</a> [View List](https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt)
 
 #### Chirag's Annoyance list <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt">Subscribe</a> [View List](https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt)
 
