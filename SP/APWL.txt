@@ -2,6 +2,7 @@
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: Chirag's Anti-paywall
 !#include https://raw.githubusercontent.com/llacb47/miscfilters/master/antipaywall.txt
+betterprogramming.pub###lo-highlight-meter-1-highlight-box
 cnn.com##[data-testid="preview-component"]
 fortune.com##.paywall:style(filter: none !important;)
 fortune.com##p:has([id^="offer"])
@@ -9,8 +10,12 @@ levelup.gitconnected.com###lo-highlight-meter-1-highlight-box
 mediapost.com###accesswall-modal, .modal-backdrop
 mediapost.com##body:style(overflow: auto !important;)
 mediapost.com##div:style(filter: none !important;)
+medium.datadriveninvestor.com###lo-highlight-meter-1-highlight-box
 newrepublic.com###pwPopups
+positronx.io###cookie
 slate.com##.slate-paywall
+technologyreview.com##.overlayFooter__wrapper--3DhFn
+technologyreview.com##.stayConnected__wrapper--22zXu
 telegraph.co.uk##.martech-modal-component-overlay
 telegraph.co.uk##body:style(overflow-y: auto !important;)
 telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.5-76--1.js
@@ -27,12 +32,14 @@ washingtontimes.com##.tp-modal
 ||gitconnected.com^$cookie
 ||lumendatabase.org$cookie
 ||medium.com^$cookie
+||medium.datadriveninvestor.com^$cookie
 ||mindtools.com^$cookie=count_cookie
 ||nytimes.com^$cookie
 ||pr-cy.ru^$cookie
 ||reuters.com^$cookie
 ||scientificamerican.com^$cookie
 ||swarajyamag.com^$cookie=at-meter
+||technologyreview.com^$cookie
 ||thediplomat.com^$cookie
 ||time.com^$cookie
 ||towardsdatascience.com^$cookie
