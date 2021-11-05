@@ -22,6 +22,8 @@ youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', '0.playerResponse.a
 youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'playerResponse.adPlacements', 'undefined')
 youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.adPlacements', 'undefined')
 youtube-video.download#%#//scriptlet("prevent-window-open")
+youtube.com###YtKevlarVisibilityIdentifier
+youtube.com###YtSparklesVisibilityIdentifier
 youtube.com###__ffYoutube1
 youtube.com###__ffYoutube2
 youtube.com###__ffYoutube3
@@ -47,13 +49,11 @@ youtube.com###watch-branded-actions
 youtube.com###watch-buy-urls
 youtube.com###watch-channel-brand-div
 youtube.com###watch7-branded-banner
-youtube.com###YtKevlarVisibilityIdentifier
-youtube.com###YtSparklesVisibilityIdentifier
+youtube.com##.GoogleActiveViewElement
 youtube.com##.ad-container
 youtube.com##.banner-promo-style-type-masthead-v2
 youtube.com##.carousel-offer-url-container
 youtube.com##.companion-ad-container
-youtube.com##.GoogleActiveViewElement
 youtube.com##.list-view[style="margin: 7px 0pt;"]
 youtube.com##.promoted-sparkles-text-search-root-container
 youtube.com##.promoted-videos
@@ -79,6 +79,7 @@ youtube.com##.ytp-ad-overlay-container
 youtube.com##.ytp-ad-player-overlay-flyout-cta
 youtube.com##.ytp-ad-progress
 youtube.com##.ytp-ad-progress-list
+youtube.com##YTM-PROMOTED-VIDEO-RENDERER
 youtube.com##[class*="ytd-display-ad-"]
 youtube.com##[class^="ytd-display-ad-"]
 youtube.com##[layout*="display-ad-"]
@@ -96,7 +97,6 @@ youtube.com##ytd-video-masthead-ad-v3-renderer
 youtube.com##ytm-companion-slot
 youtube.com##ytm-promoted-sparkles-text-search-renderer
 youtube.com##ytm-promoted-sparkles-web-renderer
-youtube.com##YTM-PROMOTED-VIDEO-RENDERER
 youtube.com#%#//scriptlet("json-prune", "playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds")
 youtube.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
 youtube.com#?#ytd-rich-grid-renderer ytd-rich-item-renderer div > ytd-display-ad-renderer:upward(2)
