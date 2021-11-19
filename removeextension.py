@@ -29,7 +29,6 @@ if __name__ == '__main__':
 
                 main()
 
-
         else:
             sleep(0.01)
     

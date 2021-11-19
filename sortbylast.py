@@ -1,38 +1,71 @@
-#  list of items to put them in alphabetical order by last name is in the file input.txt
+# write code to sort the lines in the files in the file_list
+# and overwrite the original files with the sorted lines
 
-from os import read
 
-# list of the files to be read
-file_list = ['input.txt']
+# list all files in the current directory and directories within it
+files = ['i.txt']
+
+# define function to get the content of the file
+
+
+def get_content(file):
+    with open(file, 'r') as f:
+        content = f.read()
+    return content
+
+
+# define the function to convert the content to the list of strings
+
+
+def convert_to_list(content):
+    return content.split('\n')
+
+# remove empty lines from the list of strings
+
+
+def remove_empty_lines(list):
+    return [line for line in list if line.strip()]
+
+# define the function to sort the list of strings
+
+
+def sort_list(list):
+    return sorted(list)
+
+def join_list(list):
+    return '\n'.join(list)
+
+
+
+# define the function to write the sorted list to the files
+def write_to_file(filename, list):
+    with open(filename, 'w') as file:
+        file.writelines(list)
 
 
 if __name__ == '__main__':
 
-    for file in file_list:
+    # loop through the list of files
+    for file in files:
 
-        # read the file and put it in a list
-        with open(file, 'r') as f:
-            rules = f.read().splitlines()
+        # convert the contents of the files to a list of strings
+        content = get_content(file)
 
-        # split the rules into first and last name separated by commas or - or  -- or . or ## or . ## or ### [ or ] and put them in a list
-        rules_list = []
-        for rule in rules:
-            rules_list.append(rule.split(','))
-            
+        # reverse the strings
+        content = content[::-1]
 
+        content = convert_to_list(content)
 
-        # sort the list of the urls by last name
-        rules.sort(key=lambda x: x.split(' ')[-1])
+        # remove empty lines from the list of strings
+        content = remove_empty_lines(content)
 
+        # sort the list of strings
+        content = sort_list(content)
 
-        # write the sorted list to the output file
-        with open(file, 'w') as f:
-            for rule in rules:
-                f.write(rule + '\n')
+        content = join_list(content)
 
-        print('File {} sorted'.format(file))
+        # reverse the strings
+        content = content[::-1]
 
-
-
-
-    
+        # write the sorted list to the files
+        write_to_file(file, content)
