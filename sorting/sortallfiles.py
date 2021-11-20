@@ -39,9 +39,6 @@ def remove_empty_lines(list):
 def sort_list(list):
     return sorted(list)
 
-def join_list(list):
-    return '\n'.join(list)
-
 
 # define the function to write the sorted list to the files
 def write_to_file(filename, list):
@@ -63,7 +60,6 @@ if __name__ == '__main__':
         # sort the list of strings
         content = sort_list(content)
 
-        content = join_list(content)
 
         # write the sorted list to the files
 
