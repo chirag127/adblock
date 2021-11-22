@@ -327,7 +327,7 @@ In some cases the `$domain` modifier can match not only the referrer domain, but
 2. The rule's pattern doesn't match any particular domain(s)
 3. The rule's pattern doesn't contain regular expressions
 
-When all these conditions are met, the `domain` modifier will match both the referrer doman **and** the target domain.
+When all these conditions are met, the `domain` modifier will match both the referrer doman \_and_he target domain.
 
 If some of the conditions above aren't met but the rule contains modifiers `cookie` or `csp`, the target domain will still be matched.
 
