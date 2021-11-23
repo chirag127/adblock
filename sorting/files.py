@@ -1,7 +1,9 @@
 
 import os
 
-# define the function to LIST ALL THE FILES IN THE current DIRECTORY AND SUBDIRECTORIES 
+# define the function to LIST ALL THE FILES IN THE current DIRECTORY AND SUBDIRECTORIES
+
+
 def list_all_files():
     # get the current directory
     current_dir = os.getcwd()

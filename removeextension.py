@@ -8,6 +8,7 @@ import keyboard
 def remove_extension():
     pyautogui.click(x=639, y=759)
 
+
 def main():
     # define the function to click on the remove extension button
     remove_extension()
@@ -18,6 +19,7 @@ def main():
     pyautogui.press('enter')
 
     sleep(0.5)
+
 
 if __name__ == '__main__':
 
@@ -31,4 +33,3 @@ if __name__ == '__main__':
 
         else:
             sleep(0.01)
-    

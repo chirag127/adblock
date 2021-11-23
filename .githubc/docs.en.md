@@ -67,7 +67,7 @@ visible: true
       - [Examples](#examples-8)
       - [Testing extended selectors without AdGuard](#testing-extended-selectors-without-adguard)
     - [Debugging scriptlets](#debugging-scriptlets)
-  - [Good luck with creating filters!](#good-luck-with-creating-filters)
+  - [Good luck with creating filters](#good-luck-with-creating-filters)
 
 <a id="introduction"></a>
 
@@ -758,7 +758,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
 
-##### Example 1:
+##### Example 1
 
 ```
 ||example.org^$important
@@ -767,7 +767,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 
 `||example.org^$important` will block all requests despite of the exception rule.
 
-##### Example 2:
+##### Example 2
 
 ```
 ||example.org^$important
@@ -776,7 +776,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 
 Now the exception rule also has `$important` modifier so it will prevail.
 
-##### Example 3:
+##### Example 3
 
 The `$important` modifier will be ignored if a document-level exception rule is applied to the document.
 
@@ -820,7 +820,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 #### **`empty`**
 
-Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with` 200 OK` status.
+Usually, blocked requests look like a server error to browser. If you use `empty` modifier, AdGuard will emulate a blank response from the server with`200 OK` status.
 
 ##### `empty` example
 
@@ -893,7 +893,7 @@ There are three parts in this rule:
 - Regular expression flags: `i` (insensitive search)
 
 You can see how this rule works here:
-http://regexr.com/3cesk
+<http://regexr.com/3cesk>
 
 ##### Multiple `$replace` rules example
 
@@ -933,9 +933,9 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 
 > Limitations
 
-> 1.  Please note that there're a few characters forbidden in the `$csp` value: (`,`), (`$`)
-> 2.  `csp` rules support limited list of modifiers: `domain`, `important`, `subdocument`
-> 3.  Rules with `report-*` directives are considered invalid.
+> 1. Please note that there're a few characters forbidden in the `$csp` value: (`,`), (`$`)
+> 2. `csp` rules support limited list of modifiers: `domain`, `important`, `subdocument`
+> 3. Rules with `report-*` directives are considered invalid.
 
 ##### `csp` examples
 
@@ -1128,7 +1128,7 @@ or to these three:
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
 
-##### `noop` examples:
+##### `noop` examples
 
 ```
 ||example.com$_,removeparam=/^ss\\$/,_,image
@@ -1715,6 +1715,7 @@ To check properties of specific element, do:
 
 1. Select the element on the page.
 2. Go to Console tab and run `console.dir($0)`.
+
 </details>
 
 <a id="extended-css-xpath"></a>
@@ -2383,8 +2384,8 @@ Where:
 
 Eventually, here are the two versions of the Base filter for AdGuard browser extension:
 
-- full: https://filters.adtidy.org/extension/chromium/filters/2.txt
-- optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+- full: <https://filters.adtidy.org/extension/chromium/filters/2.txt>
+- optimized: <https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt>
 
 **Important: If you want to add a rule which shouldn't be removed at optimization use the NOT_OPTIMIZED hint:**
 
@@ -2508,7 +2509,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+Alternatively, install an "ExtendedCssDebugger" userscript: <https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js>
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 
@@ -2541,7 +2542,7 @@ The following scriptlets may be used for debug purposes when applied without any
 
 <a id="good-luck"></a>
 
-## Good luck with creating filters!
+## Good luck with creating filters
 
 We wish you luck with creating you own ad filters.
 
