@@ -27,30 +27,13 @@ def Click_next():
 
 def main():
 
-    urls = """
-https://raw.githubusercontent.com/chirag127/adblock/master/AD.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/AL.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/APWL.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/C.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/D.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/E.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/F.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/GD.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/H.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/N.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/NF.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/O.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/P.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/S.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/SR.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/T.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/W.txt
-https://raw.githubusercontent.com/chirag127/adblock/master/YT.txt
-"""
+    file = open("Custom/url.txt", "r")
+    urls = file.read()
+    file.close()
 
     urlslist = urls.split('\n')
 
-    print(urlslist.count())
+    print(len(urlslist))
 
     for url in urlslist:
 
@@ -60,9 +43,13 @@ https://raw.githubusercontent.com/chirag127/adblock/master/YT.txt
 
         sleep(0.1)
 
-        Type_url(url)   # type the url
+        Type_url(url)
+
+        sleep(0.1)
 
         Click_next()
+
+        pyautogui.moveTo(100, 500)
 
         sleep(1)
 
@@ -77,20 +64,24 @@ https://raw.githubusercontent.com/chirag127/adblock/master/YT.txt
 
             pyautogui.click(x_trust, y_trust)
 
+            sleep(0.1)
+
             pyautogui.click(x_subscribe, y_subscribe)
+
+            sleep(0.5)
 
         except Exception as e:
             print(e)
 
-        pyautogui.hotkey('ctrl', 'r')
+            pyautogui.hotkey('ctrl', 'r')
 
-        sleep(0.5)
+            sleep(1)
 
     print('Done')
 
 
 if __name__ == '__main__':
-    
+
     while True:
 
         if keyboard.is_pressed('ctrl + q'):
