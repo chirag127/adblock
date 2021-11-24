@@ -2,11 +2,11 @@
 
 uBlock filters [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt)
 
-uBlock filters – Badware risks [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badlists.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badlists.txt)
+uBlock filters – Badware risks [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt)
 
 uBlock filters – Privacy [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt)
 
-uBlock filters – Resource abuse [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resourceabuse.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resourceabuse.txt)
+uBlock filters – Resource abuse [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt)
 
 uBlock filters – Unbreak [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt) [View List](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt)
 
