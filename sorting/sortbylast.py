@@ -3,7 +3,7 @@
 
 
 # list all files in the current directory and directories within it
-files = ['i.txt']
+files = ['SP/C.txt', 'SP/APWL.txt']
 
 # define function to get the content of the file
 
