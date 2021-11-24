@@ -2,6 +2,14 @@
 ! Expires: 1 hours
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: Chirag's Anti Donation list
+##[class*="donate"  i]:not(html):not(body)
+##[class*="donation" i]:not(html):not(body)
+##[class*="fundraising" i]:not(html):not(body)
+##[class*="support" i]:not(html):not(body)
+##[id*="donate" i]:not(html):not(body)
+##[id*="donation" i]:not(html):not(body)
+##[id*="fundraising" i]:not(html):not(body)
+##[id*="support" i]:not(html):not(body)
 add0n.com###donation
 addons.videolan.org##.supportDiv
 ahadns.com###donate
@@ -11,8 +19,6 @@ businesstech.co.za###the_poll
 cpuid.com##.widget-donation
 d3ward.github.io##.bmc
 decentraleyes.org##.btn-donate
-developers.google.com##.devsite-thumb-rating
-developers.google.com##devsite-feedback
 docs.github.com##.contribution
 epic.org###support
 freecodecamp.org###nav-donate
