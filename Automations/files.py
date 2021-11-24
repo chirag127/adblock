@@ -13,7 +13,10 @@ def list_all_files():
     files_all = [os.path.join(current_dir, file) for file in files]
     # get the list of all files in the current directory and subdirectories
     files_all = [file for file in files_all if os.path.isfile(file)]
-    return files_all
+
+    print(files_all.sort())
+    
+
+list_all_files()
 
 
-print(list_all_files())
