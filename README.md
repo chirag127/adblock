@@ -14,21 +14,45 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 ## Lists
 
-### Chirag's YouTube Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt)
-
-### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt)
-
 ### Chirag's Anti-comment list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/SP/C.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/SP/C.txt)
 
 ### Chirag's Anti-paywall list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/SP/APWL.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/SP/APWL.txt)
 
 ### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/SP/C.txt)
 
+#### People using dns blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard dns
+
 ### Super Reddit list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/SP/SR.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/SP/SR.txt)
 
+## Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt)
 
+## Chirag's Anti Feedback list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/FE.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/FE.txt)
 
-#### People using dns blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard dns
+## Chirag's Anti News Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/N.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/N.txt)
+
+## Chirag's Anti Other Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Chirag127/adblock/main/O.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/O.txt)
+
+## Chirag's Anti Parameter list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/P.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/P.txt)
+
+## Chirag's Anti Spyware list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/S.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/S.txt)
+
+## Chirag's Anti Top Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/T.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/T.txt)
+
+## Chirag's Education Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/E.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/E.txt)
+
+## Chirag's Foriegn Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/F.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/F.txt)
+
+## Chirag's Genral Donations list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt)
+
+## Chirag's Whitelist list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/##main/W.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/W.txt)
+
+## Chirag's YouTube Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt)
+
+### Chirag's Affiliate Disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt)
+
+### Chirag's Anti-Alert list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AL.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/AL.txt)
+
+### Chirag's Anti-Donations list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/D.txt) [View List](https://raw.githubusercontent.com/chirag127/adblock/main/D.txt)
 
 ## Disclaimer
 
