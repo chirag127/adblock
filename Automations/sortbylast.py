@@ -3,7 +3,7 @@
 
 
 # list all files in the current directory and directories within it
-files = ['GEN/NCD.txt']
+files = ['GEN/NCD.txt','GD.txt']
 
 # define function to get the content of the file
 
