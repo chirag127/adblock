@@ -36,6 +36,13 @@ def sort_list(list):
 def join_list(list):
     return '\n'.join(list)
 
+# reverse the words in lines in the list of strings
+def reverse_words(list):
+    for i in range(len(list)):
+        list[i] = list[i][::-1]
+    return list
+
+
 
 # define the function to write the sorted list to the files
 def write_to_file(filename, list):
