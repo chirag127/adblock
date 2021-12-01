@@ -19,8 +19,8 @@ def list_all_files():
 
 
 # list all files in the current directory and directories within it
-files = ['AD.txt', 'AL.txt', 'D.txt', 'E.txt', 'F.txt', 'FE.txt', 'N.txt',
-         'O.txt', 'P.txt', 'S.txt', 'T.txt', 'WL.txt', 'UBOS/AD.txt', 'UBOS/AAll.txt']
+files = ['AD.txt', 'D.txt', 'E.txt', 'F.txt', 'N.txt',
+         'O.txt', 'P.txt', 'S.txt', 'T.txt', 'W.txt']
 
 
 # define the function to convert the contents of the files to a list of strings
