@@ -1,16 +1,17 @@
 # add all txt files to the current directory
 import os
 
-f = open('A.txt', 'w')
+file = open('A.txt', 'w')
 
-# list all txt files in the current directory
-def listTxtFiles():
-    for file in os.listdir(os.getcwd()):
-        if file.endswith(".txt"):
-            print(file)
-            f.write(file + '\n')
-                
-    listTxtFiles()
-    f.close()
+file.write("""! Description: It contains all list
+! Expires: 1 hours
+! Homepage: https://github.com/chirag127/adblock/
+! Title: Chirag's All Annoyances list
+""")
 
-    
+for dir in os.listdir('.'):
+
+    if dir.endswith('.txt'):
+
+        file.write( '\n'+'!#include ' + dir )
+

@@ -1,26 +1,19 @@
-# write code to a list of urls in the files in the and sort them alphabetically and overwrite the original files
-#  with the sorted list
 
 import os
 
-# define the function to LIST ALL THE FILES IN THE current DIRECTORY AND SUBDIRECTORIES
+files = []
+
+#  Add all files to a list
+for dir in os.listdir('.'):
+
+    if dir.endswith('.txt'):
+        files.append(dir)
 
 
-def list_all_files():
-    # get the current directory
-    current_dir = os.getcwd()
-    # get the list of all files in the current directory
-    files = os.listdir(current_dir)
-    # get the list of all files in the current directory and subdirectories
-    files_all = [os.path.join(current_dir, file) for file in files]
-    # get the list of all files in the current directory and subdirectories
-    files_all = [file for file in files_all if os.path.isfile(file)]
-    return files_all
+# remove NF.txt from the list
+files.remove('Y.txt')
 
 
-# list all files in the current directory and directories within it
-files = ['AD.txt', 'D.txt', 'E.txt', 'F.txt', 'N.txt',
-         'O.txt', 'P.txt', 'S.txt', 'T.txt', 'W.txt']
 
 
 # define the function to convert the contents of the files to a list of strings

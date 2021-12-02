@@ -1,9 +1,18 @@
-# write code to sort the lines in the files in the file_list
-# and overwrite the original files with the sorted lines
+import os
+
+files = []
+
+#  Add all files to a list
+for dir in os.listdir('.'):
+
+    if dir.endswith('.txt'):
+        files.append(dir)
+
+files.remove('YT.txt')
+
 
 
 # list all files in the current directory and directories within it
-files = ['GEN/NCD.txt','GD.txt']
 
 # define function to get the content of the file
 
