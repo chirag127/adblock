@@ -8,7 +8,7 @@ for dir in os.listdir('.'):
     if dir.endswith('.txt'):
         files.append(dir)
 
-files.remove('YT.txt')
+files.remove('Y.txt')
 
 
 
@@ -85,3 +85,5 @@ if __name__ == '__main__':
 
         # write the sorted list to the files
         write_to_file(file, content)
+
+print('Done')

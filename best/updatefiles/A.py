@@ -27,5 +27,5 @@ for dir in files:
 
     if dir.endswith('.txt'):
 
-        file.write( '\n'+'!#include ' + dir )
+        file.write('!#include ' + dir + '\n')
 

@@ -3,7 +3,10 @@
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: Chirag's Anti Top Annoyances
 ###ckpolicy
-addons.mozilla.org##.Notice, .Notice-warning, .GetFirefoxBanner, .Notice-dismissible
+addons.mozilla.org##.GetFirefoxBanner
+addons.mozilla.org##.Notice
+addons.mozilla.org##.Notice-dismissible
+addons.mozilla.org##.Notice-warning
 addons.videolan.org###product-maker > div > div.project-share-new.col-lg-12.col-md-12.col-sm-12.col-xs-12 > div.prod-widget-box.prod-user.right:nth-child(6)
 adguard.com##.sticky-bar, .sticky-bar--fixed
 adguard.com##.test__location
@@ -19,9 +22,8 @@ cloud.google.com##.devsite-banner-announcement
 community.brave.com###banner
 coursefreedl.com#%#//scriptlet("adjust-setInterval", "downloadTimer", "", "0.02")
 dbknews.com##.hidden
-developer.android.com##.devsite-footer-utility-item
 developer.android.com##.devsite-footer-utility-button
-developer.chrome.com##.banner, .banner--info
+developer.android.com##.devsite-footer-utility-item
 developers.google.com##.devsite-banner-message
 dnsleaktest.com##div.container_12:nth-child(3) > p:last-child
 dnsleaktest.com##p[style="padding-bottom: 100px"]:remove()
@@ -32,7 +34,8 @@ freepress.net##div[class$="newsletter"]
 gethuman.com##.sec-below
 golang.org##.Header-banner
 grasshopper.app##gh-banner
-huffpost.com##.archive-notice, .archive-notice--top
+huffpost.com##.archive-notice
+huffpost.com##.archive-notice--top
 icallhelpline.org##.b-modal
 icallhelpline.org##.pps-popup
 ihavenotv.com###bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-left:nth-child(5) > li:last-child > a
@@ -65,12 +68,9 @@ translate.google.com##.notification-area,.gt-cc:remove()
 tutcourse.com##+js(aeld, DOMContentLoaded)
 vimeo.com#?#main aside[class] > div > div:not([role]):has(> p[format] > a[href="/for-hire#jobForm"])
 webrtc.org##.devsite-banner-message
-||analytics.pinterest.com^$domain=d3ward.github.io
 ||api.aws.parking.godaddy.com/v1/parking/*$domain=zacebookpk.com
 ||cdn.thewire.in/wp-content/uploads/2020/05/12160243/Wire-Science-Writer-Banner-no-logo.png^
 ||media.geeksforgeeks.org/img-practice/Prac-LT-DSA-SP.png^
 ||polsy.org.uk^$removeparam=auth
-||trk.pinterest.com^$domain=d3ward.github.io
-||youtube.cleverads.vn^$domain=d3ward.github.io
 ||youtube.com/subscribe_embed?$third-party
 ||youtube.com/subscribe_widget$third-party
