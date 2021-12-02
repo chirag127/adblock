@@ -3,14 +3,14 @@ import pyautogui
 import keyboard
 from time import sleep
 import webbrowser
-# Physical: {X=802,Y=822}
-# Physical: {X=914,Y=725}
-# Physical: {X=916,Y=900}
-# Physical: {X=644,Y=798}
+# Physical: {X=791,Y=682}
+# Physical: {X=921,Y=730}
+# Physical: {X=641,Y=611}
+# Physical: {X=958,Y=731}
 
 
 def Click_Add_custom_filter():
-    pyautogui.click(x=802, y=822)
+    pyautogui.click(x=791, y=682)
 
 # define a function to type the url
 
@@ -22,22 +22,18 @@ def Type_url(url):
 
 
 def Click_next():
-    pyautogui.click(x=914, y=725)
+    pyautogui.click(x=921, y=730)
 
 
 def main():
 
-    # file = open("Custom/url.txt", "r")
-    # urls = file.read()
-    # file.close()
-
-    urls = """https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/EkstraBladetEroticContentRemover.txt"""
+    file = open("Custom/url.txt", "r")
+    urls = file.read()
+    file.close()
 
     urlslist = urls.split('\n')
 
     print(len(urlslist))
-
-    sleep(0.5)
 
     for url in urlslist:
 
@@ -59,12 +55,11 @@ def main():
 
         try:
 
-            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen(
-                'snew.png')
+            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen("assests/images/subscribe.png")
 
-            x_trust = x_subscribe - 272
+            x_trust = x_subscribe - 307
 
-            y_trust = y_subscribe - 102
+            y_trust = y_subscribe - 120
 
             pyautogui.click(x_trust, y_trust)
 
