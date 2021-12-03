@@ -1,8 +1,6 @@
 ! Title: Chirag's Anti YouTube Annoyance list
 ! Expires: 2 days
 ! Description: A list of YouTube element that annoys me.
-
-
 dallasnews.com##.print_hidden
 hbr.org##.hide-for-print
 washingtonpost.com##.hide-for-print
@@ -10,14 +8,11 @@ theguardian.com##[data-print-layout="hide"]
 analyticsindiamag.com##.hide-on-print
 indiaforums.com##.no-print_not
 ccm.net##.dontPrint
-
-
+youtube.com###alert-banner
+youtube.com###menu > ytd-menu-renderer.style-scope.ytd-video-primary-info-renderer
 youtube.com###outro-controls-title > a[href="https://www.buymeacoffee.com/JustDai"]
 youtube.com###outro-controls
-
 youtube.com##ytd-compact-movie-renderer
-
-
 ! Mixes are pointless. Just add an option for their appearance, or remove them.
 ! Removes Mixes from the Main Page
 youtube.com##ytd-rich-item-renderer #video-title-link[title*="Mix"][href$="start_radio=1"]:upward(ytd-rich-item-renderer)
@@ -25,16 +20,12 @@ youtube.com##ytd-rich-item-renderer #video-title-link[title*="Mix"][href$="start
 youtube.com##ytd-compact-radio-renderer
 ! Removes Mixes from search results
 youtube.com##ytd-radio-renderer
-
 ! Removes "YouTube" (Music) playlists from the right side panel
 youtube.com##ytd-compact-playlist-renderer .ytd-channel-name:has-text(/^YouTube/):upward(ytd-compact-playlist-renderer)
-
-
 ! homepage
 !youtube.com###primary > ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer
 ! explore
 !youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
-
 !side chat box
 youtube.com###chat
 !clarify
@@ -50,10 +41,7 @@ youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
 ! menu
 ! youtube.com###menu-container,.ytd-video-primary-info-renderer.style-scope.super-title,.ytd-video-primary-info-renderer.style-scope.super-title-icon
 ! youtube.com##.ytp-miniplayer-button
-
-
 youtube.com###alerts
-
 !s youtube
 ||youtube.com/s/notifications/
 ||youtube.com/youtubei/v1/notification/
@@ -66,11 +54,7 @@ youtube.com##ytd-topbar-menu-button-renderer.style-default.ytd-masthead.style-sc
 youtube.com###buttons > ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default:first-child
 ! notification buttons
 youtube.com##.notification-button-style-type-default
-
-
-
 !guide menu of the side
-
 youtube.com###endpoint[title="Your videos"]
 youtube.com###endpoint[title="Your clips"][href="/feed/clips"]
 ! Removes Side Menu Playlists and Subscription List (Can be accessed in library)
@@ -79,29 +63,22 @@ youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-ty
 youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
 !SettingsReport historyHelpSend feedback
 youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
-
 ! footer  + 
 youtube.com###guide-links-primary
 !usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresAboutPressCopyrightContact
 youtube.com###guide-links-secondary
 !copyright
 youtube.com###copyright
-
 ! the report search prediction in omni box 
 youtube.com##.sbfl_b
-
 ! Appearance: Device theme
 youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="studio.youtube.com"]
 youtube.com##ytd-popup-container.ytd-app.style-scope > .ytd-popup-container.style-scope [href*="paid_memberships?"]
 !! For the last time stop pushing us your memberships.
 youtube.com##a#endpoint[href="/paid_memberships"]
 youtube.com###offer-module
-
-
-
 ! banner channel
 youtube.com##div.ytd-c4-tabbed-header-renderer.style-scope.banner-visible-area
-
 !search and home page
 !call icall suicide help line 
 youtube.com##.ytd-emergency-onebox-renderer
@@ -110,7 +87,6 @@ youtube.com###contents > ytd-clarification-renderer
 youtube.com##ytd-movie-renderer
 !suicide
 youtube.com##ytd-emergency-onebox-renderer
-
 ! don't know
 !youtube.com##ytd-primetime-promo-renderer
 !youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Watch again/i))
@@ -120,11 +96,8 @@ youtube.com##ytd-emergency-onebox-renderer
 !youtube.com##ytd-horizontal-card-list-renderer.ytd-item-section-renderer.style-scope:has(span:has-text(/Searches related to/i))
 !!youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Learn while you're at home/i))
 !youtube.com##ytd-shelf-renderer.style-scope:has(span:has-text(/Top news/i))
-
 !restricted mode is on warning on the search result. I don't want to turn off restricted mode in any condition then this is not needed.
 youtube.com###header > ytd-text-header-renderer.style-scope.ytd-section-list-renderer
-
-
 ! safe browsing on 
 google.com##.pdswFd
 ! Images for india flag map beautiful independence day city culture village ancient wallpaper photography famous republic day state logo delhi drawing south outline art digital Image result for india Image result for india Image result for india Image result for india Image result for india Image result for india Image result for india Image result for india Image result for india Image result for india ![image](https://user-images.githubusercontent.com/76880977/122076385-76a51780-ce18-11eb-850e-dff58b3351c5.png) ![image](https://user-images.githubusercontent.com/76880977/122076387-773dae00-ce18-11eb-885e-a4c38f7ceff7.png)
@@ -147,14 +120,12 @@ www.google.com##.w7DnQb
 www.google.com##.jYyFuf
 ! feedback pop up about snippet
 www.google.com###dfo
-
 !Reddit RPAN
 ! Hide Reddit 'Top Broadcast Now' & 'Top livestream'
 reddit.com##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
 ! Block downloading. Please report back if does not work or causes issues
 ||redd.it/*.m3u8^$xhr,domain=reddit.com
 ||strapi.reddit.com^$xhr,domain=reddit.com
-
 !premium banner on homepage
 reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
 !create post bar on top on home page
@@ -180,4 +151,3 @@ reddit.com##._3lfTEmyI7x9ib1wz4e8RWP
 reddit.com##._3XoW0oYd5806XiOr24gGdb
 ! small grey box below usernames in the coments .
 reddit.com##._3w527zTLhXkd08MyacMV9H
-
