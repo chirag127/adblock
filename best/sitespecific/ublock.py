@@ -9,7 +9,6 @@ https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resourceab
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
-https://easylist.to/
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
@@ -18,7 +17,7 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 
 urls_list = urls.split()
 
-domain = "youtube.com"
+domain = "daum"
 
 
 for url in urls_list:
