@@ -2,7 +2,7 @@
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
 
-file = open("best/updatefiles/makeparam/url.txt", "r")
+file = open("best/updatefiles/url.txt", "r")
 
 
 for url in file:
