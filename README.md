@@ -1,4 +1,4 @@
-# Chirag-Personal-Filters
+# Chirag Personal Filter lists
 
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 
