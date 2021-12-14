@@ -52,7 +52,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 #### Chriag's Super Reddit list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/SR.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/SR.txt)
 
-### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/SP/C.txt)
+### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt)
 
 #### People using dns blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard dns
 
