@@ -24,7 +24,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 #### Chirag's Anti Affiliate disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt)
 
-#### Chirag's Anti Paywall list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/APWL.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/APWL.txt)
+#### Chirag's Anti Paywall list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AP.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AP.txt)
 
 #### Chirag's Anti-comment list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/C.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/C.txt)
 
@@ -52,7 +52,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 #### Chirag's Whitelist list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/##main/W.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/W.txt)
 
-#### Chirag's Anti YGR Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/YT.txt)
+#### Chirag's Anti YGR Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Y.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/Y.txt)
 
 ### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt)
 
