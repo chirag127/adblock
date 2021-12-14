@@ -18,7 +18,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 #### Chirag's Affiliate Disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt)
 
-### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/A.txt)
+### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/A.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/A.txt)
 
 ### Chirag's Anti Affiliate disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt)
 
