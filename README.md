@@ -14,11 +14,14 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 ## Lists
 
+
+
 ### Chirag's Lists
 
 #### Chirag's Affiliate Disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AD.txt)
 
-#### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt)
+### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/AAll.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/A.txt)
+
 
 #### Chirag's Anti Feedback list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/FE.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/FE.txt)
 
@@ -42,9 +45,9 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 #### Chirag's Education Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/E.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/E.txt)
 
-#### Chirag's Foriegn Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/F.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/F.txt)
+#### Chirag's Foreign Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/##adblock/main/F.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/F.txt)
 
-#### Chirag's Genral Donations list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt)
+#### Chirag's General Donations list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/GD.txt)
 
 #### Chirag's Whitelist list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/##main/W.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/W.txt)
 
@@ -54,8 +57,8 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 ### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/SP/C.txt)
 
-#### People using dns blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard dns
+#### People using DNS blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard DNS.
 
 ## Disclaimer
 
-As this is a **personal** filterlist of mine, there maybe some filters that you disagree with and if you do, feel free to click on the **fork** button and make your own list.
+As this is a **personal** filter list of mine, there maybe some filters that you disagree with and if you do, feel free to click on the **fork** button and make your own list.
