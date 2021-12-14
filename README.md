@@ -56,7 +56,7 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 ### AdGuard Tracking Protection List without domains [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/Include/AdGuard/ATPWD.txt)
 
-#### People using DNS blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard DNS
+> People using DNS blocking don't need to use the complete AdGuard Tracking Protection List as approx 80% rules of the AdGuard Tracking Protection List are domains which are already blocked by AdGuard DNS or other DNS blocking services. The same concept can not be applied to AdGuard Base as AdGuard extension also blocks the frame and placeholders of the domains and URLs blocked by it and if the user wants to block the frame and place blocks the placeholder of the ads, then the user needs to use the complete AdGuard Base filtering list.
 
 ## Disclaimer
 
