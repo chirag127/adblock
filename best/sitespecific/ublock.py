@@ -23,11 +23,11 @@ domain = "daum"
 for url in urls_list:
     response = requests.get(url)
     if response.status_code == 200:
-        rules_list = response.text.split('\n')
+        rules_list = response.text.split("\n")
         for rule in rules_list:
             # write rule to sitespecific/domain.txt if it contains domain
             if domain in rule:
                 f = open(f"best/sitespecific/{domain}.txt", "a")
-                f.write(rule + '\n' + "filterlist = " + url + '\n' )
+                f.write(rule + "\n" + "filterlist = " + url + "\n")
 
 print("Done!")

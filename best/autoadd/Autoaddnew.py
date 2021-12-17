@@ -3,6 +3,7 @@ import pyautogui
 import keyboard
 from time import sleep
 import webbrowser
+
 # Physical: {X=802,Y=822}
 # Physical: {X=914,Y=725}
 # Physical: {X=916,Y=900}
@@ -12,11 +13,13 @@ import webbrowser
 def Click_Add_custom_filter():
     pyautogui.click(x=802, y=822)
 
+
 # define a function to type the url
 
 
 def Type_url(url):
     pyautogui.typewrite(url)
+
 
 # define a function to click the next button
 
@@ -33,7 +36,7 @@ def main():
 
     urls = """https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/EkstraBladetEroticContentRemover.txt"""
 
-    urlslist = urls.split('\n')
+    urlslist = urls.split("\n")
 
     print(len(urlslist))
 
@@ -41,7 +44,7 @@ def main():
 
     for url in urlslist:
 
-        pyautogui.press('end')
+        pyautogui.press("end")
 
         Click_Add_custom_filter()
 
@@ -58,10 +61,10 @@ def main():
         sleep(1)
 
         try:
-            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen("assests/images/subscribe.png")
+            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen(
+                "assests/images/subscribe.png"
+            )
 
-
-            
             x_trust = x_subscribe - 272
 
             y_trust = y_subscribe - 102
@@ -77,18 +80,18 @@ def main():
         except Exception as e:
             print(e)
 
-            pyautogui.hotkey('ctrl', 'r')
+            pyautogui.hotkey("ctrl", "r")
 
             sleep(1)
 
-    print('Done')
+    print("Done")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     while True:
 
-        if keyboard.is_pressed('ctrl + q'):
+        if keyboard.is_pressed("ctrl + q"):
 
             main()
 

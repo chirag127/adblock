@@ -3,6 +3,7 @@ import pyautogui
 import keyboard
 from time import sleep
 import webbrowser
+
 # Physical: {X=791,Y=682}
 # Physical: {X=921,Y=730}
 # Physical: {X=641,Y=611}
@@ -12,11 +13,13 @@ import webbrowser
 def Click_Add_custom_filter():
     pyautogui.click(x=791, y=682)
 
+
 # define a function to type the url
 
 
 def Type_url(url):
     pyautogui.typewrite(url)
+
 
 # define a function to click the next button
 
@@ -31,13 +34,13 @@ def main():
     urls = file.read()
     file.close()
 
-    urlslist = urls.split('\n')
+    urlslist = urls.split("\n")
 
     print(len(urlslist))
 
     for url in urlslist:
 
-        pyautogui.press('end')
+        pyautogui.press("end")
 
         Click_Add_custom_filter()
 
@@ -55,7 +58,9 @@ def main():
 
         try:
 
-            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen("assests/images/subscribe.png")
+            x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen(
+                "assests/images/subscribe.png"
+            )
 
             x_trust = x_subscribe - 307
 
@@ -72,18 +77,18 @@ def main():
         except Exception as e:
             print(e)
 
-            pyautogui.hotkey('ctrl', 'r')
+            pyautogui.hotkey("ctrl", "r")
 
             sleep(1)
 
-    print('Done')
+    print("Done")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     while True:
 
-        if keyboard.is_pressed('ctrl + q'):
+        if keyboard.is_pressed("ctrl + q"):
 
             main()
 

@@ -6,12 +6,9 @@ file.close()
 
 for url in urls.split("\n"):
     if url != "":
-        content =   requests.get(url)
+        content = requests.get(url)
 
         if content != "":
             file = open("Custom/results.txt", "a")
             file.write(content.text)
             file.close()
-
-
-

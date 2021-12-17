@@ -1,6 +1,7 @@
 import pyautogui
 from time import sleep
 import keyboard
+
 # Physical: {X=639,Y=759}
 
 
@@ -16,16 +17,16 @@ def main():
     sleep(0.5)
 
     # define the function to click exter
-    pyautogui.press('enter')
+    pyautogui.press("enter")
 
     sleep(0.5)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     while True:
 
-        if keyboard.is_pressed('ctrl+c'):
+        if keyboard.is_pressed("ctrl+c"):
 
             while True:
 
