@@ -8,7 +8,15 @@ files = []
 for dir in os.listdir("."):
 
     if dir.endswith(".txt"):
+
         files.append(dir)
+
+
+for dir in os.listdir("./adtl"):
+
+    if dir.endswith(".txt"):
+
+        files.append("adtl/" + dir)
 
 
 # remove NF.txt from the list
@@ -17,11 +25,12 @@ files.remove("A.txt")
 
 file = open("A.txt", "w")
 
+
 file.write(
     """! Description: It contains all list
 ! Expires: 1 hours
 ! Homepage: https://github.com/chirag127/adblock/
-! Title: Chirag's All Annoyances list
+! Title: Chirag's Annoyance list
 """
 )
 
