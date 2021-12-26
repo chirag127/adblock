@@ -1,7 +1,8 @@
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
+file_path = "best\\updatefiles\\makeparam\\url.txt"
 
-file = open("best/updatefiles/url.txt", "r")
+file = open(file_path, "r")
 
 
 for url in file:
@@ -11,7 +12,7 @@ for url in file:
     query = parse_qs(parsed_url.query)
     for key, value in query.items():
         with open("P.txt", "a") as f:
-            f.write(f"||{domain}^$removeparam={key}\n")
+            f.write(f"\n||{domain}^$removeparam={key}")
 
-with open("best/updatefiles/makeparam/url.txt", "w") as f:
+with open(file_path, "w") as f:
     f.write("")
