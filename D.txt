@@ -2,12 +2,6 @@
 ! Expires: 1 hours
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: Chirag's Anti Donation list
-##[class*="donate"  i]:not(html):not(body)
-##[class*="donation" i]:not(html):not(body)
-##[class*="fundraising" i]:not(html):not(body)
-##[id*="donate" i]:not(html):not(body)
-##[id*="donation" i]:not(html):not(body)
-##[id*="fundraising" i]:not(html):not(body)
 add0n.com###donation
 addons.videolan.org###support-box-module
 addons.videolan.org##.supportDiv
@@ -66,3 +60,13 @@ yr.media##.desktop-donation-banner
 ||ko-fi.com^
 ||patreon.com^
 ||plugin.orcsnet.com^
+~donate.com##[class*="donate"  i]:not(html):not(body)
+~donate.com##[id*="donate" i]:not(html):not(body)
+~donation.com##[class*="donation" i]:not(html):not(body)
+~donation.com##[id*="donation" i]:not(html):not(body)
+~fundraising.com##[class*="fundraising" i]:not(html):not(body)
+~fundraising.com##[id*="fundraising" i]:not(html):not(body)
+~news-letter.com##[class*="news-letter" i]:not(html):not(body)
+~news-letter.com##[id*="news-letter" i]:not(html):not(body)
+~newsletter.com##[class*="newsletter" i]:not(html):not(body)
+~newsletter.com##[id*="newsletter" i]:not(html):not(body)
