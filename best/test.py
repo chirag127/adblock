@@ -5,7 +5,7 @@ with open("U.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
         if "comment" in line:
-            with open("C.txt", "w") as f:
+            with open("C.txt", "a") as f:
                 f.write(line)
         else:
             for newssite in newssites:
