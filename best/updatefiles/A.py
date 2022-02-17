@@ -12,13 +12,6 @@ for dir in os.listdir("."):
         files.append(dir)
 
 
-for dir in os.listdir("./adtl"):
-
-    if dir.endswith(".txt"):
-
-        files.append("adtl/" + dir)
-
-
 # remove NF.txt from the list
 files.remove("A.txt")
 
