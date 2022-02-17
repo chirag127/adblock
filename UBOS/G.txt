@@ -2,6 +2,14 @@
 ! Expires: 1 hours
 ! Homepage: https://github.com/chirag127/adblock/
 ! Title: General Rules list
+~ad.com,~youtube.com##[class*="ad" i]:not(html):not(body)
+~ad.com,~youtube.com##[id*="ad" i]:not(html):not(body)
+~adblock.com,~youtube.com##[class*="adblock" i]:not(html):not(body)
+~adblock.com,~youtube.com##[id*="adblock" i]:not(html):not(body)
+~backtop.com,~youtube.com##[class*="back" i][class*="top" i]:not(html):not(body)
+~backtop.com,~youtube.com##[id*="back" i][id*="top" i]:not(html):not(body)
+~banner.com,~youtube.com##[class*="banner" i]:not(html):not(body)
+~banner.com,~youtube.com##[id*="banner" i]:not(html):not(body)
 ~cookie.com,~youtube.com##[class*="cookie" i]:not(html):not(body)
 ~cookie.com,~youtube.com##[id*="cookie" i]:not(html):not(body)
 ~facebook.com,~youtube.com##[class*="facebook" i]:not(html):not(body)
@@ -20,6 +28,8 @@
 ~pinterest.com,~youtube.com##[id*="pinterest" i]:not(html):not(body)
 ~privacy.com,~youtube.com##[class*="privacy" i][class*="policy" i]:not(html):not(body)
 ~privacy.com,~youtube.com##[id*="privacy" i][id*="policy" i]:not(html):not(body)
+~scrolltop.com,~youtube.com##[class*="scroll" i][class*="top" i]:not(html):not(body)
+~scrolltop.com,~youtube.com##[id*="scroll" i][id*="top" i]:not(html):not(body)
 ~snapchat.com,~youtube.com##[class*="snapchat" i]:not(html):not(body)
 ~snapchat.com,~youtube.com##[id*="snapchat" i]:not(html):not(body)
 ~subscribe.com,~youtube.com##[class*="subscribe" i]:not(html):not(body)
@@ -28,4 +38,5 @@
 ~twitter.com,~youtube.com##[id*="twitter" i]:not(html):not(body)
 ~whatsapp.com,~youtube.com##[class*="whatsapp" i]:not(html):not(body)
 ~whatsapp.com,~youtube.com##[id*="whatsapp" i]:not(html):not(body)
-~youtube.com##[class*="ad" i]:not(html):not(body)
+~comment.com,~youtube.com##[class*="comment" i]:not(html):not(body)
+~comment.com,~youtube.com##[id*="comment" i]:not(html):not(body)
