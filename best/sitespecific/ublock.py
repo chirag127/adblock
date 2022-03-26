@@ -1,14 +1,14 @@
 import requests
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resourceabuse.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
+# https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
 
-
-urls = """https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resourceabuse.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
+urls = """
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
@@ -17,8 +17,7 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 
 urls_list = urls.split()
 
-domain = "daum"
-
+domain = "pornhub.com"
 
 for url in urls_list:
     response = requests.get(url)
@@ -27,7 +26,7 @@ for url in urls_list:
         for rule in rules_list:
             # write rule to sitespecific/domain.txt if it contains domain
             if domain in rule:
-                f = open(f"best/sitespecific/{domain}.txt", "a")
-                f.write(rule + "\n" + "filterlist = " + url + "\n")
+                f = open(f"add.txt", "a")
+                f.write(rule + "\n")
 
 print("Done!")
