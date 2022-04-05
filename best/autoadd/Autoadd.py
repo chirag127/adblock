@@ -30,10 +30,8 @@ def Click_next():
 
 def main():
 
-    file = open("Custom/url.txt", "r")
-    urls = file.read()
-    file.close()
-
+    with open("Custom/url.txt", "r") as file:
+        urls = file.read()
     urlslist = urls.split("\n")
 
     print(len(urlslist))

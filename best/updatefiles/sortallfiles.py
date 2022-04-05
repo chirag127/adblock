@@ -1,13 +1,6 @@
 import os
 
-files = []
-
-#  Add all files to a list
-for dir in os.listdir("."):
-
-    if dir.endswith(".txt"):
-        files.append(dir)
-
+files = [dir for dir in os.listdir(".") if dir.endswith(".txt")]
 
 # remove NF.txt from the list
 files.remove("Y.txt")
