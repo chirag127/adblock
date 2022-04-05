@@ -26,7 +26,7 @@ for url in urls_list:
         for rule in rules_list:
             # write rule to sitespecific/domain.txt if it contains domain
             if domain in rule:
-                f = open(f"add.txt", "a")
+                f = open("add.txt", "a")
                 f.write(rule + "\n")
 
 print("Done!")

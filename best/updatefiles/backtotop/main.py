@@ -9,11 +9,9 @@ Content = requests.get(url).text
 
 for line in Content.splitlines():
 
-    f = open("GEN\B.txt", "a")
-
-    if line.startswith("##"):
-        if "back" in line and "top" in line:
-            f.write(line + "\n")
-        if "scroll" in line and "top" in line:
-            f.write(line + "\n")
-    f.close()
+    with open("GEN\B.txt", "a") as f:
+        if line.startswith("##"):
+            if "back" in line and "top" in line:
+                f.write(line + "\n")
+            if "scroll" in line and "top" in line:
+                f.write(line + "\n")

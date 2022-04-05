@@ -1,14 +1,11 @@
 import requests
 
-file = open("Custom/url.txt", "r")
-urls = file.read()
-file.close()
-
+with open("Custom/url.txt", "r") as file:
+    urls = file.read()
 for url in urls.split("\n"):
     if url != "":
         content = requests.get(url)
 
         if content != "":
-            file = open("Custom/results.txt", "a")
-            file.write(content.text)
-            file.close()
+            with open("Custom/results.txt", "a") as file:
+                file.write(content.text)
