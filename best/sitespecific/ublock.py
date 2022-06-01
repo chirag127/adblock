@@ -17,16 +17,17 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 
 urls_list = urls.split()
 
-domain = "pornhub.com"
+domain = "a"
 
 for url in urls_list:
     response = requests.get(url)
     if response.status_code == 200:
-        rules_list = response.text.split("\n")
+        rules_list = response.text.splitlines()
         for rule in rules_list:
-            # write rule to sitespecific/domain.txt if it contains domain
-            if domain in rule:
-                f = open("add.txt", "a")
-                f.write(rule + "\n")
+            if domain in rule and not rule.startswith("!"):
+                with open("add.txt", "a") as f:
+                    f.write(rule + "\n")
+    else:
+        print("Error")
 
-print("Done!")
+
