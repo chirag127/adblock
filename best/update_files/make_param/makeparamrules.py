@@ -1,6 +1,6 @@
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
-file_path = "best\\updatefiles\\makeparam\\url.txt"
+file_path = "best\\update_files\\make_param\\url.txt"
 
 file = open(file_path, "r")
 

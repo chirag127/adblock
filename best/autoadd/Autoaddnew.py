@@ -36,13 +36,13 @@ def main():
 
     urls = """https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/EkstraBladetEroticContentRemover.txt"""
 
-    urlslist = urls.split("\n")
+    urls_list = urls.split("\n")
 
-    print(len(urlslist))
+    print(len(urls_list))
 
     sleep(0.5)
 
-    for url in urlslist:
+    for url in urls_list:
 
         pyautogui.press("end")
 
@@ -62,7 +62,7 @@ def main():
 
         try:
             x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen(
-                "assests/images/subscribe.png"
+                "assets/images/subscribe.png"
             )
 
             x_trust = x_subscribe - 272

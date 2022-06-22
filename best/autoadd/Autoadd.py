@@ -32,11 +32,11 @@ def main():
 
     with open("Custom/url.txt", "r") as file:
         urls = file.read()
-    urlslist = urls.split("\n")
+    urls_list = urls.split("\n")
 
-    print(len(urlslist))
+    print(len(urls_list))
 
-    for url in urlslist:
+    for url in urls_list:
 
         pyautogui.press("end")
 
@@ -57,7 +57,7 @@ def main():
         try:
 
             x_subscribe, y_subscribe = pyautogui.locateCenterOnScreen(
-                "assests/images/subscribe.png"
+                "assets/images/subscribe.png"
             )
 
             x_trust = x_subscribe - 307

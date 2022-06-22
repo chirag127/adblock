@@ -1,5 +1,5 @@
 with open("sites\\N.txt", "r") as f:
-    newssites = f.readlines()
+    news_sites = f.readlines()
         
 with open("U.txt", "r") as f:
     lines = f.readlines()
@@ -8,7 +8,7 @@ with open("U.txt", "r") as f:
             with open("C.txt", "a") as f:
                 f.write(line)
         else:
-            for newssite in newssites:
-                if newssite in line:
+            for news_site in news_sites:
+                if news_site in line:
                     with open("N.txt", "a") as f:
                         f.write(line)
