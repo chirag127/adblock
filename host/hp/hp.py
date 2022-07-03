@@ -5,7 +5,3 @@ with open("host\\hp\\raw.txt","r") as f:
             f1.write(f"0.0.0.0 {line}")
             f1.write("\n")
 
-# empty the file
-with open("host\\hp\\raw.txt","w") as f:
-    f.write("")
-
