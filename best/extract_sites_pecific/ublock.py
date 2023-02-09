@@ -27,7 +27,6 @@ reddit.com
 twitter.com"""
 
 
-
 # domain = "quora.com"
 
 for domain in domains.splitlines():
@@ -40,7 +39,10 @@ for domain in domains.splitlines():
             for rule in rules_list:
 
                 if domain in rule and not rule.startswith("!"):
-                    with open(f"UBOS/{name_of_file}", "a",encoding='utf8') as f:
+                    with open(f"UBOS/{name_of_file}", "a", encoding="utf8") as f:
                         f.write(rule + "\n")
+
+
+
         else:
             print(f"Error in {url}")
