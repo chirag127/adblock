@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '15 17 * * *'
+    - cron: '15 30 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
       - name: execute py script
         # env:
         #   SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python main.py
+        run: python without_domains1make_without_domains.py
 
       - name: commit files
         run: |
