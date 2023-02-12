@@ -36,8 +36,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 -google-analytics-$script,domain=~wordpress.org
 -google-analytics.
 -google-analytics/$domain=~wordpress.org
+-logging.nextmedia.com^
 -monero-miner.$domain=~wp-monero-miner.com
--pixelfront-analytics.
 -stat/collect/
 -track-email-open?
 -track-inview.
@@ -83,7 +83,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 .content_tracking.
 .ct.sendgrid.net/$image
 .demdex.net/event?
-.doctolib.de/tr/op/$image
 .doubleclick.net/$image
 .efeedbacktrk.com/$third-party
 .email.*/tr/op/$image
@@ -547,7 +546,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /azion-pulse.js
 /b.banners.impress.
 /b.gif?
-/b/s/beacon
 /b/ss/*&aqe=
 /b/ss/*&ce=utf-8&
 /b/ss/*&events=
@@ -559,6 +557,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /b_track_2.
 /baiduStatistics.js
 /base/es6/bundle.js
+/basicMetricsTracking.
 /batch/1/OE/*
 /batch/1/OP/*
 /baynote/*
@@ -711,6 +710,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /cohesion-latest.
 /coinhive.min.js
 /collect.gif?
+/collect.php?tid=
 /collect/kasupport
 /collect/pv?
 /collect/sdk?$domain=~iugu.com
@@ -969,7 +969,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /frontend-gtag.
 /frontend-sentry-
 /frosmo.easy.js
-/frtrack.
 /fusion/lucid/data/*
 /ga-audiences?
 /ga-events.js
@@ -990,6 +989,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /ga2.js
 /ga?type=
 /gaAnalytics.
+/gaControlTracker.
 /gaEventTracking.
 /gaEvents.js
 /gaTracker.
@@ -1241,6 +1241,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /linktracking.
 /live/analytics/*
 /livestats.ashx
+/livestats.php?
 /ljcounter/*
 /load.gif?
 /loader/counter.js
@@ -1320,7 +1321,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /lytics/*
 /lzdmailer.letter.open?
 /m.gif?
-/magento/page-visit?
 /mail-stat.airdroid.com/*$image
 /maillist.*/t/*$image
 /mailstatstrk/*
@@ -1477,7 +1477,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /performanceMetrics?
 /performance_timing/*
 /perimeterx/*$domain=~github.com|~github.io
-/pg_pixel?
 /ph-tracking-
 /phenomtrack.
 /php-stats.js
@@ -1687,7 +1686,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /scripts/clickjs.php
 /scripts/ga.js
 /scripts/log.
-/scripts/statistics/*
 /scripts/stats/*
 /scripts/tracking.js
 /scripts/xiti/*
@@ -1965,7 +1963,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /trackermediator.js
 /trackhandler.ashx?
 /tracking-analytics-
-/tracking-cookie.
 /tracking-init.
 /tracking-pixel.
 /tracking-pixel/*
@@ -1978,7 +1975,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /tracking.relead.
 /tracking/?ID=
 /tracking/adobe/*
-/tracking/airdog
 /tracking/click?
 /tracking/clicks
 /tracking/digitalData.
@@ -1990,7 +1986,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /tracking/impression
 /tracking/index.
 /tracking/ipify
-/tracking/jitney/*
 /tracking/open?
 /tracking/partner_
 /tracking/pixel.
@@ -2034,7 +2029,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /trckUtil.
 /trcksp.
 /trendmd.min.js
-/trigger-visit-event
 /trk.*/impression/*
 /trk.*/tracking.
 /trk.gif?
@@ -2425,6 +2419,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||geolocation-db.com/jsonp$script,domain=parts.hp.com
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||ghstatic.com/images/site/zylom/scripts/google-analytics.js?$domain=zylom.com
+@@||glenat.com^*/static/analytics.js$script,~third-party
 @@||gls-us.com/api/tracking/$~third-party
 @@||go.com/b/ss/$image
 @@||google-analytics.com/analytics.js$domain=beinsports.com|brooklinen.com|healthrangerstore.com|jackbox.tv|k2radio.com|koel.com|kowb1290.com|stressless.com|tracking.narvar.com|truwin.com|westernunion.com
@@ -2500,6 +2495,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||locoloader.com/assets/js/ga.min.js$script,~third-party
 @@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
 @@||logging.apache.org^$~third-party
+@@||logistics.costco.com/innovel-services/api/tracking/$~third-party
 @@||logo.clearbit.com^$image,third-party
 @@||mabanque.fortuneo.fr/js/front/fingerprint2.js$script,domain=mabanque.fortuneo.fr
 @@||matomo.miraheze.org/matomo.js$script,~third-party
@@ -2683,6 +2679,7 @@ _hits_stat.
 _impression_analytics/
 _interaction_analytics/
 _logHuman=
+_pix.gif?
 _rpc/log?
 _stat.php?referer=
 _stats.js?
@@ -2734,6 +2731,7 @@ cgi-bin/counter
 ||adguard.com/-/event/
 ||adme.media/metric-collector
 ||adobe.io/system/log
+||adobedc.net/collector/
 ||adobedtm.com^$third-party,domain=~adobe.com
 ||adtrackers.net^$~script,third-party
 ||advgo.net/hits/
@@ -2830,7 +2828,6 @@ cgi-bin/counter
 ||auto.ru/-/ajax/$~xmlhttprequest
 ||autohome.com.cn/deliver?
 ||autohome.com.cn/impress?
-||automate-prod.s3.amazonaws.com^$~script
 ||automobile.it/fb/
 ||autotrader.com/pixall/
 ||avito.ru/stat/
@@ -2967,6 +2964,7 @@ cgi-bin/counter
 ||cloudfront.net/js/grin-sdk.js
 ||cloudfront.net/lp.js
 ||cloudfront.net/powr.js
+||cloudfront.net/rc.js?
 ||cloudfront.net/rum/bacon.min.js
 ||cloudfront.net/script.js
 ||cloudfront.net/sentinel.js
@@ -3780,6 +3778,7 @@ cgi-bin/counter
 ||shazam.com/services/metrics/
 ||shinobi.jp/track?
 ||shinobi.jp/zen?
+||shoop.de/mgtrx/
 ||shopeemobile.com/*/tr/
 ||shopify.com/shopifycloud/web-pixels-manager/
 ||shoplocal.com/it.ashx?
@@ -3819,7 +3818,6 @@ cgi-bin/counter
 ||socialannex.com/c-sale-track/$script
 ||socital.com^*/socital.js
 ||sogou.com/cl.gif?
-||sogoucdn.com/hhytrace/
 ||sohu.com.cn/hdpb.gif?
 ||sohu.com/adgtr/
 ||sohu.com/clk.gif?
@@ -3987,6 +3985,7 @@ cgi-bin/counter
 ||twitter.com/oct.js
 ||twitter.com/scribe/
 ||typepad.com/t/stats?
+||uai.com.br^*/analytics.js
 ||uber.com/_events
 ||uber.com/_track
 ||uber.com/careers/apply/_log
@@ -4074,7 +4073,6 @@ cgi-bin/counter
 ||webengage.sky.com^$xmlhttprequest
 ||webgozar.com/c.aspx*&t=counter
 ||webgozar.ir/c.aspx*&t=counter
-||webmd.com/pixel/
 ||webmd.com/static/v/c?
 ||websuccess-data.com/tracker.js
 ||webutation.net/js/load_badge.js
