@@ -30,7 +30,7 @@ def Click_next():
 
 def main():
 
-    with open("Custom/url.txt", "r") as file:
+    with open("Custom/url.txt", "r",encoding="utf8") as file:
         urls = file.read()
     urls_list = urls.split("\n")
 
@@ -72,8 +72,8 @@ def main():
 
             sleep(0.5)
 
-        except Exception as e:
-            print(e)
+        except Exception as error: # pylint: disable=broad-except
+            print(error)
 
             pyautogui.hotkey("ctrl", "r")
 

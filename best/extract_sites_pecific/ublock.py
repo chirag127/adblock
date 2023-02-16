@@ -1,3 +1,7 @@
+"""
+make file with all rules for popular sites
+"""
+
 import requests
 
 urls = """https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
