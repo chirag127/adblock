@@ -1,5 +1,5 @@
 """
-make file with all rules for popular sites
+make files for each site with all the rules from all the lists
 """
 
 import requests
@@ -38,13 +38,13 @@ twitch.tv
 """
 
 
-with open(file_name, "w", encoding="utf8") as file:
-    file.write("")
 
 
 # domain = "quora.com"
 
 for domain in domains.splitlines():
+
+    file_name_domain = f"extract_sites_specific/all_rules_for_popular_sites_{domain.replace('.', '_')}.txt"
 
     for url in urls_list:
         response = requests.get(url, timeout=10)
@@ -53,7 +53,7 @@ for domain in domains.splitlines():
             for rule in rules_list:
 
                 if domain in rule and not rule.startswith("!"):
-                    with open(file_name, "a", encoding="utf8") as file:
+                    with open(file_name_domain, "a", encoding="utf8") as file:
                         file.write(rule + "\n")
 
 
