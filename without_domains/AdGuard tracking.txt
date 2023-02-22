@@ -1251,6 +1251,8 @@ $cookie=yTrackVisit
 @@||cdn.questionpro.com^$domain=questionpro.*
 @@||cdn.retailrocket.*/*/tracking.js$domain=ozerki.ru
 @@||cdn.retailrocket.ru/content/javascript/tracking.js$domain=comfy.ua
+@@||cdn.reverso.net/rumjs/conf/rum.config.dictionary.min.js$domain=reverso.net
+@@||cdn.reverso.net/rumjs/rum*.min.js$domain=reverso.net
 @@||cdn.sajari.com/embed/*/*.js$domain=insurancebusinessmag.com
 @@||cdn.segment.com/*/analytics.min.js$domain=canva.com
 @@||cdn.segment.com/analytics.js$domain=anime-planet.com
@@ -3274,9 +3276,11 @@ reelrundown.com#%#//scriptlet('prevent-fetch', 'uid.mavencoalition.io')
 returnpath.net/pixel.gif$image
 reuters.com###taboola-recirc
 reuters.com#%#//scriptlet('set-local-storage-item', 'ajs_anonymous_id', 'null')
+reverso.net#%#//scriptlet('set-constant', 'rumjs.business.setManualConsent', 'noopFunc')
 revv.co.in#%#(()=>{window.google_optimize={get(){}}})();
 russianbeauties.jp###secondary-column > div.text-recommend
 salesforceiq.com/t.png$image
+samuraisoccer.doorblog.jp##.plugin-l-t:last-child
 scarfilm.org##.footer-col-3
 screenov.eu#?#.container > div.box:has(> a[href^="https://www.liveinternet.ru/click"])
 seclub.org##a[href^="http://waplog.net/"]
@@ -5862,6 +5866,7 @@ znak.com##.relap
 ||signal-collector.gemaltodigitalbankingidcloud.com^$script
 ||signin.ebay.com/t_n.html
 ||sim-technik.de^*&uniqueTrackId=
+||sina.cn^$cookie=recent_visited
 ||sinajs.cn/open/analytics/$third-party
 ||sinst.fwdcdn.com/img/newImg/liveinternet.gif
 ||sirporno.xxx/js/analytics.js
@@ -6206,6 +6211,7 @@ znak.com##.relap
 ||top10.vl.ru/hh.hit$third-party
 ||topshop.com/wcsstore/ConsumerDirectStorefrontAssetStore/images/trans_pixel.gif
 ||toptracker.ru/buttons/counter.gif
+||torimochi.line-apps.com^$image,redirect=1x1-transparent.gif
 ||tosshub.com/sites/common/resources/trackdata/min/itgdtrack*.js
 ||touchcommerce.com/tagserver/logging/$third-party
 ||tout.com/tracker.js
