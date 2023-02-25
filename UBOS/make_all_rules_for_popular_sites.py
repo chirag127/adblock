@@ -24,6 +24,7 @@ file_name = "UBOS/all_rules_for_popular_sites.txt"
 
 domains = """youtube.com
 google.com
+bing.com
 quora.com
 reddit.com
 twitter.com
@@ -31,6 +32,8 @@ facebook.com
 instagram.com
 tiktok.com
 twitch.tv
+flipkart.com
+amazon.com
 """
 
 
