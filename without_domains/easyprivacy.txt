@@ -32,7 +32,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 -event-tracking.
 -ga-track.
 -ga-tracking/
--geoIP.js
 -google-analytics-$script,domain=~wordpress.org
 -google-analytics.
 -google-analytics/$domain=~wordpress.org
@@ -100,13 +99,11 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 .iframetracker/
 .informz.net/z/$image
 .intercom-mail.com/via/$image
-.inxmail-commerce.com/tracking/$image
 .inxserver.com/transparent.gif
 .io/track?
 .js?referrer=
 .keap-link003.com/$image
 .keap-link006.com/$image
-.keap-link007.com/$image
 .keap-link009.com/$image
 .keap-link013.com/$image
 .klclick.com/$image
@@ -248,7 +245,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /ResonateAnalytics.
 /SAPOWebAnalytics/*
 /SSOCore/update?
-/StatCms/ViewCount?
 /StatRecorder.asp?
 /StatSNA.js
 /Statistics/Log.svc/*
@@ -369,6 +365,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /amp.gif?
 /amp/analytics
 /amp/pingback?
+/ampmetrics.
 /amptrack.
 /analyse.js
 /analysis-logger/*
@@ -1092,6 +1089,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /hmapxy.js
 /hnpprivacy-min.
 /hockeystack.min.js
+/homepage/analytics.
 /honeybadger.min.js$third-party
 /horizon-track.
 /host-analyticsjs-local/*
@@ -1148,8 +1146,8 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /intercept.js
 /internal/page_view?
 /intstatcheck.
+/iperceptions.
 /iperceptions/*
-/ipinfo.json
 /ipixel?spacedesc
 /itmdp_code.
 /j.gif?
@@ -1666,6 +1664,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /sa.gif?
 /satismeter.js
 /save_stats.php?
+/savetracking?
 /sc_trackingid.
 /scribd_events?
 /script/analytics.
@@ -1809,7 +1808,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /stats.gif?
 /stats.php?*http
 /stats.php?type=
-/stats.wawacity.
 /stats.wp.com/*
 /stats/?ref=
 /stats/?rt=
@@ -1933,6 +1931,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /trackAdHit.
 /trackBatchEvents?
 /trackEvent.js?
+/trackEvent.min.js?
 /trackIt.js
 /trackPageView/*
 /track_click?
@@ -1948,6 +1947,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /tracker.min.js
 /tracker.php?
 /tracker.tsp?
+/tracker/?key=
 /tracker/app.
 /tracker/events/*
 /tracker/track.php?
@@ -2144,7 +2144,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /wix-engage-visitors-
 /wizrocketmail.net/r?$image
 /wmxtracker.js
-/wp-rum/*
 /wp-slimstat/*
 /wp-statistics/v2/hit?
 /wp-useronline/useronline.
@@ -2318,6 +2317,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
 @@||caf.fr^*/smarttag.js$script,~third-party
 @@||caritas-international.de^*/analyticsmediator.js$domain=caritas-international.de
+@@||cat.telia.no/gtm.js$script,domain=telia.no
 @@||cbc.ca/g/stats/js/cbc-stats-top.js
 @@||cbsinteractive.com^*/lib/tracking/comscore/$script
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
@@ -2373,7 +2373,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||decision.taplytics.com^$domain=royalbank.com
 @@||delet.jhi.pl/bower_components/angular-google-analytics/$script,~third-party
 @@||delta.com/dlhome/ruxitagentjs$~third-party
-@@||deteql.net/recommend/provision?$xmlhttprequest,domain=t-fashion.jp
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
 @@||devclass.com/wp-content/plugins/google-analytics-for-wordpress/$script,~third-party
 @@||digitalgov.gov/Universal-Federated-Analytics-Min.js?$script,domain=travel.state.gov
@@ -2514,7 +2513,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||munchkin.marketo.net/munchkin.js$domain=telus.com
 @@||muumuu-domain.com/common/js/ga_social_tracking.js
 @@||mxpnl.com^$domain=mixpanel.com
-@@||mycourses.pearson.com/shared/static/*/component/ga.min.js$~third-party
 @@||natureetdecouvertes.com^*/pixel.png$~third-party
 @@||netcoresmartech.com/smartechclient.js$domain=cgv.vn
 @@||netcoresmartech.com/smartechclient.js$domain=hdfcfund.com
@@ -2840,7 +2838,6 @@ cgi-bin/counter
 ||b2w.io/event/
 ||b8cdn.com/assets/v1/analytics-
 ||baidu.com/api/bidder/
-||baidu.com/cpro/ui/c.js
 ||baidu.com/cpro/ui/f.js
 ||baidu.com/h.js?
 ||baidu.com/hm.gif?
@@ -2874,6 +2871,7 @@ cgi-bin/counter
 ||bcbits.com/bundle/bundle/1/impl-$domain=bandcamp.com
 ||bdg.com/event?
 ||behance.net/v2/an/pv
+||berliner-stadtplan.com/t.gif
 ||bestcontactform.com^$~image,third-party
 ||bhphotovideo.com/aperture/shared/js/dataLayer.js
 ||bing.com/fd/ls/GLinkPing.aspx?
@@ -3010,7 +3008,6 @@ cgi-bin/counter
 ||coveo.com/coveo.analytics.js/
 ||covery.ai/fp/$third-party
 ||cpro.baidustatic.com^$script,domain=sohu.com
-||creately.com/static/js/creately-analytics-
 ||credible.com/api/logs-fe
 ||crunchbase.com/rw7M6iAV/init.js
 ||cultofmac.com/djrxqhzkbsgf.js
@@ -3034,6 +3031,7 @@ cgi-bin/counter
 ||dealer.com^*/tracker/
 ||dealer.com^*/tracking/
 ||dealnews.com/lw/ul.php
+||dein-plan.de/t.gif
 ||dek-d.com^*/analytic.js
 ||deliveroo.com^*/events
 ||delivery.satr.jp/event/
@@ -3165,6 +3163,7 @@ cgi-bin/counter
 ||formstack.com/forms/analytics.php
 ||formstack.com/forms/js/*/analytics_
 ||forum.zuvio.com.tw/api/article/finish
+||fotocommunity.de/track/
 ||fotomoto.com/analytics/
 ||foureyes.io/fe-init.js
 ||foursquare.com/v2/private/logactions
@@ -3174,7 +3173,6 @@ cgi-bin/counter
 ||freecontent.stream
 ||freedownloadmanager.org/ajax/th_view.php
 ||freehostedscripts.net^*.php?site=*&s=*&h=$third-party
-||freepeople.com/tN88Q85M/init.js
 ||freepik.*/download.gif?
 ||freepik.com/_ga?
 ||freeplayervideo.com/cdn-cgi/trace
@@ -3247,7 +3245,9 @@ cgi-bin/counter
 ||gstatic.com/gen_204?
 ||gstatic.com/wcm/loader.js
 ||gumtree.com.au/tracking/
+||hamburger-stadtplan.com/t.gif
 ||hankookilbo.com/service/kt/trk.js$script,domain=koreatimes.co.kr
+||hannover-stadtplan.com/t.gif
 ||harryrosen.com/analytics/
 ||hbo.com/events/
 ||healthline.com/api/metrics
@@ -3380,6 +3380,7 @@ cgi-bin/counter
 ||legitscript.com/seals/
 ||lego.com/api/dl-event-ingest
 ||leguide.com/js/lgtrk-*.js
+||leipziger-stadtplan.com/t.gif
 ||lemonde.fr/*&gatp=
 ||lemonde.fr/*&ptag=
 ||lemonde.fr/*&vtag=
@@ -3438,6 +3439,7 @@ cgi-bin/counter
 ||mangadex.org/api/event
 ||manua.ls/gtag
 ||map.baidu.com/newmap_test/static/common/images/transparent.gif
+||maptrackpro.com/track/
 ||marketcat.co/pixel/
 ||marketingautomation.services/client/ss.js
 ||marketo.com/rtp-api/
@@ -3489,6 +3491,7 @@ cgi-bin/counter
 ||mtvnservices.com/aria/projectX/
 ||mtvnservices.com/aria/uuid.html
 ||mtvnservices.com/measurements/
+||muenchener-stadtplan.com/t.gif
 ||music.163.com/weapi/feedback/weblog
 ||music.163.com/weapi/pl/count
 ||musvc2.net/e/c?
@@ -3511,6 +3514,7 @@ cgi-bin/counter
 ||nct.ui-portal.de/gmx/gmx/s?$image,ping
 ||needle.com/pageload?
 ||needle.com/pageupdate?
+||nelonenmedia.fi/logger/
 ||netaffiliation.com^$script,third-party
 ||netease.com/track/
 ||netease.com/web/performance?
@@ -3637,6 +3641,7 @@ cgi-bin/counter
 ||popt.in^$third-party,domain=~poptin.com
 ||popup.laybuy.com^$subdocument,third-party
 ||porzo.com/js/analytics
+||potsdamer-stadtplan.com/t.gif
 ||ppstatic.pl^*/track.js
 ||pptv.com/webdelivery/
 ||presspage.com/statistics/
@@ -3800,6 +3805,7 @@ cgi-bin/counter
 ||sina.com.cn/view?
 ||sinajs.cn/open/api/js/wb.js
 ||sinonimos.com.br/hits.php
+||sitebooster.com/sb/wix/p?$third-party
 ||sitefinity.com/collect/
 ||sitescdn.net/ytag/ytag.min.js
 ||sitest.jp/tracking/
@@ -3855,6 +3861,7 @@ cgi-bin/counter
 ||splunkcloud.com/services/collector/
 ||sport.ua/pixel/
 ||spox.com/pub/js/track.js
+||spreewaldkarte.de/t.gif
 ||squarespace.com/universal/scripts-compressed/performance-$script,third-party
 ||squid.gazeta.pl/bdtrck/
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
@@ -3880,7 +3887,6 @@ cgi-bin/counter
 ||storage.googleapis.com/tm-frend-graffiti/
 ||streamtape.com/stat/
 ||streamtheworld.com/imp?
-||streeteasy.com/cZdhF737/init.js
 ||stripe.com/?event=
 ||stripe.com/tracking/
 ||studocu.com/27m703Hm/init.js
@@ -3950,7 +3956,6 @@ cgi-bin/counter
 ||tra.scds.pmdstatic.net/sourcepoint/
 ||traceparts.com/logs
 ||tracker.twenga.
-||tracking.donnemagazine.it^$script
 ||trackjs.com/agent/$script,third-party
 ||trackjs.com/releases/current/tracker.js
 ||trackjs.com/usage.gif?
@@ -4018,6 +4023,7 @@ cgi-bin/counter
 ||untappd.com/profile/impression?
 ||uol.com.br/stats?
 ||upi.com/story/stat/
+||uplynk.com/session/ping/
 ||ups.com/img/icp.gif
 ||uptime.com/static/rum/$third-party
 ||uptolike.com^$third-party,domain=~uptolike.ru
@@ -4164,7 +4170,6 @@ cgi-bin/counter
 ||yelp.com/ad_syndication_user_tracking
 ||yelp.com/bunsen/
 ||yelp.com/spice?
-||yeptube.com/collect
 ||yext.com/plpixel?
 ||yimg.com/aaq/vzm/$script,domain=news.yahoo.com
 ||yimg.com/aaq/wf/wf-darla-
