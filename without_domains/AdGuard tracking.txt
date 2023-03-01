@@ -163,6 +163,7 @@ $cookie=_parsely_session
 $cookie=_parsely_visitor
 $cookie=_pbjs_userid_consent_data,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
 $cookie=_pcid
+$cookie=_pctx
 $cookie=_pubcid
 $cookie=_tb_sess_r
 $cookie=_tb_t_ppg
@@ -239,6 +240,7 @@ $cookie=kampyle_userid
 $cookie=khaos
 $cookie=ki_r
 $cookie=ki_t
+$cookie=kn_cs_visitor_id
 $cookie=li_sugr
 $cookie=lms_ads
 $cookie=lms_analytics
@@ -437,6 +439,7 @@ $cookie=yTrackVisit
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[0-9a-z_-]{0,84}[A-Z])(?=[a-zA-Z_-]{0,84}[0-9])[0-9a-zA-Z_-]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mathbang.net|ujnews.co.kr|mediatoday.co.kr|hankyung.com|tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com|1412.rest|twicenest.com|feedclick.net|tistory.com|sportalkorea.com|minelist.kr|donga.com
+/^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /_/api/v2/analytics/?
 /_CPiX/art
 /__Analytics-Start?url=
@@ -3880,7 +3883,6 @@ znak.com##.relap
 ||canvas.*.edu.*/page_views
 ||canvas.*.edu/api/v1/courses/*/ping
 ||canvas.*.edu/page_views
-||capi.connatix.com/tr/
 ||capterra.com/*/b/s|
 ||capterra.com/*/collector
 ||caras.uol.com.br/increase_counters.js
@@ -4109,6 +4111,9 @@ znak.com##.relap
 ||condenastdigital.com/track$third-party
 ||conduit.com/drawtoolbar/
 ||conectiva.io/XEngine/extensions/visitor/visitor.js
+||connatix.com/rtb/
+||connatix.com/tr/
+||connatix.com^*/pixel?
 ||connect.facebook.net/*/fbds.js$third-party
 ||connect.facebook.net^*/fbevents.js$domain=saturn.de|mediamarkt.de
 ||connecteam.com/bi/api/ReportHit/
@@ -4362,6 +4367,7 @@ znak.com##.relap
 ||ebaystatic.com^*/tracking_
 ||ebbs.jp/spa.php?
 ||ebookers.com/cl/2x2.gif?
+||ebs.co.kr/js/weblogs/nethru/wlo.js
 ||ecoms.koton.com/ma/collect
 ||eduki.com^$cookie=track_sid
 ||eec.crunchyroll.com/v*/track
@@ -5060,9 +5066,12 @@ znak.com##.relap
 ||kinja.com/api/analytics/
 ||kitbag.com/api/track|
 ||kiwisizing.com/api/log
+||kkuriren.se^$cookie=adksid
+||kkuriren.se^$cookie=adkvid
 ||klarnaservices.com/?a=$image
 ||klops.ru/ahoy/
 ||kmib.co.kr/NetInsight/trace/track
+||knotch-cdn.com/ktag/
 ||kocaeligazetesi.com.tr/stats/
 ||kodik.cc/stats
 ||kookbang.dema.mil.kr/newspaper/js/nlogger.js
@@ -5445,6 +5454,7 @@ znak.com##.relap
 ||otakufr.co^$cookie=session_id
 ||ouscous.acs.wecandeo.io/*/api/video*?data=
 ||outlook-1.cdn.office.net/owamini/*/resources/analytics-ping.js
+||owata-net.com/js/ga.js
 ||owlcation.com/.bootscripts/hubPages*Tracker.min.js
 ||ozone.ru/graphics/client-metrics/
 ||p.adsymptotic.com/d/px^$domain=boudja.com
@@ -5600,6 +5610,7 @@ znak.com##.relap
 ||prtimes.jp/common/js/GTMhead.js
 ||prtimes.jp/common/js/googleana.js
 ||psprices.com/staticfiles/build/frontend_psprices_js_analytics_ts.*.js
+||psr.staticbg.com/rum/monitor.min.js
 ||pstatic.net/adimg3.search/adpost/
 ||pub.olx.com.br/detect-adblocker.js
 ||pub.olx.com.br/listing.js
@@ -5859,6 +5870,7 @@ znak.com##.relap
 ||sfstatic.net/build/js/gaControlTracker.*.js
 ||sgqcvfjvr.onet.pl/build/dlApi/dl.aureus.min.js
 ||sgqcvfjvr.onet.pl/build/dlApi/dl.clickmap.min.js
+||sgtm.fashionunited.
 ||sgtm.fashionunited.de/gtm.js
 ||shalltry.com/athena/
 ||share.9cdn.net/share/long_cache/js/tracking/
