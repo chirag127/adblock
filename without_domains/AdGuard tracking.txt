@@ -343,6 +343,9 @@ $cookie=yTrackVisit
 &action=js_stats&
 -ajax.php?action=ajax-hits-counter-
 -asset-tag.
+-conversions.appsflyersdk.com^
+-gcdsdk.appsflyersdk.com^
+-launches.appsflyersdk.com^
 -pcre-js-gen.herokuapp.com/tracking-event|
 -spiky.clevertap-prod.com^
 -spiky.clevertap-prod.com^$third-party
@@ -354,8 +357,6 @@ $cookie=yTrackVisit
 .amazonaws.com/thbeacon
 .arcor.de/pixel/
 .arnostat.nl/click.
-.at/t.gif?
-.au/t.gif?
 .awstrack.me^$image
 .ay.delivery^
 .cf/gif/impression?
@@ -371,7 +372,6 @@ $cookie=yTrackVisit
 .com/cct?
 .com/i.gif?
 .com/s.gif?
-.com/t.gif?
 .com/v.gif?
 .com/vanity/?
 .de/pt.gif?type=
@@ -395,18 +395,13 @@ $cookie=yTrackVisit
 .microsoft.*/broker.js$domain=~technet.microsoft.com
 .microsoft.com/trans_pixel.
 .microsoft.com/wupixel/
-.net/t.gif?
-.nz/t.gif?
 .php?p=stats$domain=ahwaktv.tv
 .plerdy.com^$third-party
 .providesupport.com/cmd/*?ps_t=
-.pt/t.gif?
 .ru/stat/?c=$domain=ucoz.net
-.sg/t.gif?
 .spmailtechnolo.com/q/$image
 .svc/?tracking_id=
 .tns-counter.ru/v13a
-.uk/t.gif?
 /.bootscripts/analytics.min.js
 /.well-known/private-click-measurement
 //t100.ru^$third-party
@@ -876,6 +871,7 @@ $cookie=yTrackVisit
 /wp-content/plugins/pb-ga-google-analytics/*$domain=~wordpress.org
 /wp-content/plugins/stat-analytics/*
 /wp-content/plugins/stat-dfp/*
+/wp-content/plugins/woocommerce-google-adwords-conversion-tracking-tag/js/*
 /wp-content/plugins/wp-google-analytics-events/*
 /wp-content/themes/vip/pmc-plugins/pmc-global-functions/js/geoPosition.js
 /wp-power-stats.js
@@ -1323,9 +1319,7 @@ $cookie=yTrackVisit
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
 @@||click.appcast.io/track^$domain=neuvoo.co.uk
 @@||clicktale.net/wrb.js$domain=microsoft.com
-@@||cloud.roistat.com/api/site/$script,domain=britvabarber.ru
 @@||cloud.roistat.com/api/site/$script,domain=britvabarber.ru|tickets.bckhimki.ru
-@@||cloud.roistat.com/dist/module.*$script,stylesheet,domain=britvabarber.ru
 @@||cloud.roistat.com/dist/module.*$script,stylesheet,domain=britvabarber.ru|tickets.bckhimki.ru
 @@||cloud.roistat.com/dist/module.js$domain=pandashop.md
 @@||cloudflare.com/*/fingerprint2.min.js$domain=saavn.com
@@ -1548,8 +1542,6 @@ $cookie=yTrackVisit
 @@||gapt.hit.gemius.pl/gplayer.js$domain=radiocomercial.iol.pt
 @@||gardenista.com/media/js/libs/ga_social_tracking.js
 @@||gatr.hit.gemius.pl/gplayer.js
-@@||gatr.hit.gemius.pl/gplayer.js$domain=kanald.com.tr
-@@||gatr.hit.gemius.pl/gplayer.js$domain=netd.com
 @@||gaua.hit.gemius.pl/gplayer.js$domain=1plus1.video
 @@||gaua.hit.gemius.pl/gplayer.js$domain=kanald.com.tr
 @@||gaua.hit.gemius.pl/gplayer.js$domain=ovva.tv
@@ -2011,7 +2003,6 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtm.js$domain=live.vodafone.de
 @@||googletagmanager.com/gtm.js$domain=lodgecastiron.com
 @@||googletagmanager.com/gtm.js$domain=m.kinomax.ru
-@@||googletagmanager.com/gtm.js$domain=m.n11.com
 @@||googletagmanager.com/gtm.js$domain=m.papajohns.ru
 @@||googletagmanager.com/gtm.js$domain=mainichi.jp
 @@||googletagmanager.com/gtm.js$domain=makitani.net
@@ -2379,7 +2370,6 @@ $cookie=yTrackVisit
 @@||media.bnd.com/mistats/products/escenic_s_code.js
 @@||media.ft.com/j/optimost-$domain=ft.com
 @@||media.kaspersky.com/tracking/omniture/s_code_single_suite.js
-@@||media.kaspersky.com/tracking/omniture/s_code_single_suite.js$domain=kaspersky.ru
 @@||media.richrelevance.com/rrserver/$domain=askul.co.jp
 @@||media.sosh.fr/includes/wtbase.js
 @@||media.sosh.fr/includes/wtinit.js
@@ -2704,7 +2694,6 @@ $cookie=yTrackVisit
 @@||slike.indiatimes.com/feed/$domain=idiva.com
 @@||slike.indiatimes.com/feed/playerconfig/*.json$domain=timesnownews.com
 @@||slike.indiatimes.com/feed/playerconfig/*.json$domain=zoomtventertainment.com
-@@||slike.indiatimes.com/feed/stream/*.json$domain=economictimes.indiatimes.com
 @@||slike.indiatimes.com/feed/stream/*.json$domain=newspointapp.com|indiatimes.com|timesofindia.com|timesnownews.com|zoomtventertainment.com
 @@||slike.indiatimes.com/feed^$domain=tvid.in
 @@||smartpixel.tv
@@ -2894,7 +2883,6 @@ $cookie=yTrackVisit
 @@||uid.mavencoalition.io/v3$xmlhttprequest,domain=globalcovidsummit.org
 @@||uid.mavencoalition.io^$domain=si.com
 @@||uid.mavencoalition.io^$xmlhttprequest,domain=mtonews.com|thestreet.com
-@@||uid.mavencoalition.io^$xmlhttprequest,domain=si.com
 @@||uim.tifbs.net/js/*.js$domain=web.de|gmx.net|gmx.ch|gmx.at
 @@||uim.tifbs.net/js/3423.js$domain=top.de
 @@||uim.tifbs.net/js/7732.js$domain=gewinnspiel.gmx.de|gewinnspiel.web.de
@@ -3065,6 +3053,7 @@ businessinsider.co.uk,businessinsider.com##.rail-recommended
 businessinsider.com##.bottom-recommended
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 cbssports.com#%#(()=>{window.admiral=function(d,a,b){if("function"==typeof b)try{b({})}catch(a){}}})();
+cdn-settings.appsflyersdk.com^
 chaos2ch.com###sub div.plugin-memo:last-child
 charlestownwyllie.oaklawnnonantum.com^
 chinatimes.com##.popin-recommend
@@ -3417,7 +3406,6 @@ znak.com##.relap
 ||4players.de/javascript/awstats_misc_tracker.js
 ||4pna.com/clientscript/kr_scripts/rbs_scripts/rbs_banner_sender.min.js
 ||5-fifth.com/assets/js/*/analytics.js
-||5-fifth.com/assets/js/pc/analytics.js
 ||51nongyao.net/js/analytics.js
 ||58.205.218.4/pos?act=
 ||60a6ae725fca.bitsngo.net/widget-scripts/zoomd.widget.logger.min.js
@@ -3653,7 +3641,6 @@ znak.com##.relap
 ||api.reverso.net/stats/
 ||api.salesmachine.io/*/track/event
 ||api.simeji.me/*/sessionLog
-||api.smg.com/Etrack/
 ||api.socialmart.ru/analytics.php
 ||api.solvvy.com/v1/pixels/track
 ||api.taboola.com/2.0/json/*/recommendations.$redirect=nooptext,domain=azby.fmworld.net
@@ -3924,7 +3911,6 @@ znak.com##.relap
 ||cdn.contx.net/collect.js
 ||cdn.cr.org/etc/designs/electronics/clientlibs/tracking.js
 ||cdn.cubki.jp/shopping_tracker.js
-||cdn.d2-apps.net/js/tr.js
 ||cdn.daenischesbettenlager.de/analytics.js
 ||cdn.digitaloceanspaces.com/pixel/lp.js
 ||cdn.dopc.cz/gen/detect.png
@@ -4160,7 +4146,6 @@ znak.com##.relap
 ||crunchyroll.com/tracker
 ||cs.*/pixeljs|
 ||cs.pikabu.ru/apps/*/analytics.js
-||cs.pikabu.ru/apps/ub/*/main/analytics.js
 ||csi.gstatic.com^$domain=promiflash.de,redirect=nooptext,important
 ||cstream.wi-fi.ru/csc-event$domain=wi-fi.ru
 ||ctv.by/sites/default/files/googleanalytics/analytics.js
@@ -4243,7 +4228,6 @@ znak.com##.relap
 ||dealabs.com^$cookie=f_v
 ||dealer.com^*/tracker/
 ||dealer.com^*/tracking/
-||deawm.com/*/wt?p=
 ||dec.azureedge.net/sdk/telerik-dec-client.min.
 ||dec.sitefinity.com/collect/
 ||decathlon.de/content/js/tc_analytics.js
@@ -4342,7 +4326,6 @@ znak.com##.relap
 ||dsr.livefyre.com/livecountping/
 ||dtiblog.com/hist_count.
 ||dtm-dre.platform.hicloud.com/download/web/dtm.js
-||dtory.ebs.co.kr/wlo/Logging
 ||dubox.com/api/analytics
 ||duckduckgo.com/*/reportAnalytics
 ||duckduckgo.com/*/reportAnalytics$xmlhttprequest,redirect-rule=noopjson
@@ -4436,7 +4419,6 @@ znak.com##.relap
 ||expedia.com^*/logexperiments
 ||expedia.nl/trvl-px/
 ||express.co.uk/analytics.config.json
-||express.co.uk/analytics.config.json.php
 ||ext.chtbl.com/trackable.js
 ||extra.cz/counter.php?id=
 ||extremetech.com/sbs/beacon.js
@@ -4456,7 +4438,6 @@ znak.com##.relap
 ||fashionbykakao.com/api/*/tr?
 ||fast.a.klaviyo.com/media/js/analytics/klaviyo_analytics.js
 ||fastcdn.co/js/sptw.
-||fastcdn.co/js/sptw.js
 ||faz.net/l.gif?
 ||faz.net/placingservice/count
 ||fb.ru/misc/js/global/tracker.js
@@ -4848,7 +4829,6 @@ znak.com##.relap
 ||hrs.de/bi/null.gif?
 ||hsbcglobalcmb.sc.omtrdc.net/id?$redirect=nooptext,important,domain=business.hsbc.uk
 ||hsforms.com/*/counters.gif
-||http2.mlstatic.com/analytics/ga/mla-ml-analytics.min.js
 ||huawei.com/*/hwautocomplete/
 ||hub.npo-data.nl/tags/tag.min.js
 ||hubpages.com/ctracker/
@@ -4964,7 +4944,6 @@ znak.com##.relap
 ||instagram.com/ajax/bz
 ||instagram.com/logging/
 ||instagram.com/static/bundles/*/EmbedAsyncLogger.js
-||interesting-engineering.froomle.com/api/ie/events
 ||interia.pl/*/hit.t?
 ||internet-abc.de^*/eTracker.js
 ||internethaber.com/ajax/hit-increment
@@ -5124,6 +5103,7 @@ znak.com##.relap
 ||lightboxcdn.com/static/identity.html
 ||link.tv-asahi.co.jp/tver/cookiesync?
 ||linkedin.com/*/rum-track?
+||linkedin.com/*/track|
 ||linkedin.com/countserv/count/$third-party
 ||linkedin.com/emimp/
 ||linkedin.com/pixel/
@@ -5151,7 +5131,6 @@ znak.com##.relap
 ||locondo.jp/*/analysis/tracker.js
 ||log-collector.shopee.
 ||log.cognativex.com/pixel.
-||log.nordot.jp^$xmlhttprequest
 ||log.nordot.jp^$~script
 ||log.player.cntv.cn/stat.html?
 ||log.ventunotech.com^*/beacon.gif?
@@ -5186,7 +5165,6 @@ znak.com##.relap
 ||mail.yahoo.com/d/log?count=
 ||mail.yahoo.com/neo/mbfb?bk=
 ||mail.yahoo.com/neo/splunkLogger
-||mail.yahoo.com/px.gif?
 ||mail.yandex.*/monitoring_liza.txt$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.com|mail.yandex.com.tr
 ||mailchimp.com^$cookie=_mcid
 ||maillist-manage.com/wa/ActionLogger?
@@ -5458,7 +5436,6 @@ znak.com##.relap
 ||ostkcdn.com/js/ostk-user-tracking-*.js
 ||ostkcdn.com/js/thirdparty/siteIntercept.*.js
 ||ostsee-zeitung.de/viewlog_receiver.php?
-||ot.obi.de/*/wt?p=*webtrekk
 ||otakufr.co^$cookie=_uc_referrer
 ||otakufr.co^$cookie=session_id
 ||ouscous.acs.wecandeo.io/*/api/video*?data=
@@ -5473,7 +5450,6 @@ znak.com##.relap
 ||pa.7w.ro/js/trk.js
 ||pageinfo-k8s.motorsport.com/stat/
 ||pages.*/Script/pageTracking.js
-||pages.e.newsdigitalmedia.com.au/Script/pageTracking.js
 ||pages03.net/WTS/event.jpeg?
 ||papoto.com/api*/network/stats
 ||pardot.com/pd.js
@@ -5528,7 +5504,6 @@ znak.com##.relap
 ||pikabu.ru/ajax/save_stories_stat.php
 ||pin-river.data.ea.com/pinEvents
 ||ping.typekit.net/p.gif
-||pingma.qq.com/mstat/
 ||pinkoi.com/_log/
 ||pinterest.com/_/_/report/
 ||pipe.flixbus.com/*/wt?src=pipe
@@ -5539,7 +5514,6 @@ znak.com##.relap
 ||pixazza.com/track/
 ||pixel*.adswizz.com
 ||pixel.archive.
-||pixel.quantserve.com
 ||pixel.randi.adswizz.com
 ||pixel.wp.pl/*/*.js$replace=/.+//
 ||pixel.wp.pl^$important
@@ -5821,7 +5795,6 @@ znak.com##.relap
 ||sbc.digitalocean.com/s.js
 ||sberbank.ru/portalserver/static/features/*/Gtm/
 ||sbm.nate.com/setCookie?
-||sc.sftcdn.net/statics/px.gif?ch=
 ||science.ytn.co.kr/_comm/clog.php
 ||scinable.net/access?vid=
 ||scorecardresearch.com^$domain=cnet.com,important
@@ -5948,7 +5921,6 @@ znak.com##.relap
 ||sopoe.cn/index.php/user/ajax_ulog/
 ||soufun.com/stats/
 ||soundcloud.com/v*/events
-||source.mmi.bemobile.ua/cm/
 ||sovetnik.net/count
 ||sozcu.com.tr/aip/aip2Analytics.js
 ||sp.cargurus.com/i?stm=
@@ -6105,6 +6077,7 @@ znak.com##.relap
 ||success.trendmicro.com/jslibrary/*/NetworkTracking.js
 ||sueddeutsche.de/statistics?eventType=
 ||suedkurier.de/storage/scr/*_webtrekk.js.js
+||suggestion.ciceksepeti.com/api/v*/events
 ||sumo.com/api/event/
 ||sumo.com/apps/heatmaps/
 ||sumome.com/api/event/?
@@ -6255,7 +6228,6 @@ znak.com##.relap
 ||tp-link.com^*/addHits.html
 ||tpucdn.com/js/ga-*.js
 ||tr.computeruniverse.net/*/hm?p=
-||tr.computeruniverse.net/*/wt?p=
 ||tr.indeed.com/m/basecamp/analytics.js
 ||track.avt.pl/collector.js
 ||track.cedsdigital.it/track_views.php
@@ -6536,7 +6508,6 @@ znak.com##.relap
 ||winfuture.de/?*/videos-json.php&f=track_event
 ||winfuture.de/ajax/count
 ||wintorrents.ru/templates/WinTorentsNew/images/gp.jpg
-||wipe.de^$~script,third-party
 ||wired.*/hotzones/src/pixelpropagate.js
 ||wiwo.de/js/*/webtrekk
 ||wix.com/_api/blog-social-counters/
@@ -6558,7 +6529,6 @@ znak.com##.relap
 ||ws.zoominfo.com/pixel/
 ||wscatalog.ru/dizain/cycounter.gif
 ||wsknow.net/jssdk/track/
-||wt.vhb.de/*/wt?p=
 ||wurking.global.ssl.fastly.net/ingestly-ingest/
 ||www.google.*/velog/
 ||www.uz/counter/collect?
