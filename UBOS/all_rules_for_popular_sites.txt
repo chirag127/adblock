@@ -206,6 +206,7 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerRespo
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
+youtube.com###player [class*="suggested-action-badge-icon"]:upward(.ytp-suggested-action)
 zupload.me##a[href="https://www.9xyoutube.com"]
 ||youtube.com/get_video$media,redirect=noopmp4-1s,domain=wowescape.com
 ||youtube.com/get_video$media,redirect=noopmp4-1s,domain=games2rule.com
@@ -948,7 +949,6 @@ www.google.com##:matches-path(/^/search\?.*tbm=shop/) html[itemtype$="/SearchRes
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=linkshorts.*
 *$frame,denyallow=google.com,domain=dz4link.com
 *$script,3p,denyallow=facebook.net|google.com|gstatic.com|recaptcha.net,domain=dz4link.com
-||adservice.google.com^$script,redirect-rule=noopjs,domain=next-episode.net
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=adsrt.*
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|jsdelivr.net|mega.nz|recaptcha.net,domain=animeflv.*
 *$frame,3p,denyallow=google.com,domain=pouvideo.*|povvideo.*|povw1deo.*|powvibeo.*|povwideo.*|powv1deo.*|powvideo.*|powvldeo.*|povvldeo.*
@@ -1305,7 +1305,6 @@ quora.com##.qu-pt--medium > .q-box[style="box-sizing: border-box;"] > div:not([c
 ||log.quora.com^
 ||q.quora.com/_/*/pixel?
 quora.com##button[aria-label="More sharing options"]
-quora.com##.q-relative > button[aria-label="More sharing options"]
 quora.com##body > div[id]:has(.modal_signup_dialog)
 quora.com##.new_signup_dialog.modal_bg
 quora.com##.signup_wall_prevent_scroll #root:style(filter: none !important;)
@@ -2585,7 +2584,7 @@ facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##htm
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##div[aria-posinset]:has(a[aria-label="広告"])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##div[aria-posinset] h4 > span > a[href]:not([href^="/groups/"]):not([href*="section_header_type"]):matches-attr(href="/__cft__\[0\]=[-\w]{270,}/"):upward(div[aria-posinset])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##div[aria-describedby]:not([aria-posinset]) h4 > span > a[href]:not([href^="/groups/"]):not([href*="section_header_type"]):matches-attr(href="/__cft__\[0\]=[-\w]{270,}/"):upward(div[aria-describedby])
-*$script,3p,denyallow=cloudflare.com|disqus.com|disquscdn.com|facebook.com|fastlylb.net|fbcdn.net|facebook.net|googleapis.com,domain=oploverz.*
+*$script,3p,denyallow=cloudflare.com|disqus.com|disquscdn.com|facebook.com|fastlylb.net|fbcdn.net|facebook.net|googleapis.com|jsdelivr.net|statically.io|githack.com|gitcdn.xyz|gitcdn.link|gitcdn.herokuapp.com|arc.io|fluidplayer.com,domain=oploverz.*
 *$script,3p,denyallow=cloudflare.net|cloudfront.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastlylb.net|fbcdn.net|fontawesome.com|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|sharethis.com|unpkg.com|watchcartoonsonline.info|kisscartoon.info,domain=kiss-anime.*
 *$script,3p,denyallow=cdn77.org|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|google.com|googleapis.com|gstatic.com|hwcdn.net|hcaptcha.com|instagram.com|jquery.com|jsdelivr.net|jwpcdn.com|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wp.com,domain=japscan.*
 *$frame,denyallow=facebook.com|google.com|youtube.com,domain=foxseotools.com
@@ -2867,7 +2866,6 @@ tiktok.com##div[class*="DivShareActions"] + div[data-e2e="challenge-more"]
 tiktok.com##div[data-e2e="share-btn"]
 newsroom.tiktok.com##.post-share-container
 tiktok.com###tiktok-share
-tiktok.com##div[class*="DivShareActions"] a[data-e2e="video-share-email"]
 flytothesky.ru##div.textwidget > a[href="https://www.tiktok.com/@andynurrov"]
 tiktok.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 ||ads.tiktok.com^$xhr,redirect-rule=noop.txt
