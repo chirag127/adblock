@@ -22,6 +22,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 -adobe-analytics/
 -adobeDatalayer_
 -amp-error-reporting.
+-analytics-events.
 -analytics/analytics.
 -click-tracker.
 -client-tracking.goodgamestudios.com/
@@ -85,8 +86,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 .doubleclick.net/$image
 .efeedbacktrk.com/$third-party
 .email.*/tr/op/$image
-.emltrk.com/
-.emsecure.min.js
 .epicgames.com/O/
 .everestengagement.com/$image
 .facebook.com/tr/$image
@@ -149,7 +148,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 .tripadvisor.com/q/$image
 .umusic-online.com^*/o.gif
 .webstats.
-.wxAdTargeting.
 .zalando.com/images/probe.png
 /0.gif?
 /0pixel.php?
@@ -330,6 +328,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /adobe-analytics-$domain=~business.adobe.com
 /adobe-analytics.
 /adobe-analytics/*
+/adobe-prd/*
 /adobe/VisitorAPI_$script
 /adobe/target/*
 /adobeAnalytics/*
@@ -374,7 +373,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /analyse.js
 /analysis-logger/*
 /analysis/ga_
-/analyticcdn.
 /analytics-2.
 /analytics-amplitude-
 /analytics-assets/*
@@ -702,7 +700,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /cnt.cgi?
 /cnt.js
 /cnt.php?id=
-/cnt.php?rf=
 /cntlog/*
 /coAnalytics.
 /cohesion-latest.
@@ -786,6 +783,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /cta-loaded.js
 /ctr_tracking.
 /ctracker/*$domain=~charmtracker.com
+/custom-tracking.
 /cv/conversion.js
 /cwtracking-
 /cxense-candy.js
@@ -795,6 +793,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /data/collect/*$xmlhttprequest
 /data_collect.js
 /datadome/*
+/dataunlocker-prod.
 /dbdm-events.
 /dcjs/prod/*
 /dcs.gif?
@@ -808,6 +807,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /device-fingerprint.
 /dfpsvc?
 /dh-analytics-
+/didna-pixel-
 /diffuser.js
 /discourse-fingerprint_
 /dispatch.fcgi?
@@ -1046,7 +1046,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /google_analytics-
 /google_analytics.$~image
 /google_analytics/*
-/google_analytics3_
 /google_analytics_$script,domain=~github.com
 /google_tag.
 /google_tag/*
@@ -1206,7 +1205,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /keen-tracking.
 /keen.min.js
 /keypress.js$script
-/kissmetrics.
 /kiwip.js
 /koko-analytics-
 /koko-analytics/*/script.js
@@ -1367,7 +1365,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /monitor/v1/log
 /monitor_analytic.
 /monitus.js
-/monsido.js
 /mpel/mpel.js
 /mpulse.js
 /ms.analytics-
@@ -1550,6 +1547,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /plausible.outbound-links.js$domain=~plausible.io
 /player-test-impression?
 /player/stats.php?
+/plog?id
 /plogger/*
 /plugins/exactmetrics-
 /plugins/visitors-traffic-
@@ -1778,7 +1776,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /srp.gif?
 /ss/o/*.gif
 /ssl-intgr-net/*
-/sstlm8.sst?
 /standalone-analytics-
 /stat-google-ads.js
 /stat-microsoft-ads.js
@@ -1860,6 +1857,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /tab_impression_logging/*
 /tacoda_
 /taevents-
+/tag?tags=
 /tagcommander.
 /tagging?type=
 /tagmanager/pptm.
@@ -2139,6 +2137,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 /webdig.js
 /webdig_test.js
 /webiq.$domain=~webiq.co.nz
+/webmnr.min.js
 /webmonitor/collect/*
 /webstat.js
 /webstat_
@@ -2220,6 +2219,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 ://stats.*/script.js
 ://t.order.*/r/?id=$image
 ://top.*/count/cnt.php?
+://top.*/hit/
 ://track.*/collect
 ://track.*/dye?
 ://tracker.*/pageview
@@ -2280,6 +2280,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||adobedtm.com^*/satellite-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=absa.co.za|ally.com|americanexpress.com|argos.co.uk|auspost.com.au|backcountry.com|bmw.com.au|collegeboard.org|costco.com|crackle.com|crave.ca|crimewatchdaily.com|directline.com|eonline.com|fcbarcelona.com|firststatesuper.com.au|godigit.com|hellobank.fr|hgtv.com|hrw.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|malaysiaairlines.com|mastercard.us|mathworks.com|monoprice.com|myaetnasupplemental.com|nbcnews.com|nfl.com|nflgamepass.com|nofrills.ca|oprah.com|oracle.com|pnc.com|realtor.com|redbull.tv|repco.co.nz|searspartsdirect.com|shoppersdrugmart.ca|smooth.com.au|stuff.co.nz|subaru.com|telegraph.co.uk|timewarnercable.com|usanetwork.com|vanityfair.com|wired.com|wowway.net
 @@||adobedtm.com^*/satelliteLib-$script,domain=ceair.com|fcbarcelona.cn
+@@||adobedtm.com^*/satelliteLib-$script,domain=conad.it|ilsole24ore.com|laredoute.it
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.fr|laredoute.be|laredoute.ch|laredoute.fr|lci.fr|nrj.fr|tou.tv
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.ru
@@ -2379,7 +2380,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||cxense.com/cx.js$domain=cyclestyle.net|mainichi.jp|nippon.com|shueisha.co.jp|tarzanweb.jp|tv-tokyo.co.jp
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d26opx5dl8t69i.cloudfront.net/js/reflektion.js$script,domain=jdsports.com|kegworks.com
-@@||d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js$script,domain=einthusan.tv|tlk.io
 @@||dashboard.unity.com/dist/udash/app/assets/services/analytics/$domain=dashboard.unity.com|dashboard.unity3d.com
 @@||datadoghq-browser-agent.com/datadog-$script,domain=bbcgoodfood.com|dashboard.getdriven.app|usa.experian.com
 @@||dcard.docomo.ne.jp/st/common/js/googleTagManager.js
@@ -2606,7 +2606,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||starbucks.ca^*/optimizely.$script,~third-party
 @@||starbucks.com^*/optimizely.$script,~third-party
 @@||startribune.com/analytics-assets/sitecatalyst/appmeasurement.js$~third-party
-@@||statcounter.com/js//fusioncharts.charts.js
 @@||statcounter.com/js/fusioncharts.js
 @@||static.amazon.jobs/assets/analytics-$script,domain=amazon.jobs
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
@@ -2617,7 +2616,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||support-beacon.nakanohito.jp/widget/$xmlhttprequest
 @@||support-widget.nakanohito.jp/chatbot$script,stylesheet
 @@||support.brother.com^*/js/analytics.js$script,~third-party
-@@||switchfly.com/static/*/resources/shopping/.build/scripts/analytics-$script,domain=reise-services.americanexpress.de|travel.americanexpress.co.uk|viaggi.americanexpress.it
 @@||taboola.com/libtrc/$script,domain=bild.de|bz-berlin.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|sueddeutsche.de|techbook.de|travelbook.de|welt.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
 @@||taboola.com^*/json?tim=$domain=sueddeutsche.de
 @@||tag.aticdn.net/piano-analytics.js$domain=yourstory.com
@@ -2651,7 +2649,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||ultimaterewardspoints.chase.com/web-analytics/ur-reporting.js$~third-party
 @@||userapi.com^*.gif?extra=$image,domain=vk.com
 @@||uwants.com/include/*/swfaddress.js
-@@||vefir.mms.is^*/static/analytics.js$~third-party
 @@||vodgc.net^*/genoa-event-tracking.min.js
 @@||vpro.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 @@||walmart.ca/assets/store-selector-page/js/analytics.$script,~third-party
@@ -2661,7 +2658,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|onlinevideoconverter.com|povw1deo.c
 @@||wishpost.cn/api/tracking/
 @@||wix.com/_api/*count?type$~third-party
 @@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
-@@||www.statcounter.com/images/$image,third-party
 @@||wwwimage-tve.cbsstatic.com^
 @@||yandex.ru/metrika/tag.js$script,domain=kuchenland.ru
 @@||yandex.ru/metrika/watch.js$domain=alean.ru|anoncer.net|nabortu.ru|samozapis-spb.ru|tv.yandex.ru|tvrain.ru
@@ -2852,6 +2848,7 @@ cgi-bin/counter
 ||b8cdn.com/assets/v1/analytics-
 ||backcountry.com/api/log
 ||baidu.com/api/bidder/
+||baidu.com/cpro/ui/c.js
 ||baidu.com/cpro/ui/f.js
 ||baidu.com/h.js?
 ||baidu.com/hm.gif?
@@ -2949,6 +2946,7 @@ cgi-bin/counter
 ||channelexco.com/events
 ||checkout.com/logging
 ||chefkoch.de/tracking/
+||chosun.com/hitlog/
 ||chtbl.com^$script,third-party,xmlhttprequest
 ||cinematoday.jp/js/*/pageviews.
 ||citi.com^*/fp.js
@@ -3112,7 +3110,6 @@ cgi-bin/counter
 ||eighten-bloc-party.thebrowser.company/script.js
 ||eloqua.com^$~stylesheet,third-party
 ||elpais.com/t.gif
-||emetriq.de^$domain=focus.de
 ||emetriq.de^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|transfermarkt.de
 ||emoment.net/cnt/
 ||endorsal.io/check/
@@ -3269,7 +3266,6 @@ cgi-bin/counter
 ||helloretail.com/serve/collect/
 ||hh.ru/stat?
 ||hicloud.com/download/web/dtm.js
-||hindustantimes.com/res/images/one-pixel.png
 ||hktvmall.com/api/event
 ||hltv.org/scripts/hltv-tracking.js
 ||homedepot-static.com/data-collection/
@@ -3424,6 +3420,7 @@ cgi-bin/counter
 ||linkedin.com/sensorCollect/
 ||linktr.ee/events
 ||linkwithin.com/pixel.png
+||linximpulse.net/impulse/
 ||list-manage.com/track/
 ||live.mrf.io/statics/marfeel/gardac-sync.js
 ||livehdcams.com/api/events
@@ -3441,6 +3438,7 @@ cgi-bin/counter
 ||lowes.com/gauge/
 ||ltwebstatic.com/she_dist/libs/devices/fpv2.
 ||ltwebstatic.com^*/libs/sensors/
+||lulus.com/px/client/main.min.js
 ||lupoporno.com/js/analytics
 ||lyft.com/api/track
 ||m-oo-m.com/data/report/
@@ -3627,7 +3625,6 @@ cgi-bin/counter
 ||perfdrive.com/aperture/aperture.js
 ||perfops.net/rom3/
 ||phonearena.com/_track.php
-||photobox.com/event
 ||piano.io/tracker/
 ||pikbest.com/?m=Stats&
 ||pinkoi.com/_log/
@@ -3880,7 +3877,6 @@ cgi-bin/counter
 ||squarespace.com/universal/scripts-compressed/performance-$script,third-party
 ||squid.gazeta.pl/bdtrck/
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
-||srvmath.com^*/analytics.js
 ||ss.lv/counter/
 ||stackoverflow.com/_/client-timings
 ||stackshare.io/analytics.
@@ -4221,3 +4217,4 @@ cgi-bin/counter
 ||zineone.com^*/event
 ||zoominfo.com/osx7m0dx/init.js
 ||zoominfo.com/pixel/
+||zynga.com/track/
