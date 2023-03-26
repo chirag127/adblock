@@ -222,6 +222,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /NetworkTracking.
 /NielsenTracking.
 /OmnitureAkamai.
+/OmnitureAnalytics.
 /OtAutoBlock.js
 /PageTrack.js
 /PageTracker.
@@ -279,6 +280,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /__ub.gif?
 /__utm.gif
 /__utm.js
+/__wsm.gif
 /_blazor/*$ping
 /_ga?send&
 /_hcms/perf
@@ -533,8 +535,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /basicMetricsTracking.
 /batch/1/OE/*
 /batch/1/OP/*
-/baynote-$script
-/baynote.
 /baynote/*
 /baynote_
 /bb-analytics-
@@ -687,7 +687,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /collect/kasupport
 /collect/pv?
 /collect/sdk?$domain=~iugu.com
-/collect/view_count?
 /collect?appName
 /collect?data=
 /collect?event=
@@ -867,7 +866,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /event/tracking
 /event/trigger?
 /event/visit?
-/event?adblk=
 /event?sendBeacon=
 /event?token=
 /eventLog.ajax
@@ -1194,6 +1192,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /koko-analytics-
 /koko-analytics/*/script.js
 /krux-sass-helper.
+/krux.js
 /ktag/*
 /lasso-ga.js
 /layer_log.php?p=
@@ -1299,7 +1298,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /loi/imp?
 /ls.gif?
 /lunametrics-
-/lytics/*
 /lzdmailer.letter.open?
 /m.gif?
 /mail-stat.airdroid.com/*$image
@@ -1359,7 +1357,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /mtracking.
 /myImage.track?
 /nLoggerJB_
-/nStat/*
 /naLogImpressions?
 /nativendo.js
 /nbc-stats/*
@@ -1435,7 +1432,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /pagestat/*
 /pagestat?
 /pageview.js
-/pageview?client=
 /pageview?key=
 /pageview?t=
 /pageview_candidate.
@@ -1742,7 +1738,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /snowplowjs.
 /somni.js
 /sourcepoint.js
-/sovrn_beacon_
 /sp_analytics.
 /sp_tracker.
 /spacer.gif?
@@ -1796,6 +1791,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /stats/CounterPage.
 /stats/collect?
 /stats/collector.js
+/stats/common/*
 /stats/count.
 /stats/counter.
 /stats/etag.
@@ -1949,6 +1945,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /tracking.php?id
 /tracking.png?
 /tracking.srv2.de/op/*$image
+/tracking/airdog
 /tracking/analytics/*
 /tracking/article/*
 /tracking/click?
@@ -1962,6 +1959,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /tracking/impression
 /tracking/index.
 /tracking/ipify
+/tracking/jitney/*
 /tracking/open?
 /tracking/partner_
 /tracking/pixel.
@@ -2125,6 +2123,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /wizrocketmail.net/r?$image
 /wmxtracker.js
 /worldwide_analytics/*
+/wp-counter.php
 /wp-slimstat/*
 /wp-statistics/v2/hit?
 /wp-stats-manager/js/wsm_new.js
@@ -2179,11 +2178,9 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 ://metrika.*/analytics.
 ://parcel-api.delivery-status.*/open/$image
 ://piwik.$domain=~matomo.org|~piwik.pro
-://segment-api.
 ://segment-cdn.
 ://stats.*/index.js
 ://stats.*/script.js
-://t.order.*/r/?id=$image
 ://track.*/collect
 ://track.*/dye?
 ://tracker.*/pageview
@@ -2193,6 +2190,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 =eulerian&
 =getSideStats&
 =googleanalytics_
+=stats&action=
 =stats&apiVersion=
 ?act=counter&
 ?action=event&
@@ -2287,8 +2285,8 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||browser.sentry-cdn.com^$domain=acustica-audio.com|dic.pixiv.net|doconcall.com.my|eco-clobber.co.uk|fundhero.io|menshealth.com|roomster.com|timesprime.com|womenshealthmag.com
 @@||browser.sentry-cdn.com^$script,domain=vivareal.com.br
 @@||businessclick.ch/index.js$domain=finanzen.ch
+@@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
-@@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
 @@||caf.fr^*/smarttag.js$script,~third-party
 @@||cat.telia.no/gtm.js$script,domain=telia.no
 @@||cbc.ca/g/stats/js/cbc-stats-top.js
@@ -2356,7 +2354,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|dreamcloudsleep.com|fendi.com|harborfreight.com|luisaviaroma.com|nectarsleep.com|noelleeming.co.nz|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
 @@||dz9qn8fh4jznm.cloudfront.net/script.js$script,domain=bostonglobe.com
 @@||eatstreet.com/api/v2/tracking/$~third-party
-@@||editorx.com/_api/*count?type$~third-party
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js
 @@||ens.nzz.ch^$~third-party
@@ -2499,7 +2496,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||optimizely.com/datafiles/$domain=guildeducation.com|hm.com|nike.com|printify.me|talktalk.co.uk|tommy.com|wallapop.com
 @@||optimizely.com^$script,domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 @@||optimizely.guildeducation.com^$~third-party
-@@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||p.typekit.net/p.css$stylesheet,domain=browserstack.com|bungie.net|business.untappd.com|robertsspaceindustries.com
 @@||p11.techlab-cdn.com^$domain=wizzair.com
 @@||palmettostatearmory.com/static/$script,~third-party
@@ -2507,6 +2503,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||php.heute.at/onion/ProjectOnion/render/common/js/tracking.js$~third-party
 @@||plausible.io/js/plausible.js$script,domain=sammobile.com
 @@||playep.pro/log_event$~third-party,xmlhttprequest
+@@||players.fichub.com/plugins/adobe/$domain=24kitchen.pt
 @@||plex.tv/api/v2/geoip$xmlhttprequest
 @@||plplayer.online/log_event$~third-party,xmlhttprequest
 @@||pmdstatic.net/advertising-$script,xmlhttprequest,domain=programme-tv.net
@@ -2533,6 +2530,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||s.yjtag.jp/tag.js$script,domain=baseball.yahoo.co.jp|soccer.yahoo.co.jp|www.epson.jp
 @@||sahibinden.com/assets/analytics*.js$~third-party
+@@||sankei.co.jp/js/analytics/skd.Analysis.js$script
 @@||scandichotels.com/Static/js/tracking/tracking-data-init.js$~third-party
 @@||schlr.cnki.net/detailstatic/js/tracker.js$script,~third-party
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_theplatform.js
@@ -2892,7 +2890,6 @@ cgi-bin/counter
 ||chefkoch.de/tracking/
 ||chosun.com/hitlog/
 ||chtbl.com^$script,third-party,xmlhttprequest
-||cinematoday.jp/js/*/pageviews.
 ||citi.com^*/fp.js
 ||citiservi.es/adstrack?
 ||classdojo.com/logs/
@@ -2922,6 +2919,7 @@ cgi-bin/counter
 ||cloudfront.net/i?v=
 ||cloudfront.net/js/grin-sdk.js
 ||cloudfront.net/lp.js
+||cloudfront.net/powr.js
 ||cloudfront.net/rc.js?
 ||cloudfront.net/script.js
 ||cloudfront.net/sentinel.js
@@ -3099,6 +3097,7 @@ cgi-bin/counter
 ||fbot.me/events/
 ||fc2.com/ana/processor.php?
 ||fc2.com/counter_img.php?
+||fensi.plus^*/tracking/
 ||fishki.net/counter/
 ||fiverr.com/api/v1/activities
 ||flex.msn.com/mstag/
@@ -3725,7 +3724,6 @@ cgi-bin/counter
 ||search.brave.com/serp/v1/static/serp-js/telemetry/
 ||search.ch/audit/
 ||searchenginejournal.com/xcs0MhRsfxHG.js
-||secureprovide1.com/*=tracking$image
 ||secureserver.net/t/
 ||seekingalpha.com/mone_event
 ||seekingalpha.com/xgCxM9By/init.js
@@ -3976,6 +3974,7 @@ cgi-bin/counter
 ||urldefense.com^$image,third-party
 ||usercentrics.eu/session/$image
 ||usersonline.org/ping.php?
+||userway.org/api/seo-widget/
 ||userway.org/api/v1/stats
 ||usnews.com/static/esi/usn-geo.json
 ||utils.global-e.com/set?
@@ -4002,7 +4001,6 @@ cgi-bin/counter
 ||vimeocdn.com/ga/
 ||vipstatic.com/mars/
 ||viralize.tv/track/
-||virtuoussoftware.com/tracker/
 ||visa.com/logging/logEvent$third-party
 ||visualstudio.com/v2/track
 ||vivociti.com/images/$third-party
@@ -4031,6 +4029,7 @@ cgi-bin/counter
 ||wayfair.com/px/client/main.min.js
 ||wc.yahoodns.net^$image
 ||wc4.net^$image,third-party
+||wccftech.com/cnt7vfDVvWa3.js
 ||web.de/monitoring/
 ||webedia.fr/js/gs.js
 ||webengage.sky.com^$xmlhttprequest
@@ -4098,7 +4097,6 @@ cgi-bin/counter
 ||yahoo.com/beacon?
 ||yahoo.com/sync/casale/
 ||yahoo.net/pixel.gif
-||yalemedicine.org/website-api-data/analytics-report
 ||yandex.*/clck/$~ping
 ||yandex.*/count/
 ||yandex.com/clck/
