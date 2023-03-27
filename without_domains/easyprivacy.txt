@@ -37,6 +37,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 -logabpstatus.
 -logging.nextmedia.com^
 -monero-miner-
+-realtime-logging-
 -track-email-open?
 -track-inview.
 -unbxdAnalytics.
@@ -114,7 +115,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 .php?tracking=
 .pixel.archive.
 .pl?trans.gif&ref=
-.secureserver.net/bbimage.aspx?
 .sendcloud.net/track/
 .sendibm1.com/*.gif?
 .sendibm1.com/mk/
@@ -146,6 +146,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /1x1.gif?
 /1x1.png?
 /2.gif?
+/24h-analytics.
 /2x2.gif?$image
 /3.gif?
 /500b-bench.jpg?
@@ -165,7 +166,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /AdCookies.js
 /AdmitadTagTag.js
 /AdobeAnalyticsAndTargetOverwrites.
-/Analytics.aspx?
 /Analytics/Tracking.
 /AnalyticsDataLayer.
 /AppMeasurement.js
@@ -201,10 +201,8 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /GoogleAnalyticActionLib.
 /GoogleAnalyticsPlus/*
 /HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
-/Hit.ashx?
 /Hit.aspx?
 /HitCounter.
-/HitCounter/*
 /Hits/collect/*
 /IPbeacon.
 /InsightTrk/*
@@ -233,6 +231,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /QualtricsSurvey.
 /QuotaService.RecordEvent?
 /RadioAnalytics.js
+/RecordHit?
 /ResonateAnalytics.
 /SAPOWebAnalytics/*
 /SSOCore/update?
@@ -253,6 +252,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /TrackView/*$xmlhttprequest
 /TrackVisitors/*
 /TrackWebPage?
+/Tracking/TrackPage
 /Tracking?id=
 /TrackingData.
 /TrackingPixel/*
@@ -369,6 +369,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /analytics-js.
 /analytics-js/*
 /analytics-min.js
+/analytics-minimal.
 /analytics-ping.
 /analytics-plugin/*
 /analytics-scripts.
@@ -523,6 +524,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /awstats_misc_tracker
 /azion-pulse.js
 /aztracker.
+/azure-perfops.
 /b.gif?
 /b/s/beacon
 /b/ss/*&aqe=
@@ -561,6 +563,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /better-analytics/*
 /bf.gif?ac=
 /bineos.min.js
+/bing-bat.js
 /bingimpression?
 /bitrix/spread.php?
 /bk-coretag.js
@@ -604,6 +607,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /cdn-cgi/rum?
 /cdn-cgi/zaraz/*
 /cdn_cookie_service.$image
+/cdnperf-rum.
 /cdx-radar/*
 /cedexis/*
 /census/RecordHit
@@ -648,7 +652,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /clicklog.
 /clicklog/*
 /clicks.*/q/*$image
-/clickstream/visit?
 /clicktag.
 /clicktale.
 /clicktale_
@@ -1064,7 +1067,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /hc/activity
 /healthanalytics.js
 /histats.js
-/hit-counter.
 /hit-counter/*
 /hit.asp?
 /hit.php?
@@ -1146,7 +1148,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /itmdp_code.
 /j.gif?
 /javascript/Analytics.
-/javascript/analytics/*
 /javascripts/ga.js
 /javascripts/tracking_
 /jquery.analytics.js|
@@ -1201,7 +1202,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /lead-tracking.
 /lead-tracking/*
 /leads-tracker-
-/leadtag.js
 /lftracker_
 /lib/analytics.
 /lib/ga.js
@@ -1221,6 +1221,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /linktracking.
 /live/analytics/*
 /livestats.ashx
+/livestats.php?
 /livezilla/server.php?request=track&
 /ljcounter/*
 /llntrack.
@@ -1324,7 +1325,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /metrics/v1/frontend/*
 /metrika/tag.js
 /metrika/watch.
-/metrika/watch_
 /min/gtm/*
 /miner.js
 /mint/?js
@@ -1337,6 +1337,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /mms/get_loaders?
 /mmt.gif?
 /mnppixellibrary.
+/mnt/imp?
 /moat-tracker.
 /moat/yield.js
 /moksa.js
@@ -1402,7 +1403,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /open.aspx?
 /open.html?$image
 /open/log/*
-/opentag-
 /opinionlab.js
 /optimizely-
 /optimizely.$domain=~optimizely.com
@@ -1470,7 +1470,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /ping?utm_
 /pingd?
 /pinterest-pixels.
-/pippio.
 /piwik-$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
 /piwik.$image,script,domain=~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
 /piwik/*$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro
@@ -1564,6 +1563,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /pv_count.
 /pvcount.
 /pvevent_
+/pview?event
 /pwa/js/container_$script
 /px.gif?
 /px.js?ch=$script
@@ -1761,6 +1761,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /stat.php?
 /stat.png?
 /stat/count
+/stat/event?
 /stat/rt/js?
 /stat2.aspx?
 /stat?event=
@@ -1899,6 +1900,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /track?data=
 /track?event=
 /track?eventKey=
+/track?events=
 /track?name=
 /track?pid=
 /track?referrer=
@@ -2134,9 +2136,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /wrapper/metrics/*
 /writelog.js
 /wt_capi.js
-/wtbase.js
 /wtid.js
-/wtinit.js
 /wtrack?event=
 /wutime-adblocktracker/*
 /wwwcount.cgi?
@@ -2256,6 +2256,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||api.amplitude.com^$xmlhttprequest,domain=insiderintelligence.com
 @@||api.apolomedia.com/static/libs/event-tracking.min.js$script
 @@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
+@@||api.cxense.com/document/search?$script,xmlhttprequest,domain=friday.kodansha.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/data$script,xmlhttprequest,domain=businessinsider.de|computerbild.de|handelsblatt.com
 @@||api.cxense.com/public/widget/data$script,xmlhttprequest,domain=cyclestyle.net|friday.gold|friday.kodansha.co.jp|mainichi.jp|nippon.com|shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=bizjournals.com|cxpublic.com|marketwatch.com|wsj.com
@@ -2396,12 +2397,12 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||googleoptimize.com/optimize.js$script,domain=binglee.com.au|inquirer.com|investing.com|lodgecastiron.com|tentree.ca
 @@||googletagmanager.com/gtag/js$script,domain=academy.com|acornonline.com|aliexpress.com|carhartt-wip.com|cbslocal.com|devclass.com|ejgiftcards.com|herculesstands.com|honeystinger.com|kawasaki.com|liene-life.com|livongo.com|m.putlocker.how|mediaite.com|montcopa.org|schwab.com|toptal.com|virginplus.ca|winefolly.com
 @@||googletagmanager.com/gtag/js$script,domain=dholic.co.jp|game.anymanager.io|nihontsushin.com|zf1.tohoku-epco.co.jp
-@@||googletagmanager.com/gtag/js$script,domain=radiosarajevo.ba
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|aliexpress.com|atptour.com|axeptio.eu|backcountry.com|binglee.com.au|bsa-whitelabel.com|bybit.com|bybitglobal.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|coolermaster.com|crello.com|cyclingnews.com|cypress.io|dmv.ca.gov|doodle.com|dropps.com|easternbank.com|edwardjones.com|elnuevodia.com|ergotron.com|expressvpn.com|festoolusa.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|herculesstands.com|independent.co.uk|jn.pt|kedronparkhotel.com.au|konami.com|lecker.de|level.travel|mcgeeandco.com|mercell.com|montcopa.org|mysmartprice.com|nflgamepass.com|nielsendodgechryslerjeepram.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|royalbank.com|runescape.com|scotsman.com|soranews24.com|soundguys.com|stressless.com|support.creative.com|swarajyamag.com|talent.lowes.com|theretrofitsource.com|trademe.co.nz|tumi.com|uclabruins.com|uniqlo.com|upwork.com|uqr.to|zennioptical.com|zinio.com
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|aliexpress.com|atptour.com|axeptio.eu|backcountry.com|binglee.com.au|bsa-whitelabel.com|bybit.com|bybitglobal.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|coolermaster.com|crello.com|cyclingnews.com|cypress.io|dmv.ca.gov|doodle.com|dropps.com|easternbank.com|edwardjones.com|elnuevodia.com|ergotron.com|expressvpn.com|festoolusa.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|herculesstands.com|houseofbilocca.com|independent.co.uk|jn.pt|kedronparkhotel.com.au|konami.com|lecker.de|level.travel|mcgeeandco.com|mercell.com|montcopa.org|mysmartprice.com|nflgamepass.com|nielsendodgechryslerjeepram.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|royalbank.com|runescape.com|scotsman.com|soranews24.com|soundguys.com|stressless.com|support.creative.com|swarajyamag.com|talent.lowes.com|theretrofitsource.com|trademe.co.nz|tumi.com|uclabruins.com|uniqlo.com|upwork.com|uqr.to|zennioptical.com|zinio.com
 @@||googletagmanager.com/gtm.js$domain=autobild.de|betten.de|bunte.de|computerbild.de|finanzen.at|finanzen.net|focus.de|freenet-funk.de|idealo.at|idealo.de|karriere.at|oetker-shop.de|radiorur.de|rtl.de|saturn.at|spektrum.de|sport1.de|swb.de|vip.de|vox.de
 @@||googletagmanager.com/gtm.js$domain=besplatka.ua|cdek.ru|glamusha.ru|rustih.ru|sportmaster.ru|teddyfood.com|tribuna.com
 @@||googletagmanager.com/gtm.js$domain=casa.it|eprice.it|euronics.it|iphoneitalia.com|la7.it|lastampa.it|savethechildren.it|unieuro.it|video.repubblica.it
 @@||googletagmanager.com/gtm.js$domain=insiderstore.com.br|netcombo.com.br|odia.ig.com.br|saraiva.com.br|superesportes.com.br|topper.com.br|tugatech.com.pt
+@@||googletagmanager.com/gtm.js$domain=toyota-forklifts.se|tradera.com|xxl.se
 @@||googletagmanager.com/gtm.js$script,domain=animeanime.jp|anond.hatelabo.jp|benesse-style-care.co.jp|book.impress.co.jp|carcareplus.jp|cinemacafe.net|cmoa.jp|cyclestyle.net|dengekionline.com|dholic.co.jp|dlsite.com|gamebusiness.jp|gamespark.jp|hatenacorp.jp|inside-games.jp|junonline.jp|kakuyomu.jp|mainichi.jp|makitani.net|mangaseek.net|mycar-life.com|nap-camp.com|newscafe.ne.jp|nicovideo.jp|nihontsushin.com|okwave.jp|onlineshop.ocn.ne.jp|radiko.jp|rbbtoday.com|reanimal.jp|resemom.jp|response.jp|rocketnews24.com|sanwacompany.co.jp|scan.netsecurity.ne.jp|spyder7.com|stage.parco.jp|type.jp|viviennewestwood-tokyo.com|wowma.jp|ymobile.jp|youpouch.com|zakzak.co.jp|zf1.tohoku-epco.co.jp|zozo.jp
 @@||googletagmanager.com/gtm.js$script,domain=arvopaperi.fi|cdon.fi|como.fi|episodi.fi|fum.fi|hobbyhall.fi|iltalehti.fi|inferno.fi|mediuutiset.fi|mikrobitti.fi|rumba.fi|soundi.fi|talouselama.fi|tekniikkatalous.fi|tilt.fi|tivi.fi|veho.fi|www.kauppalehti.fi|www.uusisuomi.fi
 @@||googletagmanager.com/gtm.js$script,domain=beterbed.nl|finanzen.ch|hostingvergelijker.nl|mediamarkt.nl
@@ -2413,7 +2414,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||googletagmanager.com/gtm.js$script,domain=vtvgo.vn
 @@||googletagmanager.com/gtm.js?$domain=autorevue.cz|e15.cz|mobilmania.cz|zive.cz
 @@||googletagmanager.com/gtm.js?$domain=journaldunet.com
-@@||googletagmanager.com/gtm.js?id=$domain=tradera.com|xxl.se
 @@||googletagservices.com/tag/js/gpt.js$domain=fukuishimbun.co.jp
 @@||groupbycloud.com/gb-tracker-client-4.min.js$domain=lacomer.com.mx
 @@||gs.statcounter.com/chart.php$script,third-party
@@ -2826,7 +2826,6 @@ cgi-bin/counter
 ||bdg.com/event?
 ||behance.net/v2/an/pv
 ||berliner-stadtplan.com/t.gif
-||bestcontactform.com^$~image,third-party
 ||bhphotovideo.com/aperture/client/logs
 ||bhphotovideo.com/aperture/shared/js/dataLayer.js
 ||bing.com/fd/ls/GLinkPing.aspx?
@@ -3062,6 +3061,7 @@ cgi-bin/counter
 ||error.fc2.com/blog/$image
 ||estore.jp/beacon/
 ||etsy.com/bcn/beacon
+||euro.com.pl/log-customer-visit
 ||events.release.narrativ.com^$subdocument,xmlhttprequest
 ||everyaction.com/v1/Track/
 ||evidon.com/pub/
@@ -3189,7 +3189,6 @@ cgi-bin/counter
 ||googleapis.com^*/gen_204?
 ||googletagmanager.com/gtm.js?$third-party,domain=gamestar.de
 ||googleusercontent.com/tracker/
-||gowatchit.com/analytics.js
 ||grabify.link/api/js
 ||groove.so/unlocker.js
 ||groupon.com/analytic/
@@ -3218,7 +3217,6 @@ cgi-bin/counter
 ||horizont.net/stats/
 ||hostingcloud.party
 ||hostingcloud.racing
-||hotels.com/trvl-px/
 ||houzz.com/hsc/aetrk/
 ||hqq.tv/cdn-cgi/trace
 ||hrzn-nxt.com/pxl?
@@ -3448,7 +3446,6 @@ cgi-bin/counter
 ||musvc2.net/e/c?
 ||myanimelist.net/static/logging.html
 ||myfinance.com/widget/
-||mymetal.ru/counter/
 ||myprivacy.dpgmedia.net/audits
 ||myspace.com/beacon/
 ||myvisualiq.net^$image,script,third-party
@@ -3471,6 +3468,7 @@ cgi-bin/counter
 ||netease.com/track/
 ||netease.com/web/performance?
 ||netflix.com/msl/playapi/cadmium/logblob/
+||netreviews.eu/index.php?action=act_access&$third-party
 ||netuplayer.top/cdn-cgi/trace
 ||netzwelt.de/log?
 ||newser.com/utility.aspx?
@@ -3718,6 +3716,7 @@ cgi-bin/counter
 ||schemaapp.com/pagecount
 ||sciencex.com/api/location/
 ||scorecardresearch.com^$domain=gamestar.de
+||scout.salesloft.com/r?tid=
 ||scribd.com^*/events
 ||sdiapi.com/reporter/
 ||search.brave.com/api/feedback$~third-party
@@ -3830,6 +3829,7 @@ cgi-bin/counter
 ||storage.googleapis.com/tm-frend-graffiti/
 ||streamadblocker.com/stat/
 ||streamadblocker.store/stat/
+||streamta.pe/stat/
 ||streamtape.com/stat/
 ||streamtheworld.com/imp?
 ||stripchat.com/pixel/
@@ -4031,6 +4031,7 @@ cgi-bin/counter
 ||wc4.net^$image,third-party
 ||wccftech.com/cnt7vfDVvWa3.js
 ||web.de/monitoring/
+||web.whatsapp.com/wam
 ||webedia.fr/js/gs.js
 ||webengage.sky.com^$xmlhttprequest
 ||webgozar.com/c.aspx*&t=counter
@@ -4053,6 +4054,7 @@ cgi-bin/counter
 ||whattomine.com/stats
 ||wheregoes.com/api/event
 ||whois.com/js/gtmDataLayer.js
+||widgeo.net/compteur.php?
 ||widgeo.net/geocompteur/
 ||widgeo.net/hitparade.php
 ||widgeo.net/tracking.php?
