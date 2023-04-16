@@ -8,6 +8,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 &EventType=Impression&
 &action=js_stats&
 &action=js_stats_
+&ev=PageView&
 &event=view&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com|~jobscore.com
 &mi_ecmp=
@@ -34,7 +35,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 -google-analytics-$script,domain=~wordpress.org
 -google-analytics.
 -google-analytics/$domain=~wordpress.org
--landing-tracking-
 -logging.nextmedia.com^
 -monero-miner-
 -monero-miner/
@@ -94,7 +94,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 .informz.net/z/$image
 .intercom-mail.com/via/$image
 .inxserver.com/transparent.gif
-.io/track?
 .keap-link003.com/$image
 .keap-link005.com/$image
 .keap-link006.com/$image
@@ -202,7 +201,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /GAInit.js|
 /GARecord^
 /GlanceCobrowseLoader_
-/Google/ga.js
 /GoogleAdnalyticsJs?
 /GoogleAnalyticActionLib.
 /HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
@@ -304,6 +302,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /acecounter_
 /action/analytics
 /ad/statistic
+/adb-analytics
 /adb1.gif?
 /addLinkerEvents.js
 /addon/analytics/*
@@ -351,10 +350,10 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /alweb.rfk.
 /amazon-affiliate-
 /amp-analytics-
+/amp-analytics/*
 /amp-call-tracking-
 /amp-skimlinks-
 /amp-story-auto-analytics-
-/amp.gif?
 /amp/analytics
 /amp/pingback?
 /amptrack.
@@ -503,6 +502,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /aspenanalytics.
 /assets/analytics-
 /assets/analytics.
+/assets/beacons.js
 /assignments/impressions
 /astrack.js
 /async~sentry-
@@ -685,9 +685,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /cnt.js
 /cnt.php?id=
 /cnt.php?rf=
-/cnt/start.php?
 /cntlog/*
-/coAnalytics.
 /cohesion-latest.
 /coinhive.min.js
 /collect.gif?
@@ -959,7 +957,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /frontend-gtag.
 /frontend-sentry-
 /frosmo.easy.js
-/frtrack.
 /fusion/lucid/data/*
 /ga-audiences?
 /ga-events.js
@@ -1188,7 +1185,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /kameleoon.js
 /kameleoon/script.
 /keen-tracker.
-/keen-tracking-
 /keen-tracking.
 /keen.min.js
 /keypress.js$script
@@ -1319,6 +1315,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /metrica/sp.js
 /metrics/event?
 /metrics/metrics$domain=~docs.datadoghq.com|~spatineo.com
+/metrics/ping?
 /metrics/rum
 /metrics/statsd/*
 /metrics/v1/frontend/*
@@ -1493,6 +1490,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /pixel.track
 /pixel/?random_number=
 /pixel/email/*$image
+/pixel/impression/*
 /pixel/js/*$third-party
 /pixel/sbs?
 /pixel/stats/?
@@ -1675,7 +1673,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
 /sentry-browser.
-/sentry-logger.js
 /sentry.unit-
 /server.php?request=track&output=
 /service/metrics/*
@@ -1860,7 +1857,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /torimochi.js
 /tp.gif?
 /tr.gif?
-/tr/pageview/*
 /trace-Update.php?
 /trace/record?
 /traces.php?
@@ -1949,6 +1945,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 /tracking.php?id
 /tracking.png?
 /tracking.srv2.de/op/*$image
+/tracking/adobe/*
 /tracking/airdog
 /tracking/analytics/*
 /tracking/article/*
@@ -2345,6 +2342,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d2r1yp2w7bby2u.cloudfront.net^$domain=sonyliv.com
 @@||d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js$script,domain=einthusan.tv|tlk.io
+@@||d2wy8f7a9ursnm.cloudfront.net^$script,domain=staples.ca
 @@||d2zv6vzmaqao5e.cloudfront.net/css/foodticket/*_google_analytics.js
 @@||datadoghq-browser-agent.com/datadog-$script,domain=bbcgoodfood.com|dashboard.getdriven.app|usa.experian.com
 @@||dcard.docomo.ne.jp/st/common/js/googleTagManager.js
@@ -2406,7 +2404,7 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||googleoptimize.com/optimize.js$script,domain=binglee.com.au|inquirer.com|investing.com|lodgecastiron.com|tentree.ca|virginmedia.com
 @@||googletagmanager.com/gtag/js$script,domain=academy.com|acornonline.com|aliexpress.com|carhartt-wip.com|cbslocal.com|devclass.com|ejgiftcards.com|herculesstands.com|honeystinger.com|kawasaki.com|liene-life.com|livongo.com|m.putlocker.how|mediaite.com|montcopa.org|schwab.com|toptal.com|virginplus.ca|winefolly.com
 @@||googletagmanager.com/gtag/js$script,domain=dholic.co.jp|game.anymanager.io|nihontsushin.com|zf1.tohoku-epco.co.jp
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|aliexpress.com|atptour.com|axeptio.eu|backcountry.com|binglee.com.au|bsa-whitelabel.com|bybit.com|bybitglobal.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|coolermaster.com|crello.com|cyclingnews.com|cypress.io|dmv.ca.gov|doodle.com|dropps.com|easternbank.com|edwardjones.com|elnuevodia.com|ergotron.com|expressvpn.com|festoolusa.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|herculesstands.com|houseofbilocca.com|independent.co.uk|jn.pt|kedronparkhotel.com.au|konami.com|lecker.de|level.travel|mcgeeandco.com|mercell.com|montcopa.org|mysmartprice.com|nflgamepass.com|nielsendodgechryslerjeepram.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|royalbank.com|runescape.com|scotsman.com|soranews24.com|soundguys.com|stressless.com|support.creative.com|swarajyamag.com|talent.lowes.com|theretrofitsource.com|trademe.co.nz|tumi.com|uclabruins.com|uniqlo.com|upwork.com|uqr.to|zennioptical.com|zinio.com
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|aliexpress.com|atptour.com|axeptio.eu|backcountry.com|binglee.com.au|bsa-whitelabel.com|bybit.com|bybitglobal.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|coolermaster.com|crello.com|cyclingnews.com|cypress.io|dmv.ca.gov|doodle.com|dropps.com|easternbank.com|edwardjones.com|elnuevodia.com|ergotron.com|expressvpn.com|festoolusa.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|herculesstands.com|houseofbilocca.com|independent.co.uk|jn.pt|kedronparkhotel.com.au|konami.com|lecker.de|level.travel|luko.eu|mcgeeandco.com|mercell.com|montcopa.org|mysmartprice.com|nflgamepass.com|nielsendodgechryslerjeepram.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|royalbank.com|runescape.com|scotsman.com|soranews24.com|soundguys.com|stressless.com|support.creative.com|swarajyamag.com|talent.lowes.com|theretrofitsource.com|trademe.co.nz|tumi.com|uclabruins.com|uniqlo.com|upwork.com|uqr.to|zennioptical.com|zinio.com
 @@||googletagmanager.com/gtm.js$domain=autobild.de|betten.de|bunte.de|computerbild.de|finanzen.at|finanzen.net|focus.de|freenet-funk.de|idealo.at|idealo.de|karriere.at|oetker-shop.de|radiorur.de|rtl.de|saturn.at|spektrum.de|sport1.de|swb.de|vip.de|vox.de
 @@||googletagmanager.com/gtm.js$domain=besplatka.ua|cdek.ru|glamusha.ru|rustih.ru|sportmaster.ru|teddyfood.com|tribuna.com
 @@||googletagmanager.com/gtm.js$domain=casa.it|eprice.it|euronics.it|iphoneitalia.com|la7.it|lastampa.it|savethechildren.it|unieuro.it|video.repubblica.it
@@ -2465,7 +2463,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||live.bbc.co.uk^*/comscore.js$~third-party
 @@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
 @@||logo.clearbit.com^$image,third-party
-@@||lzstatic.com^*/gdpr/consentHandler/optimizely.js$domain=ladenzeile.de
 @@||mabanque.fortuneo.fr/js/front/fingerprint2.js$script,domain=mabanque.fortuneo.fr
 @@||mat.socy.es^$script,xmlhttprequest,domain=3djuegosguias.com|3djuegospc.com|applesfera.com|compradiccion.com|directoalpaladar.com|espinof.com|genbeta.com|poprosa.com|trendencias.com|trendenciashombre.com|vidaextra.com|vitonica.com|xatakamovil.com
 @@||matomo.miraheze.org/matomo.js$script,~third-party
@@ -2488,7 +2485,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||mxpnl.com^$domain=mixpanel.com
 @@||mycourses.pearson.com/shared/static/*/component/ga.min.js$~third-party
 @@||natureetdecouvertes.com^*/pixel.png$~third-party
-@@||nelonenmedia.fi/logger/logger-ini.json$xmlhttprequest,domain=embed.sanoma-sndp.fi|supla.fi
 @@||new.abb.com/ruxitagentjs_$~third-party
 @@||nike.com/assets/measure/data-capture/analytics-client.min.js$script,~third-party
 @@||nike.com^*/optimizely.browser.umd.min.js$~third-party
@@ -2502,7 +2498,6 @@ $xmlhttprequest,domain=flashx.cc|nowvideo.sx|povw1deo.com|powvideo.net|sleeptime
 @@||officedepot.com.mx/_ui/shared/js/analyticsmediator.js$~third-party
 @@||omns.americanexpress.com/b/ss/
 @@||omtrdc.net/rest/$xmlhttprequest
-@@||online-metrix.net^$script,domain=eki-net.com
 @@||online.mps-gba.de/praeludium/$script,domain=auto-motor-und-sport.de|caravaning.de|motorradonline.de
 @@||optimizely.com/datafiles/$domain=guildeducation.com|hm.com|nike.com|printify.me|talktalk.co.uk|tommy.com|wallapop.com
 @@||optimizely.com^$script,domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
@@ -2861,6 +2856,7 @@ cgi-bin/counter
 ||bitrix.info/bx_stat
 ||blend.com/event/
 ||bloomberg.com/8FCGYgk4/init.js
+||bnamic.com/referrer/
 ||booking.com/c360/v1/track
 ||booking.com/collector/
 ||booking.com/logo?
@@ -3225,6 +3221,7 @@ cgi-bin/counter
 ||groupondata.com/tracky
 ||gstatic.com/gen_204?
 ||gstatic.com/wcm/loader.js
+||gubagoo.io/c/$image
 ||halifax-online.co.uk/scripts/16c9d93d/
 ||harryrosen.com/analytics/
 ||hbo.com/events/
@@ -3857,6 +3854,7 @@ cgi-bin/counter
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
 ||ss.lv/counter/
 ||stackshare.io/analytics.
+||staff-start.com/js/track
 ||start.ru/logger/
 ||startpage.com/sp/$ping
 ||startpage.com/sp/jst
@@ -3891,7 +3889,6 @@ cgi-bin/counter
 ||surveymonkey.com/resp/api/metrics
 ||suumo.jp^*/tag/
 ||svc.dynamics.com/f/m/$third-party
-||svc.dynamics.com/t/w$third-party
 ||swarm.video/stats/
 ||sweetwater.com/p2TBVNJZ/init.js
 ||swiftypecdn.com/cc.js$third-party
@@ -4048,7 +4045,6 @@ cgi-bin/counter
 ||vizcloud.co/ping/
 ||vk.com/js/lib/px.js
 ||vk.com/rtrg?
-||vo.msecnd.net/api/beYableJSv2.js
 ||vrbo.com/pdp/logger?
 ||vsco.co/api/cantor/track
 ||vtex.com.br/rc/rc.js
