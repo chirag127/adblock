@@ -13,11 +13,12 @@ def get_rules(url):
     :param url: The url of the rules.
     :return: A list of rules.
     """
-    response = requests.get(url,timeout=10)
+    response = requests.get(url, timeout=10)
     if response.status_code == 200:
         return response.text.splitlines()
     else:
         raise Exception("Something went wrong while getting the rules")
+
 
 def remove_domains(rules_list: List[str]) -> List[str]:
     """
@@ -26,17 +27,16 @@ def remove_domains(rules_list: List[str]) -> List[str]:
     :return: A list of rules without domains.
     """
 
+    # or rule.endswith("^$third-party")
+
     new_rules_list = []
     for rule in rules_list:
-        if (
-            rule.startswith("||")
-            and (rule.endswith("^") or rule.endswith("^$third-party"))
-            or rule.startswith("!")
-        ):
+        if (rule.startswith("||") and (rule.endswith("^"))) or rule.startswith("!"):
             pass
         else:
             new_rules_list.append(rule)
     return new_rules_list
+
 
 def remove_duplicates(rules_list: list) -> list:
     """
@@ -45,6 +45,7 @@ def remove_duplicates(rules_list: list) -> list:
     :return: A list of rules without duplicates.
     """
     return list(set(rules_list))
+
 
 def sort_list(rules_list: list) -> list:
     """
@@ -56,9 +57,11 @@ def sort_list(rules_list: list) -> list:
     rules_list.sort()
     return rules_list
 
+
 def save_rules(name: str, rules_list: list) -> None:
     with open(f"without_domains/{name}.txt", "w", encoding="utf8") as f:
         f.write("\n".join(rules_list))
+
 
 def main() -> None:
     """
@@ -67,7 +70,7 @@ def main() -> None:
     :return: None
     """
 
-    adguard_registry : str = (
+    adguard_registry: str = (
         "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/"
     )
     urls: Dict[str, str] = {
@@ -76,6 +79,8 @@ def main() -> None:
         "AdGuard annoyances": adguard_registry + "filter_14_Annoyances/filter.txt",
         "easyprivacy": "https://filters.adtidy.org/extension/ublock"
         + "/filters/118_optimized.txt",
+        "bpc-paywall-filter": "https://gitlab.com/magnolia1234/"
+        + "bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt",
     }
 
     for name, url in urls.items():
@@ -84,6 +89,7 @@ def main() -> None:
         rules_list: List[str] = remove_duplicates(rules_list)
         rules_list: List[str] = sort_list(rules_list)
         save_rules(name, rules_list)
+
 
 if __name__ == "__main__":
     main()
