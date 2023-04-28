@@ -16,8 +16,6 @@ def get_rules(url):
     response = requests.get(url, timeout=10)
     if response.status_code == 200:
         return response.text.splitlines()
-    else:
-        raise Exception("Something went wrong while getting the rules")
 
 
 def remove_domains(rules_list: List[str]) -> List[str]:
@@ -59,8 +57,15 @@ def sort_list(rules_list: list) -> list:
 
 
 def save_rules(name: str, rules_list: list) -> None:
-    with open(f"without_domains/{name}.txt", "w", encoding="utf8") as f:
-        f.write("\n".join(rules_list))
+    """
+    Save the rules in a file.
+    :param name: The name of the file.
+    :param rules_list: A list of rules.
+    :return: None
+    """
+
+    with open(f"without_domains/{name}.txt", "w", encoding="utf8") as file:
+        file.write("\n".join(rules_list))
 
 
 def main() -> None:
