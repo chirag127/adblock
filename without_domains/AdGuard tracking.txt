@@ -221,6 +221,7 @@ $cookie=device_uuid
 $cookie=dextp
 $cookie=dfp_user_id,domain=olx.ro|olx.kz|olx.pl|olx.pt|olx.ua|olx.uz|olx.in|olx.com
 $cookie=disqus_unique
+$cookie=dmvk
 $cookie=dst
 $cookie=dtCookie
 $cookie=dtPC
@@ -284,6 +285,7 @@ $cookie=rxVisitor
 $cookie=s_cc
 $cookie=s_ecid
 $cookie=s_fid
+$cookie=s_invisit
 $cookie=s_lastvisit
 $cookie=s_lastvisit_s
 $cookie=s_nr
@@ -291,6 +293,7 @@ $cookie=s_pltp
 $cookie=s_ppv
 $cookie=s_sq
 $cookie=s_vi
+$cookie=s_vnum
 $cookie=sa31,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
 $cookie=sbjs_current
 $cookie=sbjs_current_add
@@ -331,6 +334,8 @@ $cookie=tuuid
 $cookie=tuuid_lu
 $cookie=uid,domain=motor.ru|quto.ru
 $cookie=utag_main
+$cookie=v1st
+$cookie=v1st_dm
 $cookie=vocuser_uuid,domain=ideal.es|elcorreo.com
 $cookie=waldo_continent
 $cookie=waldo_country
@@ -1262,6 +1267,7 @@ $cookie=yTrackVisit
 @@||cdn.optimizely.com/js/3148790251.js$domain=shopsmarter.com
 @@||cdn.optimizely.com/js/8143030612.js$domain=bestbuy.com
 @@||cdn.optimizely.com/public/$script,domain=nytimes.com
+@@||cdn.permutive.app/*-web.js$domain=theglobeandmail.com
 @@||cdn.permutive.com/*-web.js$domain=independent.co.uk
 @@||cdn.personaclick.com^$domain=koctas.com.tr
 @@||cdn.petametrics.com/*.js$domain=lanacion.com.ar
@@ -2554,7 +2560,7 @@ $cookie=yTrackVisit
 @@||piwik.windit.de/piwik.js$domain=livespotting.tv
 @@||pix04.revsci.net/E05510/a4/0/0/pcx.js?$domain=video.foxbusiness.com
 @@||pix04.revsci.net^*.js?$domain=t-online.de
-@@||pix2.services.tvn.pl/pix2.js$domain=tvn24.pl|ttv.pl
+@@||pix2.services.tvn.pl/pix2.js$domain=tvn24.pl|ttv.pl|tvnturbo.pl
 @@||pixel.facebook.com/ajax/gigaboxx/endpoint/UpdateLastSeenTime.php?$image
 @@||pixel.facebook.com/ajax/notifications/mark_read.php?*&alert_ids%$image
 @@||pixel.facebook.com^$domain=pixel.facebook.com
@@ -3383,8 +3389,10 @@ track.email.stackcommerce.com/q/$image
 track.mixmax.com/api$image
 trackedlink.net$image
 tracking.cirrusinsight.com$image
-ttv.pl,tvn24.pl#%#(function(){window.__pix2={event:function(){},track:function(){}}})();
-ttv.pl,tvn24.pl#%#//scriptlet("set-constant", "gemiusStream", "noopFunc")
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2', 'emptyObj')
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2.event', 'noopFunc')
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2.track', 'noopFunc')
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', 'gemiusStream', 'noopFunc')
 tweakers.net#%#//scriptlet('abort-current-inline-script', 'AbStats', 'trackId')
 tweakers.net#%#//scriptlet('abort-on-property-read', 'GlobalSnowplowNamespace')
 tweakers.net#%#//scriptlet('abort-on-property-read', 'snowplow')
@@ -4128,7 +4136,7 @@ znak.com##.relap
 ||assets-jpcust.jwpsrv.com/*/ping.js
 ||assets-prod.sumo.prod.webservices.mozgcp.net/static/gtm-snippet.
 ||assets.adobedtm.com^$app=com.aa.android
-||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz
+||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com
 ||assets.adsttc.com/insights/form-funnel.min.js
 ||assets.adsttc.com/insights/tracker.js
 ||assets.alicdn.com/g/alilog/aplus_plugin_xwj/index.js
@@ -4714,6 +4722,7 @@ znak.com##.relap
 ||cdn.optimizely.com^$redirect=nooptext,domain=alaskaair.com
 ||cdn.panelbear.com/analytics.js
 ||cdn.pdst.fm/ping.min.js
+||cdn.permutive.app/*-web.js$script,redirect=noopjs,domain=theglobeandmail.com
 ||cdn.pmweb.com.br/df/tag.js
 ||cdn.preciso.net^$third-party
 ||cdn.privacy-mgmt.com/wrapper/metrics$important
@@ -7361,6 +7370,7 @@ znak.com##.relap
 ||logger.co.kr^$third-party
 ||logger.danawa.com/tracker
 ||logger.pw^$third-party
+||login.dognet.sk/scripts/*?visitorId=
 ||login.eki-net.com^$badfilter
 ||login.yahoo.com/config/loga?pad=
 ||lognormal.net^$third-party
@@ -7720,6 +7730,7 @@ znak.com##.relap
 ||moviefone.com/click?
 ||moviefone.com/ping?
 ||moviepilot.de/assets/autotrack
+||movieweb.com/strpixel.png
 ||mowfruit.com^$third-party
 ||mozilla.org/media/js/firefox_new_pixel.
 ||mp3king.club^$third-party
@@ -7935,6 +7946,7 @@ znak.com##.relap
 ||niadd.com^$cookie=protocol_country_code
 ||nice264.com/data?$third-party
 ||nicovideo.jp/*/user/actions/video/watch-events.json?
+||nicovideo.jp/*/user/actions/watch-events/nonmember.json?
 ||nicovideo.jp/api/tkas_video_impression
 ||niftyhospital.com^$third-party
 ||niftyjelly.com^$third-party
@@ -7977,6 +7989,7 @@ znak.com##.relap
 ||nr7.us^$third-party
 ||nrich.ai^$third-party
 ||ns1p.net^$third-party
+||nsandi.com/sites/all/themes/nsandi/js/webtrends_multitrack.js
 ||nsaudience.pl^$third-party
 ||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js$script,redirect=noopjs
 ||nstracking.com^$third-party
@@ -9100,7 +9113,7 @@ znak.com##.relap
 ||secure.agoda.com/pixel.gif
 ||secure.booking.com/email_opened_tracking_pixel
 ||securepaths.com^$third-party
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg
 ||secureserver.net/t/
 ||securestudies.com^$third-party
 ||sedotracker.com^$third-party
@@ -10974,6 +10987,7 @@ znak.com##.relap
 ||xlisting.jp^$third-party
 ||xn--pckua2a7gp15o89zb.com/api/tracking.js
 ||xovq5nemr.com^$third-party
+||xozilla.xxx/static/js/analytics.*.js
 ||xpanama.net^$third-party
 ||xplosion.de^$third-party
 ||xref.io^$third-party
