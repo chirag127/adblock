@@ -56,9 +56,9 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 .mjt.lu/oo/$image
 .php?action_name=
 .php?p=stats&
+.php?ping=
 .sendibm1.com/mk/
 .skimlinks.js
-.smtp.net/o/$image
 .snowplowanalytics.$domain=~snowplowanalytics.com
 .sparkpostmail.com/q/$image
 .spmailtechnol.com/q/$image
@@ -136,10 +136,11 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /VisitorIdentification.js
 /WebAnalytics.$domain=~webanalytics.italia.it
 /Web_JS_Stats.
-/^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
+/^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=kleinanzeigen.de
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 /^https?:\/\/src\.ebay-us\.com\/[_a-zA-Z0-9]{10,}\?/$script,domain=pages.ebay.com
 /^https?:\/\/tmx\.(td|tdbank)\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com|tdbank.com
+/^https?:\/\/www\.ebay-kleinanzeigen\.de\/[a-z0-9]{8}\-[0-9a-f]{4}\-/$script,domain=kleinanzeigen.de
 /_/api/v2/analytics/?
 /_/trace/trace/*
 /__imp_apg__/*
@@ -868,6 +869,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /stats.wp.com/*
 /stats/?rt=
 /stats/CounterPage.
+/stats/collector.js
 /stats/footer.
 /stats/impression
 /stats/pageview
@@ -1393,7 +1395,7 @@ _webanalytics.
 |http://r.i.ua^
 |https://r.i.ua^
 ||123count.com^$third-party
-||127.0.0.1^$third-party,domain=53.com|ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay-kleinanzeigen.de|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|lendup.com|mbna.ca|rusneb.ru|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
+||127.0.0.1^$third-party,domain=53.com|ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|kleinanzeigen.de|lendup.com|mbna.ca|rusneb.ru|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
 ||1337x.to/ip3.php
 ||163.com/sn.gif?
 ||17173.com/ping.js
@@ -2064,6 +2066,7 @@ _webanalytics.
 ||dynatrace-managed.com^$third-party
 ||dynatrace.com^$third-party,domain=~dynatracelabs.com
 ||dyntrk.com^$third-party
+||e-click.jp^$third-party
 ||e-contenta.com^$third-party
 ||e-pagerank.net^$third-party
 ||e-referrer.com^$third-party
@@ -2483,6 +2486,7 @@ _webanalytics.
 ||instapagemetrics.com^$third-party
 ||instreamatic.com^$third-party
 ||intelliad.de^$third-party
+||intelligems.io/track
 ||intellimize.co^$third-party
 ||interactive-circle.jp^$third-party
 ||intergient.com^$third-party
@@ -2842,6 +2846,7 @@ _webanalytics.
 ||nexstardigital.net/segment.js
 ||nextdoor.com/events/
 ||nextstat.com^$third-party
+||nfcube.com/assets/img/pixel.gif
 ||ngacm.com^$third-party
 ||ngastatic.com^$third-party
 ||nice264.com/data?$third-party
@@ -2925,6 +2930,7 @@ _webanalytics.
 ||otclick-adv.ru^$third-party
 ||otto.de/error-logging/
 ||otto.de^$ping
+||overstock.com/dlp?
 ||owldata.com^$third-party
 ||ownpage.fr^$third-party
 ||p.ctpost.com/article?
@@ -3050,6 +3056,7 @@ _webanalytics.
 ||ptengine.cn^$third-party
 ||ptengine.com^$third-party
 ||ptengine.jp^$third-party
+||ptztvpremium.com^$third-party
 ||pubdream.com^$third-party
 ||pubexchange.com^$third-party
 ||public.cobrowse.oraclecloud.com/rely/storage/
@@ -3348,6 +3355,7 @@ _webanalytics.
 ||site24x7rum.com^$third-party
 ||siteapps.com^$third-party
 ||sitebro.com^$third-party
+||sitebro.tw^$third-party
 ||sitefinity.com/collect/
 ||siteimprove.com^$third-party
 ||siteimproveanalytics.com^$third-party
@@ -3463,6 +3471,8 @@ _webanalytics.
 ||stockx.com/16uD0kOF/init.js
 ||storage.googleapis.com/rasin/*/hm.js
 ||stormiq.com^$third-party
+||streamoptim.com/log.js
+||streamoptim.com/log/report?
 ||streeteasy.com/cZdhF737/init.js
 ||stripchat.com/pixel/
 ||stripe.com/?event=
@@ -3777,6 +3787,7 @@ _webanalytics.
 ||watchonlinehd123.sbs/cdn-cgi/trace
 ||waudit.cz^$third-party
 ||waust.at^$third-party
+||way2traffic.com^$third-party
 ||wbtrk.net^$third-party
 ||wc.yahoodns.net^$image
 ||wcfbc.net^$third-party
@@ -3896,6 +3907,7 @@ _webanalytics.
 ||yahoo.com/_td_api/beacon/
 ||yahoo.com/beacon/
 ||yahoo.com/beacon?
+||yahoo.com/sync/casale/
 ||yahoo.net/pixel.gif
 ||yandex.*/clck/$~ping
 ||yandex.*/count/
