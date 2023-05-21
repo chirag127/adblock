@@ -230,7 +230,7 @@ nautil.us##+js(cookie-remover, /^(arc|sfa)$/)
 newrepublic.com##div.article-scheduled-modal
 newsday.com##+js(ra, class, html[class])
 nrc.nl##+js(cookie-remover, counter)
-nrc.nl##[id$="modal__overlay"],.header__subscribe-bar,.banner,div#shepherd-steps-container
+nrc.nl##div[id$="modal__overlay"],div.header__subscribe-bar,div.banner
 nu.nl##+js(rc, authorized-content, div.authorized-content)
 nu.nl##.login-wall
 nw.de##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
@@ -239,6 +239,7 @@ nwzonline.de,shz.de,svz.de##+js(ra, amp-access-hide, [amp-access][amp-access-hid
 nybooks.com##+js(rc, paywall-article, .paywall-article)
 nybooks.com##div.toast-cta
 nyteknik.se##+js(rc, locked-article, div.locked-article)
+nytimes.com##+js(json-prune, data.user)
 nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div.expanded-dock
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
 onet.pl##+js(cookie-remover, /xbc/)
