@@ -295,10 +295,14 @@ $cookie=s_fid
 $cookie=s_invisit
 $cookie=s_lastvisit
 $cookie=s_lastvisit_s
+$cookie=s_lv
+$cookie=s_lv_s
 $cookie=s_nr
 $cookie=s_pltp
+$cookie=s_ppn
 $cookie=s_ppv
 $cookie=s_sq
+$cookie=s_tp
 $cookie=s_vi
 $cookie=s_vnum
 $cookie=sa31,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
@@ -1458,6 +1462,7 @@ $cookie=yTrackVisit
 @@||datadoghq-browser-agent.com/datadog-logs-v*.js$domain=radiotimes.com
 @@||datadoghq-browser-agent.com/datadog-rum-v*.js$domain=voici.fr|gala.fr
 @@||datadoghq-browser-agent.com/datadog-rum.js$domain=notonthehighstreet.com
+@@||datadoghq-browser-agent.com^$script,domain=hungryroot.com
 @@||datadome.co/js/$xmlhttprequest,domain=sso.garena.com
 @@||datadome.co/tags.js$domain=sso.garena.com
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=fivethirtyeight.com
@@ -1496,7 +1501,6 @@ $cookie=yTrackVisit
 @@||dpm.demdex.net^$app=com.appseleration.android.selfcare
 @@||dpm.zebestof.com/*/tag.js$domain=commentcamarche.net
 @@||dpm.zebestof.com/*/tag.js$domain=sante.journaldesfemmes.fr
-@@||dsb.yahoo.co.jp/api/v1/stream$xmlhttprequest,domain=gyao.yahoo.co.jp
 @@||dtdc.in/tracking^
 @@||dw.cbsi.com/anonc.js$domain=cbs.com
 @@||dw.cbsi.com/anonc.js$domain=cnet.com
@@ -3069,6 +3073,7 @@ _analytics.js?
 _pagespeed_beacon?
 _social_tracking.js^
 _tracking.php?b=
+aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
 abp?type=js&session$domain=prosieben.de|sat1.de|kabeleins.de|sixx.de|prosiebenmaxx.de
 accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback&&a.hitCallback();}
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
@@ -3100,6 +3105,7 @@ auto.ru#%#//scriptlet('set-local-storage-item', 'ludca', '0')
 automesseweb.jp#?##_popIn_ranking:upward(.code_php_in_widget)
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#%#//scriptlet('set-constant', 'ga', 'noopFunc')
 b.kyodo.co.jp##.banner-area-entry + h3.category-title
+bbcgoodfood.com#%#AG_onLoad((function(){const t=document.querySelector('script[src*="/gpt/tag/js/gpt.js"]');if(t)for(let e=0;e<3;e++){const e=document.createElement("script");t.parentNode.insertBefore(e,t)}}));
 bcnretail.com###_popIn_recommend
 beauty.ua##.footer-counters
 biedronka.pl#%#//scriptlet('remove-class', 'async-hide', 'html')
@@ -3177,6 +3183,8 @@ email.mixmax.com/e/o$image
 embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream', 'emptyObj')
 embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream.event', 'noopFunc')
 emltrk.com$image
+ero-anime.net###top_area_under
+ero-anime.net#?##side_col #index_side_widget:has(.ninja-recommend-block)
 espreso.tv##.wrap-footer .counter
 europcar.com###wt_overlay
 exct.net/open.aspx$image
@@ -3188,7 +3196,6 @@ fatcatslim.ru#?#.sidebar > div.widget:has(> div > a[href$="liveinternet.ru/click
 fategrandorder.info##.sidebar_acr.side_inline
 ferra.ru##div[data-widget="plista_widget_belowArticle_desktop_nocss"]+div[class^="_"] > svg
 ferra.ru##div[data-widget="plista_widget_webApp_mobile_nocss"]+div[class^="_"] > svg
-financial-field.com##div[id*="logly-lift-"]
 finders.me##.__popin
 finders.me##.__recommendedPosts
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
@@ -4013,6 +4020,7 @@ znak.com##.relap
 ||api.clerk.io/v*/log/
 ||api.code.com.tr/analytics
 ||api.contentpass.net/analytics
+||api.earthly.dev/analytics|
 ||api.edkt.io/analytics
 ||api.eduki.com/*/track
 ||api.eigene.io/rec/
@@ -4161,7 +4169,7 @@ znak.com##.relap
 ||assets-jpcust.jwpsrv.com/*/ping.js
 ||assets-prod.sumo.prod.webservices.mozgcp.net/static/gtm-snippet.
 ||assets.adobedtm.com^$app=com.aa.android
-||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com
+||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au
 ||assets.adsttc.com/insights/form-funnel.min.js
 ||assets.adsttc.com/insights/tracker.js
 ||assets.alicdn.com/g/alilog/aplus_plugin_xwj/index.js
@@ -4314,6 +4322,7 @@ znak.com##.relap
 ||baynote.net^$third-party
 ||bazaarvoice.com^*/magpie.js
 ||bbc.com/ngas/latest/dotcom-analytics.js
+||bbcgoodfood.com/stitcher-assets/gpt/tag/js/gpt.js$script,redirect=noopjs
 ||bc.thestreet.com/DG/DEFAULT/rest/
 ||bc0a.com/api/
 ||bc0a.com/autopilot/
@@ -5653,6 +5662,7 @@ znak.com##.relap
 ||eanalyzer.de^$third-party
 ||eapi.pcloud.com/loganalyticsevent
 ||early-birds.fr/tracker/
+||earthly.dev/blog/assets/js/analytics.js
 ||earthquakescarf.com^$third-party
 ||earthycopy.com^$third-party
 ||easy-hit-counters.com^$third-party
@@ -7225,6 +7235,7 @@ znak.com##.relap
 ||knowledgevine.net^$third-party
 ||kocaeligazetesi.com.tr/stats/
 ||kodik.cc/stats
+||kodik.info/stats|
 ||komtrack.com^$third-party
 ||kono-research.de^$third-party
 ||kontagent.net^$third-party
@@ -7524,7 +7535,6 @@ znak.com##.relap
 ||marc-o-polo.media01.eu/view.aspx?trackid
 ||marche.onward.co.jp/*/sys/top_adobe_analytics.js
 ||marinsm.com^$third-party
-||mark.isbank.com.tr/cdn/automation.js
 ||markedcrayon.com^$third-party
 ||markedmeasure.com^$third-party
 ||markedpail.com^$third-party
