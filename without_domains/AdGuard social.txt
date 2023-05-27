@@ -1277,6 +1277,7 @@
 [$path=/jc/r]jiji.com##.SnsBtn
 [$path=/maps]google.*#?#div[class][data-js-log-root]:has(> div[class] > button[jsaction^="pane"] > div[jstcache]:contains(Facebook))
 [$path=/maps]google.*#?#div[jslog*="mutable:"] > div[class]:has(> div[class] > button[jsaction^="pane."][jslog$="track:click"] > div[style] > img[src^="//maps.gstatic.com/tactile/share/"])
+[$path=/maps]yandex.*#?#.popup__content > div.options-control__content > div.ugc-reviews-options-view > label.list-item-view:has(> div.list-item-view__content:contains(Поделиться))
 [$path=/plugins]facebook.com#?#body.plugin div.pluginSkinLight div[class][style^="padding-bottom:"] > div[class]:not([id]) div[class]:has(> div + button.accessible_elem:contains(Поделиться))
 _follow_me-b.png
 _social-button-
@@ -1862,6 +1863,8 @@ auto-swiat.pl#$#.onet_ustPlugin_addthis > .box2 { visibility: hidden!important; 
 auto-swiat.pl,komputerswiat.pl##.social-box
 auto.mail.ru##.sharelist__items
 auto.ru##.ButtonShare-module__container
+auto.ru##.ScrollableSidebar > div[class^="PageLogbookCard_"] button[class*="LogbookCardActions__share-"]
+auto.ru#?#.Review__footer-col:has(> div.ReviewShare)
 auto.vesti.ru##a#gbuzz
 auto.vesti.ru##a[href*="liveinternet.ru/journal_post.php?"]
 autobild.de##.socialmediabox > .content
@@ -2374,7 +2377,6 @@ britannica.com##.md-social-toolbar-circle[data-value="share"]
 britannica.com##.toolbar-share[data-popover=".share-popover"]
 brodude.ru##.social__panel-wrapper
 broncos.com.au##body .share-block__list
-browser.yandex.ru##.b-article_yablogs-not-draft__footer
 browserling.com###tool-fffff
 brunch.co.kr##.wrapButtonSocialShare
 brutus.jp##.o-wrapper > div[class^="u-ml"]
@@ -3337,10 +3339,6 @@ discoverskills.com#?#.et_pb_extra_column_sidebar > div.widget_text:has(> div.tex
 discoverychannel.com.tr##.widget_bizi_takip_edin
 discudemy.com##section[class="thirteen wide column"] > div[class="ui attached segment"]:has(> div#shareIconsCounter)
 discuss.com.hk#?#.post-action-group > li:has(> a[onclick] > i.icon-share)
-disk.yandex.az,disk.yandex.by,disk.yandex.co.il,disk.yandex.com,disk.yandex.com.am,disk.yandex.com.ge,disk.yandex.com.tr,disk.yandex.ee,disk.yandex.fr,disk.yandex.kg,disk.yandex.kz,disk.yandex.lt,disk.yandex.lv,disk.yandex.md,disk.yandex.ru,disk.yandex.tj,disk.yandex.tm,disk.yandex.uz,yadi.sk##.share-link-menu__menu-item_type_facebook
-disk.yandex.az,disk.yandex.by,disk.yandex.co.il,disk.yandex.com,disk.yandex.com.am,disk.yandex.com.ge,disk.yandex.com.tr,disk.yandex.ee,disk.yandex.fr,disk.yandex.kg,disk.yandex.kz,disk.yandex.lt,disk.yandex.lv,disk.yandex.md,disk.yandex.ru,disk.yandex.tj,disk.yandex.tm,disk.yandex.uz,yadi.sk##.share-link-menu__menu-item_type_odnoklassniki
-disk.yandex.az,disk.yandex.by,disk.yandex.co.il,disk.yandex.com,disk.yandex.com.am,disk.yandex.com.ge,disk.yandex.com.tr,disk.yandex.ee,disk.yandex.fr,disk.yandex.kg,disk.yandex.kz,disk.yandex.lt,disk.yandex.lv,disk.yandex.md,disk.yandex.ru,disk.yandex.tj,disk.yandex.tm,disk.yandex.uz,yadi.sk##.share-link-menu__menu-item_type_vkontakte
-disk.yandex.az,disk.yandex.by,disk.yandex.co.il,disk.yandex.com,disk.yandex.com.am,disk.yandex.com.ge,disk.yandex.com.tr,disk.yandex.ee,disk.yandex.fr,disk.yandex.kg,disk.yandex.kz,disk.yandex.lt,disk.yandex.lv,disk.yandex.md,disk.yandex.ru,disk.yandex.tj,disk.yandex.tm,disk.yandex.uz,yadi.sk##.share-link-popup__menu > div.menu__group:last-child > div.menu__item:not(:last-child):not(:nth-child(3))
 diskunion.net##.newsTitleArea__snsAreaUl
 diskunion.net##.sidenav__snsArea
 disntr.com#?##main-content div.et_pb_module:has(> div.et_pb_code_inner a#gab-share-btn)
@@ -4299,7 +4297,6 @@ foriio.com##div[class^="ShareWorkOrNote__"]
 forklog.com##div[class$="share_blk"]
 formatatmak.com##.theiaStickySidebar > .facebook-widget
 formel1.de##.shariff-button
-forms.yandex.ru##.goto-and-share
 forms.yandex.ru##.quiz-result__share
 formula1.com##body .social-share-wrapper
 formula1news.co.uk,sportzwiki.com##.fox-share
@@ -8729,7 +8726,6 @@ pptvhd36.com##.social__button-share
 prabhatkhabar.com##.jmQQY
 prabhatkhabar.com,pinkvilla.com##.sticky-social-share
 prachachat.net##.td_block_unixdev_social_1
-practicum.yandex.*##.sharing-page__social-icons-container
 prad.de##.pd-social-buttons
 prad.de##.pd-sticky-buttons
 pravda.com.ua##.news_social_buttons
@@ -9094,8 +9090,7 @@ realsound.jp,insight.co.kr##.fixed-share
 realt.by##.right-links
 realt.by#?#div.col > div.object-item div[class^="col"]:has(> div.ya-share2)
 realting.com#?#.article-content > div.text-center:has(> div:contains(Поделиться с помощью))
-realty.ya.ru#?#footer div[class*="Frame__container--"]:has(> div[class*="PostContentFooter__shareStack"])
-realty.yandex.ru##.ShareAction__button
+realty.ya.*##.NavBar__inner > div[class^="NewbuildingCardNavigationBar"] > svg[class*="_share-"]
 realukraine.net##.newsstand-social-share
 reason.com##.rcom-social-tools
 rebaltica.lv##.widget_ws_fb_like_box
@@ -10986,8 +10981,8 @@ transfery.info##.news-social-media a.media-icon-container
 translate.google.*##.share-translation-button
 translate.meta.ua###shareit_form
 translate.weblio.jp##a[href*="plus.google.com/share"]
-translate.yandex.ru,translate.yandex.by,translate.yandex.com,ceviri.yandex.com.tr,translate.yandex.kz###shareContent
-translate.yandex.ru,translate.yandex.by,translate.yandex.com,ceviri.yandex.com.tr,translate.yandex.kz###shareContent+div[data-action="mailTo"]
+translate.yandex.*###shareContent
+translate.yandex.*###shareContent + div[data-action="mailTo"]
 transparency.org##.js-highlight-tooltip
 transparency.org,shibuya.tokyu-plaza.com,24smi.org,nur.kz,smartcitysweden.com,goodfon.com,sony.*,otus.ru,daily.afisha.ru,about.com,drive2.com,drive2.ru,metrolyrics.com,surfingbird.ru##.js-share
 transport-publiczny.pl,rynekinfrastruktury.pl,rynek-lotniczy.pl#$#.wiadomoscSocial > #divLikeMaly ~ * { visibility: hidden!important; }
@@ -11006,8 +11001,6 @@ travel.spot-app.jp##.post-meta.under-title > .loop-share-num
 travel.thewom.it##.wo-opening-share-panel
 travel.willer.co.jp,kidd.co.kr##.sns-share-btn
 travel.yahoo.co.jp##div[data-component="RoomPlanDetail"] > div.border-t.mt-4 > div.h-16
-travel.yandex.ru#?#.Popup2 div[class]:has(> button[type="button"] > div:contains(Twitter))
-travel.yandex.ru#?#button[type="button"]:has(> div[class] > svg[viewBox="0 0 28 28"][width="24"][height="24"])
 travelask.ru###facebook-popup
 travelask.ru###vk-popup
 travelask.ru##.blog-share-toolbar
@@ -12007,6 +12000,8 @@ wws-channel.com##li[class*="_sharelist_"]:not(.last)
 www-news18-com.cdn.ampproject.org##.story-social-share-fix > ul
 www-pocket--lint-com.cdn.ampproject.org##.extras > .social
 www-unionesarda-it.cdn.ampproject.org,unionesarda.it#@#.article-share
+www.kinopoisk.ru##.ya-share2
+www.kinopoisk.ru##div[class*="-share-buttons"]
 www.msn.com##.stb-flexvertical
 wwws.warnerbros.co.jp##.mainFooter_share
 wxii12.com##.share-content > .js-share-container
@@ -12064,7 +12059,6 @@ xvideos.com,sexub.com#?##tabShareAndEmbed > h4:has(> span.icf-share)
 xxl.ua##.facebook-reaction
 xxxbunker.com##.video-toolbar > button:contains(Share)
 y-aoyama.jp##.m-share_group
-ya.ru##.b-ya-share
 yabancidizici.net##a[data-target=".share-modal"]
 yablor.ru##.minishare
 yadi.sk##.ns-view-sliderShare
@@ -12087,18 +12081,17 @@ yan.vn##.float-right
 yan.vn##.imgShareFB
 yan.vn##.imgShareLink
 yan.vn#?#.side-bar > div[class]:has(> h3.cate-title:contains(THEO DÕI CHÚNG TÔI TẠI))
-yandex.*##.news-story__share
-yandex.*##.share__socials-title
-yandex.*##.social-share-view_gallery
-yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##.share.unit
-yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##.discovery-share-view
-yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##li[class^="ya-share2"][class$="facebook"]
-yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##li[class^="ya-share2"][class$="odnoklassniki"]
-yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##li[class^="ya-share2"][class$="twitter"]
-yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##li[class^="ya-share2"][class$="vkontakte"]
+yandex.*##.Card-HeaderInnerWrapper > button.ShareNative
+yandex.*##.MMViewerButtons-Share
+yandex.*##.Viewer-Buttons > span.Viewer-ShareLink
+yandex.*##body button.mg-share
+yandex.*##body div[class^="images-viewer-content"] > button[class$="panel-share"]
+yandex.*##li[class^="ya-share2"][class$="facebook"]
+yandex.*##li[class^="ya-share2"][class$="odnoklassniki"]
+yandex.*##li[class^="ya-share2"][class$="twitter"]
+yandex.*##li[class^="ya-share2"][class$="vkontakte"]
+yandex.*#?#.business-card-title-view__actions div.card-actions-view div._type_share
 yandex.ru##.response__share > div.share-icons
-yandex.ru#?#body[class*="page_q"] button[data-role="button"]:has(> div[class] > div[class] > div:contains(/^Поделиться$/))
-yandex.ru,yandex.by,yandex.kz##.stream-share
 yapx.ru##.photoblock-footer-social
 yapx.ru##.photoblock-social-block
 yardbarker.com##.aph_inner > div:not([class]):not([id]) > button.compact[onclick^="window.open('"]
