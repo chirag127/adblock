@@ -748,7 +748,6 @@ mobiflip.de##a[onclick^="window.open('https://plus.google.com/share?url="]
 @@||gstatic.com/chrome/webstore/images/share_$domain=google.com
 *$3p,domain=zone-annuaire.*,denyallow=facebook.com|google.com|iconfinder.com
 *$3p,denyallow=google.com|googleapis.com|gstatic.com|eplayvid.com,domain=123enjoy.net
-*$frame,3p,denyallow=google.com|streamtape.cc|streamadblocker.xyz,domain=shavetape.cash|streamadblocker.*|streamtape.*
 *$script,3p,denyallow=google.com|gstatic.com,domain=skidrowcodex.net
 *$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com,domain=bollyflix.*
 *$script,3p,denyallow=blogger.com|bootstrapcdn.com|cloudflare.com|cloudflare.net|gitcdn.link|githack.com|google.com|googleapis.com|gstatic.com|recaptcha.net,domain=wwwfotografgotlin.blogspot.com
@@ -2695,6 +2694,7 @@ flipkart.com##div[dir]:has-text(/^AD$/):upward(div[style])
 flipkart.com##div[style*="width:24px;height:20px;"]:has(img[src*="/promos/"]):upward(div[style])
 ||assoc-amazon.com^
 ||images-*.ssl-images-amazon.com/images/*/ape/sf/MAsf-*_.js
+amazon.com.au###hero-quick-promo_feature_div
 [$path=/vtmc49533]blog.livedoor.jp###article-contents > img[src^="https://images-na.ssl-images-amazon.com/images/I/"]
 amazon.com###detailILMPercolate_feature_div
 amazon.com###centerBelow > #ape_search_btf_search-mWeb_text-wrapper
@@ -2834,6 +2834,8 @@ read.amazon.com##*:style(-webkit-touch-callout: default !important; -webkit-user
 ||cloudfront.net^*.mp3|$media,redirect=noopmp3-0.1s,domain=music.amazon.com|music.amazon.ca|music.amazon.co.uk|music.amazon.fr|music.amazon.de|music.amazon.it|music.amazon.es|music.amazon.co.jp|music.amazon.com.au|music.amazon.com.mx
 oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
 ||videorolls.row.aiv-cdn.net/*.mp4$media,redirect=noopmp3-0.1s,domain=amazon.com
+amazon.com##+js(json-prune, cuepointPlaylist)
+amazon.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[name()="SupplementalProperty"][@value="Ad"]]), , .mpd)
 ||fls-na.amazon.com/$xhr,redirect=noopjs,domain=imdb.com
 @@||ws-na.assoc-amazon.com^$image,domain=4tests.com
 @@||ssl-images-amazon.com/*/satelliteLib-$script,domain=audible.*
