@@ -207,7 +207,6 @@ $cookie=audit
 $cookie=bf_lead
 $cookie=bf_visit
 $cookie=bitmovin_analytics_uuid
-$cookie=blaize_session
 $cookie=blaize_tracking_id
 $cookie=c,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
 $cookie=cX_G
@@ -2818,6 +2817,7 @@ $cookie=yTrackVisit
 @@||static.atgsvcs.com/js/atgsvcs.js$domain=officedepot.com|shop.lego.com
 @@||static.chartbeat.com/crossdomain.xml
 @@||static.chartbeat.com/js/chartbeat.js$domain=hindustantimes.com
+@@||static.chartbeat.com/js/chartbeat_brightcove_plugin.js$domain=capital.it
 @@||static.chartbeat.com/js/chartbeat_brightcove_plugin.js$domain=repubblica.it
 @@||static.chartbeat.com/js/chartbeat_mab.js$domain=ny1.com
 @@||static.chartbeat.com/js/chartbeat_mab.js$domain=tampabay.com
@@ -3133,6 +3133,7 @@ business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなた
 businessinsider.co.uk,businessinsider.com##.rail-recommended
 businessinsider.com##.bottom-recommended
 capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
+capital.it#%#//scriptlet('prevent-element-src-loading', 'script', 'static.chartbeat.com/js/chartbeat_brightcove_plugin.js')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
 cbssports.com#%#(()=>{window.admiral=function(d,a,b){if("function"==typeof b)try{b({})}catch(a){}}})();
@@ -4028,6 +4029,8 @@ znak.com##.relap
 ||api.carrottrack.io^$third-party
 ||api.cazamba.com^$third-party
 ||api.centify.co/adb
+||api.cian.ru/browser-telemetry/v*/send-stats/
+||api.cian.ru/ebc-analytics/
 ||api.clerk.io/v*/log/
 ||api.code.com.tr/analytics
 ||api.contentpass.net/analytics
@@ -5862,7 +5865,6 @@ znak.com##.relap
 ||everesttech.net^$third-party
 ||evergage.com^$third-party
 ||evgnet.com/beacon/
-||evilmartians.com/component*events-*.js
 ||eviltracker.net^$third-party
 ||evisitanalyst.com^$third-party
 ||evyy.net^$third-party
@@ -10152,6 +10154,7 @@ znak.com##.relap
 ||tidymitten.com^$third-party
 ||tidytrail.com^$third-party
 ||tiebac.baidu.com/*/log/
+||tightpowder.com^$third-party
 ||tiktok.com/whale/
 ||tiktokv.com/web/report?
 ||time4shopping.com.ua/api/api.php/stat
