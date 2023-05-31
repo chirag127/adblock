@@ -543,7 +543,7 @@ $cookie=yTrackVisit
 /cb-pixel.gif?
 /cdn-cgi/apps/head/*$script,~third-party
 /cdn-cgi/bm/cv/*$script
-/cdn-cgi/challenge-platform/h/g/beacon/*$xmlhttprequest,~third-party
+/cdn-cgi/challenge-platform/h/*/beacon/*$xmlhttprequest,~third-party
 /cdn-cgi/pe/bag2?*.google-analytics.com
 /cdn-cgi/pe/bag2?*bluekai.com
 /cdn-cgi/pe/bag2?*bounceexchange.com
@@ -1990,7 +1990,6 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtm.js$domain=chip.com.tr
 @@||googletagmanager.com/gtm.js$domain=ci-en.dlsite.com
 @@||googletagmanager.com/gtm.js$domain=cildimveben.com
-@@||googletagmanager.com/gtm.js$domain=cinemaximum.com.tr
 @@||googletagmanager.com/gtm.js$domain=cinemaxx.de
 @@||googletagmanager.com/gtm.js$domain=cnbctv18.com
 @@||googletagmanager.com/gtm.js$domain=coda.io
@@ -2070,6 +2069,7 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtm.js$domain=m.kinomax.ru
 @@||googletagmanager.com/gtm.js$domain=m.papajohns.ru
 @@||googletagmanager.com/gtm.js$domain=mainichi.jp
+@@||googletagmanager.com/gtm.js$domain=make.dmm.com
 @@||googletagmanager.com/gtm.js$domain=makitani.net
 @@||googletagmanager.com/gtm.js$domain=manager-magazin.de
 @@||googletagmanager.com/gtm.js$domain=managertoday.com.tw
@@ -2335,7 +2335,6 @@ $cookie=yTrackVisit
 @@||ivwextern.prosieben.de^*/ivw_flashscript.php?$script
 @@||jeevansathi.com/minify.php?files=$script,stylesheet
 @@||jetztspielen.de^*/EventTracker.js
-@@||jfe-cdn.qualtrics.com^$domain=virginiatech.qualtrics.com
 @@||jianshu.com/asimov/ab_test/info
 @@||jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 @@||js-agent.newrelic.com/nr-*.min.js$domain=copy.com
@@ -2352,7 +2351,6 @@ $cookie=yTrackVisit
 @@||js.monitor.azure.com^$app=com.microsoft.office.officehubrow
 @@||js.revsci.net/gateway/gw.js?$domain=t-online.de
 @@||js.vpro.nl/vpro/*/statcounter.js?
-@@||jsainsbury.*.qualtrics.com/jfe/form/$subdocument
 @@||jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js$domain=suki-kira.com
 @@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=cwseed.com
 @@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=cwtv.com
@@ -2625,7 +2623,7 @@ $cookie=yTrackVisit
 @@||pv.sohu.com/cityjson$domain=vip.jsjinfu.com
 @@||pvtag.yahoo.co.jp^$script,domain=paypayfleamarket.yahoo.co.jp
 @@||pvtag.yahoo.co.jp^$script,domain=paypaymall.yahoo.co.jp
-@@||qualtrics.com/jfe/form/$subdocument,domain=kor.tellburgerking.com
+@@||qualtrics.com/jfe/form/$subdocument
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
 @@||quantserve.com/quant.js$domain=apps.facebook.com|caranddriver.com|g4tv.com|nymag.com|salon.com|theblaze.com
 @@||query.petametrics.com^$image,xmlhttprequest,domain=comics.mecha.cc
@@ -2990,6 +2988,7 @@ $cookie=yTrackVisit
 @@||virtualearth.net^*/LoggingService.svc/Log?$script,domain=bing.com
 @@||visa.com^*/vendor/unica.js
 @@||visiblemeasures.com/crossdomain.xml$domain=espn.go.com|live.indiatimes.com
+@@||visilabs.net/*/Visilabs.min.js$domain=paribucineverse.com
 @@||vivocha.com/a/kartell/api/vivocha.js$domain=kartell.com
 @@||vizio.com/resources/js/vizio-module-tracking-google-analytics.js
 @@||vlscppe.microsoft.com/fp/tags.js$domain=microsoft.com
@@ -2999,8 +2998,8 @@ $cookie=yTrackVisit
 @@||vplayer.ilsemedia.nl/swf/im_player.swf?
 @@||vpro.nl/vpro/htmlplayer/0.3-snapshot/statcounter.js?
 @@||vsh.visilabs.net/Visilabs.js^$domain=boyner.com.tr
-@@||vsh.visilabs.net/Visilabs.js^$domain=cinemaximum.com.tr
 @@||vsh.visilabs.net/Visilabs.js^$domain=kapsamaharitasi.turktelekom.com.tr
+@@||vsh.visilabs.net/Visilabs.min.js$domain=paribucineverse.com
 @@||vulture.com/decor/javascript/magnify_stats.js
 @@||w3spy.org/etc/geo.php?
 @@||w88.espn.com/id?$domain=espn.com
@@ -3218,6 +3217,8 @@ fudge.jp##.ratio-wrapper
 gcdsdk.appsflyersdk.com^
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
 gmarket.co.kr#%#//scriptlet("set-constant", "pvprofiler.sendEvt", "noopFunc")
+gmx.com##div[data-mod-name="taboolateasers"]
+gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-teasers)
 go.rjmetrics.com$image
 go.toutapp.com$image
 goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
@@ -3347,6 +3348,9 @@ otekomachi.yomiuri.co.jp###_popIn_right
 otekomachi.yomiuri.co.jp##.p-ads
 outrch.com/api/mailings/opened$image
 overclockers.ru#%#AG_onLoad(function() { window.trackOutboundLink = window.open; });
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs', 'noopFunc')
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.AddParameter', 'noopFunc')
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.Collect', 'noopFunc')
 park.ajinomoto.co.jp##.bottomMenu
 petyado.com##.font12[height="184"]
 petyado.com##center > table[width="100%"][cellpadding="0"] + table[width="700"][cellspacing="0"][cellpadding="0"]:not([height])
@@ -3509,7 +3513,6 @@ znak.com##.relap
 ||1dmp.io^$third-party
 ||1freecounter.com^$third-party
 ||1pel.com^$third-party
-||1ps.ru/cdn-cgi/challenge-platform/
 ||2-ip.online/sbar/$third-party
 ||200stran.ru^$third-party
 ||200summit.com^$third-party
@@ -6456,6 +6459,7 @@ znak.com##.relap
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=kidega.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=learning.edx.org
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=lodgecastiron.com
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=make.dmm.com,important
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=morningstar.nl|morningstar.de|morningstar.at|morningstar.fr|morningstarfunds.ie|morningstar.it|morningstar.es|morningstar.se|morningstar.ch|morningstar.co.uk|morningstar.hk|morningstar.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=otomotoklik.pl
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=pcmag.com,important
@@ -8693,7 +8697,7 @@ znak.com##.relap
 ||quacksquirrel.com^$third-party
 ||quadran.eu^$third-party
 ||quaintcan.com^$third-party
-||qualtrics.com^$third-party
+||qualtrics.com/jfe/static/dist/c/adobe.
 ||qualtrics.com^*/metrics
 ||quant.jp^$third-party
 ||quantcount.com^$third-party
@@ -8942,7 +8946,6 @@ znak.com##.relap
 ||riotgames.com/m.gif
 ||ritecounter.com^$third-party
 ||ritzykey.com^$third-party
-||rjno1.com/cdn-cgi/challenge-platform/h/b/scripts/invisible.js
 ||rkdms.com^$third-party
 ||rktu.com^$third-party
 ||rl0.ru/*/dist/post.js$domain=www.rambler.ru
