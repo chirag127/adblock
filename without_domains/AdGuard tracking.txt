@@ -1577,6 +1577,7 @@ $cookie=yTrackVisit
 @@||fussball.de/fbed/js/xtcore.js
 @@||gaanacdn.com/*_social_tracking.js$domain=gaana.com
 @@||gahu.hit.gemius.pl/gplayer.js$domain=mafab.hu
+@@||galaxy.geely.com/assets/plugins/sa-sdk-javascript-*/sensorsdata.min.js
 @@||gameplayer.io^*/EventTracker.js
 @@||gamerch.com/s3-assets/library/js/fingerprint2.min.js
 @@||gamespot.com/js/compiled/trackingWithCT.js$domain=gamespot.com
@@ -3214,6 +3215,11 @@ forfun.ist#%#//scriptlet('prevent-fetch', 'ssl.geoplugin.net/javascript.gp')
 fr.de##.bottom-footer > .dossier
 freecodecamp.org#%#//scriptlet("abort-current-inline-script", "Function", "b9kEBAW")
 fudge.jp##.ratio-wrapper
+galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors', 'emptyObj')
+galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.init', 'noopFunc')
+galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.quick', 'noopFunc')
+galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.registerPage', 'noopFunc')
+galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.track', 'noopFunc')
 gcdsdk.appsflyersdk.com^
 gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
 gmarket.co.kr#%#//scriptlet("set-constant", "pvprofiler.sendEvt", "noopFunc")
@@ -3222,11 +3228,6 @@ gmx.com#?#.content-wrapper > div[data-mod-name="container"]:has(> div.taboola-te
 go.rjmetrics.com$image
 go.toutapp.com$image
 goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
-guancha.cn#%#//scriptlet('set-constant', 'sensors', 'emptyObj')
-guancha.cn#%#//scriptlet('set-constant', 'sensors.init', 'noopFunc')
-guancha.cn#%#//scriptlet('set-constant', 'sensors.quick', 'noopFunc')
-guancha.cn#%#//scriptlet('set-constant', 'sensors.registerPage', 'noopFunc')
-guancha.cn#%#//scriptlet('set-constant', 'sensors.track', 'noopFunc')
 hdreactor.club,hdreactor.su,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-wrap > div.menu-head:contains(Счетчики)
 hdreactor.club,hdreactor.su,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-wrap > div.menu-head:contains(Счетчики) + div.menu-head1
 hentai-sharing.net,news.webike.net###custom_html-3
@@ -3534,6 +3535,7 @@ znak.com##.relap
 ||24log.de^$third-party
 ||24log.ru^$third-party
 ||24support.cc/js/stats.js
+||2ch-c.net/click.php
 ||2cnt.net^$third-party
 ||2day.kh.ua/*/statistics/
 ||2gis.*/_/metrics
@@ -4055,7 +4057,6 @@ znak.com##.relap
 ||api.idg.zone/intextlinks-tracking/
 ||api.impresa.pt/trackercookie
 ||api.ip.sb/geoip$third-party
-||api.ipdata.co^$third-party
 ||api.ipify.org/?format=json$xmlhttprequest,redirect=nooptext,domain=utils.surf
 ||api.jetlore.com/track.png?
 ||api.keen.io/*/projects/$domain=faceit.com
