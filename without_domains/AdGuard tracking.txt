@@ -30,6 +30,7 @@ $app=com.fiberhome.wifiserver
 $app=com.miui.analytics
 $app=com.miui.systemAdSolution
 $cookie,domain=ads.stickyadstv.com
+$cookie=/WZRK_/
 $cookie=/^AMCVS?_.*AdobeOrg/
 $cookie=/^CaosGtag_ga/
 $cookie=/^KRTBCOOKIE_/
@@ -1050,6 +1051,7 @@ $cookie=yTrackVisit
 @@||analytics.edgesuite.net/js/csma.js$domain=mitele.es
 @@||analytics.freetubeapp.io/index.php$domain=analytics.freetubeapp.io
 @@||analytics.global.sky.com/sky-tags
+@@||analytics.htmedia.in/analytics-js/tracker.js$domain=livemint.com
 @@||analytics.kbjfree.com/js/plausible.js
 @@||analytics.ladmedia.fr/parismatch/xtcore_mod2.js$domain=parismatch.com
 @@||analytics.tiktok.com/*/pixel/sdk.js$domain=wopilo.com
@@ -3135,6 +3137,7 @@ capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'n
 capital.it#%#//scriptlet('prevent-element-src-loading', 'script', 'static.chartbeat.com/js/chartbeat_brightcove_plugin.js')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
+cbssports.com##.taboola-recommends
 cbssports.com#%#(()=>{window.admiral=function(d,a,b){if("function"==typeof b)try{b({})}catch(a){}}})();
 cdn-settings.appsflyersdk.com^
 cerbahealthcare.it#%#//scriptlet('set-constant', 'pa', 'emptyObj')
@@ -3287,6 +3290,8 @@ lightrun.com#%#//scriptlet('set-constant', 'gtag', 'noopFunc')
 link.gmapp*.net$image
 list-manage.com/track$image
 livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward(2)
+livemint.com#%#//scriptlet('set-constant', 'dapTracker', 'emptyObj')
+livemint.com#%#//scriptlet('set-constant', 'dapTracker.track', 'noopFunc')
 lurkmore.to###p-counters
 luxhard.com#?##sidebar-primary > .widget-container:has(a[href^="https://metrika.yandex.ru/stat/"])
 m.card-gorilla.com,pindirectshop.com,dongbanmall.com#%#//scriptlet("set-constant", "kakaoPixel", "undefined")
@@ -5924,6 +5929,7 @@ znak.com##.relap
 ||ezakus.net^$third-party
 ||ezapp.ovh/track.js?pixelId=
 ||ezec.co.uk^$third-party
+||ezneering.com/wp-content/plugins/hashbar-wp-notification-bar/assets/js/analytics.js
 ||ezodn.com^$third-party
 ||ezstat.ru^$third-party
 ||ezytrack.com^$third-party
@@ -9186,7 +9192,7 @@ znak.com##.relap
 ||secure.agoda.com/pixel.gif
 ||secure.booking.com/email_opened_tracking_pixel
 ||securepaths.com^$third-party
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~golf.com|~today.line.me|~inmuebles24.com|~inside.com.tw|~investing.com|~olx.com.eg|~eksisozluk1923.com
 ||secureserver.net/t/
 ||securestudies.com^$third-party
 ||sedotracker.com^$third-party
@@ -10536,7 +10542,6 @@ znak.com##.relap
 ||umeng.com/app_logs
 ||umirs.com/counter*.
 ||umirs.com/counters/
-||unagi*.amazon.
 ||unarmedindustry.com^$third-party
 ||unbecominghall.com^$third-party
 ||uncn.jp^$third-party
