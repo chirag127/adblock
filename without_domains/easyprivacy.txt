@@ -113,7 +113,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /Track/Capture.aspx?
 /TrackPartnerVisit?
 /TrackingData.
-/TrackingPixel/*
 /TrackingService.js
 /Universal-Federated-Analytics.
 /VideoTracking.
@@ -412,12 +411,12 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /fbevents.min.js
 /fbpix-events-
 /fbpixel.
-/fbpixel/*
 /fe_logger?
 /figanalytics/*
 /fingerprint.js
 /fingerprint.min.js
 /fingerprint2.js
+/fingerprint2.min.js
 /fingerprintjs2.
 /firebase-performance-
 /fit?analyticsSession=
@@ -452,7 +451,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /ganalytics.
 /ganalytics/*
 /gapro.js
-/gatag.js
 /gatrack.
 /gb-tracker-
 /gemius.js
@@ -507,6 +505,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /impresion/zona/*
 /impression/stream/*
 /impression/track?
+/impression?mkevt=
 /impression_analytics/*
 /impressions?
 /insales_counter.
@@ -736,6 +735,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /rainbow/master-js
 /readReceipt/notify/?img=$image
 /realtimeapi/impression?
+/redir.inxmail-commerce.com/r/*$image
 /referer/visitor/*
 /referral-tracking.
 /referrer.js
@@ -984,10 +984,10 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 ://beacon.*/track
 ://blue.*/script.js
 ://collector.*/event
+://internal-matomo.
 ://lightning.*/launch/
 ://matomo.$domain=~matomo.org
 ://track.*/collect
-://track.*/dye
 ://tracker.*/pageview
 ://tracking.*/event
 ://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.lol|~utm.md|~utm.openskies.sh|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
@@ -1008,7 +1008,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||adnz.co/header.js?adTagId=$domain=finanzen.ch
 @@||adobedtm.com/extensions/$domain=antena3.com|apple.com|atresmedia.com|atresplayer.com|automobiles.honda.com|bravotv.com|cadenaser.com|crave.ca|foodnetwork.com|lasexta.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
-@@||adobedtm.com^*-source.min.js$script,domain=53.com|aarp.org|ally.com|americanexpress.com|atresplayer.com|automobiles.honda.com|backcountry.com|bose.ae|bose.at|bose.ca|bose.ch|bose.cl|bose.co|bose.co.jp|bose.co.nz|bose.co.uk|bose.com|bose.com.au|bose.de|bose.dk|bose.es|bose.fi|bose.fr|bose.hk|bose.hu|bose.ie|bose.it|bose.lu|bose.mx|bose.nl|bose.no|bose.pe|bose.pl|bose.se|boseapac.com|bosebelgium.be|boselatam.com|bt.com|cadenaser.com|churchofjesuschrist.org|cibc.com|crave.ca|currys.co.uk|dollargeneral.com|etihad.com|guitarcenter.com|healthsafe-id.com|helvetia.com|hgtv.com|hilton.com|homedepot.ca|ing.com.au|ingrammicro.com|kroger.com|manager-magazin.de|marriott.com|mtvuutiset.fi|mybell.bell.ca|natwest.com|nbarizona.com|news.sky.com|personal.natwest.com|pnc.com|ralphlauren.com|samsung.com|ssrn.com|telus.com|verizon.com|virginplus.ca|walgreens.com
+@@||adobedtm.com^*-source.min.js$script,domain=53.com|aarp.org|ally.com|americanexpress.com|atresplayer.com|automobiles.honda.com|backcountry.com|bose.ae|bose.at|bose.ca|bose.ch|bose.cl|bose.co|bose.co.jp|bose.co.nz|bose.co.uk|bose.com|bose.com.au|bose.de|bose.dk|bose.es|bose.fi|bose.fr|bose.hk|bose.hu|bose.ie|bose.it|bose.lu|bose.mx|bose.nl|bose.no|bose.pe|bose.pl|bose.se|boseapac.com|bosebelgium.be|boselatam.com|bt.com|cadenaser.com|churchofjesuschrist.org|cibc.com|crave.ca|currys.co.uk|dollargeneral.com|etihad.com|guitarcenter.com|healthsafe-id.com|helvetia.com|hgtv.com|hilton.com|homedepot.ca|ing.com.au|ingrammicro.com|kroger.com|lenovo.com|manager-magazin.de|marriott.com|mtvuutiset.fi|mybell.bell.ca|natwest.com|nbarizona.com|news.sky.com|personal.natwest.com|pnc.com|ralphlauren.com|samsung.com|ssrn.com|telus.com|verizon.com|virginplus.ca|walgreens.com
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=sky.it
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/s-code-$script
@@ -1072,7 +1072,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||cmp.telerama.fr/js/telerama.min.js$~third-party
 @@||cnet.com/a/video-player/uvpjs-rv/$script,~third-party
 @@||cohesionapps.com/cohesion/$domain=bankrate.com|frontier.com
-@@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
 @@||collector.appconsent.io/hello$domain=lachainemeteo.com|lefigaro.fr
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
@@ -1083,7 +1082,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||cqcounter.com^$domain=cqcounter.com
 @@||criteo.net/js/ld/publishertag.js$domain=novayagazeta.ru
 @@||crowdtwist.com/img/$image,domain=disneymovieinsiders.com
-@@||crowdtwist.com/img/$image,domain=lego.com
 @@||cults3d.com/packs/js/quantcast-$~third-party
 @@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|handelsblatt.com|mainichi.jp|marketwatch.com|tarzanweb.jp|tn.com.ar|wpb.shueisha.co.jp
 @@||cxense.com/cx.js$domain=bizjournals.com|businessinsider.de|computerbild.de|cyclestyle.net|handelsblatt.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|savonsanomat.fi|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp
@@ -1249,6 +1247,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||startribune.com/analytics-assets/sitecatalyst/appmeasurement.js$~third-party
 @@||statcounter.com/js/fusioncharts.js
 @@||static.amazon.jobs/assets/analytics-$script,domain=amazon.jobs
+@@||static.atgsvcs.com/js/atgsvcs.js$domain=officedepot.com|shop.lego.com
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
 @@||stats.sports.bellmedia.ca^$domain=tsn.ca
 @@||steamstatic.com/steam/apps/$image,domain=store.steampowered.com
@@ -1397,6 +1396,7 @@ _webanalytics.
 ||adop.cc^$third-party
 ||adoric-om.com^$third-party
 ||adpaths.com^$third-party
+||adpies.com^$third-party
 ||adpon.jp^$third-party
 ||adrizer.com^$third-party
 ||adrta.com^$third-party
@@ -1456,6 +1456,7 @@ _webanalytics.
 ||alcmpn.com^$third-party
 ||alexametrics.com^$third-party
 ||algolia.io/1/events?
+||algolia.io/1/isalive
 ||alicdn.com/AWSC/et/
 ||alicdn.com/f/pcdn/i.php?
 ||aliexpress.com/ts?
@@ -1706,7 +1707,6 @@ _webanalytics.
 ||canalplus-bo.net/web/*/tracker/?
 ||canddi.com^$third-party
 ||capitalone.com/collector/
-||capturehighered.net^$third-party
 ||carambo.la^$third-party
 ||cardinalcommerce.com/prod/log
 ||cargurus.com/tr/
@@ -1786,7 +1786,6 @@ _webanalytics.
 ||cloudfront.net/i?v=
 ||cloudfront.net/js/grin-sdk.js
 ||cloudfront.net/script.js
-||cloudfront.net/sitegainer_
 ||cloudfront.net/sso.js
 ||cloudfront.net/test.png
 ||cloudfront.net/track?
@@ -2047,6 +2046,7 @@ _webanalytics.
 ||evergage.com^$third-party
 ||everyaction.com/v1/Track/
 ||evidon.com/pub/
+||evorra.net^$third-party
 ||evs.sgmt.loom.com^$script
 ||evyy.net^$third-party
 ||exactag.com^$third-party
@@ -2766,7 +2766,6 @@ _webanalytics.
 ||nrich.ai^$third-party
 ||nsaudience.pl^$third-party
 ||nsg.symantec.com^$third-party
-||ntvid.online/cdn-cgi/trace
 ||nuggad.net^$third-party
 ||numerino.cz^$third-party
 ||nvidia.partners/telemetry/
@@ -3224,7 +3223,6 @@ _webanalytics.
 ||seoul.co.kr/weblog/
 ||serveipqs.com^$third-party
 ||servo-report.dvdfab.
-||sessioncam.com^$third-party
 ||sexhd.pics/x/x.js
 ||sexu.com/api/ttrack
 ||sezzle.com/v1/event/log
@@ -3403,7 +3401,6 @@ _webanalytics.
 ||t.felmat.net^$third-party
 ||t.gelderlander.nl^$image
 ||t.hln.be^$image
-||t.id.net/log
 ||t.paypal.com^$image
 ||t.powerreviews.com^$third-party
 ||t.pzc.nl^$image
@@ -3719,7 +3716,6 @@ _webanalytics.
 ||webstatistika.lv^$third-party
 ||webtemsilcisi.com^$third-party
 ||webtracker.jp^$third-party
-||webtraffic.se^$third-party
 ||webtraxs.com^$third-party
 ||webtrekk-asia.net^$third-party
 ||webtrekk.net^$third-party
@@ -3850,6 +3846,7 @@ _webanalytics.
 ||youtubekids.com/api/stats/ads?
 ||youtubekids.com/api/stats/qoe?
 ||youtubekids.com/ptracking?
+||youvisit.com^$third-party
 ||ytn.co.kr/_comm/ylog.php?
 ||ywxi.net^$third-party,domain=~trustedsite.com
 ||zanox.com^$third-party
