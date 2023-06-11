@@ -106,7 +106,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /QuotaService.RecordEvent?
 /SSOCore/update?
 /StatSNA.js
-/TagAuditBeacon.
 /TeaLeaf.js
 /TealeafSDK.js
 /TealeafSDKConfig.js
@@ -174,6 +173,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /analytics/analytics.$~xmlhttprequest
 /analytics/collect?
 /analytics/event
+/analytics/ga.
 /analytics/geoip/*
 /analytics/page_view.
 /analytics/rt?
@@ -184,6 +184,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /analyticsjs.
 /analyticssdk.js
 /analyticstick.
+/analyticstracking.
 /analytix/events
 /analyze.js^
 /anonymous_user_guid.gif?
@@ -266,6 +267,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /chartbeat.js$domain=wetter.com
 /chartbeat.min.js
 /chartbeatanalytics/*
+/chicken.gif?*=
 /clear.gif?
 /click.*/q/*$image
 /click.email.$image
@@ -276,6 +278,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /clicklog/*
 /clicks.*/q/*$image
 /clicktale.
+/clicktracking/*
 /clicky.js
 /client-metrics/?target
 /client.rum.
@@ -297,7 +300,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /collector/v1/event
 /collectsysteminfo?
 /common/analytics.js
-/common/ga.js
 /compile/AppMeasurement.
 /comscore-js-
 /comscore-min.js
@@ -314,7 +316,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /count.php?
 /count?pid=
 /count?type=
-/counter-js.php
 /counter.asp?
 /counter.aspx?
 /counter?id=
@@ -603,7 +604,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /mistats/*
 /mixpanel.$domain=~mixpanel.com
 /mnppixellibrary.
-/moat/yield.js
 /monetate.js
 /monitor/v1/log
 /monitor_analytic.
@@ -612,7 +612,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /ms.analytics-
 /mtc.js
 /mtiFontTrackingCode.
-/mtracking.
 /myImage.track?
 /nLoggerJB_
 /naLogImpressions?
@@ -771,7 +770,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /s.gif?
 /sa.gif?
 /satismeter.js
-/savetracking?
 /scribd_events?
 /segment/api/*
 /sendLogs?cid
@@ -787,7 +785,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /shopify-boomerang-
 /shopify/track$domain=~github.com
 /shoutout.wix.com/*$image
-/showhits.php?
 /shreddit/perfMetrics
 /site_stats/*
 /smart-pixel.min.
@@ -827,9 +824,9 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /stats/impression
 /stats/lp.min.
 /stats/pageview
-/stats/ping?
 /stats/v2/visit?
 /stats?referer=
+/stats_js.asp
 /stattracker-
 /streamsense.min.js
 /strpixel.png?
@@ -838,7 +835,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /tab_impression_logging/*
 /taevents-
 /tagmanager/pptm.
-/tagmgmt/bootstrap.
+/talpa-analytics-
 /tc_analytics.
 /tccl.min.js
 /tck/gif/*
@@ -862,7 +859,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 /track?event=
 /trackBatchEvents?
 /trackIt.js
-/track_click?
 /track_visit.
 /tracker/app.
 /tracking-analytics-
@@ -990,12 +986,10 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 ://tracking.*/event
 ://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.lol|~utm.md|~utm.openskies.sh|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
 ?action=event&
-?action=impression&
 ?action=log_promo_impression
 ?action=saveViewStat&
 ?action=track_visitor&
 ?event=pageview&
-?event=performancelogger:
 ?log=stats-
 ?logType=trackEvent&
 ?sponsor_pixel=
@@ -1019,7 +1013,6 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||analytics.twitter.com^$domain=analytics.twitter.com
-@@||answers.ros.org/m/default/media/images/$image,~third-party
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
 @@||api.apolomedia.com/static/libs/event-tracking.min.js$script
 @@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
@@ -1062,6 +1055,7 @@ $websocket,domain=123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.p
 @@||cdnb.4strokemedia.com/carousel/v4/comscore-JS-$script
 @@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca|finishline.com|summitracing.com|tumi.com
 @@||check.ddos-guard.net/check.js$script
+@@||classic.comunio.de/clubImg.phtml/$image,~third-party
 @@||cloudflare.com/ajax/libs/fingerprintjs2/$domain=extracttable.com|fckrasnodar.ru
 @@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|myair.resmed.com
 @@||cmn.gyro-n.com/js/gyr.min.js$domain=benesse-style-care.co.jp
@@ -1328,7 +1322,6 @@ _webanalytics.
 ||99counters.com^$third-party
 ||9gag.com/event/
 ||9nl.eu^$third-party
-||a-calc.de^$third-party
 ||a-cast.jp^$third-party
 ||a-pagerank.net^$third-party
 ||a8.net^$third-party
@@ -1444,7 +1437,6 @@ _webanalytics.
 ||akamaihd.net/log?
 ||akamaihd.net^$image,domain=globalnews.ca|nycgo.com|stcatharinesstandard.ca
 ||akstat.io^$third-party
-||albacross.com^$third-party
 ||alcmpn.com^$third-party
 ||alexametrics.com^$third-party
 ||algolia.io/1/events?
@@ -1507,7 +1499,6 @@ _webanalytics.
 ||api.vp.rambler.ru/events/
 ||api64.com^$third-party
 ||apicit.net^$third-party
-||apm-engine.meteor.com^$third-party,xmlhttprequest
 ||app.box.com/app-api/split-proxy/api/metrics
 ||app.box.com/gen204
 ||app.carnow.com/dealers/track_visitor
@@ -1612,7 +1603,6 @@ _webanalytics.
 ||bf-tools.net^$third-party
 ||bhphotovideo.com/aperture/shared/js/dataLayer.js
 ||bidr.io^$third-party
-||bidsimulator.com^$third-party
 ||bigcattracks.com^$third-party
 ||bigmining.com^$third-party
 ||bigmir.net^$third-party
@@ -1632,7 +1622,6 @@ _webanalytics.
 ||bizspring.net^$third-party
 ||bjcathay.com^$third-party
 ||blockworks.co/_vercel/insights/
-||blogcounter.com^$third-party
 ||bloggeramt.de^$third-party
 ||bloggerei.de^$third-party
 ||blogmeetsbrand.com^$third-party
@@ -1846,6 +1835,7 @@ _webanalytics.
 ||cracataum.com^$third-party
 ||crall.io/beacon/
 ||crazyegg.com^$third-party
+||criteo.com^$domain=comunio.de
 ||criteo.com^$third-party
 ||criteo.net^$third-party
 ||crowdtwist.com^$third-party
@@ -1935,8 +1925,6 @@ _webanalytics.
 ||docodoco.jp^$third-party
 ||domdog.io^$third-party
 ||dominocounter.net^$third-party
-||doppiocdn.com/healthcheck
-||doppiocdn.org/healthcheck
 ||dotmetrics.net^$third-party
 ||doubleverify.com^$third-party
 ||douyucdn.cn/fish3/1.gif
@@ -2027,7 +2015,6 @@ _webanalytics.
 ||etracker.de^$third-party
 ||etsy.com/bcn/beacon
 ||eulerian.net^$third-party
-||euleriancdn.net^$third-party
 ||eum-appdynamics.com^$third-party
 ||euro.com.pl/log-customer-visit
 ||europuls.eu^$third-party
@@ -2083,7 +2070,6 @@ _webanalytics.
 ||feedify.net^$third-party
 ||feedjit.com^$third-party
 ||ferank.fr^$third-party
-||figpii.com^$third-party
 ||firebase.googleapis.com^$domain=terabox.fun
 ||firebaseinstallations.googleapis.com^$domain=terabox.fun
 ||fireworkanalytics.com^$third-party
@@ -2096,7 +2082,6 @@ _webanalytics.
 ||flipboard.com/usage?
 ||flipp.com/beacons
 ||flixcar.com/*/tracking/
-||flixcar.com/gvid
 ||flixcart.com/px/gNtTli3A/init.js
 ||flixsyndication.net^$third-party
 ||flocktory.com^$third-party
@@ -2545,6 +2530,7 @@ _webanalytics.
 ||loginfra.com^$third-party
 ||logly.co.jp^$third-party
 ||logrocket.com^$third-party
+||logrocket.io^$third-party
 ||logs.datadoghq.com^$third-party
 ||logz.io^$third-party
 ||lomadee.com^$third-party
@@ -2729,6 +2715,7 @@ _webanalytics.
 ||nexstardigital.net/segment.js
 ||nextdoor.com/events/
 ||nextstat.com^$third-party
+||nflshop.com/api/track
 ||ngacm.com^$third-party
 ||ngastatic.com^$third-party
 ||nice264.com/data?$third-party
@@ -3078,7 +3065,6 @@ _webanalytics.
 ||rentracks.jp^$third-party
 ||repixel.co^$third-party
 ||report-uri.com^$third-party
-||report-uri.io^$third-party
 ||reproio.com^$third-party
 ||requestmetrics.com^$third-party
 ||res-x.com^$third-party
@@ -3099,7 +3085,6 @@ _webanalytics.
 ||returnpath.net^$third-party
 ||reussissonsensemble.fr^$third-party
 ||revcatch.com^$third-party
-||reverbnation.com/api/user/app_events
 ||revhunter.tech^$third-party
 ||revive-chat.io/js/tracking-min.js
 ||revoffers.com^$third-party
@@ -3154,7 +3139,6 @@ _webanalytics.
 ||sblftg.com^$third-party
 ||scarabresearch.com^$third-party
 ||schemaapp.com/pagecount
-||scinable.net/access?
 ||scorecardresearch.com^$third-party
 ||scribd.com^*/events
 ||script.ag^$third-party
@@ -3168,7 +3152,6 @@ _webanalytics.
 ||sealserver.trustwave.com^$third-party
 ||search.brave.com/api/feedback$~third-party
 ||search.brave.com/serp/v1/static/serp-js/telemetry/
-||searchenginejournal.com/xcs0MhRsfxHG.js
 ||searchignite.com^$third-party
 ||secureanalytic.com^$third-party
 ||securepaths.com^$third-party
@@ -3329,6 +3312,7 @@ _webanalytics.
 ||statcounterfree.com^$third-party
 ||stathat.com^$third-party
 ||staticmoly.me/metric.php
+||statistiche.it^$third-party
 ||statistika.lv^$third-party
 ||stats-jobstreet-sg-en-prod.supercharge-srp.co^$domain=jobstreet.com.sg
 ||stats.externulls.com^$domain=beeg.com
@@ -3431,6 +3415,7 @@ _webanalytics.
 ||thebrighttag.com^$third-party
 ||theconversation.com/javascripts/lib/content_tracker_hook.js
 ||thefreedictionary.com/_/tr.ashx?
+||thehill.com/6zcfGH4h/init.js
 ||thench.net^$third-party
 ||thewindowsclub.com^*/skip-links.min.js
 ||threadloom.com/ga/
@@ -3474,6 +3459,7 @@ _webanalytics.
 ||trackeame.com^$third-party
 ||trackedlink.net^$third-party
 ||trackedweb.net^$third-party
+||tracker.stats.in.th^$third-party
 ||tracker.twenga.
 ||tracking.skyword.com^$third-party
 ||trackjs.com/agent/$script,third-party
