@@ -3484,6 +3484,9 @@ viva.ua##.footer-counters
 vse42.ru##.ya-metrika
 vulture.com##div[data-uri="www.vulture.com/_components/clay-space/instances/taboola@published"]
 w-kino.ru,kinotochka.club,legend.az##.counts
+weather.com#%#//scriptlet('set-constant', 'DprSdk', 'emptyObj')
+weather.com#%#//scriptlet('set-constant', 'DprSdk.init', 'noopFunc')
+weather.com#%#//scriptlet('set-constant', 'DprSdk.setHooks', 'noopFunc')
 web.frontapp.com/api$image
 weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 welovepg.polymail.io$image
@@ -4745,6 +4748,7 @@ znak.com##.relap
 ||cdn.adrise.tv/*/appboy.min.js
 ||cdn.adrise.tv/*/sentry/
 ||cdn.adsquirrel.ai^$third-party
+||cdn.almamedia.tech/esm/geo-client/
 ||cdn.ampproject.org/*/amp-analytics-
 ||cdn.api.twitter.com/*/urls/count.json$third-party
 ||cdn.appdynamics.com/adrum
@@ -4824,6 +4828,7 @@ znak.com##.relap
 ||cdn.taboola.com/libtrc/animeyttv/loader.js
 ||cdn.tebilisim.com/analytics.js
 ||cdn.teleportapi.com^$third-party
+||cdn.tercept.com^$third-party
 ||cdn.theoplayer.com/t?
 ||cdn.threadloom.com/ga/
 ||cdn.thunderhead.com/one/rt/js/one-tag.js
@@ -5012,7 +5017,6 @@ znak.com##.relap
 ||clubjt.jp/js/ga_event.js
 ||clustrmaps.com^$image,redirect=1x1-transparent.gif,third-party
 ||clustrmaps.com^$third-party
-||cm.bilibili.com/cm/api/$xmlhttprequest
 ||cm.cdn.md/js5/Mackolik/Analytics.js
 ||cmap.alibaba.com/landing_ae.gif
 ||cmap.alibaba.com/ml.html?callback=landing
@@ -8873,6 +8877,7 @@ znak.com##.relap
 ||redditstatic.com/ads/pixel.js
 ||redistats.com^$third-party
 ||redstatcounter.com^$third-party
+||reebok.eu/*/trackings|
 ||reedbusiness.net^$third-party
 ||reedge.com^$third-party
 ||referdriving.com^$third-party
@@ -10855,7 +10860,7 @@ znak.com##.relap
 ||wdr.de/*/tracker/
 ||we-stats.com^$third-party
 ||wearbasin.com^$third-party
-||weather.com/api/v*/script/dprSdkScript.js
+||weather.com/api/v*/script/dprSdkScript.js$script,redirect=noopjs
 ||weather.com/weather/assets/omniture-app-measurement.*.js
 ||weather.com/weather/assets/omniture-visitorapi.*.js
 ||weather.go.kr/w/resources/js/logger
