@@ -87,6 +87,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /GoogleAnalyticActionLib.
 /GoogleAnalyticsEvents.
 /HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
+/HitCounter.
 /Log?entry=
 /LogAnalysisTracker/*
 /LogImpression?
@@ -132,7 +133,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /adobe-analytics-$domain=~business.adobe.com
 /adobe-analytics.
 /adobeAnalytics/*
-/adplogger/*
 /adsct?
 /adstat.
 /adtrack-
@@ -376,7 +376,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /events?data=
 /eventsBeacon?
 /eventtracker.js
-/eventtracking/*
 /evercookie.
 /evercookie/*
 /evercookie_
@@ -420,7 +419,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /frontend-gtag.
 /frontend-sentry-
 /ga-audiences?
-/ga-events.js
 /ga-lite.
 /ga-tracker-
 /ga.js?grid
@@ -433,6 +431,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ganalytics.
 /ganalytics/*
 /gapro.js
+/gastats.
 /gatrack.
 /gb-tracker-
 /gc?refurl=
@@ -568,6 +567,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /loggly.tracker.
 /loi/imp?
 /ls.gif?
+/ls.php?t=
 /m.gif?
 /martypixel?
 /matomo.js$domain=~github.com
@@ -610,6 +610,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /notifications/beacon/*
 /np?log=
 /npm/perfops-rom
+/nsmg-tracking/*
 /ntpagetag.
 /o.gif?
 /o_code.js
@@ -647,7 +648,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /perflog/*
 /performance-metrics.js
 /performance/metrics
-/performanceMetrics?
 /performance_timing/*
 /perimeterx/*$domain=~github.com|~github.io
 /ph-tracking-
@@ -824,6 +824,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /trace/record?
 /track-internal-links.
 /track.ashx?*=http
+/track.php?domain=
 /track.png?
 /track.v2.js
 /track/?*&event=
@@ -852,7 +853,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /tracking/impression
 /tracking/ipify
 /tracking/pixel.
-/tracking/referrer?
 /tracking/thirdpartytag.js
 /trackingPixel.
 /trackingTools.
@@ -939,7 +939,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /wxhawkeye.js
 /x.gif?
 /xgemius.
-/xiti.js
 /xstat/*
 /xtcore.js
 /yandex-metrica-watch/*
@@ -1007,6 +1006,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||browser.sentry-cdn.com^$domain=acustica-audio.com|dic.pixiv.net|doconcall.com.my|eco-clobber.co.uk|fundhero.io|marshmallow-qa.com|menshealth.com|podcasty.seznam.cz|roomster.com|spacemarket.com|timesprime.com|vivareal.com.br|womenshealthmag.com
 @@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
+@@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
 @@||caf.fr^*/smarttag.js$script,~third-party
 @@||carsensor.net/usedcar/modules/clicklog_top_lp_revo.php$xmlhttprequest
 @@||cat.telia.no/gtm.js$script,domain=telia.no
@@ -1148,12 +1148,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||online-metrix.net^$script,domain=eki-net.com
 @@||online.mps-gba.de/praeludium/$script,domain=auto-motor-und-sport.de|caravaning.de|motorradonline.de
 @@||optimizely.com/datafiles/$domain=alaskaair.com|guildeducation.com|hm.com|nike.com|printify.me|talktalk.co.uk|tommy.com|wallapop.com
+@@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||p.typekit.net/p.css$stylesheet,domain=athleticpropulsionlabs.com|browserstack.com|bungie.net|business.untappd.com|robertsspaceindustries.com
 @@||p11.techlab-cdn.com^$domain=wizzair.com
 @@||palmettostatearmory.com/static/$script,~third-party
 @@||paypalobjects.com/*/pageView.js$script,domain=paypal.com
 @@||pendo.io/agent/static/$script,domain=recruiting.adp.com
-@@||pladform.ru/player$subdocument
 @@||plausible.io/js/plausible.js$script,domain=sammobile.com
 @@||playep.pro/log_event$~third-party,xmlhttprequest
 @@||plex.tv/api/v2/geoip$xmlhttprequest
@@ -1241,6 +1241,7 @@ _rpc/log?
 _stat.php?referer=
 _webanalytics.
 |https://r.i.ua^
+||123compteur.com^$third-party
 ||123count.com^$third-party
 ||123rf.com/apicore-index/traffic_log
 ||127.0.0.1^$third-party,domain=53.com|ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|kleinanzeigen.de|lendup.com|mbna.ca|rusneb.ru|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
@@ -1594,7 +1595,6 @@ _webanalytics.
 ||booking.com/navigation_times
 ||booking.com/sendlayoutevents
 ||box.com/index.php?rm=box_gen204_batch_record
-||bpmonline.com^$third-party
 ||branch.io^$third-party
 ||brandcdn.com/pixel/
 ||brandlock.io^$third-party
@@ -1625,7 +1625,6 @@ _webanalytics.
 ||c.paypal.com^$script
 ||c.ypcdn.com^$domain=yellowpages.com
 ||c1exchange.com^$third-party
-||c212.net^$third-party
 ||c3tag.com^$third-party
 ||cafe24.com/cfa.js
 ||call-tracking.by^$third-party
@@ -1694,7 +1693,6 @@ _webanalytics.
 ||clickfunnels.com/cf.js
 ||clickfunnels.com/userevents/
 ||clickiocdn.com/clickiotag_log/
-||clickiocdn.com/consent/log/
 ||clickiocdn.com/utr/
 ||clickmeter.com^$third-party
 ||clickonometrics.pl^$third-party
@@ -1793,7 +1791,6 @@ _webanalytics.
 ||crowdtwist.com/trck/$script
 ||csbew.com^$third-party
 ||csdata1.com^$third-party
-||cszz.ru^$third-party
 ||ctags.cn^$third-party
 ||ctnsnet.com^$third-party
 ||culturaltracking.ru^$third-party
@@ -2744,7 +2741,6 @@ _webanalytics.
 ||oracle.com/visitorinfo/
 ||oracleimg.com^*/metrics/
 ||oracleinfinity.io^$third-party
-||ordergroove.com/log/offer?
 ||oribi.io^$third-party
 ||orquideassp.com^$third-party
 ||ositracker.com^$third-party
@@ -2793,6 +2789,7 @@ _webanalytics.
 ||perfectaudience.com^$third-party
 ||perfops.io^$third-party
 ||perfops.net/rom3/
+||performanceanalyser.net^$third-party
 ||performancefirst.jp^$third-party
 ||performax.cz^$third-party
 ||perimeterx.net^$third-party
@@ -2812,6 +2809,7 @@ _webanalytics.
 ||pingomatic.com^$third-party
 ||pinkoi.com/_log/
 ||pippio.com^$domain=disqus.com
+||pirsch.io^$third-party
 ||piwik.pro^$third-party,domain=~clearcode.cc|~clearcode.pl|~piwikpro.de
 ||pixanalytics.com^$third-party
 ||pixel.ad^$third-party
@@ -2830,7 +2828,6 @@ _webanalytics.
 ||player-cdn.com/cdn-cgi/trace
 ||pleisty.com^$third-party
 ||plerdy.com^$third-party
-||plug.it^*/iol_evnt.
 ||plug.it^*/iol_evnt_
 ||pn.vg^$third-party
 ||pnstat.com^$third-party
@@ -2859,6 +2856,7 @@ _webanalytics.
 ||prfct.co^$third-party
 ||priceline.com/pws/v1/ace/impression/
 ||prime.rambler.ru^$~script
+||prism.app-us1.com^$script,third-party
 ||privacy-center.org^*/events
 ||privacy-policy.truste.com^$third-party
 ||privymktg.com^$third-party
@@ -2877,7 +2875,6 @@ _webanalytics.
 ||providesupport.com/cmd/$image
 ||psh.one^$third-party
 ||ptadsrv.de^$third-party
-||ptengine.cn^$third-party
 ||ptengine.com^$third-party
 ||ptengine.jp^$third-party
 ||ptztvpremium.com^$third-party
@@ -2885,6 +2882,7 @@ _webanalytics.
 ||public.cobrowse.oraclecloud.com/rely/storage/
 ||publicgood.com^$third-party
 ||publicidees.com^$third-party
+||pubstack.io^$third-party
 ||puls.lv^$third-party
 ||pulseinsights.com^$third-party
 ||push-ad.com^$third-party
@@ -3260,9 +3258,9 @@ _webanalytics.
 ||statcounterfree.com^$third-party
 ||stathat.com^$third-party
 ||statistika.lv^$third-party
-||stats-jobstreet-sg-en-prod.supercharge-srp.co^$domain=jobstreet.com.sg
 ||stats.externulls.com^$domain=beeg.com
 ||stats.live-video.net^$domain=kick.com
+||stats2.com^$third-party
 ||statsigapi.net^$third-party
 ||statsy.net^$third-party
 ||stattooz.com^$third-party
@@ -3440,6 +3438,7 @@ _webanalytics.
 ||trmads.eu^$third-party
 ||trrsf.com.br/metrics/
 ||trstplse.com^$third-party
+||truconversion.com^$third-party
 ||truehits.in.th^$third-party
 ||truehits.net^$third-party
 ||truenat.bid^$third-party
@@ -3496,7 +3495,6 @@ _webanalytics.
 ||united-infos.net^$third-party
 ||unity3d.com/v1/events
 ||unpkg.com/web-vitals?
-||unsplash.com/a/third-party/snow-
 ||unsplash.com/nmetrics
 ||upapi.net^$third-party
 ||upi.com/story/stat/
@@ -3583,6 +3581,7 @@ _webanalytics.
 ||walmart.ca/api/*/logger
 ||walmart.ca/px/PXnp9B16Cq/init.js
 ||walmart.ca^*/beacon-logger
+||wanmei.com/public/js/stat.js
 ||warlog.ru^$third-party
 ||warnermedia.com/api/v1/events?
 ||waudit.cz^$third-party
