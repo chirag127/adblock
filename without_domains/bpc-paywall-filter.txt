@@ -115,7 +115,7 @@ corriere.it,ilfattoquotidiano.it,ilfoglio.it##[subscriptions-section="content-no
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##+js(ra, subscriptions-section, [subscriptions-section="content"])
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##[subscriptions-section="content-not-granted"]
 corrieredellosport.it##+js(cookie-remover, /paywall_articles/)
-crusoe.uol.com.br##div#wallcontent,div#gpt-leaderboard,div.ads_desktop,div.catchment-box
+crusoe.uol.com.br##div#gpt-leaderboard,div.ads_desktop,div.catchment-box
 csmonitor.com##+js(aopr, localStorage)
 csmonitor.com##.paywall
 curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
@@ -363,6 +363,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||californiatimes.com/meteringjs/$script,domain=latimes.com|sandiegouniontribune.com
 ||cdn.ampproject.org/*/amp-access-$script
 ||cdn.ampproject.org/*/amp-subscriptions-$script
+||cdn.crusoe.com.br/assets/js/swg-wallcontent-crusoe.js$script,domain=crusoe.uol.com.br
 ||cdn.cxense.com^$script,third-party,important
 ||cdn.flip-pay.com/clients/*/flip-pay.js$script,domain=belfasttelegraph.co.uk|independent.ie
 ||cdn.loeildelaphotographie.com/wp-content/*/hague-child/js/script-$script,~third-party
@@ -379,8 +380,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||cooking.nytimes.com/api/*/access$xmlhttprequest,~third-party
 ||corprensa.com/la-prensa/evolok/$script,domain=prensa.com
 ||corriereobjects.it/*/js/_paywall.sjs$script,domain=corriere.it
-||crusoe.uol.com.br/diario/$inline-script
-||crusoe.uol.com.br/edicoes/$inline-script
+||crusoe.uol.com.br/ws/check-user-access$xmlhttprequest,~third-party
 ||diariocorreo.pe/pf/dist/engine/react.js$script,~third-party
 ||dn.se/check-paywall-v2.js,~third-party
 ||editorialedomani.it/pelcro.js$script,~third-party

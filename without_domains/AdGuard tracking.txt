@@ -465,6 +465,7 @@ $cookie=yTrackVisit
 /Web_JS_Stats.
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{25,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
+/\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[0-9a-z_-]{0,84}[A-Z])(?=[a-zA-Z_-]{0,84}[0-9])[0-9a-zA-Z_-]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mathbang.net|ujnews.co.kr|mediatoday.co.kr|hankyung.com|tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com|1412.rest|twicenest.com|feedclick.net|tistory.com|sportalkorea.com|minelist.kr|donga.com
@@ -4520,6 +4521,7 @@ znak.com##.relap
 ||bluekai.com^$third-party
 ||blushingbeast.com^$third-party
 ||blushingboundary.com^$third-party
+||blushingbread.com^$third-party
 ||blushingwar.com^$third-party
 ||blvdstatus.com^$third-party
 ||bm-rx.atatus.com^$third-party
@@ -4843,7 +4845,6 @@ znak.com##.relap
 ||cdn.theoplayer.com/t?
 ||cdn.threadloom.com/ga/
 ||cdn.thunderhead.com/one/rt/js/one-tag.js
-||cdn.ticimax.com/*/analytics.js
 ||cdn.topmind.io^$third-party
 ||cdn.trackclicks.info^$third-party
 ||cdn.trackjs.com/agent/v*/latest/t.js$script,redirect=noopjs,domain=adshnk.com|adshrink.it
@@ -7803,6 +7804,8 @@ znak.com##.relap
 ||monu.delivery^$third-party
 ||mopinion.com^$third-party
 ||more-data.ru^$third-party
+||moreknig.org^$cookie=1P_JAR
+||moreknig.org^$cookie=NID
 ||moreusers.info^$third-party
 ||morevisits.info^$third-party
 ||morgenpost.de/resources/*/js/webtrekk
