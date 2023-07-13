@@ -2802,6 +2802,7 @@ $cookie=yTrackVisit
 @@||som.aeroplan.com/b/ss/
 @@||songza.com/static/*/songza/systems/$script
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?requestUUID=$domain=bloomberg.*
+@@||sp0.baidu.com/*/finance.pae.baidu.com/vapi/async$domain=baidu.com
 @@||sp1.baidu.com/*/gettts?$media
 @@||spiegel.de/layout/js/http/netmind-$script
 @@||spieletipps.de/js/smb-tracking.js
@@ -2965,6 +2966,7 @@ $cookie=yTrackVisit
 @@||trc.taboola.com^$domain=asianetnews.com
 @@||trc.taboolasyndication.com^$domain=bloomberg.com|breitbart.com|nme.com|slatev.com
 @@||treasuredata.com/sdk/*/td.min.js$domain=shiseido.co.jp
+@@||treasuredata.com^$script,domain=skincare-univ.com
 @@||trf.greatviews.de/cl?$domain=mitarbeiterangebote.de
 @@||try.abtasty.com/403fb16c20596e4691fbe9ec5db9720e.js$domain=shop.euromaster.de
 @@||try.abtasty.com/78cb84f9b3158bdce6932109a6d7c7c1.js$domain=tf1.fr
@@ -3192,6 +3194,8 @@ connect.de#%#//scriptlet("abort-on-property-read", "trConfig")
 contactmonkey.com/api/v1/tracker$image
 continentseven.com##.gaoop
 conversions.appsflyersdk.com^
+crank-in.net#?#.wrap_general:has(> #taboola-below-article-thumbnails-mg)
+crank-in.net#?#article > section.block-area:has(> div#taboola-below-article-thumbnails-mg)
 ctvnews.ca##img[alt="comscorebeacon"]
 culture.ru###page-error-modal
 curazy.com##.sponsor-link-text
@@ -3293,6 +3297,7 @@ ixbt.com##.block__recommend
 j-cast.com###cxRelatedEntry
 j-cast.com###sp_j-cast_kiji_recommend_1
 jaiefra.com###Stats10_content
+jbpress.ismedia.jp#?#div.--wid:has(> div#taboola-below-article-thumbnails-bottom)
 jiji.com##.RecommendPianoWrapper
 jiji.com##.RecommendUnderlayer
 jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward(2)
@@ -3344,6 +3349,7 @@ mamibuy.com.tw#%#window.ga = function() {};
 mandrillapp.com/track$image
 markezine.jp##.carouselBlock > li[id^="cx_"].c-headlineindex_listitem
 maxpark.com###listOfCounters
+mdpr.jp#?#.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
 mebelkmk.ru#%#window.yaCounter27017517 ={ reachGoal: function() {} };
 megalifez.net##img[height="40"][width="88"]
 megatorrents.kg##a[href^="http://www.net.kg/stat.php"]
@@ -3406,6 +3412,7 @@ portaltele.com.ua##.td-footer-template-9
 ppomppu.co.kr#%#AG_onLoad(() => { if (/^https:\/\/(www\.|m\.|)ppomppu\.co\.kr\/(new\/|)hotdeal\//g.test(document.location.href) && document.querySelector(".hotDeal_goods > ul#hotdeal")) { var k = (n) => { if(/\/\/click\.linkprice\.com\/click\.php\?/.test(n)) { return new URLSearchParams(n).get("tu") } else { return n } }; new MutationObserver((o) => { Array.from(o[0].addedNodes).filter(e => /[0-9]{7,9}$/.test(e.className) && /ppomppu\.co\.kr\/(new\/|)hotdeal\/\?/.test(e.querySelector(".view > a").href)).forEach((e) => { e.querySelector(".view > a").href = e.querySelector("p > a[href]:not([class])").href = k(new URLSearchParams(e.querySelector(".view > a").href).get("url"))})}).observe(document.querySelector(".hotDeal_goods > ul#hotdeal"), { childList: true })}});
 ppomppu.co.kr#%#AG_onLoad(() => { if (/m\.ppomppu\.co\.kr\/new\/bbs_view\.php\?/.test(location.href) || /ppomppu\.co\.kr\/zboard\/view\.php\?/.test(location.href)) { Array.from(document.querySelectorAll("a[href][target='_blank']")).filter(e => /^https:\/\/s\.ppomppu\.co\.kr(\/|)\?idno=/.test(e.href)).forEach((o) => { o.href = atob(new URLSearchParams(o.href).get("target").replace("\\", ""))})}});
 pracuj.pl#%#//scriptlet('set-cookie-reload', 'gptrackCookie', '1')
+president.jp##.recommend
 prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистика)
 pryamoj-efir.ru#?#.layout-post-right > h1.playmaker-list:contains(Статистика)
 pstmrk.it/open$image
@@ -3637,7 +3644,6 @@ znak.com##.relap
 ||8020solutions.net^$third-party
 ||81.176.238.128/Counter.aspx
 ||82o9v830.com^$third-party
-||83.locksmaker.com.cn^$third-party
 ||85st.com/static/js/logging.js
 ||99click.com^$third-party
 ||99counters.com^$third-party
@@ -4386,7 +4392,6 @@ znak.com##.relap
 ||bdash-cloud.com^$third-party
 ||beacons.mediamelon.com^$third-party
 ||beadbears.com^$third-party
-||beak.bigdata.dpgmmservices.nl^$third-party
 ||beam.koddi.com^$third-party
 ||beamincrease.com^$third-party
 ||beamvolcano.com^$third-party
@@ -4805,6 +4810,7 @@ znak.com##.relap
 ||cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js
 ||cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js
 ||cdn.klambt.services/matomo/$third-party
+||cdn.livechatinc.com/tracking.js
 ||cdn.lmiutil.com/lpassets/contentsquare/
 ||cdn.lmiutil.com/lpassets/track-
 ||cdn.logrocket.com^$third-party
@@ -5452,7 +5458,6 @@ znak.com##.relap
 ||dbfocus.jp^$third-party
 ||dc-storm.com^$third-party
 ||dc-tag.jp^$third-party
-||dc.cuberoot.co^$third-party
 ||dc.services.visualstudio.com/*/track
 ||dcf.espn.com/privacy/
 ||dcmn.com^$third-party
@@ -5606,6 +5611,8 @@ znak.com##.relap
 ||doclix.com^$third-party
 ||docodoco.jp^$third-party
 ||docomo.ne.jp/js/beacon.js
+||doda.jp/DodaCommon/Html/js/RtoasterTrack.js
+||doda.jp/resources/dcfront/js/usrclkTracking.js
 ||dogannet.tv/q/s/stats
 ||dogsshoes.com^$third-party
 ||dojomojo.ninja^$third-party
@@ -5966,7 +5973,6 @@ znak.com##.relap
 ||ezytrack.com^$third-party
 ||f-counter.net^$third-party
 ||f.sen.seg.br^$third-party
-||f.zgbmw.com.cn^$third-party
 ||fabricww.com^$third-party
 ||facebook.com/ajax/bz?*__comet_req=
 ||facebook.com/email_open_log_
@@ -6649,6 +6655,7 @@ znak.com##.relap
 ||harryrosen.com/analytics/
 ||harvester.joj.sk/api/v1/harvester.js
 ||hasbro.com/js/omniture.js
+||hatarako.net/api/recommend/analyze_logger
 ||hatefulrequest.com^$third-party
 ||hatmiso.net^$third-party
 ||haveamint.com^$third-party
@@ -6809,6 +6816,7 @@ znak.com##.relap
 ||hung.ch^$third-party
 ||hunt-leads.com^$third-party
 ||hurra.com^$third-party
+||hurriyet.com.tr/banalytics.js
 ||hurtgrape.com^$third-party
 ||hurtteeth.com^$third-party
 ||husfly.com^$third-party
@@ -8035,6 +8043,7 @@ znak.com##.relap
 ||newzit.com/setABframe.html
 ||nexeps.com^$domain=saturn.de|mediamarkt.de
 ||nexeps.com^$third-party
+||next.rikunabi.com/api/logRecommendRealtimeI2AV2
 ||next.rikunabi.com/rnc/contents/pub/common/js/I2A.js
 ||nextclick.pl^$third-party
 ||nextstat.com^$third-party
@@ -8856,7 +8865,6 @@ znak.com##.relap
 ||rebelsubway.com^$third-party
 ||rebelswing.com^$third-party
 ||receive.shamimomo.net/dream/dream.cgi
-||receiver.pravoved.org^$third-party
 ||receptivebranch.com^$third-party
 ||receptiveink.com^$third-party
 ||receptivereaction.com^$third-party
@@ -9136,7 +9144,6 @@ znak.com##.relap
 ||sanyo-railway.co.jp/*/analytics.js
 ||sapha.com^$third-party
 ||sas15k01.com^$third-party
-||sat.public.bd.313.nl^$third-party
 ||satisfycork.com^$third-party
 ||satisfyingshow.com^$third-party
 ||satisfyingspark.com^$third-party
@@ -9809,7 +9816,6 @@ znak.com##.relap
 ||stats.pcsg-server.de/js/
 ||stats.publitas.com/publitas-stats/track
 ||stats.streamhub.io^$third-party
-||stats.vliplatform.com^$third-party
 ||stats.zone-telechargement.
 ||stats2.agilecrm.com^$third-party
 ||stats2.com^$third-party
@@ -10213,6 +10219,7 @@ znak.com##.relap
 ||tiser.com.au^$third-party
 ||tisoomi-services.com^$third-party
 ||titag.com^$third-party
+||tjrwrestling.net^$cookie=_pbjs_userid_consent_data
 ||tk.ilius.net/tr.gif?
 ||tk.mediacategory.com^$third-party
 ||tk.promit.ru^$third-party
@@ -11173,7 +11180,6 @@ znak.com##.relap
 ||youku.com/compvlog?
 ||youlead.pl/track?
 ||youngmarble.com^$third-party
-||your-counter.be^$third-party
 ||youramigo.com^$third-party
 ||yourmy.monster^$all
 ||youronlinechoices.com/css/images/pixel.png
@@ -11207,6 +11213,7 @@ znak.com##.relap
 ||zapier.com/api/*/tracking/event
 ||zara.com/integration/zenit/events/hit
 ||zara.media01.eu/tm_js.aspx?trackid
+||zatsubitown.com/mailfriend/kaiseki
 ||zaycev.net/clickmeter_
 ||zbwp6ghm.com^$third-party
 ||zdbb.net^$third-party
