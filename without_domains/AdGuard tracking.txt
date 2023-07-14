@@ -1427,6 +1427,7 @@ $cookie=yTrackVisit
 @@||content.wazimo.com/engine/common/*/js/min/?static=$domain=showsnob.com
 @@||content.wazimo.com/engine/common/css/$domain=showsnob.com
 @@||conversion.im/images/icons/google-analytics.png
+@@||convertexperiments.com/js/*.js$domain=platform.autods.com
 @@||coremetrics.com/eluminate.js
 @@||cot.priceminister.com/res/static/*/xtcore.js
 @@||count.rtl.de/crossdomain.xml$domain=n-tvnow.de|rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
@@ -2195,6 +2196,7 @@ $cookie=yTrackVisit
 @@||googletagmanager.com/gtm.js$domain=thethaiger.com
 @@||googletagmanager.com/gtm.js$domain=tribuna.com
 @@||googletagmanager.com/gtm.js$domain=turkcell.com.tr
+@@||googletagmanager.com/gtm.js$domain=tv-asahi.co.jp
 @@||googletagmanager.com/gtm.js$domain=tvnow.de|tvnow.at
 @@||googletagmanager.com/gtm.js$domain=type.jp
 @@||googletagmanager.com/gtm.js$domain=ucicinemas.pt
@@ -3405,6 +3407,8 @@ petyado.com##table[width="700"][height="42"]
 petyado.com##table[width="785"][height="30"]
 petyado.com##td[valign="top"][height="10"] > table[width="795"]
 pioneer.eu#%#//scriptlet('remove-attr', 'onclick', 'a[href][onclick^="trackOutboundLink"]')
+platform.autods.com#%#//scriptlet('set-constant', '_conv_q', 'emptyObj')
+platform.autods.com#%#//scriptlet('set-constant', '_conv_q.push', 'noopFunc')
 politring.com##a[href="https://metrika.yandex.ru/"]
 polymail.io/v2/z$image
 popin.cc#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
@@ -10166,6 +10170,8 @@ znak.com##.relap
 ||theguru.co.kr/weblog/gtracker.php
 ||theindex.moe/api/ip-info$redirect=noopjson
 ||theinformation.com/ahoy/events
+||themanual.com^$cookie=dtLastActive
+||themanual.com^$cookie=dtPageViewId
 ||thequin.ai^$third-party
 ||thermstats.com^$third-party
 ||thesearchagency.net^$third-party
@@ -10620,6 +10626,7 @@ znak.com##.relap
 ||uraaka.com/analytics/
 ||urbanairship.com^$third-party
 ||urlbrief.com^$third-party
+||urldefense.proofpoint.com^*analytics_insight.min.js
 ||urlself.com^$third-party
 ||urstats.de^$third-party
 ||usabilitytools.com^$third-party
