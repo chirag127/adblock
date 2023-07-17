@@ -202,7 +202,6 @@ m.ynet.co.il##iframe[src*=".youtube.com/subscribe_embed?"]
 nsfwyoutube.com##pp
 *$xhr,3p,domain=nsfwyoutube.com
 ||m.youtube.com/*/ad.js$script
-*$3p,denyallow=googleapis.com|dropbox-dns.com|cloudflare.com|cloudflare.net|dropbox.com|ggpht.com|googleusercontent.com|google.com|gstatic.com|ytimg.com|youtube.com|youtube-nocookie.com|plyr.io|noembed.com,domain=mp3download.to
 ||mp3juices.cc^$csp=default-src 'self' 'unsafe-inline' *.dropbox.com *.dropbox-dns.com *.gstatic.com *.googleapis.com *.google.com ytpp3.com *.youtube.com
 ||gospeljingle.com^$csp=default-src 'unsafe-inline' 'self' data: *.ytimg.com *.facebook.com *.google.com *.gstatic.com *.youtube.com *.googleapis.com *.wp.com *.gospeljingle.com *.googletagmanager.com
 ||ads.youtube.com/|$xhr,3p,redirect-rule=noop.txt
@@ -212,9 +211,11 @@ youtube.com##.masthead-ad-control,.ad-div,.pyv-afc-ads-container
 youtube.com###promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig.audioConfig)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.bkaEnforcementMessageViewModel, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
@@ -844,7 +845,6 @@ gaminplay.com##.g-recaptcha, iframe[src*="google.com/recaptcha"], #yuidea-btn-be
 *$script,3p,denyallow=bootstrapcdn.com|google.com|hwcdn.net|jquery.com,domain=kabegamipuloh.web.app
 *$script,3p,denyallow=cloudflare.com|gcdn.co|google.com|gstatic.com|videocdn.name,domain=hog.*
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com,domain=itsguider.com
-*$3p,denyallow=googleapis.com|dropbox-dns.com|cloudflare.com|cloudflare.net|dropbox.com|ggpht.com|googleusercontent.com|google.com|gstatic.com|ytimg.com|youtube.com|youtube-nocookie.com|plyr.io|noembed.com,domain=mp3download.to
 ||mp3juices.cc^$csp=default-src 'self' 'unsafe-inline' *.dropbox.com *.dropbox-dns.com *.gstatic.com *.googleapis.com *.google.com ytpp3.com *.youtube.com
 ||gospeljingle.com^$csp=default-src 'unsafe-inline' 'self' data: *.ytimg.com *.facebook.com *.google.com *.gstatic.com *.youtube.com *.googleapis.com *.wp.com *.gospeljingle.com *.googletagmanager.com
 ||krunkercentral.com^$csp=default-src 'unsafe-inline' 'self' *.google.com *.gstatic.com *.googleapis.com *.wp.com *.googletagmanager.com *.jquery.com
@@ -2692,8 +2692,8 @@ audiophileon.com#?##content > .extra-wrapper > .sqs-layout:has(.sqs-block-button
 dlsharefile.com#?#.mt-5 > div[class="border bg-secondary"]:has(a[href^="https://www.amazon.com/"])
 krebsonsecurity.com#?#.nobullet > li:has(> a[href^="https://www.amazon.com/"])
 @@||images-na.ssl-images-amazon.com/images/*/transparent-pixel.$image,domain=amazon.in
-amazon.com#%#//scriptlet('xml-prune', 'Period:\has([value="Ad"])', '', '.mpd')
-amazon.com#%#//scriptlet("json-prune", "cuepointPlaylist")
+amazon.co.jp,amazon.com#%#//scriptlet('xml-prune', 'Period:\has([value="Ad"])', '', '.mpd')
+amazon.co.jp,amazon.com#%#//scriptlet("json-prune", "cuepointPlaylist")
 ||m.media-amazon.com/images/$domain=klz9.com
 amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es##div[class*="widget=loom-"][class*="FEATURED"]
 amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es##.a-carousel-card:empty
@@ -2822,8 +2822,8 @@ ktgis.net,typepad.com,ntv.co.jp,isekai-museum.jp,phantom-world.com,skymetweather
 ||cloudfront.net^*.mp3|$media,redirect=noopmp3-0.1s,domain=music.amazon.com|music.amazon.ca|music.amazon.co.uk|music.amazon.fr|music.amazon.de|music.amazon.it|music.amazon.es|music.amazon.co.jp|music.amazon.com.au|music.amazon.com.mx
 oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
 ||videorolls.row.aiv-cdn.net/*.mp4$media,redirect=noopmp3-0.1s,domain=amazon.com
-www.amazon.com##+js(json-prune, cuepointPlaylist)
-www.amazon.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start), [value="Ad"], .mpd)
+www.amazon.co.jp,www.amazon.com##+js(json-prune, cuepointPlaylist)
+www.amazon.co.jp,www.amazon.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start), [value="Ad"], .mpd)
 ||fls-na.amazon.com/$xhr,redirect=noopjs,domain=imdb.com
 @@||ws-na.assoc-amazon.com^$image,domain=4tests.com
 @@||ssl-images-amazon.com/*/satelliteLib-$script,domain=audible.*
