@@ -283,6 +283,9 @@ splainer.in##+js(rc, hide-section, .hide-section)
 splainer.in##.subscription-prompt
 staradvertiser.com##+js(ra, style, div#hsa-paywall-content[style])
 staradvertiser.com##div#hsa-paywall-overlay
+startribune.com##+js(cookie-remover, /client_id/)
+startribune.com##+js(ra, class, body.paywall)
+startribune.com##div.ReactModalPortal,div.ad-placeholder
 stateaffairs.com##+js(rc, access-restricted, body.access-restricted)
 stateaffairs.com##div.c-memberships-message
 studocu.com##.page-content:style(filter: none !important; user-select: unset !important)
@@ -452,7 +455,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||seattletimes.com/wp-content/*/st-user-messaging-main-bundle.js$script,~third-party
 ||shrm.org/*/js/paywall*.js$script,~third-party
 ||smartwall.theglobeandmail.com^$xmlhttprequest,~third-party
-||startribune.com/vendor/js/$script,~third-party
 ||steadyhq.com^$script,third-party
 ||subs.theepochtimes.com/lib/api.bundle.js$script,~third-party
 ||suomensotilas.fi/wp-content/plugins/epflpw/js/pw.js$script,~third-party
