@@ -1,5 +1,6 @@
 ###cxense-recs-in-article
 ##.embed-responsive-trendmd
+$csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vidoza.net
 $third-party,xmlhttprequest,domain=opensubtitles.org
 &EventType=Impression&
@@ -102,6 +103,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /QuotaService.RecordEvent?
 /SSOCore/update?
 /SdaAnalytics.js
+/StatRecorder.asp?
 /StatSNA.js
 /TeaLeaf.js
 /TealeafSDK.js
@@ -148,6 +150,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ahoy/events
 /ahoy/visits
 /ajax-hits-counter/*
+/ajax/analytics/*
 /ajax/counter?ctr=
 /akam/*/pixel_
 /akam/11/*
@@ -161,9 +164,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /analytics-data-collector.
 /analytics-ping.
 /analytics-tracker/*
-/analytics.*/ping/?
 /analytics.*/track
-/analytics.config.js
 /analytics.gif?
 /analytics.js/v1/*
 /analytics.prod.$domain=~fifteen.eu
@@ -206,6 +207,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /autotrack.js
 /awp.log
 /awpys.log
+/aws-analytics/*
 /awstats_misc_tracker
 /b.gif?
 /b/s/beacon
@@ -239,6 +241,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /blank.gif?*&
 /blink-sw.js
 /boomerang.js
+/boomerang/beacon
 /brightTag-min.js
 /browserinfo?f.sid=
 /bsp-analytics.
@@ -420,6 +423,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ga.js?grid
 /ga.php?$image
 /ga2.js
+/gaEventTracking.
 /gaEvents.js
 /ga_cookie_
 /ga_setup.js
@@ -511,6 +515,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /koko-analytics-
 /koko-analytics/*/script.js
 /krux-sass-helper.
+/lc-sentry.
 /lead-tracking.
 /lead-tracking/*
 /lib/analytics.
@@ -568,7 +573,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /matomo.php
 /matomo/*$domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
 /measure/data-capture/*
-/measure/pixel/*
 /mendelstats.
 /metric/?wid=
 /metrica/sp.js
@@ -789,7 +793,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /stats.wp.com/*
 /stats/?rt=
 /stats/CounterPage.
-/stats/collect?
 /stats/footer.
 /stats/ida_
 /stats/impression
@@ -821,7 +824,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /tncms/tracking.js
 /tongji.js
 /trace/record?
-/track-event.
 /track-internal-links.
 /track-visit?
 /track.png?
@@ -843,7 +845,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /track_page_view?
 /track_video.php?id=
 /track_visit.
-/tracker.gif?
 /tracker/app.
 /tracking-analytics-
 /tracking-init.
@@ -987,7 +988,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||analytics.analytics-egain.com/onetag/$script,domain=boohoo.com|digikey.at|digikey.be|digikey.bg|digikey.ca|digikey.ch|digikey.cn|digikey.co.il|digikey.co.nz|digikey.co.th|digikey.co.uk|digikey.co.za|digikey.com|digikey.com.au|digikey.com.br|digikey.com.mx|digikey.cz|digikey.de|digikey.dk|digikey.ee|digikey.es|digikey.fi|digikey.fr|digikey.gr|digikey.hk|digikey.hu|digikey.ie|digikey.in|digikey.it|digikey.jp|digikey.kr|digikey.lt|digikey.lu|digikey.lv|digikey.my|digikey.nl|digikey.no|digikey.ph|digikey.pl|digikey.pt|digikey.ro|digikey.se|digikey.sg|digikey.si|digikey.sk|digikey.tw
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
-@@||api.apolomedia.com/static/libs/event-tracking.min.js$script
 @@||api.babbel.io/gamma/v1/$ping,domain=babbel.com
 @@||api.enthusiastgaming.net^$xmlhttprequest,domain=diep.io
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
@@ -1012,7 +1012,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cbc.ca/g/stats/js/cbc-stats-top.js
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
 @@||cdn-net.com/cc.js
-@@||cdn.perfops.net/rom3/rom3.min.js$domain=cdnperf.com
 @@||cdn.segment.com/analytics-next/
 @@||cdn.segment.com/analytics.js/$script,domain=abstractapi.com|app.cryptotrader.tax|driversed.com|fender.com|finerdesk.com|foxbusiness.com|foxnews.com|givingassistant.org|inxeption.io|reuters.com|squaretrade.com
 @@||cdn.segment.com/next-integrations/integrations/
@@ -1022,6 +1021,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cdn.viglink.com/api/vglnk.js$domain=9to5mac.com|electrek.co
 @@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca|finishline.com|summitracing.com|tumi.com
 @@||check.ddos-guard.net/check.js$script
+@@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|myair.resmed.com
 @@||cmn.gyro-n.com/js/gyr.min.js$domain=benesse-style-care.co.jp
 @@||cmp.telerama.fr/js/telerama.min.js$~third-party
 @@||cnet.com/a/video-player/uvpjs-rv/$script,~third-party
@@ -1044,7 +1044,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||datadoghq-browser-agent.com^$script,domain=bbcgoodfood.com|dashboard.getdriven.app|hungryroot.com|usa.experian.com
 @@||delta.com/dlhome/ruxitagentjs$~third-party
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
-@@||docs.google.com/*/viewdata$~third-party
 @@||dz9qn8fh4jznm.cloudfront.net/script.js$script,domain=bostonglobe.com
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||elconfidencial.com^*/AnalyticsEvent.js
@@ -1144,10 +1143,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||plplayer.online/log_event$~third-party,xmlhttprequest
 @@||pmdstatic.net/advertising-$script,xmlhttprequest,domain=programme-tv.net
 @@||pub.pixels.ai/prebid_standard.js$script,domain=standard.co.uk
-@@||px-cdn.net/api/v2/collector/ocaptcha$xmlhttprequest
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
 @@||realclearpolitics.com/esm/assets/js/admiral.js$~third-party
-@@||realclearpolitics.com/esm/assets/js/analytics/chartbeat.js$~third-party
 @@||realclearpolitics.com/esm/assets/js/analytics/gaAnalytics.js$~third-party
 @@||redbull.com/gtm.js$~third-party
 @@||res-x.com^*/Resonance.aspx?
@@ -1155,7 +1152,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||retailmenot.com/__wsm.gif$ping,~third-party,xmlhttprequest
 @@||rfksrv.com/rfk/js/*/init.js$script,domain=riteaid.com
 @@||rollbar.com^*/rollbar.min.js$domain=rollingstone.com|variety.com|wwd.com
-@@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp|pro.logitec.co.jp
+@@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
 @@||s-microsoft.com/mscc/statics/$script,domain=microsoft.com
 @@||s.btstatic.com/tag.js$domain=sephora.com
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
@@ -1228,7 +1225,6 @@ _webanalytics.
 arketing.indianadunes.com^
 |71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
 |https://r.i.ua^
-||123compteur.com^$third-party
 ||123count.com^$third-party
 ||127.0.0.1^$third-party,domain=53.com|ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|kleinanzeigen.de|lendup.com|mbna.ca|rusneb.ru|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
 ||163.com/sn.gif?
@@ -1237,7 +1233,6 @@ arketing.indianadunes.com^
 ||1dmp.io^$third-party
 ||1worldsync.com/log?
 ||2222.ro^$third-party
-||247-inc.net^$third-party
 ||24counter.com^$third-party
 ||24log.com^$third-party
 ||24log.de^$third-party
@@ -1257,7 +1252,6 @@ arketing.indianadunes.com^
 ||6sc.co^$third-party
 ||7eer.net^$third-party
 ||7x4.fr^$third-party
-||99counters.com^$third-party
 ||9nl.eu^$third-party
 ||a-cast.jp^$third-party
 ||a-pagerank.net^$third-party
@@ -1367,8 +1361,7 @@ arketing.indianadunes.com^
 ||air360tracker.net^$third-party
 ||airbrake.io^$third-party
 ||airpr.com^$third-party
-||airtable.com/internal/$xmlhttprequest
-||airtable.com/internal/page_view
+||airtable.com/internal/
 ||aiv-delivery.net/Events/
 ||aiv-delivery.net/v1/ReportEvent
 ||akamaihd.net/*.gif?e=
@@ -1587,6 +1580,7 @@ arketing.indianadunes.com^
 ||brat-online.ro^$third-party
 ||brcdn.com^$third-party
 ||breaktime.com.tw^$third-party
+||bridge-ashiato.appspot.com/beacon/
 ||brightedge.com^$third-party
 ||brilliantcollector.com^$third-party
 ||bronto.com^$third-party
@@ -1813,6 +1807,7 @@ arketing.indianadunes.com^
 ||dc-storm.com^$third-party
 ||dcard.tw/v1/events
 ||dcf.espn.com/privacy/
+||dcmn.io^$third-party
 ||de17a.com^$third-party
 ||dealer.com^*/tracking/
 ||dealnews.com/lw/ul.php
@@ -1956,6 +1951,7 @@ arketing.indianadunes.com^
 ||evergage.com/beacon/
 ||everyaction.com/v1/Track/
 ||evidon.com/pub/
+||evorra.net^$third-party
 ||evs.sgmt.loom.com^$script
 ||evyy.net^$third-party
 ||exactag.com^$third-party
@@ -2067,7 +2063,6 @@ arketing.indianadunes.com^
 ||fwpixel.com^$third-party
 ||ga-analytics.com^$third-party
 ||gacraft.jp^$third-party
-||gaiaonline.com/internal/mkt_t.php?
 ||gaijin.net/tag?
 ||galaxiemedia.fr^$third-party
 ||gameanalytics.com^$third-party
@@ -2168,7 +2163,6 @@ arketing.indianadunes.com^
 ||gravitec.net^$third-party
 ||gridsumdissector.com^$third-party
 ||grmtech.net^$third-party
-||group-ib.ru^$third-party
 ||groupondata.com/tracky
 ||growingio.com^$third-party
 ||growthrx.in^$third-party
@@ -2186,6 +2180,7 @@ arketing.indianadunes.com^
 ||guoshipartners.com^$third-party
 ||gwmtracking.com^$third-party
 ||gyro-n.com^$third-party
+||harryrosen.com/analytics/
 ||hatarako.net/api/recommend/analyze_logger
 ||healthline.com/api/metrics
 ||heapanalytics.com^$third-party
@@ -2235,6 +2230,7 @@ arketing.indianadunes.com^
 ||humanpresence.app^$third-party
 ||hurra.com^$third-party
 ||hybrid.ai^$third-party
+||hypestat.com^$third-party
 ||i-mobile.co.jp^$third-party
 ||i2ad.jp^$third-party
 ||i2i.jp^$third-party
@@ -2467,6 +2463,7 @@ arketing.indianadunes.com^
 ||m6r.eu^$third-party
 ||macromill.com^$third-party
 ||macys.com/tag_path/
+||madkudu.com^$third-party
 ||magnetmail1.net^$third-party
 ||mail.qq.com/cgi-bin/getinvestigate?
 ||mail.ru/count/
@@ -2616,6 +2613,7 @@ arketing.indianadunes.com^
 ||ndg.io^$third-party
 ||nedstat.net^$third-party
 ||nedstatbasic.net^$third-party
+||needle.com/pageload?
 ||netaffiliation.com^$script,third-party
 ||netcoresmartech.com^$third-party
 ||netease.com/web/performance?
@@ -2635,7 +2633,6 @@ arketing.indianadunes.com^
 ||ngacm.com^$third-party
 ||ngastatic.com^$third-party
 ||nice264.com/data?$third-party
-||nicequest.com^$third-party
 ||nicovideo.jp/api/counter/
 ||nicovideo.jp/v1/recommend/log/
 ||nicovideo.jp/v2/user/actions/watch-events.json
@@ -2743,6 +2740,7 @@ arketing.indianadunes.com^
 ||particularaudience.com^$third-party
 ||paruvendu.fr/*/stats/
 ||payments-amazon.com^*/analytics.js
+||payments.amazon.com/cs/uedata
 ||paypal.com/credit-presentment/log
 ||paypal.com/platform/tealeaftarget
 ||paypal.com/webapps/mch/cmd/?
@@ -2853,6 +2851,7 @@ arketing.indianadunes.com^
 ||psh.one^$third-party
 ||pstats.com^$third-party
 ||ptadsrv.de^$third-party
+||ptengine.cn^$third-party
 ||ptengine.com^$third-party
 ||ptengine.jp^$third-party
 ||ptztvpremium.com^$third-party
@@ -3011,7 +3010,6 @@ arketing.indianadunes.com^
 ||returnpath.net^$third-party
 ||reussissonsensemble.fr^$third-party
 ||revcatch.com^$third-party
-||reverbnation.com/api/user/app_events
 ||revhunter.tech^$third-party
 ||revive-chat.io/js/tracking-min.js
 ||revoffers.com^$third-party
@@ -3027,6 +3025,7 @@ arketing.indianadunes.com^
 ||rnet.plus^$third-party
 ||roblox.com/report
 ||roblox.com^*/_/1px.gif
+||roeyecdn.com^$third-party
 ||roia.biz^$third-party
 ||roistat.com^$third-party
 ||rollbar.com^$third-party
@@ -3069,7 +3068,6 @@ arketing.indianadunes.com^
 ||scorecardresearch.com^$third-party
 ||scribd.com^*/events
 ||script.ag^$third-party
-||scriptshead.com^$third-party
 ||scupio.com^$third-party
 ||sddan.com^$third-party
 ||sdiapi.com/reporter/
@@ -3200,6 +3198,7 @@ arketing.indianadunes.com^
 ||sohu.com/adgtr/
 ||sohu.com/count/
 ||sohu.com/ip/$script
+||sohu.com/pccollector
 ||sohu.com/pv.js
 ||sohu.com/pvpb.gif?
 ||sohu.com/stat/
@@ -3285,6 +3284,7 @@ arketing.indianadunes.com^
 ||synergy-e.com^$third-party
 ||syteapi.com/et?
 ||t.ad.nl^$image
+||t.destentor.nl^$image
 ||t.felmat.net^$third-party
 ||t.hln.be^$image
 ||t.paypal.com^$image
@@ -3371,7 +3371,6 @@ arketing.indianadunes.com^
 ||toplist.sk^$third-party
 ||topofblogs.com^$third-party
 ||toptracker.ru^$third-party
-||toros.daum.net/toros/imp
 ||totalcsgo.com/ctrack/
 ||tp88trk.com^$third-party
 ||tra.scds.pmdstatic.net/sourcepoint/
@@ -3431,7 +3430,6 @@ arketing.indianadunes.com^
 ||tunein.com/api/v1/log/
 ||turn.com^$third-party
 ||turnto.com/event
-||tv.sohu.com/upload/trace/
 ||tvsquared.com^$third-party
 ||twcount.com^$third-party
 ||twitter.com/1.1/jot
@@ -3455,6 +3453,7 @@ arketing.indianadunes.com^
 ||ubertags.com^$third-party
 ||uc.cn/collect?
 ||uciservice.com^$third-party
+||udemy.com/api-2.0/ecl
 ||uecdn.es/js/pbmu.js
 ||ui-portal.de/pos-cdn/tracklib/
 ||ukw.jp^$third-party
