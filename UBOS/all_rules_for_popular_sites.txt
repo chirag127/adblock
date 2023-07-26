@@ -35,10 +35,10 @@ youtube.com##ytd-search-pyv-renderer
 youtube.com##ytm-promoted-sparkles-web-renderer
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.adPlacements', 'undefined')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'playerResponse.adPlacements', 'undefined')
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerConfig.webPlayerConfig')
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerResponse.playerConfig.webPlayerConfig')
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerConfig.streamSelectionConfig')
-youtube.com,youtubekids.com,youtube-nocookie.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerResponse.playerConfig.streamSelectionConfig')
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerConfig.webPlayerConfig.webPlayerActionsPorting')
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerResponse.playerConfig.webPlayerConfig.webPlayerActionsPorting')
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerConfig.streamSelectionConfig.maxBitrate')
+youtube.com,youtubekids.com,youtube-nocookie.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds', 'playerResponse.playerConfig.streamSelectionConfig.maxBitrate')
 youtube.com,youtubekids.com,youtube-nocookie.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.playerAds', 'undefined')
 ||youtube.com/get_video_info?*=adunit&$important
 youtube.com/get_video_info?*=adunit&
@@ -215,9 +215,9 @@ youtube.com###promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig.streamSelectionConfig.maxBitrate)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig.webPlayerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig.webPlayerConfig.webPlayerActionsPorting)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig.streamSelectionConfig.maxBitrate)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig.webPlayerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig.webPlayerConfig.webPlayerActionsPorting)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
@@ -1130,6 +1130,7 @@ bing.com##div[data-viewname="GiveModeFlyoutUpsell"]
 bing.com##.ev_talkbox_wrapper
 bing.com###b_notificationContainer_bop
 backpacker.com,betamtb.com,cleaneatingmag.com,climbing.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.c-newsletter-subscribe
+cn.bing.com###id_qrcode_popup_positioner
 bing.com###bnp_rich_div
 bing.com##.bnp_btc
 bing.com###bnp_hfly
@@ -1293,7 +1294,7 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#div[
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#div[style="margin-left:24px;margin-top:0"][class] > div[class] > div[class^="_"]:not([data-redditstyle]):has(> div[class] div[class] > div[class] > div[data-before-content="advertisement"])
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.ListingLayout-outerContainer > div[class] > div[style][class] > div[style][class] > div[class] div[class]:not([data-redditstyle]):has(> div[class] > div[class] > .SidebarAd)
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#div[style*="fakelightbox-overlay-"] ~ div[tabindex] > div >  div > div > div[data-redditstyle="false"]:has(> div > div > div[data-before-content="advertisement"])
-theglobeandmail.com,globalnews.ca,infoworld.com,worldsoccertalk.com,minecraftforum.net,snipboard.io,pics-x.com,recyclingtoday.com,battlefieldtracker.com,destinytracker.com,tracker.network,tracker.gg,jamesbachini.com,grammarbook.com,punchng.com,one-off.email,all3dp.com,mangafarm.com,mangajar.com,deeeep.io,raaaaft.io,trustedreviews.com,obsev.com,gfinityesports.com,reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,dvbtmap.eu,infinityfree.net,ibtimes.co.uk,amp-businessinsider-com.cdn.ampproject.org,deviantart.com,usatoday.com##.ad-container
+ubackup.com,southparkstudios.com,theglobeandmail.com,globalnews.ca,infoworld.com,worldsoccertalk.com,minecraftforum.net,snipboard.io,pics-x.com,recyclingtoday.com,battlefieldtracker.com,destinytracker.com,tracker.network,tracker.gg,jamesbachini.com,grammarbook.com,punchng.com,one-off.email,all3dp.com,mangafarm.com,mangajar.com,deeeep.io,raaaaft.io,trustedreviews.com,obsev.com,gfinityesports.com,reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion,dvbtmap.eu,infinityfree.net,ibtimes.co.uk,amp-businessinsider-com.cdn.ampproject.org,deviantart.com,usatoday.com##.ad-container
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[data-before-content]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##a[href^="https://PornGameFree.fun"]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.ii4q9d-0.fePAzF > div.s1g6rpxu-1
