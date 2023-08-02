@@ -22,8 +22,6 @@
 @@cdn.cxense.com^$script,domain=bizjournals.com
 @@||cdn.ampproject.org/*/amp-access-$script,domain=cambridge.org|cmjornal.pt
 @@||piano.io^$domain=asia.nikkei.com|japantimes.co.jp|kurier.at|onet.pl
-@@||sdk.privacy-center.org$script,domain=abc.es
-@@||tweakers.nl/json$xmlhttprequest,domain=tweakers.net
 aaii.com##+js(rc, fadeout, .fadeout)
 aaii.com##.greybox-signup
 aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled)
@@ -67,7 +65,6 @@ axios.com##[data-vars-experiment="pro-paywall"],[class^="Modal_paywallContainer"
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##+js(rc, is-gated, .is-gated)
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##+js(rc, is-gated--flexible-layout, .is-gated--flexible-layout)
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.o-membership-overlay
-behance.net##div[class^="Search-contentBlocker-"]
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, class, div[class^="gradient-mask-"], stay)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, body[style], stay)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(ra, style, html[style], stay)
@@ -250,7 +247,6 @@ onet.pl##+js(cookie-remover, /xbc/)
 paloaltoonline.com##+js(cookie-remover, /^/)
 philosophynow.org##+js(cookie-remover, /^/)
 popbitch.com##+js(ra, class, div[class*="-premium"])
-pressreader.com##.subscriber-content
 profi.de,topagrar.at,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style])
 profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
 psypost.org##+js(cookie-remover, issuem_lp)
@@ -270,7 +266,6 @@ scmp.com##+js(ra, amp-access-hide, div.article-body[amp-access][amp-access-hide]
 scmp.com##amp-ad,div.ad-banner,div.advert-fly-carpet-container,div.inline-advert
 scmp.com##div.default-meter,div#archive-article-meter
 scotsman.com##+js(ra, class, div.premium)
-scribd.com##+js(ra, class, .blurred_page)
 slideshare.net##+js(aopr, localStorage)
 slideshare.net##+js(rc, limit-overlay, .limit-overlay)
 sofrep.com##+js(cookie-remover, sofrep_news_ids)
