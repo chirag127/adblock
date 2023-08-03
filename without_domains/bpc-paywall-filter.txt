@@ -150,6 +150,7 @@ espresso.repubblica.it##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
 etc.se##div[class$="-ad"]
+euobserver.com##+js(rc, show, div.membership-upsell.show)
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
 financialexpress.com##+js(rc, paywall, .paywall)
@@ -242,7 +243,7 @@ nyteknik.se##+js(rc, locked-article, div.locked-article)
 nytimes.com##+js(json-prune, data.user)
 nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div.expanded-dock
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
-odt.co.nz(ra, property, div[property="content:encoded"])
+odt.co.nz##+js(ra, property, div[property="content:encoded"])
 onet.pl##+js(cookie-remover, /xbc/)
 paloaltoonline.com##+js(cookie-remover, /^/)
 philosophynow.org##+js(cookie-remover, /^/)
