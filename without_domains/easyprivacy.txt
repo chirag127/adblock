@@ -57,6 +57,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .snowplowanalytics.$domain=~snowplowanalytics.com
 .spmailtechnol.com/q/$image
 .spmailtechnolo.com/q/$image
+.substack.com/o/$image
 .svc/?tracking_id=
 .zippingcare.com/beacon/$image
 /.well-known/shopify/monorail
@@ -174,7 +175,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /analytics/dist/*
 /analytics/event
 /analytics/ga.
-/analytics/inboundAnalytics.
 /analytics/page_view.
 /analytics/searches
 /analytics/track_
@@ -231,7 +231,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /beacon/stats
 /beacon/user-data
 /beacon/v1/batch?
-/beacon?cust=
 /beaconimages.netflix.net/*$image
 /beacons?data=
 /benchmarketingsmarttag/*
@@ -475,6 +474,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /imgevent?
 /imp.gif?
 /impr.gif?
+/impresion/zona/*
 /impression.track?
 /impression/track?
 /impression?mkevt=
@@ -524,7 +524,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /log/event?
 /log/impression/*
 /log/init?
-/log/pageview
 /log/report/*
 /log/sentry/*
 /log/server?
@@ -547,7 +546,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /log_h.jsp
 /log_interaction?
 /loganalyticsevent?
-/logcollect.
 /logcount.php?
 /logging/ClientEvent
 /logging/logjs
@@ -592,7 +590,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /nLoggerJB_
 /naLogImpressions?
 /nativendo.js
-/nbc-stats/*
 /new-client/trackers.
 /new-relic.$~stylesheet
 /newrelic.iframe.
@@ -746,14 +743,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /sensorsdata.$domain=~sensorsdata.cn
 /sentry-browser.
 /session/update-beacon
-/set_cookie.php?
 /set_tracking.js
 /shared/sentry/*
 /shinystat.
 /shopify-boomerang-
 /shoutout.wix.com/*$image
 /shreddit/perfMetrics
-/siteAnalytics.
 /smart-pixel.min.
 /smartpixel.$domain=~smartpixel.com|~smartpixel.tv
 /smartserve-
@@ -781,7 +776,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /stats.wp.com/*
 /stats/?rt=
 /stats/CounterPage.
-/stats/collect?
 /stats/footer.
 /stats/impression
 /stats/pageview
@@ -950,7 +944,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ?log=stats-
 ?logType=impression&
 ?logType=trackEvent&
-?sponsor_pixel=
 @@rutracker.*/tracker.php?
 @@||ab.blogs.es/abtest.png$domain=trendencias.com|xataka.com
 @@||accounts.intuit.com/fe_logger?$~third-party
@@ -1011,7 +1004,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cohesionapps.com/cohesion/$domain=bankrate.com|frontier.com
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
 @@||collector.appconsent.io/hello$domain=lachainemeteo.com|lefigaro.fr
-@@||community.brave.com/t/$xmlhttprequest
 @@||content.adunity.com/aulib.js$script,domain=b1tv.ro
 @@||coremetrics.com*/eluminate.js
 @@||cqcounter.com^$domain=cqcounter.com
@@ -1070,6 +1062,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com|rubex.efilecabinet.net
 @@||js.sentry-cdn.com^$script,domain=app.homebinder.com|book.dmm.com|interacty.me|jobs.ch|pizzahut.com.au
 @@||k-img.com/script/analytics/s_code.js$script,domain=kakaku.com
+@@||kameleoon.eu/images/$domain=welt.de
 @@||kameleoon.eu/kameleoon.js$domain=welt.de
 @@||kameleoon.io/geolocation^$domain=welt.de
 @@||kameleoon.io/ip^$domain=welt.de
@@ -1196,7 +1189,6 @@ _beacon?
 _c.gif?c=
 _event_tracking.
 _event_tracking?
-_interaction_analytics/
 _logHuman=
 _rpc/log?
 _stat.php?referer=
@@ -1232,7 +1224,6 @@ _webanalytics.
 ||7x4.fr^$third-party
 ||9nl.eu^$third-party
 ||a-cast.jp^$third-party
-||a-pagerank.net^$third-party
 ||a8.net^$third-party
 ||aamsitecertifier.com^$third-party
 ||aan.amazon.com^$third-party
@@ -1658,6 +1649,7 @@ _webanalytics.
 ||clickiocdn.com/utr/
 ||clickmeter.com^$third-party
 ||clickonometrics.pl^$third-party
+||clickshift.com^$third-party
 ||clicktale.net^$third-party
 ||clicktracks.com^$third-party
 ||clickzzs.nl^$third-party
@@ -1703,7 +1695,6 @@ _webanalytics.
 ||consent.trustarc.com/bannermsg?
 ||consent.trustarc.com/noticemsg?
 ||consultant.ru/js/counter.js
-||contactatonce.com/GetAgentStatusImage.aspx?
 ||contactmonkey.com^$third-party
 ||contadorgratis.com^$third-party
 ||contadorgratis.es^$third-party
@@ -1909,7 +1900,6 @@ _webanalytics.
 ||enhance.co.jp^$third-party
 ||enhencer.com^$third-party
 ||ensighten.com^$third-party
-||epimg.net/js/gdt/
 ||er.sanoma-sndp.fi/v2/stats/
 ||erate.co.il^$third-party
 ||error.fc2.com/blog/$image
@@ -2028,7 +2018,6 @@ _webanalytics.
 ||freepik.com/_ga?
 ||freeprivacypolicy.com/track/
 ||freesitemapgenerator.com^$third-party
-||freestats.net^$third-party
 ||freeusersonline.com^$third-party
 ||freeweblogger.com^$third-party
 ||freshmarketer.com^$third-party
@@ -2116,7 +2105,6 @@ _webanalytics.
 ||gmx.net/monitoring/
 ||gnavi.co.jp/analysis/
 ||gnezdo.ru^$third-party
-||go.com/capmon/GetDE/?
 ||go.techtarget.com^$image,xmlhttprequest
 ||go.theregister.com^$image
 ||goadservices.com^$third-party
@@ -2217,7 +2205,6 @@ _webanalytics.
 ||hubvisor.io^$third-party
 ||hulu.com/metricsconfig
 ||humanoid.fr/register-impression?
-||humanpresence.app^$third-party
 ||hurra.com^$third-party
 ||hybrid.ai^$third-party
 ||i-mobile.co.jp^$third-party
@@ -2301,6 +2288,7 @@ _webanalytics.
 ||ipmeta.io^$third-party
 ||ippen.space/idat
 ||ipstatp.com/static_magic/pgc/tech/collect/$third-party
+||iqiyi.com/dsp_track3
 ||iqiyi.com/track2?
 ||ist-track.com^$third-party
 ||iterable.com/analytics.js
@@ -2421,6 +2409,8 @@ _webanalytics.
 ||lmiutil.com^$third-party
 ||lndata.com^$third-party
 ||lngtd.com^$third-party
+||lnkd.in/li/track
+||load.tm.all3dp.com/rqlevydw.js
 ||localytics.com^$third-party
 ||logbor.com^$third-party
 ||logentries.com^$third-party
@@ -2508,7 +2498,6 @@ _webanalytics.
 ||merriam-webster.com/lapi/v1/mwol-search/stats/lookup
 ||messenger.com/ajax/bnzai?
 ||metalyzer.com^$third-party
-||metricode.com^$third-party
 ||metricool.com^$third-party
 ||metrics.brightcove.com^$domain=stern.de
 ||metricswave.com^$third-party
@@ -2651,6 +2640,7 @@ _webanalytics.
 ||nytimes.com/v1/purr-cache
 ||o-s.io^$third-party
 ||oadz.com^$third-party
+||observare.de^$third-party
 ||octavius.rocks^$third-party
 ||odnoklassniki.ru/dk?cmd=videoStatNew
 ||odysee.com/api/v1/metric/
@@ -2947,7 +2937,6 @@ _webanalytics.
 ||reachforce.com^$third-party
 ||reachmax.cn^$third-party
 ||reactful.com^$third-party
-||reallyfreegeoip.org^$third-party
 ||realtimewebstats.net^$third-party
 ||realtor.com/rdc_user_check/init.js
 ||realtracker.com^$third-party
@@ -3030,7 +3019,6 @@ _webanalytics.
 ||rumble.com^$ping,third-party
 ||run.app/events$domain=imgur.com
 ||rutarget.ru^$third-party
-||rztrkr.com^$third-party
 ||s.pinimg.com/ct/core.js
 ||s.pixfs.net/js/pixlogger.min.js
 ||s.pixfs.net/visitor.pixplug.in/
@@ -3067,7 +3055,6 @@ _webanalytics.
 ||search.brave.com/api/feedback$~third-party
 ||search.brave.com/serp/v1/static/serp-js/telemetry/
 ||searchignite.com^$third-party
-||seattlepi.com/413gkwMT/init.js
 ||secureanalytic.com^$third-party
 ||securepaths.com^$third-party
 ||secureserver.net/t/
@@ -3159,6 +3146,7 @@ _webanalytics.
 ||smart-bdash.com/tracking-script/
 ||smart-counter.net^$third-party
 ||smart-digital-solutions.com^$third-party
+||smart-ip.net^$third-party
 ||smart-widget-assets.ekomiapps.de^$third-party
 ||smartclip-services.com^$third-party
 ||smarterhq.io^$third-party
@@ -3230,7 +3218,6 @@ _webanalytics.
 ||stathat.com^$third-party
 ||statista.com/data/ptm.gif
 ||statistiche.it^$third-party
-||statistika.lv^$third-party
 ||stats.externulls.com^$domain=beeg.com
 ||stats.live-video.net^$domain=kick.com
 ||stats.zone-telechargement.
@@ -3490,7 +3477,6 @@ _webanalytics.
 ||va.tawk.to/log
 ||vamaker.com^$third-party
 ||vbt.io^$third-party
-||vedomosti.ru/boom?
 ||veinteractive.com^$third-party
 ||velaro.com^$third-party
 ||ventunotech.com/beacon/
@@ -3713,7 +3699,6 @@ _webanalytics.
 ||zatsubitown.com/mailfriend/kaiseki
 ||zazzle.fr/svc/px
 ||zebestof.com^$third-party
-||zenimpact.io/dist/zen_init.min.js
 ||zeotap.com^$third-party
 ||zerkalo.io/stat/
 ||zero.kz^$third-party
