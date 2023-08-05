@@ -138,6 +138,8 @@ eastwest.eu###testo_articolo > p, #testo_articolo > h3
 eastwest.eu##+js(ra, style, .paywall)
 eastwest.eu##+js(rc, paywall, .paywall)
 eastwest.eu##.offerta_abbonamenti
+economist.com##div.paywall,svelte-scroller-outer
+economist.com##html:style(overflow: auto !important;)
 elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed)
 elespanol.com##div.full-suscriptor-container
 elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style])
@@ -410,6 +412,8 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||internazionale.it/templates_js_ajax.inc.php$xmlhttprequest,~third-party
 ||ippen.space^$third-party
 ||irishexaminer.com/pu_examiner/scripts/engage/$script,~third-party
+||irishnews.com/*/js/bundle.js$script,~third-party
+||irishnews.com/*/js/mpppaywall.js$script,~third-party
 ||jpost.com/js/js_article.min.js$script,~third-party
 ||js.matheranalytics.com^$script,third-party
 ||js.pelcro.com^$script,third-party
