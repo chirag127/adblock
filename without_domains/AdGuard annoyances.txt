@@ -26564,7 +26564,6 @@ otakotaku.com#$#body { padding-top: 70px !important; }
 otakumix.doorblog.jp##iframe[src="http://otakumix.doorblog.jp/testrss.html"]
 otakumode.com##.guest-mail
 otasoku.livedoor.biz#?#.article-footer:has(> .article-post > li > font > b:contains(アンテナ新着記事一覧))
-otekomachi.yomiuri.co.jp###_popIn_right
 otelo.de##.GlobalConsentBar
 otelo.de#$#body { overflow: visible!important; }
 otelo.de#$?#div[data-reactroot] > div > div.Lightbox:has(p.TextHeadline:contains(/^Cookies/)) { display: none!important; }
@@ -30289,7 +30288,11 @@ sankakucomplex.com###news-ticker
 sankei.com###piano_information_Article
 sankei.com###snsFollow
 sankei.com#?#.main-items > .col-container > .col-item > .custom-html-feature:has(> #piano_information_Article)
+sankei.com#?#.main-items > .col-container > .col-item > .story-card-feed > .col-container > article.storycard:has(span.sponsored)
+sankei.com#?#.main-items > .col-container > .col-item:has(.story-card-feed > .col-container > article.storycard:only-child span.sponsored)
+sankei.com#?#.main-items > .col-container > .col-item:has(> .story-card-feed > .col-container > article.storycard:first-child:has(span.sponsored) + article.storycard:last-child:has(span.sponsored))
 sankei.com#?#.piano-information-default li > a > span.sponsored:upward(2)
+sankei.com#?#.sidebar-items > .story-card-feed > .col-container > article.storycard:has(span.sponsored)
 sankei.com#?#div[class^="grid__col--lg-"] span.sponsored:upward(div[class^="grid__col--lg-"])
 sanktgeorg.de##.cs-cookie-layer
 sanos.xyz#$##link-view > #showContainer { display: none !important; }
