@@ -11,7 +11,7 @@
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
 /loader-wp/*/loader.min.js$script,~third-party,domain=denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pe.com|twincities.com
-/shared-content/art/tncms/user/user.js$script,~third-party
+/shared-content/art/tncms/api/access.js$script,~third-party
 /temptation/resolve$xmlhttprequest,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
 /wp-content/*/ev-em.min.js$script,~third-party
 /zephr/feature$xmlhttprequest,~third-party
@@ -81,7 +81,6 @@ bizwest.com##div.fp-paywall
 bloomberg.com##+js(set-local-storage-item, history, $remove$)
 bloomberg.com##div[id^="fortress-"]
 bloombergadria.com##+js(ra, style, article[style])
-buffalonews.com,journalnow.com,omaha.com,richmond.com,tucson.com,tulsaworld.com##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 cen.acs.org##+js(cookie-remover, paywall-cookie)
 cen.acs.org##.meteredBar
 centrepresseaveyron.fr,ladepeche.fr,lindependant.fr,midi-olympique.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr##+js(ra, subscriptions-section, [subscriptions-section="content"])
@@ -345,7 +344,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||amazonaws.com/s3fs-public/js/js_$script,domain=genomeweb.com|360dx.com|precisiononcologynews.com
 ||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,~third-party
 ||api.afr.com/graphql?query=*PaywallRuleQuery$xmlhttprequest,~third-party
-||api.bntech.io/js$script,domain=buffalonews.com
 ||api.pico.tools/client/query/*$xmlhttprequest,~third-party
 ||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
 ||artnet.com/paywall-ajax.php$xmlhttprequest,~third-party
