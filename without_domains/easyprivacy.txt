@@ -72,6 +72,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /?log=experiment&
 /?sentry_key=
 /?sentry_version=
+/ASPixel.js
 /AnalyticsDataLayer.
 /AppMeasurement.js
 /AppMeasurement.min.js
@@ -80,7 +81,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /AutoTracker.js
 /Certona/*
 /ClickTrack.
-/CofinaHits.
 /ContextLogResource/*
 /CreateCookieSSO_
 /Criteo/*
@@ -91,7 +91,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /GlanceCobrowseLoader_
 /GoogleAnalyticActionLib.
 /HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
-/KenticoActivityLogger/*
 /Log?entry=
 /LogAnalysisTracker/*
 /LogImpression?
@@ -211,6 +210,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /b/ss/*&pagename=
 /b/ss/*/JS-
 /b/stats?
+/ba_tracking.js
 /baiduStatistics.js
 /banalytics.js
 /base/es6/bundle.js
@@ -293,7 +293,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /cookies/render?
 /count.do?
 /count.php?
-/counter.aspx?
 /counter?id=
 /countly.js
 /countly.min.js
@@ -302,7 +301,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /csp_log?
 /cta-loaded.js
 /ctr_tracking.
-/cv/conversion.js
 /cxense-candy.js
 /cxense-entitlement.js
 /d.gif?
@@ -347,6 +345,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /eulerian.js
 /eumcollector/*
 /event-log/*
+/event-log?
 /event-tracking.
 /event-tracking/*
 /event.gif?
@@ -361,6 +360,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /events/view?
 /events?data=
 /eventsBeacon?
+/eventtracking.
 /eventtracking/*
 /evercookie.
 /evercookie/*
@@ -406,6 +406,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ga-audiences?
 /ga-lite.
 /ga.js?grid
+/gaEventTracking.
 /gaEvents.js
 /ga_cookie_
 /ga_setup.js
@@ -498,7 +499,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /liferay-analytics-
 /link-tracker?*&l=open&
 /link.morningbrew.com/img/*.gif
-/linktrack.js
 /ljcounter/*
 /load.gif?
 /log-nt/*
@@ -517,7 +517,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /log/track/*
 /log/web?
 /log204?
-/log?action=
 /log?count=
 /log?data=
 /log?format=
@@ -553,7 +552,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /metrica/sp.js
 /metrics/metrics$domain=~docs.datadoghq.com|~spatineo.com
 /metrics/rum
-/metrics/statsd/*
 /metrics/v1/frontend/*
 /metrika/tag.js
 /microsoft.cognitiveservices.speech.sdk.bundle.js
@@ -599,7 +597,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /open.html?$image
 /optimizelyjs/*
 /optmzly/*
-/ositTracker.
 /otlp/traces
 /ouibounce.min.js
 /owa.Analytics.
@@ -772,6 +769,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /stats/impression
 /stats/pageview
 /stats/ping?
+/stats/v2/visit?
 /stats?referer=
 /statslogresource/*
 /stattracker-
@@ -905,7 +903,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /wpstatistics/*
 /wrapper/metrics/*
 /wtid.js
-/wxhawkeye.js
 /x.gif?
 /xgemius.
 /xiti.js
@@ -958,7 +955,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||analytics.digitalpfizer.com/js/prod/pcc/pf_appmeasurement.js$domain=pfizer-covid19-vaccine.jp
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
+@@||answers.ros.org/m/default/media/images/$image,~third-party
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
+@@||api.apolomedia.com/static/libs/event-tracking.min.js$script
 @@||api.babbel.io/gamma/v1/$ping,domain=babbel.com
 @@||api.enthusiastgaming.net^$xmlhttprequest,domain=diep.io
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
@@ -988,7 +987,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cdn.segment.com/next-integrations/integrations/
 @@||cdn.segment.com/v1/projects/
 @@||cdn.smartclip-services.com^$script,domain=cerebriti.com
-@@||cdn.treasuredata.com/sdk/$script,domain=retty.me
 @@||cdn.viglink.com/api/vglnk.js$domain=9to5mac.com|electrek.co
 @@||cdnb.4strokemedia.com/carousel/v4/comscore-JS-$script
 @@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca|finishline.com|summitracing.com|tumi.com
@@ -1089,7 +1087,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||mxpnl.com^$domain=mixpanel.com
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
 @@||netcoresmartech.com/smartechclient.js$domain=cgv.vn
-@@||netcoresmartech.com/smartechclient.js$domain=hdfcfund.com
 @@||new.abb.com/ruxitagentjs_$~third-party
 @@||nike.com/assets/measure/data-capture/analytics-client.min.js$script,~third-party
 @@||nintendolife.com/themes/base/javascript/fingerprint.js$~third-party
@@ -1129,7 +1126,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||s.yjtag.jp/tag.js$script,domain=baseball.yahoo.co.jp|soccer.yahoo.co.jp|www.epson.jp
 @@||sascdn.com/tag/$script,domain=filmweb.pl
 @@||scorecardresearch.com^*/streamingtag_plugin_jwplayer.js
-@@||sealserver.trustwave.com/seal.js$domain=zoom.us
+@@||script-at.iocnt.net/iam.js$domain=oe24.at
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
@@ -1285,6 +1282,7 @@ _webanalytics.
 ||adrizer.com^$third-party
 ||adrta.com^$third-party
 ||adschoom.com^$third-party
+||adskom.com^$third-party
 ||adsmatcher.com^$third-party
 ||adsrvr.org^$third-party
 ||adstat.4u.pl^$third-party
@@ -1365,6 +1363,7 @@ _webanalytics.
 ||amazonpay.com/customerInsight?
 ||amcdn.vn^$third-party
 ||americanexpress.com/beacon
+||amiunique.org/analytics.js
 ||amnet.tw^$third-party
 ||amoad.com^$third-party
 ||amplify.outbrain.com^$third-party
@@ -1459,7 +1458,6 @@ _webanalytics.
 ||b1js.com^$third-party
 ||b2c.com^$third-party
 ||b2w.io/event/
-||babator.com^$third-party
 ||baidu.com/api/bidder/
 ||baidu.com/h.js?
 ||baidu.com/hm.gif?
@@ -1564,6 +1562,7 @@ _webanalytics.
 ||bugherd.com^$third-party
 ||bugsnag.com^$third-party
 ||builder.io/api/v1/track
+||bukalapak.com/banner-redirector/impression
 ||bumlam.com^$third-party
 ||byteoversea.com/captcha/report
 ||byteoversea.com/monitor_browser/
@@ -1706,6 +1705,7 @@ _webanalytics.
 ||conversionlogic.net^$third-party
 ||conversionruler.com^$third-party
 ||convertexperiments.com^$third-party
+||convertkit.com^*/visit
 ||convertro.com^$third-party
 ||cookieless-data.com^$third-party
 ||cooladata.com^$third-party
@@ -1745,6 +1745,7 @@ _webanalytics.
 ||d-1.co^$third-party
 ||d-markets.net^$third-party
 ||d.rcmd.jp^$image
+||d1z2jf7jlzjs58.cloudfront.net^$redirect=noop.js,domain=voici.fr,script
 ||d2-apps.net^$third-party
 ||d241ujsiy3yht0.cloudfront.net
 ||d2c.ne.jp^$third-party
@@ -1990,7 +1991,6 @@ _webanalytics.
 ||forter.com^$third-party
 ||fortvision.com^$third-party
 ||fouanalytics.com^$third-party
-||foureyes.io/fe-init.js
 ||foursquare.com/v2/private/logactions
 ||fout.jp^$third-party
 ||foxpush.com^$third-party
@@ -2028,14 +2028,12 @@ _webanalytics.
 ||fw-ad.jp^$third-party
 ||fwpixel.com^$third-party
 ||gacraft.jp^$third-party
-||gaiaonline.com/internal/mkt_t.php?
 ||gaijin.net/tag?
 ||galaxiemedia.fr^$third-party
 ||gameanalytics.com^$third-party
 ||gamedistribution.com/collect?
 ||gamejolt.com/tick/
 ||gaug.es^$third-party
-||gbotvisit.com^$third-party
 ||gc.newsweek.com/front/js/counter.js
 ||gc.zgo.at^$third-party
 ||gdeslon.ru^$third-party
@@ -2096,7 +2094,6 @@ _webanalytics.
 ||gmx.net/monitoring/
 ||gnavi.co.jp/analysis/
 ||gnezdo.ru^$third-party
-||go.com/capmon/GetDE/?
 ||go.techtarget.com^$image,xmlhttprequest
 ||go.theregister.com^$image
 ||goadservices.com^$third-party
@@ -2495,7 +2492,6 @@ _webanalytics.
 ||metalyzer.com^$third-party
 ||metricool.com^$third-party
 ||metrics.brightcove.com^$domain=stern.de
-||metricswave.com^$third-party
 ||metrika-informer.com^$third-party
 ||meucdn.vip/cdn-cgi/trace
 ||mfadsrvr.com^$third-party
@@ -2527,7 +2523,6 @@ _webanalytics.
 ||monitus.net^$third-party
 ||monkeytracker.cz^$third-party
 ||monsido.com^$third-party
-||monstat.com^$third-party
 ||mopinion.com^$third-party
 ||moshimo.com^$third-party
 ||mouseflow.com^$third-party
@@ -2609,8 +2604,6 @@ _webanalytics.
 ||ngastatic.com^$third-party
 ||nice264.com/data?$third-party
 ||nicovideo.jp/api/counter/
-||nicovideo.jp/v1/recommend/log/
-||nicovideo.jp/v2/user/actions/watch-events.json
 ||nik.io^$third-party
 ||nikkei.com/.resources/tracking/
 ||nimiq.com^$third-party
@@ -2635,7 +2628,6 @@ _webanalytics.
 ||nytimes.com/v1/purr-cache
 ||o-s.io^$third-party
 ||oadz.com^$third-party
-||observare.de^$third-party
 ||octavius.rocks^$third-party
 ||odnoklassniki.ru/dk?cmd=videoStatNew
 ||odysee.com/api/v1/metric/
@@ -2797,7 +2789,6 @@ _webanalytics.
 ||porzo.com/js/analytics
 ||postaffiliatepro.com^$third-party
 ||posthog.com^$third-party
-||ppstatic.pl^*/track.js
 ||pravda.com.ua/counter/
 ||prchecker.info^$third-party
 ||predictiveresponse.net^$third-party
@@ -2839,6 +2830,7 @@ _webanalytics.
 ||publytics.net^$third-party
 ||puls.lv^$third-party
 ||pulseinsights.com^$third-party
+||pulsemaps.com^$third-party
 ||push-ad.com^$third-party
 ||push4site.com^$third-party
 ||pushalert.co^$third-party
@@ -2888,7 +2880,6 @@ _webanalytics.
 ||quantummetric.com^$third-party
 ||quartic.pl^$third-party
 ||qubitproducts.com^$third-party
-||quick-counter.net^$third-party
 ||quiz.stroeermediabrands.de/pub/$image
 ||quora.com/_/ad/
 ||quora.com/qevents.js
@@ -2928,7 +2919,6 @@ _webanalytics.
 ||rbc.ru/redir/stat/
 ||rcsobjects.it/rcs_tracking-service/v1/distro/HTML/trservice.shtml
 ||rd.rakuten.co.jp^$script
-||rdcdn.com^$third-party
 ||reachforce.com^$third-party
 ||reachmax.cn^$third-party
 ||reactful.com^$third-party
@@ -3108,6 +3098,7 @@ _webanalytics.
 ||siftscience.com^$third-party
 ||signalfx.com^$third-party
 ||signifyd.com^$third-party
+||silverpop.com^$third-party
 ||simonsignal.com^$third-party
 ||simpleanalyticscdn.com^$third-party
 ||simplehitcounter.com^$third-party
@@ -3117,7 +3108,6 @@ _webanalytics.
 ||sirdata.eu^$third-party
 ||sirdata.io^$third-party
 ||site24x7rum.com^$third-party
-||siteapps.com^$third-party
 ||sitebro.com^$third-party
 ||sitefinity.com/collect/
 ||siteimprove.com^$third-party
@@ -3207,12 +3197,14 @@ _webanalytics.
 ||startpage.com/sp/jst
 ||stat-track.com^$third-party
 ||stat.media^$third-party
+||stat.pl^$third-party
 ||stat24.com^$third-party
 ||statcounter.com^$third-party
 ||statcounterfree.com^$third-party
 ||stathat.com^$third-party
 ||statista.com/data/ptm.gif
 ||statistiche.it^$third-party
+||statistika.lv^$third-party
 ||stats.externulls.com^$domain=beeg.com
 ||stats.live-video.net^$domain=kick.com
 ||stats.zone-telechargement.
@@ -3345,6 +3337,7 @@ _webanalytics.
 ||tpcs.payu.in/pixelwithcookie.gif$domain=hindustantimes.com
 ||tra.scds.pmdstatic.net/sourcepoint/
 ||tracdelight.io^$third-party
+||tracemyip.org/vlg/
 ||trackalyzer.com^$third-party
 ||trackcmp.net^$third-party
 ||trackeame.com^$third-party
@@ -3537,7 +3530,6 @@ _webanalytics.
 ||web-boosting.net^$third-party
 ||web-counter.net^$third-party
 ||web-stat.com^$third-party
-||web-visor.com^$third-party
 ||webedia.fr/js/gs.js
 ||webengage.com^$third-party
 ||webest.info^$third-party
