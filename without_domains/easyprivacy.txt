@@ -73,7 +73,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /?log=experiment&
 /?sentry_key=
 /?sentry_version=
-/ASPixel.js
 /AnalyticsDataLayer.
 /AppMeasurement.js
 /AppMeasurement.min.js
@@ -407,7 +406,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ga-audiences?
 /ga-lite.
 /ga.js?grid
-/gaEventTracking.
 /gaEvents.js
 /ga_cookie_
 /ga_setup.js
@@ -547,7 +545,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /matomo.js$domain=~github.com
 /matomo.php
 /matomo/*$domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
-/measure/data-capture/*
 /mendelstats.
 /metric/?wid=
 /metrica/sp.js
@@ -615,7 +612,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /partner/transparent_pixel-$image
 /partnermetrics.
 /pdp.gif?
+/peach-collector.min.js
 /perf-vitals_
+/perfmatters/js/analytics.js
 /performance-metrics.js
 /performance/metrics
 /performance_timing/*
@@ -918,6 +917,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ://img.promio-connect.com/
 ://lightning.*/launch/
 ://matomo.$domain=~matomo.org
+://omni.soundestlink.com/$image
 ://track.*/collect
 ://track.*/dye
 ://track.opentable.
@@ -1010,6 +1010,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
 @@||dmp.im-apps.net/pms/*/pmt.js$domain=zakzak.co.jp
 @@||dz9qn8fh4jznm.cloudfront.net/script.js$script,domain=bostonglobe.com
+@@||e-stat.go.jp/modules/custom/retrieve/src/js/stat.js?$script,~third-party
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js
@@ -1212,7 +1213,6 @@ _webanalytics.
 ||9nl.eu^$third-party
 ||a-cast.jp^$third-party
 ||a-counters.com^$third-party
-||a-pagerank.net^$third-party
 ||a8.net^$third-party
 ||aamsitecertifier.com^$third-party
 ||aan.amazon.com^$third-party
@@ -1542,7 +1542,6 @@ _webanalytics.
 ||brat-online.ro^$third-party
 ||brcdn.com^$third-party
 ||breaktime.com.tw^$third-party
-||bridge-ashiato.appspot.com/beacon/
 ||brightedge.com^$third-party
 ||brilliantcollector.com^$third-party
 ||bronto.com^$third-party
@@ -1818,7 +1817,6 @@ _webanalytics.
 ||dotmetrics.net^$third-party
 ||douyucdn.cn/fish3/1.gif
 ||dpbolvw.net^$third-party
-||driv-analytics.com^$third-party
 ||drom.ru/dummy.
 ||drop.com/statBeacon
 ||dropbox.com/2/client_metrics
@@ -2243,6 +2241,7 @@ _webanalytics.
 ||instant.page^$third-party
 ||instapagemetrics.com^$third-party
 ||instreamatic.com^$third-party
+||instructables.com/counter
 ||intelliad.de^$third-party
 ||interactive-circle.jp^$third-party
 ||intergient.com^$third-party
@@ -2293,6 +2292,7 @@ _webanalytics.
 ||jiankongbao.com^$third-party
 ||jixie.io^$third-party
 ||jpush.cn^$third-party
+||js.static.m1905.cn/pingd.js
 ||js.trendmd.com^$script,subdocument,third-party
 ||jscache.com/static/page_moniker/
 ||jsecoin.com^$third-party
@@ -2534,6 +2534,7 @@ _webanalytics.
 ||mps-gba.de^$third-party
 ||mps.nbcuni.com/request/page/json/params/*&adunits=$xmlhttprequest
 ||msecnd.net/next/$script
+||msecnd.net/script/raptor-
 ||msecnd.net/scripts/a/ai.
 ||msecnd.net/scripts/jsll-
 ||msg-intl.qy.net^$image
@@ -2599,6 +2600,7 @@ _webanalytics.
 ||nice264.com/data?$third-party
 ||nicovideo.jp/api/counter/
 ||nik.io^$third-party
+||nike.com/assets/measure/data-capture/
 ||nikkei.com/.resources/tracking/
 ||nimiq.com^$third-party
 ||nius.de/monitoring
@@ -2622,6 +2624,7 @@ _webanalytics.
 ||nytimes.com/v1/purr-cache
 ||o-s.io^$third-party
 ||oadz.com^$third-party
+||obozrevatel.com/pixel.png
 ||octavius.rocks^$third-party
 ||odnoklassniki.ru/dk?cmd=videoStatNew
 ||odysee.com/api/v1/metric/
@@ -2810,7 +2813,6 @@ _webanalytics.
 ||provesrc.com^$third-party
 ||providesupport.com/cmd/$image
 ||psh.one^$third-party
-||pstats.com^$third-party
 ||ptadsrv.de^$third-party
 ||ptengine.cn^$third-party
 ||ptengine.com^$third-party
@@ -2905,7 +2907,6 @@ _webanalytics.
 ||ranker.com/api/tr?
 ||ranker.com/api/tracking/comscore
 ||ranking-hits.de^$third-party
-||rapidcounter.com^$third-party
 ||ravelin.click^$third-party
 ||raygun.io/events?
 ||rays-counter.com^$third-party
@@ -3016,7 +3017,6 @@ _webanalytics.
 ||salesviewer.org^$third-party
 ||say.ac^$third-party
 ||sayyac.net^$third-party
-||sblftg.com^$third-party
 ||scarabresearch.com^$third-party
 ||schemaapp.com/pagecount
 ||scorecardresearch.com^$domain=gamestar.de
@@ -3211,12 +3211,10 @@ _webanalytics.
 ||storage.googleapis.com/nchq-dj-nid/prod/sp_v1.js
 ||storage.googleapis.com/rasin/*/hm.js
 ||stormiq.com^$third-party
-||streamtape.com/stat/
 ||streamtape.xyz/stat/
 ||streem.com.au^$third-party
 ||stripchat.com/pixel/
 ||stripe.com/?event=
-||stroeerdigitalmedia.de^$third-party
 ||strs.jp^$third-party
 ||stubhub.com/a/icph
 ||studocu.com/27m703Hm/init.js
@@ -3473,7 +3471,6 @@ _webanalytics.
 ||vimeocdn.com/add/player-stats?
 ||vimeocdn.com/ga/
 ||vinlens.com^$third-party
-||vinted.fr/relay/events
 ||vipstatic.com/mars/
 ||virgul.com^$third-party
 ||visilabs.net^$third-party
@@ -3582,7 +3579,6 @@ _webanalytics.
 ||wisetrack.net^$third-party
 ||wishloop.com^$third-party
 ||withcabin.com^$third-party
-||wiztube.xyz/cdn-cgi/trace
 ||wmcdp.io^$third-party
 ||wo-cloud.com^$ping
 ||wogaa.sg^$third-party
