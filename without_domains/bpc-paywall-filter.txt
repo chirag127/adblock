@@ -157,6 +157,7 @@ etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
 etc.se##div[class$="-ad"]
 euobserver.com##+js(rc, show, div.membership-upsell.show)
+fastcompany.com##div[class*="ad-wrapper"]
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
 financialexpress.com##+js(rc, paywall, .paywall)
@@ -232,6 +233,8 @@ modernhealthcare.com##+js(rc, sponsored-article, div.sponsored-article)
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, id, div#article-teaser)
 mv-voice.com##+js(cookie-remover, /^/)
+nation.africa##+js(rc, nmgp, .nmgp)
+nation.africa##div.modal
 nautil.us##+js(cookie-remover, /^(arc|sfa)$/)
 newrepublic.com##div.article-scheduled-modal
 newsday.com##+js(ra, class, html[class])
@@ -395,6 +398,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||eviemagazine.com/api/trpc/post.paywall$xmlhttprequest,~third-party
 ||evolok.net^$third-party
 ||exame.com/*/js/pywll-dyn.js$script,~third-party
+||fastcompany.com/script.js$script,~third-party
 ||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
 ||flowerstreatment.com^$third-party
 ||folha.uol.com.br/paywall/js/$script,~third-party
