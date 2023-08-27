@@ -119,8 +119,6 @@ csmonitor.com##.paywall
 curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
 cyclingtips.com##div[data-block-name="ads"],div#takeover
 dailywire.com###post-body-text > div > div:style(height: auto !important;)
-dallasnews.com##+js(ra, style, div#courier-body-wrapper[style])
-dallasnews.com##div.sl-overlay
 defector.com##+js(cookie-remover, lede_defector_user)
 defector.com##div[class^="ContentGate_wrapper__"]
 denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
@@ -157,7 +155,6 @@ etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
 etc.se##div[class$="-ad"]
 euobserver.com##+js(rc, show, div.membership-upsell.show)
-fastcompany.com##div[class*="ad-wrapper"]
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
 financialexpress.com##+js(rc, paywall, .paywall)
@@ -398,10 +395,10 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||eviemagazine.com/api/trpc/post.paywall$xmlhttprequest,~third-party
 ||evolok.net^$third-party
 ||exame.com/*/js/pywll-dyn.js$script,~third-party
-||fastcompany.com/script.js$script,~third-party
 ||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
 ||flowerstreatment.com^$third-party
 ||folha.uol.com.br/paywall/js/$script,~third-party
+||forbes.com/sites/$inline-script
 ||foreignaffairs.com/modules/custom/fa_paywall_js/js/paywall.js$script,~third-party
 ||ftm.eu/js/routing$script,~third-party
 ||ftm.nl/js/routing$script,~third-party
