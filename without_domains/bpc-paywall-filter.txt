@@ -284,9 +284,8 @@ splainer.in##+js(rc, hide-section, .hide-section)
 splainer.in##.subscription-prompt
 staradvertiser.com##+js(ra, style, div#hsa-paywall-content[style])
 staradvertiser.com##div#hsa-paywall-overlay
-startribune.com##+js(cookie-remover, /client_id/)
-startribune.com##+js(rc, ReactModal__Body--open, body.ReactModal__Body--open)
-startribune.com##div.ReactModalPortal,div.ad-placeholder
+startribune.com##body[class]:style(overflow: auto !important; position: static !important;)
+startribune.com##div.modal-backdrop
 stateaffairs.com##+js(rc, access-restricted, body.access-restricted)
 stateaffairs.com##div.c-memberships-message
 studocu.com##.page-content:style(filter: none !important; user-select: unset !important)
@@ -330,6 +329,7 @@ thetimes.co.uk##+js(ra, style, body[style], stay)
 thetimes.co.uk##+js(ra, style, html[style], stay)
 topagrar.at,topagrar.com##div.paywall-package
 trailsoffroad.com##.paywall
+tuttosport.com##div[class^="AdUnit_"]
 winnipegfreepress.com##.billboard-ad-space,.ad,.article-ad,.fixed-sky
 yorkshirepost.co.uk##+js(ra, class, div.premium)
 zvw.de##+js(rc, paywall, .paywall)
@@ -479,6 +479,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,~third-party
 ||timeshighereducation.com/sites/default/files/*/js__*.js$script,~third-party
 ||tribdss.com^$third-party
+||tuttosport.com/_next/static/chunks/pages/news/%5B*.js$script,~third-party
 ||vikatan.com/evolok/ev-dab/ev-em.min.js$script,~third-party
 ||wallkit.net/js/$script,third-party
 ||washingtonpost.com/tetro/metering/evaluate$xmlhttprequest,~third-party
