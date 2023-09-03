@@ -215,6 +215,7 @@ youtube.com###promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(rpnt, script, /(\(function serverContract\(\)|writeEmbed|var _F_cssRowKey)/, 'const pruner=text=>{let json=JSON.parse(text);for(k of["playerAds","adPlacements","adSlots"]){json[k]=[];}return JSON.stringify(json);};const urlFromArg=arg=>{if(typeof arg==="string"){return arg;}if(arg instanceof Request){return arg.url;}return String(arg);};const realFetch=window.fetch;window.fetch=new Proxy(window.fetch,{apply:function(target,thisArg,args){if(!(urlFromArg(args[0]).includes("player?key="))){return Reflect.apply(target,thisArg,args);}return realFetch(...args).then(realResponse=>realResponse.text().then(text=>new Response(pruner(text),{status:realResponse.status,statusText:realResponse.statusText,headers:realResponse.headers,})));}});window.XMLHttpRequest.prototype.open=new Proxy(window.XMLHttpRequest.prototype.open,{apply:async(target,thisArg,args)=>{if(!(urlFromArg(args[1]).includes("player?key="))){return Reflect.apply(target,thisArg,args);}thisArg.addEventListener("readystatechange",function(){if(thisArg.readyState!==4){return;}const type=thisArg.responseType;if(type!==""&&type!=="text"){return;}const textin=thisArg.responseText;const textout=pruner(textin);if(textout===textin){return;}Object.defineProperty(thisArg,"response",{value:textout});Object.defineProperty(thisArg,"responseText",{value:textout});});return Reflect.apply(target,thisArg,args);}}); $1')
+youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(rpnt, script, (function serverContract(), 'const pruner=text=>{const json=JSON.parse(text);for(k of["playerAds","adPlacements","adSlots"]){json[k]=[];}return JSON.stringify(json);};const urlFromArg=arg=>{if(typeof arg==="string"){return arg;}if(arg instanceof Request){return arg.url;}return String(arg);};const realFetch=window.fetch;window.fetch=new Proxy(window.fetch,{apply:function(target,thisArg,args){if(!(urlFromArg(args[0]).includes("player?key="))){return Reflect.apply(target,thisArg,args);}return realFetch(...args).then(realResponse=>realResponse.text().then(text=>new Response(pruner(text),{status:realResponse.status,statusText:realResponse.statusText,headers:realResponse.headers,})));}}); (function serverContract()')
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
@@ -234,7 +235,7 @@ zupload.me##a[href="https://www.9xyoutube.com"]
 *$script,3p,denyallow=cloudflare.net|fastly.net|google.com|googleapis.com|gstatic.com|jwpcdn.com|jsdelivr.net|eastream.net|youtube.com|ytimg.com,domain=vidfast.co
 *$frame,denyallow=facebook.com|google.com|hcaptcha.com|youtube.com,domain=fc.lc|fc-lc.com
 ||goodnewsnetwork.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagservices.com *.wp.com *.air.tv *.addthis.com *.cloudflare.com *.facebook.net *.facebook.com *.gstatic.com *.youtube.com *.ytimg.com *.google.com *.googletagmanager.com *.instagram.com
-*$popup,3p,domain=work.ink,to=~discord.*|~google.com|~workink.*|~youtu.be|~youtube.com
+*$popup,3p,domain=work.ink,to=~discord.*|~google.com|~qiwi.gg|~workink.*|~youtu.be|~youtube.com
 ||youtube.com/embed/*$domain=1shortlink.com
 @@||youtube.com/yts/jsbin/*$script,domain=breathecast.com|classicalite.com|crossmap.com|hallels.com|newseveryday.com|returnofkings.com
 ||ads.youtube.com^$badfilter
@@ -448,6 +449,7 @@ play.google.com#@#div[aria-label="Ads"]
 ||google.com/adsense/ad
 ||google.com/adsense/domains
 ||google.com/adsense/search/$third-party
+||google.com/afs/ads?
 ||google.com/dp/ads
 ||google.com/pagead/
 ||googleadapis.l.google.com^$third-party
@@ -973,7 +975,7 @@ codesnse.com##[href^="https://play.google.com/"]
 *$frame,script,3p,denyallow=consensu.org|google.com|gstatic.com|recaptcha.net|quantcast.com,domain=owllink.net
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=fir3.net
 ||adservice.google.com/adsid/integrator.js$xhr,redirect=noopjs,domain=maxedtech.com
-*$popup,3p,domain=work.ink,to=~discord.*|~google.com|~workink.*|~youtu.be|~youtube.com
+*$popup,3p,domain=work.ink,to=~discord.*|~google.com|~qiwi.gg|~workink.*|~youtu.be|~youtube.com
 ||fundingchoicesmessages.google.com^$3p
 *$script,3p,denyallow=b-cdn.net|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hetrixtools.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|twimg.com|twitter.com,domain=animekaizoku.com
 *$script,3p,denyallow=jwpsrv.com|plyr.io|jsdelivr.net|twimg.com|twitter.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|hcaptcha.com|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com,domain=mkvcinemas.*
@@ -1419,6 +1421,7 @@ old.reddit.com##a.outbound[data-outbound-url]:remove-attr(data-outbound-url)
 reddit.com,~old.reddit.com##+js(rpnt, script, "outboundUrl", "outbound")
 reddit.com,~old.reddit.com##+js(json-prune, data.*.elements.edges.[].node.outboundLink)
 reddit.com,~old.reddit.com##+js(json-prune, data.children.[].data.outbound_link)
+||reddit.com^$removeparam=rdt,doc
 @@||gateway.reddit.com/desktopapi/*$xhr,1p
 ##a[href^="http://reddit.com/submit"]
 ##a[href^="http://www.reddit.com/submit"]
