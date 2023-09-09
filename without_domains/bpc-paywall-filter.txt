@@ -1,7 +1,6 @@
 
 .com.au/graphql?query=*PaywallRuleQuery$xmlhttprequest,~third-party,domain=brisbanetimes.com.au|smh.com.au|theage.com.au|watoday.com.au
 .com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|precisionmedicineonline.com
-.com/*/scripts/contentGate*.js$script,domain=backpacker.com|betamtb.com|betternutrition.com|cleaneatingmag.com|climbing.com|gymclimber.com|outsideonline.com|oxygenmag.com|pelotonmagazine.com|podiumrunner.com|rockandice.com|skimag.com|trailrunnermag.com|triathlete.com|vegetariantimes.com|velonews.com|womensrunning.com|yogajournal.com
 .com/_assets/jam/journey-data.js$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
 .com/journey/compiler/build-*.js$script,domain=architecturaldigest.com|bonappetit.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|wired.com
 .com/prod/ajc/loader.min.js$script,domain=dayton.com|daytondailynews.com|journal-news.com|springfieldnewssun.com
@@ -64,9 +63,6 @@ augsburger-allgemeine.de,muensterschezeitung.de,westfalen-blatt.de,wn.de##+js(ra
 augsburger-allgemeine.de,muensterschezeitung.de,westfalen-blatt.de,wn.de##[subscriptions-section="content-not-granted"]
 axios.com##+js(ra, style, html[style], stay)
 axios.com##[data-vars-experiment="pro-paywall"],[class^="Modal_paywallContainer"],.apexAd
-backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##+js(rc, is-gated, .is-gated)
-backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##+js(rc, is-gated--flexible-layout, .is-gated--flexible-layout)
-backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,podiumrunner.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.o-membership-overlay
 beleggersbelangen.nl##+js(ra, style, div.content-inner[style])
 beleggersbelangen.nl##+js(rc, no-account, div.no-account)
 beleggersbelangen.nl##div.unlimited-access
@@ -119,7 +115,6 @@ crusoe.com.br##div#gpt-leaderboard,div.ads_desktop,div.catchment-box
 csmonitor.com##+js(aopr, localStorage)
 csmonitor.com##.paywall
 curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
-cyclingtips.com##div[data-block-name="ads"],div#takeover
 dailywire.com###post-body-text > div > div:style(height: auto !important;)
 defector.com##+js(cookie-remover, lede_defector_user)
 defector.com##div[class^="ContentGate_wrapper__"]
@@ -452,7 +447,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||odt.co.nz/bwtw/scripts/tw.js$script,~third-party
 ||olytics.omeda.com^$third-party
 ||onecount.net^$third-party
-||outsideonline.com/*/MegaRegWall*.js$script,~third-party
 ||paywall.correiodopovo.com.br$script,~third-party
 ||paywall.fewcents.co/static/js/paywall.js
 ||paywall.folha.uol.com.br^$script,~third-party
