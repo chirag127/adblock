@@ -1423,6 +1423,7 @@ old.reddit.com##a.outbound[data-outbound-url]:remove-attr(data-outbound-url)
 reddit.com,~old.reddit.com##+js(rpnt, script, "outboundUrl", "outbound")
 reddit.com,~old.reddit.com##+js(json-prune, data.*.elements.edges.[].node.outboundLink)
 reddit.com,~old.reddit.com##+js(json-prune, data.children.[].data.outbound_link)
+||www.reddit.com/|$xhr,1p,method=post
 ||reddit.com^$removeparam=rdt,doc
 @@||gateway.reddit.com/desktopapi/*$xhr,1p
 ##a[href^="http://reddit.com/submit"]
@@ -2104,7 +2105,6 @@ m.alpha.facebook.com,touch.alpha.facebook.com,mtouch.alpha.facebook.com,x.alpha.
 @@||facebook.com/videocall/$stealth
 @@||facebook.com/login.php$stealth
 @@||facebook.com/*/dialog/oauth$stealth
-_ad6.$domain=~facebook.com|~facebookcorewwwi.onion|~messenger.com
 ||facebook.com/audiencenetwork/$third-party
 ||facebook.com/network_ads_common
 ||activistpost.com^$csp=script-src *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com
