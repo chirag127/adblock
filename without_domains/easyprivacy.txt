@@ -22,8 +22,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 -click-tracker.
 -client-tracking.goodgamestudios.com/
 -didomi.js
--ga-tracking/
 -geoIP.js
+-logging.nextmedia.com^
 -monero-miner-
 -track-email-open?
 -track-inview.
@@ -66,7 +66,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .google-analytics.com/
 .googleanalytics.js
 .iframetracker/
-.innologica.com/t/
 .intercom-mail.com/via/$image
 .inxmail-commerce.com/tracking/$image
 .inxserver.com/transparent.gif
@@ -134,6 +133,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /AIT_Analytics.
 /ASPixel.js
 /AccessCounter/*
+/AdobeAnalyticsAndTargetOverwrites.
 /Analytics/Visitor.
 /AnalyticsDataLayer.
 /AppMeasurement.js
@@ -303,6 +303,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /analytics-facade.
 /analytics-gjc-min.js
 /analytics-helper.
+/analytics-ingress-
 /analytics-ping.
 /analytics-reporter/*
 /analytics-secure.
@@ -413,6 +414,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /basicMetricsTracking.
 /batch/1/OE/*
 /batch/1/OP/*
+/baynote/*
 /baynote_
 /bb-analytics-
 /bc/clk?
@@ -488,6 +490,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /click/impression?
 /click?track=
 /click_stats.js
+/clickability/*
 /clickcount.
 /clickcount/*
 /clickctrl.js
@@ -563,6 +566,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /counter.cgi?
 /counter.js.php
 /counter.pl?
+/counter/collect?
 /counter5.min.js
 /counter?action=
 /counter?id=
@@ -627,6 +631,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /eTagP/*
 /e_stat?g_id=
 /ebonetag.js
+/ecg-js-ga-tracking/*
 /edAnalyticsWrapper.js
 /egcs/v2/collect
 /eloqua.
@@ -916,6 +921,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /js_log_error.
 /js_tracker.
 /js_tracking?
+/jscounter.
 /json/stats?
 /json/tracking/*
 /json?mbox=
@@ -957,6 +963,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /log.php?id
 /log/analytics
 /log/collect/*
+/log/counter?
 /log/error?
 /log/event?
 /log/impression/*
@@ -1034,10 +1041,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /metrika/tag.js
 /microsoft.cognitiveservices.speech.sdk.bundle.js
 /min/gtm/*
+/minescripts.js
 /mint/?js
 /mistat-data/*
 /mistats/*
 /mixpanel.$domain=~mixpanel.com
+/mms.*/pv?
 /mms/get_loaders?
 /mnppixellibrary.
 /moapt-action-iq-analytics.
@@ -1098,6 +1107,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /open.aspx?
 /open.html?$image
 /open/log/*
+/opentag/*
 /opinionlab.js
 /optimizelyjs/*
 /optimost.
@@ -1484,6 +1494,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /track?name=
 /track?referrer=
 /trackBatchEvents?
+/trackEvent.min.js?
 /trackIt.js
 /trackPageView/*
 /track_click?
@@ -1598,6 +1609,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /views_tracking/*
 /visit-tag?
 /visit/log.js?
+/visitWebPage?_
 /visitinfo.js
 /visitor-js/?
 /visitor-params.
@@ -1674,7 +1686,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /zanox.js
 /zhugeio.js
 /ztracker.js
-://2ip.*/member_photo/$third-party
 ://a02342.
 ://a869.
 ://analytics.*/collect
@@ -1737,7 +1748,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
-@@||api.babbel.io/gamma/v1/$ping,domain=babbel.com
 @@||api.enthusiastgaming.net^$xmlhttprequest,domain=diep.io
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||asadcdn.com/adlib/$domain=computerbild.de
@@ -1795,7 +1805,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||delta.com/dlhome/ruxitagentjs$~third-party
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
 @@||dz9qn8fh4jznm.cloudfront.net/script.js$script,domain=bostonglobe.com
-@@||e-stat.go.jp/modules/custom/retrieve/src/js/stat.js?$script,~third-party
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js
 @@||ens.nzz.ch^$~third-party
@@ -1837,6 +1846,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||js.captcha-display.com/xhr_tag.js$script,domain=auth.garena.com
 @@||js.datadome.co/tags.js$script,domain=sso.garena.com
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com|rubex.efilecabinet.net
+@@||js.sentry-cdn.com^$script,domain=app.homebinder.com|book.dmm.com|etsy.com|interacty.me|jobs.ch|pizzahut.com.au
 @@||k-img.com/script/analytics/s_code.js$script,domain=kakaku.com
 @@||kameleoon.eu/images/$domain=welt.de
 @@||kameleoon.eu/kameleoon.js$domain=welt.de
@@ -1994,6 +2004,7 @@ omni.soundestlink.com$image
 ||11nux.com^$third-party
 ||123compteur.com^$third-party
 ||123count.com^$third-party
+||123rf.com/apicore-index/traffic_log
 ||127.0.0.1^$third-party,domain=53.com|ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|kleinanzeigen.de|lendup.com|mbna.ca|rusneb.ru|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
 ||15gifts.com^$third-party
 ||163.com/sn.gif?
@@ -2011,8 +2022,6 @@ omni.soundestlink.com$image
 ||24smi.info^$third-party
 ||24smi.net^$third-party
 ||2dehands.be/px/
-||2ememain.be/c3650cdf-
-||2ememain.be/px/
 ||2gis.ru/_/log
 ||2gis.ru/_/metrics
 ||2o7.net^$third-party
@@ -2243,6 +2252,7 @@ omni.soundestlink.com$image
 ||amazonpay.com/customerInsight?
 ||amcdn.vn^$third-party
 ||americanexpress.com/beacon
+||amikay.com^$third-party
 ||amnet.tw^$third-party
 ||amoad.com^$third-party
 ||amplify.outbrain.com^$third-party
@@ -2265,6 +2275,7 @@ omni.soundestlink.com$image
 ||ancestrycdn.com/tao/at/
 ||androidfilehost.com/libs/otf/stats.otf.php?
 ||andyhoppe.com^$third-party
+||anonymised.io^$third-party
 ||anormal-tracker.de^$third-party
 ||anrdoezrs.net^$third-party
 ||answerscloud.com^$third-party
@@ -2624,6 +2635,7 @@ omni.soundestlink.com$image
 ||chartbeat.com^$domain=prosieben.at|prosieben.ch|prosieben.de
 ||chartbeat.com^$third-party
 ||chartbeat.net^$third-party
+||chatroll.com/t.gif
 ||check.ddos-guard.net^$third-party
 ||checkeffect.at^$third-party
 ||checkstat.nl^$third-party
@@ -2791,6 +2803,7 @@ omni.soundestlink.com$image
 ||countby.com^$third-party
 ||counter-go.de^$third-party
 ||counter-gratis.com^$third-party
+||counter.de^$third-party
 ||counter.dev^$third-party
 ||counter.gd^$third-party
 ||counter.pixplug.in^$third-party
@@ -2967,9 +2980,11 @@ omni.soundestlink.com$image
 ||dojomojo.ninja^$third-party
 ||domdog.io^$third-party
 ||dominocounter.net^$third-party
+||domodomain.com^$third-party
 ||dotmetrics.net^$third-party
 ||douyucdn.cn/fish3/1.gif
 ||dpbolvw.net^$third-party
+||dreamcounter.de^$third-party
 ||drift.com/impressions/
 ||drift.com/targeting/
 ||drift.com/track
@@ -3192,6 +3207,7 @@ omni.soundestlink.com$image
 ||flashb.id^$third-party
 ||flex.msn.com/mstag/
 ||flexlinkspro.com^$third-party
+||flipboard.com/api/v2/reporting
 ||flipboard.com/usage?
 ||flipkart.com/api/3/data/collector/
 ||flipp.com/beacons
@@ -3233,7 +3249,6 @@ omni.soundestlink.com$image
 ||fout.jp^$third-party
 ||foxpush.com^$third-party
 ||foxpush.net^$third-party
-||foxsports.com.au/akam/
 ||fpjs.io^$third-party
 ||fpt.shop/fa_tracking.js
 ||fraudjs.io^$third-party
@@ -4512,6 +4527,7 @@ omni.soundestlink.com$image
 ||privacy-policy.truste.com^$third-party
 ||privymktg.com^$third-party
 ||prnx.net^$third-party
+||prod.benchmarkemail.com/tracker.bundle.js
 ||productsup.com^$third-party
 ||proext.com^$third-party
 ||profitmetrics.io^$third-party
@@ -4984,6 +5000,7 @@ omni.soundestlink.com$image
 ||slickdeals.net/ajax/stats/
 ||slingpic.com^$third-party
 ||smadex.com^$third-party
+||smallpdf.com/build/track-js.js
 ||smallseotools.com^$third-party
 ||smarketer.de^$third-party
 ||smart-bdash.com/receptions/action/impression
@@ -5135,6 +5152,7 @@ omni.soundestlink.com$image
 ||submitnet.net^$third-party
 ||subscribers.com^$third-party
 ||successfultogether.co.uk^$third-party
+||sugodeku.com^$third-party
 ||sumo.com^$third-party
 ||sumologic.com^$third-party,domain=~sumologic.net
 ||sumome.com^$third-party
