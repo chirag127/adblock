@@ -239,6 +239,7 @@ mv-voice.com##+js(cookie-remover, /^/)
 nation.africa##+js(rc, nmgp, .nmgp)
 nation.africa##div.modal
 nautil.us##+js(cookie-remover, /^(arc|sfa)$/)
+newoxfordreview.org##+js(rc, not-viewable, div.not-viewable)
 newrepublic.com##div.article-scheduled-modal
 newsday.com##+js(ra, class, html[class])
 nrc.nl##+js(cookie-remover, counter)
@@ -312,8 +313,8 @@ theathletic.com##body[class]:style(overflow:visible !important; position:relativ
 theathletic.com##div[amp-access*="NOT granted"]
 theathletic.com##div[id^="slideup-"],div[id*="overlay"],div:empty:not([data-rjs]),#paywall,div.ad-container
 theatlantic.com##+js(cookie-remover, articleViews)
-theatlantic.com##+js(rc, Image_lazy__tutlP, img.Image_lazy__tutlP)
 theatlantic.com##.c-nudge__container,.c-non-metered-nudge,div[class^="ArticleInjector_"]
+theatlantic.com##img[class*="Image_lazy__"]:style(opacity: 1 !important)
 thediplomat.com##+js(cookie-remover, dpl-pw)
 thediplomat.com##+js(rc, dpl-preview, article.dpl-preview, stay)
 theepochtimes.com##+js(ra, style, body[style], stay)
