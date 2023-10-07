@@ -7,6 +7,7 @@
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
 .nl\/_\/zh\/worker$xmlhttprequest,~third-party,domain=lc.nl|dvhn.nl
 /\.(femmesdaujourdhui|flair|knack|levif|libelle)\.be\/.+\/((\w)+(\-)+){3,}/$inline-script
+/\.vn\.at\/.+\/\d{4}\//$inline-script
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
 /loader-wp/*/loader.min.js$script,~third-party,domain=denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
@@ -255,6 +256,7 @@ nybooks.com##+js(rc, paywall-article, .paywall-article)
 nybooks.com##div.toast-cta
 nyteknik.se##+js(rc, locked-article, div.locked-article)
 nytimes.com##+js(json-prune, data.user)
+nytimes.com##+js(json-prune-fetch-response, data.user)
 nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div.expanded-dock
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
 odt.co.nz##+js(ra, property, div[property="content:encoded"])
@@ -363,6 +365,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||artnet.com/paywall-ajax.php$xmlhttprequest,~third-party
 ||artsenkrant.com/js/responsive/rmgModal.js$script,~third-party
 ||artsenkrant.com/js/responsive/rmgPaywall.js$script,~third-party
+||artsprofessional.co.uk/*/js/content_paywall.js$script,~third-party
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
 ||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
 ||auto-motor-und-sport.de/thenewsbar/static/pw.js$script,~third-party
