@@ -711,7 +711,6 @@ $cookie=yotpo_pixel
 /log.gif$domain=nicovideo.jp
 /log/pv?id=
 /logExecutionStats?
-/log_event?
 /log_interaction?
 /logger/p.gif?*d=/*
 /logset.cgi?
@@ -1463,7 +1462,7 @@ $cookie=yotpo_pixel
 @@||collector.wawlabs.com/mmsearch.js$domain=mediamarkt.com.tr
 @@||collegeboard.org/webanalytics/
 @@||comcastresidentialservices.tt.omtrdc.net/m2/comcastresidentialservices^$domain=xfinity.com
-@@||comeresaprensasl.tt.omtrdc.net/rest/v*/delivery$domain=elcomercio.es|eldiariomontanes.es|elcorreo.com|lasprovincias.es|hoy.es
+@@||comeresaprensasl.tt.omtrdc.net/rest/v*/delivery$domain=elcomercio.es|eldiariomontanes.es|elcorreo.com|lasprovincias.es|hoy.es|ideal.es
 @@||components2.corriereobjects.it/rcs_tealium/v1/distro/corriere/preprod/utag.*js?$domain=corriere.it
 @@||computerworld.com/resources/scripts/lib/demandbase.js$script
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
@@ -1985,6 +1984,7 @@ $cookie=yotpo_pixel
 @@||googletagmanager.com/gtag/js$domain=ln24.be
 @@||googletagmanager.com/gtag/js$domain=m.hkgolden.com
 @@||googletagmanager.com/gtag/js$domain=malwaretips.com
+@@||googletagmanager.com/gtag/js$domain=mobile01.com
 @@||googletagmanager.com/gtag/js$domain=muji.order.place
 @@||googletagmanager.com/gtag/js$domain=nbc.com
 @@||googletagmanager.com/gtag/js$domain=nibelungen-kurier.de
@@ -2165,6 +2165,7 @@ $cookie=yotpo_pixel
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.nl
 @@||googletagmanager.com/gtm.js$domain=militaria.pl
 @@||googletagmanager.com/gtm.js$domain=miltonkeynes.co.uk
+@@||googletagmanager.com/gtm.js$domain=mobile01.com
 @@||googletagmanager.com/gtm.js$domain=moniteurautomobile.be
 @@||googletagmanager.com/gtm.js$domain=morningstar.nl|morningstar.de|morningstar.at|morningstar.fr|morningstarfunds.ie|morningstar.it|morningstar.es|morningstar.se|morningstar.ch|morningstar.co.uk|morningstar.hk|morningstar.com
 @@||googletagmanager.com/gtm.js$domain=muscleandfitness.com
@@ -2859,6 +2860,7 @@ $cookie=yotpo_pixel
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=chelseafc.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=yorkshirepost.co.uk
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=tf1info.fr
 @@||seewhy.com^$domain=nixon.com
 @@||segment-data.zqtk.net^$domain=wsj.com
 @@||sellpoint.net/smart_button/$script,domain=walmart.com
@@ -2958,6 +2960,7 @@ $cookie=yotpo_pixel
 @@||static.personaclick.com/Elektromarketim/$domain=elektromarketim.com
 @@||static.rpxnow.com/js/lib/rpx.js$domain=colbertnation.com|thedailyshow.com
 @@||static.vocstatic.com^$script,domain=areapersonal.hoy.es
+@@||static.vocstatic.com^$script,stylesheet,domain=ideal.es
 @@||statics.cfmcdn.net/*/scripts/webtrends-$script,domain=cheapflights.com
 @@||stats.e-go.gr/rx.asp?$domain=megatv.com
 @@||stats.g.doubleclick.net/dc.js$domain=dubizzle.com
@@ -3213,6 +3216,7 @@ $cookie=yotpo_pixel
 @@||zillowstatic.com/c/*/linktrack.js$domain=zillow.com
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+[$path=/edmredir.php]mobile01.com#%#//scriptlet('trusted-replace-node-text', 'script', '/sendOfflineEvent[\s\S]*?window\.location\.href/', '/(window\.dataLayer[\s\S]*?sendOfflineEvent[\s\S]*?(window.location.href = [\s\S]*?;))/', '$2$1')
 [$path=/search]ya.ru,yandex.*#%#//scriptlet('remove-attr', 'data-counter', '.serp-list a[href]')
 _analytics.js?
 _pagespeed_beacon?
@@ -3865,6 +3869,8 @@ znak.com##.relap
 ||4players.de/javascript/awstats_misc_tracker.js
 ||4pna.com/clientscript/kr_scripts/rbs_scripts/rbs_banner_sender.min.js
 ||4stats.de^$third-party
+||4sysops.com/global/appear.js
+||4sysops.com/js/uni.js
 ||4tololo.ru/core/modules/statistics/statistics.php
 ||5-fifth.com/assets/js/*/analytics.js
 ||50bang.org^$third-party
@@ -6235,6 +6241,7 @@ znak.com##.relap
 ||extstat.info^$third-party
 ||exuberanteyes.com^$third-party
 ||exuberantsoda.com^$third-party
+||eye.targetads.io/web/pixel
 ||eyein.com^$third-party
 ||eyeota.net^$third-party
 ||ezakus.net^$third-party
@@ -8453,7 +8460,7 @@ znak.com##.relap
 ||omniture.chip.de/b/ss/
 ||omt.shinobi.jp/tsumugi?location=
 ||omtrdc.net/id^$redirect=nooptext,important
-||omtrdc.net/rest/v*/delivery?client=$replace=/^\{[\s\S]*\}\$/{}/,domain=~kia.com|~pccomponentes.com|~acrobat.adobe.com
+||omtrdc.net/rest/v*/delivery?client=$replace=/^\{[\s\S]*\}\$/{}/,domain=~kia.com|~pccomponentes.com|~acrobat.adobe.com|~elcomercio.es|~eldiariomontanes.es|~elcorreo.com|~lasprovincias.es|~hoy.es|~ideal.es
 ||on-line.lv^$third-party
 ||on.aws/tracking/event
 ||onecount.net/onecount/oc_track/
