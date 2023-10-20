@@ -45,9 +45,7 @@ youtube.com#%#//scriptlet('set-constant', 'yt.config_.EXPERIMENT_FLAGS.ab_det_ge
 .com/watch?v=$replace=/\"playerAds.*?\}\}\]\,//,xmlhttprequest,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /youtubei/v*/player?key=$replace=/\"playerAds.*?\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 youtube.com#%#//scriptlet('trusted-replace-xhr-response', '/\"adPlacements.*?\"\}\}\}\]\,/', '', '/player\?key=|watch\?v=/')
-youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/("lastModified":"[^"]{3,}".*?)"adSlots.*?\}\]\}\}\]\,/', '$1', 'player?key=')
-youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/("lastModified":"[^"]{3,}".*?)"adPlacements.*?"\}\}\}\]\,/', '$1', 'player?key=')
-youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/("lastModified":"[^"]{3,}".*?)"playerAds.*?\}\}\]\,/', '$1', 'player?key=')
+youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/"adPlacements.*?\/(aclk\?sa=L&ai=C[-_0-9A-Za-z]+__________|get_midroll_info\S+&token=ALH).*?"\}\}\}\]\,/', '', 'player?key=')
 m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots')
 ||youtube.com/get_video_info?*=adunit&$important
 youtube.com/get_video_info?*=adunit&
@@ -160,7 +158,7 @@ youtube.com#?#ytd-enforcement-message-view-model:has(> div.ytd-enforcement-messa
 youtube.com#$#tp-yt-iron-overlay-backdrop { display: none !important; }
 youtube.com#$?#tp-yt-paper-dialog:has(> ytd-enforcement-message-view-model > div.ytd-enforcement-message-view-model) { remove: true; }
 youtube.com#$#ytd-watch-flexy[player-unavailable] #player-container-outer.ytd-watch-flexy { visibility: visible !important; }
-youtube.com#$#yt-playability-error-supported-renderers { display: none !important; }
+youtube.com#$?#yt-playability-error-supported-renderers:has(yt-button-view-model[dialog-dismiss]) { display: none !important; }
 youtube.com##.yt-mealbar-promo-renderer
 youtube.com##yt-mealbar-promo-renderer
 youtube.com##tp-yt-iron-dropdown[class="style-scope ytd-popup-container"][horizontal-align="right"]
@@ -241,9 +239,13 @@ youtube.com###promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
 www.youtube.com##+js(json-prune-xhr-response, [].playerResponse.adPlacements [].playerResponse.playerAds [].playerResponse.adSlots playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots, , propsToMatch, url:/player\?key=|watch\?v=|youtubei\/v1\/player/)
-www.youtube.com##+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"adSlots.*?\}\]\}\}\]\,/, $1, url:player?key=)
-www.youtube.com##+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"adPlacements.*?"\}\}\}\]\,/, $1, url:player?key=)
-www.youtube.com##+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"playerAds.*?\}\}\]\,/, $1, url:player?key=)
+www.youtube.com##+js(trusted-replace-fetch-response, /"adPlacements.*?\/(aclk\?sa=L&ai=C[-_0-9A-Za-z]+__________|get_midroll_info\S+&token=ALH).*?"\}\}\}\]\,/, , url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /(itag=.*?)"adSlots.*?\}\]\}\}\]\,/, $1, url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /(itag=.*?)"adPlacements.*?"\}\}\}\]\,/, $1, url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /(itag=.*?)"playerAds.*?\}\}\]\,/, $1, url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"adSlots.*?\}\]\}\}\]\,/, $1, url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"adPlacements.*?"\}\}\}\]\,/, $1, url:player?key=)
+www.youtube.com#@#+js(trusted-replace-fetch-response, /("lastModified":"[^"]{3}.*?)"playerAds.*?\}\}\]\,/, $1, url:player?key=)
 www.youtube.com#@#+js(trusted-replace-fetch-response, /(source=.*?)"adSlots.*?\}\]\}\}\]\,/, $1, url:player?key=)
 www.youtube.com#@#+js(trusted-replace-fetch-response, /(source=.*?)"adPlacements.*?"\}\}\}\]\,/, $1, url:player?key=)
 www.youtube.com#@#+js(trusted-replace-fetch-response, /(source=.*?)"playerAds.*?\}\}\]\,/, $1, url:player?key=)
@@ -276,8 +278,6 @@ youtube.com#@#+js(trusted-replace-fetch-response, /(youtubei.*?)"playerAds.*?\}\
 youtube.com#@#+js(trusted-replace-fetch-response, /\"adSlots.*?true.*?\}\]\}\}\]\,/, , url:player?key= method:/post/i)
 youtube.com#@#+js(trusted-replace-fetch-response, /\"adPlacements.*?ytimg.*?\"\}\}\}\]\,/, , url:player?key=)
 youtube.com#@#+js(trusted-replace-fetch-response, /\"playerAds.*?\"enabledEngageTypes\":\"\d.*?\}\}\]\,/, , url:player?key=)
-youtube.com#@#+js(trusted-replace-fetch-response, /\"adPlacements.*?true.*?\"\}\}\}\]\,/, , url:player?key= method:/post/i)
-youtube.com#@#+js(trusted-replace-fetch-response, /\"playerAds.*?true.*?\}\}\]\,/, , url:player?key= method:/post/i)
 www.youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.ab_det_gen_re, false)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
@@ -533,7 +533,7 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.OcdnDb
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.commercial-unit-desktop-rhs:not(.mnr-c)
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.commercial-unit-mobile-top > div[data-pla="1"]
-google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.kpih0e
+google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.ltJjte
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##.uEierd
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##a[href^="/aclk?sa="][href*="&adurl=&placesheetAdFix=1"]
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##a[href^="/aclk?sa="][href*="&adurl=&placesheetAdFix=1"] + button
@@ -1529,6 +1529,7 @@ reddit.com##[reddit-cookie-banner]
 reddit.com##div[style*="--Toaster-indicatorColor"]
 redd.it,reddit.com##shreddit-async-loader[bundlename="reddit_cookie_banner"]
 reddit.com##shreddit-cookie-banner
+reddit.com###eu-cookie-policy
 reddit.com##.email-collection-banner
 ||ads-bidder-api.twitter.com^
 @@||static.ads-twitter.com^$app=jp.co.alc.eow
@@ -2894,7 +2895,7 @@ read.amazon.com##.kp-share-inline-container
 aws.amazon.com##a[data-share-dialog-toggle]
 amazon.com##div[data-widgetid="share"]
 amazon.com##span[data-action="ssf-share-icon"]
-speedtest.pl,flyordie.com,convertinmp4.com,amazon.com###facebook
+ewrc.cz,speedtest.pl,flyordie.com,convertinmp4.com,amazon.com###facebook
 ktgis.net,typepad.com,ntv.co.jp,isekai-museum.jp,phantom-world.com,skymetweather.com,amazon.com,tellows-au.com,tellows-tr.com,tellows.at,tellows.be,tellows.ch,tellows.co,tellows.co.nz,tellows.co.uk,tellows.co.za,tellows.com,tellows.com.br,tellows.cz,tellows.de,tellows.es,tellows.fr,tellows.hu,tellows.in,tellows.it,tellows.jp,tellows.mx,tellows.nl,tellows.pl,tellows.pt,tellows.ru,tellows.se,tellows.tw###twitter
 ||cloudfront.net^*.mp3|$media,redirect=noopmp3-0.1s,domain=music.amazon.com|music.amazon.ca|music.amazon.co.uk|music.amazon.fr|music.amazon.de|music.amazon.it|music.amazon.es|music.amazon.co.jp|music.amazon.com.au|music.amazon.com.mx
 oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
