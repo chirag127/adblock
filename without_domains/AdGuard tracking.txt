@@ -36,7 +36,7 @@ $cookie=/^CaosGtag_ga/
 $cookie=/^KRTBCOOKIE_/
 $cookie=/^_chartbeat/
 $cookie=/^_dc_gtm_UA-/
-$cookie=/^_ga_/
+$cookie=/^_ga_/,domain=~nintendo.com
 $cookie=/^_gac_/
 $cookie=/^_gat_/
 $cookie=/^_gat_tracker\d+/
@@ -62,7 +62,7 @@ $cookie=/^mprtcl-prodv4_/
 $cookie=/^mprtcl-v4_/
 $cookie=/^uid-bp-\d+/
 $cookie=/^wisepops/
-$cookie=/dwac_/
+$cookie=/dwac_/,domain=~nintendo.com
 $cookie=/dwanonymous_/
 $cookie=/mp_.*_mixpanel/
 $cookie=ACac2,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
@@ -951,6 +951,7 @@ $cookie=yotpo_pixel
 /wp-statistics/assets/js/tracker.js
 /wp-statistics/v2/hit?
 /wt?p=
+/www\.eldorado\.gg\/[a-zA-Z]{10}\.js/$script,~third-party,domain=eldorado.gg
 /wxhawkeye.js
 /xgemius.js
 /xstat/?id=$script,~third-party
@@ -2973,7 +2974,6 @@ $cookie=yotpo_pixel
 @@||stats.jtvnw.net/crossdomain.xml
 @@||stippleit.com/stipple.js$domain=photos.toofab.com
 @@||storage.embluemail.com/pixeltracking^$domain=lavoz.com.ar
-@@||store-jp.nintendo.com^$cookie
 @@||stylished.de/js/vendors/emos2.js$domain=stylished.de
 @@||sumologic.com^$domain=sumologic.com
 @@||sundaysky.com/sundaysky.js?$domain=lenovo.com
