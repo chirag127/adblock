@@ -1060,6 +1060,7 @@ codesnse.com##[href^="https://play.google.com/"]
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=smoner.com
 docs.google.com##+js(no-xhr-if, method:POST url:/logImpressions)
 ||play.google.com/store/apps/*referrer$removeparam=referrer
+colab.research.google.com##+js(href-sanitizer, a[href^="https://colab.research.google.com/corgiredirector?site=http"], ?site)
 @@||google-analytics.com/analytics.js$script,domain=developers.google.com
 @@||google.com/afsonline/*$script,domain=newser.com
 ||thelibertydaily.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com,badfilter
