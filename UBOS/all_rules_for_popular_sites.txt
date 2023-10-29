@@ -253,9 +253,6 @@ www.youtube.com#@#+js(trusted-replace-fetch-response, /(source=.*?)"playerAds.*?
 www.youtube.com#@#+js(trusted-replace-fetch-response, '/("mimeType":"[^"]{3,}".*?)"adSlots.*?\}\]\}\}\],/', $1, url:player?key=)
 www.youtube.com#@#+js(trusted-replace-fetch-response, '/("mimeType":"[^"]{3,}".*?)"adPlacements.*?"\}\}\}\],/', $1, url:player?key=)
 www.youtube.com#@#+js(trusted-replace-fetch-response, '/("mimeType":"[^"]{3,}".*?)"playerAds.*?\}\}\],/', $1, url:player?key=)
-www.youtube.com#@#+js(trusted-replace-fetch-response, /(requiressl.*?)"adSlots.*?\}\]\}\}\]\,/, $1, url:player?key=)
-www.youtube.com#@#+js(trusted-replace-fetch-response, /(requiressl.*?)"adPlacements.*?"\}\}\}\]\,/, $1, url:player?key=)
-www.youtube.com#@#+js(trusted-replace-fetch-response, /(requiressl.*?)"playerAds.*?\}\}\]\,/, $1, url:player?key=)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
@@ -265,6 +262,7 @@ youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container
 youtube.com###player [class*="suggested-action-badge-icon"]:upward(.ytp-suggested-action)
 ||googlevideo.com/initplayback?source=youtube*&c=TVHTML5&oad=$xhr,domain=youtube.com
 ||googlevideo.com/videoplayback?*&ctier=L&$xmlhttprequest,domain=m.youtube.com|music.youtube.com|www.youtube.com,badfilter
+*o097znze.googlevideo.com^$xhr,3p,method=get,domain=www.youtube.com
 zupload.me##a[href="https://www.9xyoutube.com"]
 ||youtube.com/get_video$media,redirect=noopmp4-1s,domain=wowescape.com
 ||youtube.com/get_video$media,redirect=noopmp4-1s,domain=games2rule.com
@@ -927,7 +925,7 @@ computerpedia.in###tp98, #countdown, [src*="https://www.google.com/recaptcha"]:o
 *$script,3p,denyallow=twitter.com|jsdelivr.net|jwpcdn.com|fbcdn.net|facebook.net|fastly.net|fastlylb.net|jquery.com|hwcdn.net|hcaptcha.com|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|consensu.org|sharethis.com|tradingview.com,domain=beforeitsnews.com
 @@||google.com/*/search/*$script,domain=thewindowsclub.com
 *$frame,3p,denyallow=google.com,domain=fullxh.com|hamsterix.*|megaxh.com|unlockxh4.com|xhadult2.com|xhadult3.com|xhadult4.com|xhadult5.com|xhamster.*|xhamster10.*|xhamster11.*|xhamster12.*|xhamster13.*|xhamster14.*|xhamster15.*|xhamster16.*|xhamster17.*|xhamster18.*|xhamster19.*|xhamster20.*|xhamster2.*|xhamster3.*|xhamster4.*|xhamster46.com|xhamster5.*|xhamster7.*|xhamster8.*|xhday.com|xhday1.com|xhmoon5.com|xhplanet1.com|xhplanet2.com|xhreal2.com|xhreal3.com|xhtab2.com|xhvictory.com|xhwebsite.com|xhwebsite2.com|xhwide1.com|xhwide8.com
-*$frame,denyallow=google.com,domain=slreamplay.*
+*$frame,denyallow=google.com,domain=slreamplay.*|streampiay.*
 9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co,marketrealist.com##.ad-disclaimer-container, .inlinead, .ad-container
 ||googlesyndication.com^$xhr,redirect=noopjs,domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co|marketrealist.com
 *$script,redirect-rule=noopjs,domain=9to5google.com|9to5mac.com|9to5toys.com|dronedj.com|electrek.co|marketrealist.com
@@ -1251,6 +1249,7 @@ bing.com##+js(nosiif, logQueue, 10000)
 ||api.search.live.net^$third-party,domain=~bing.com
 ||bing.com*/bootstrap.js$third-party
 ||bing.com/widget/render/$third-party
+bing.com###b_pole
 bing.com##.PopinAnimation
 bing.com###thp_notf_div
 bing.com#@##cc_container
