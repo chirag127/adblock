@@ -55,6 +55,7 @@ architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newy
 architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newyorker.com,vanityfair.com,vogue.com,wired.com##[subscriptions-section="content-not-granted"]
 arkansasonline.com##+js(cookie-remover, blaize_session)
 artforum.com##+js(cookie-remover, /^/)
+artnet.com##div.article-body:style(display:block !important;)
 artnet.com,barrons.com,billboard.com,bloombergquint.com,bostonglobe.com,dallasnews.com,fortune.com,latimes.com,marketwatch.com,sandiegouniontribune.com,scmp.com,sportico.com,staradvertiser.com,theathletic.com,voguebusiness.com,wsj.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 artnet.com,barrons.com,billboard.com,bloombergquint.com,bostonglobe.com,dallasnews.com,fortune.com,latimes.com,marketwatch.com,sandiegouniontribune.com,scmp.com,sportico.com,staradvertiser.com,theathletic.com,voguebusiness.com,wsj.com##[subscriptions-section="content-not-granted"]
 artsenkrant.com##+js(ra, class, div.article-body > div)
@@ -328,8 +329,6 @@ theatlantic.com##.c-nudge__container,.c-non-metered-nudge,div[class^="ArticleInj
 theatlantic.com##img[class*="Image_lazy__"]:style(opacity: 1 !important)
 thediplomat.com##+js(cookie-remover, dpl-pw)
 thediplomat.com##+js(rc, dpl-preview, article.dpl-preview, stay)
-theepochtimes.com##+js(ra, style, body[style], stay)
-theepochtimes.com##div.modal
 thegardenisland.com###single-login-box,#single-excerpt
 thegardenisland.com##+js(ra, style, #single-paywall)
 theglobeandmail.com##+js(ra, class, .c-article-body--subscribed)
@@ -422,6 +421,9 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||emol.cl/assets/js/merPramV2.js$script,domain=lasegunda.com
 ||emol.cl/assets/js/vendor/modal.js$script,domain=lasegunda.com
 ||ensighten.com/*/Bootstrap.js$script,third-party
+||epoch.org.il$inline-script
+||epochbase.com/rules/get$xmlhttprequest,third-party
+||epochbase.eu/rules/get$xmlhttprequest,third-party
 ||estadao.com.br/access.js$script,~third-party
 ||estadao.com.br/paywall/$script,~third-party
 ||ev.lavanguardia.com$xmlhttprequest,~third-party
@@ -514,6 +516,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||theatlantic.com/_next/static/chunks/pages/*/archive/$script,~third-party
 ||thediplomat.com/*/js/angular-cookies.min.js$script,~third-party
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/$script,~third-party
+||theepochtimes.com/rules/get$xmlhttprequest,~third-party
 ||theglobeandmail.com/pf/dist/engine/react.js$script,~third-party
 ||theintercept.com/api/tinypass.min.js$script,~third-party
 ||thenewatlantis.com/*/thenewatlantis/js/donate.js$script,~third-party
