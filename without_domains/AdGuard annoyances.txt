@@ -1641,7 +1641,7 @@
 #%#var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
 #%#var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
 #%#var AG_setConstant=function(e,a){if("undefined"===a)a=void 0;else if("false"===a)a=!1;else if("true"===a)a=!0;else if("noopFunc"===a)a=function(){};else if("trueFunc"===a)a=function(){return!0};else if("falseFunc"===a)a=function(){return!1};else if(/^\d+$/.test(a)){if(a=parseFloat(a),isNaN(a)||32767<Math.abs(a))return}else return;var b=!1;AG_defineProperty(e,{get:function(){return a},set:function(c){if(b)var d=!0;else void 0!==c&&void 0!==a&&typeof c!==typeof a&&(b=!0),d=b;d&&(a=c)}})};
-$cookie=articlesRead,domain=xda-developers.com|androidpolice.com
+$cookie=articlesRead,domain=xda-developers.com|androidpolice.com|movieweb.com
 $script,redirect-rule=noopjs,domain=aternos.org
 $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 -CookieInfo.
@@ -5711,7 +5711,6 @@ androidpolice.com##.nav-right > div.nav-elements
 androidpolice.com##.w-affiliate
 androidpolice.com#?#.sidebar > .sidebar-trending > .newsletter-container:upward(1)
 androidpolice.com#?#ul#sbar-content > li[id^="custom_html-"]:has(> div > section > form[action$="/subscriptions"])
-androidpolice.com,xda-developers.com#%#//scriptlet('remove-cookie', 'articlesRead')
 androidride.com##li[id^="custom_html-"]
 androidsis.com##.machete_cookie_container
 androjungle.com#%#//scriptlet('adjust-setInterval', 'download', '*', '0.02')
@@ -8297,6 +8296,7 @@ blogtechh.com#%#//scriptlet('adjust-setTimeout', 'countdowntimer', '*', '0.02')
 blogto.com##.fire_video_style
 blogto.com##.newsletter-subscribe-panel
 blogto.com##[style^="--dndwrpr-position:fixed;"]
+blogviewers.com,satyaclub.in,freemodapp.com,howmany.co.in,iwitnessnews.in,jabigetjob.com,kojnews.com,serkarijobfind.com,thenovbharattimes.com,nokrimilegi.in,kejriwalyojana.com,netflixrelease.com,mydomainscan.com,onlinegratuitycalculator.com,globlenews.in,rontymobile.in,revadvert.com,mynewsmedia.co#%#//scriptlet('set-constant', 'count', '0')
 blok.ai##div[class^="ConsentPrompt-module_privacyConsentApp_"]
 bloknot.ru#?#.bg-bloknot_beige > div[style^="float:"]:has(> div[id^="via_"])
 blokt.com##div[id^="coinzilla_expandable_widget"]
@@ -8827,6 +8827,9 @@ brodude.ru##.site__footer-center-subscribe-form
 brogle.de#$#.ilightbox-holder { display: none !important; }
 brogle.de#$#.ilightbox-overlay { display: none !important; }
 brogle.de#$#body.ilightbox-noscroll { overflow: auto !important; }
+brokensilenze.net#%#//scriptlet('abort-on-property-write', 'disableEnterKey')
+brokensilenze.net#%#//scriptlet('abort-on-property-write', 'nocontext')
+brokensilenze.net,pabrikarang.com,allaboutshaving.kr,animeindia.in,codedosa.com,my-expert.ru#$#.unselectable { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 bronydom.net###AltBlocked
 brose.com###bbcdBanner
 brotagonist.de###privacy_hints
@@ -12441,6 +12444,8 @@ domclick.ru##div[class^="cookie-root"]
 domeny.pl,kei.pl,cyberfolks.pl##.cfGdprCookieConsentPopup
 domestika.org###cookiesAlertWidget
 dometic.com#?##container div[class]:has(> button[aria-label="Schließen"])
+domhouse.it,energienutricao.com.br,922tp.com,itshokunin.cc,omaske.ru,animesrbija.com,adbuff.com###ppsPopupBgOverlay
+domhouse.it,energienutricao.com.br,922tp.com,itshokunin.cc,omaske.ru,animesrbija.com,adbuff.com##.ppsPopupShell
 domicad.com.ua###pop_up_subscription
 domicad.com.ua#$#.message-cockies { display: none !important; }
 domicad.com.ua#$#.show-message #shop-info { padding: 60px 0 15px 0 !important; }
@@ -12816,6 +12821,8 @@ dzbank-derivate.de###screen-overlay
 dzbank.de##.MCookieQuestionBox
 dzen.ru##article[class*="ad-campaign-qr-banner__wrapper"]
 dzen.ru##body .card-wrapersome
+dzen.ru##div[class*="__pageContainer-"] > div[id$="-popup"] > div > div[style="visibility: visible;"]
+dzen.ru##div[class*="__pageContainer-"] > div[id$="-teaser"] + div[id$="-splashscreen"]
 dzen.ru#$?#.feed__item > article._with_big_card_height._dzen-feed._carousel:contains(/[реклама]{7,10}/) { remove: true; }
 dzen.ru#%#//scriptlet('set-constant', 'Object.prototype.registerPlacement', 'undefined')
 dzenkino.com.ua##.sendpulse_of
@@ -13574,8 +13581,6 @@ enel.com.br##footer + .module.message-notification
 energetyka24.com,space24.pl,cyberdefence24.pl,defence24.pl,defence24.com#%#//scriptlet('set-local-storage-item', 'd24Cookie', 'true')
 energieag.at##.app-cookie-consent
 energiedirect.nl###wall
-energienutricao.com.br,922tp.com,itshokunin.cc,omaske.ru,animesrbija.com,adbuff.com###ppsPopupBgOverlay
-energienutricao.com.br,922tp.com,itshokunin.cc,omaske.ru,animesrbija.com,adbuff.com##.ppsPopupShell
 energiepflanzen.com,reisenexclusiv.com,tri-it-fit.de##.pixelmate-big-wrapper
 energy.de###attention_cookies
 energy.rakuten.co.jp##.bottom_slider_layout
@@ -15101,9 +15106,6 @@ fmovies.cab##div[id="1_bottom_corner"]
 fmovies.style#?#body > main + script + div[class]:has(> div[id] > div[id] > a[href="/user/profile/premium-membership"])
 fmovies2.cx##div[style^="display:block;z-index:9999;position:fixed;bottom:0;text-align:center;width:100%"]
 fmoviesdl.com#%#//scriptlet("adjust-setTimeout", "#counter", "", "0.02")
-fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$##modalshare { display: none !important; }
-fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$#.modal-backdrop { display: none !important; }
-fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$#body { overflow: auto !important; padding-right: 0 !important; }
 fmv-mypage.fmworld.net##.home-news-pr-text
 fmworld.net##p[class^="webmart"]
 fnac.pt,fnac.com##.consent-notice
@@ -18292,7 +18294,6 @@ howdyho.net##.special-ripple
 howdyho.net##.special-top-tip
 howjsay.com#%#//scriptlet("prevent-setTimeout", "adsbygoogle")
 howlongtobeat.com##.showConsentTool
-howmany.co.in,iwitnessnews.in,jabigetjob.com,kojnews.com,serkarijobfind.com,thenovbharattimes.com,nokrimilegi.in,kejriwalyojana.com,netflixrelease.com,mydomainscan.com,onlinegratuitycalculator.com,globlenews.in,rontymobile.in,revadvert.com,mynewsmedia.co#%#//scriptlet('set-constant', 'count', '0')
 howmanyfps.com##.ReactModal__Content.gi.Yd
 howstuffworks.com###async-footer > aside:has(> div > form#subscribe-form)
 howstuffworks.com###cmpBackdrop
@@ -25092,12 +25093,16 @@ moviequotedb.com,multimediaxis.de##.altamira-gdpr-cookie-consent
 moviesdaweb.blogspot.com#%#//scriptlet("adjust-setInterval", "counter--", "100", "0.02")
 moviesfi.net#%#//scriptlet("adjust-setTimeout", "#download", "10000", "0.02")
 moviesfi.net#%#//scriptlet("adjust-setTimeout", "#download", "11000", "0.02")
+moviesjoyhd.to,fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$##modalshare { display: none !important; }
+moviesjoyhd.to,fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$#.modal-backdrop { display: none !important; }
+moviesjoyhd.to,fmoviesz.to,123moviesto.pw,123movieshd.top,ev01.cc,myflixerz.to,zoechip.cc,ev01.sx,123moviesgo.ac,tinyzonetv.se,showboxmovies.net,gomovies.sx,himovies.sx,putlocker.gy,zoechip.com,dopebox.se,pressplay.top,flixhd.cc,bflix.gg,moviestowatch.tv,123moviestv.net,123-movies.vc,attacker.tv,movie4kto.net,theflixer.tv,sflix.se,2kmovie.cc,musichq.net,swatchseries.*,1movieshd.com,fmoviesto.*,solarmovie.pe,cineb.rs,myflixerhd.ru,hdtoday.*,yesmovies.mn,divicast.com,seriestv.watch,freemoviesfull.com,dopebox.to,fmovies.hn,fmovies.*,sflix.to,myflixer.to,movies2watch.tv,ev01.to,ummagurau.com,6movies.net,tinyzonetv.to,myflixertv.to,f2movies.to,moviesjoy.*,moviesjoy.*,myflixerhd.ru,soap2day.*,solarmovie.pe,cineb.net#$#body { overflow: auto !important; padding-right: 0 !important; }
 moviesroom.pl##footer > div.overlay-rules
 moviesrush.in,charbelnemnom.com#%#//scriptlet("abort-current-inline-script", "stopPrntScr")
 moviesrush.one#$?#body style:contains(/-webkit-tap-highlight-color:|::selection/) { remove: true; }
 moviesrush.one,my-expert.ru,moviesrush.in,toonvideos.net.in,hunterfansub.com#%#//scriptlet("abort-current-inline-script", "document.onkeydown")
 moviessoul.com#%#//scriptlet("adjust-setTimeout", "counter", "", "0.02")
 moviewalker.jp##.bl_pickup_btn
+movieweb.com,androidpolice.com,xda-developers.com#%#//scriptlet('remove-cookie', 'articlesRead')
 moving2canada.com##.header_advertisement_container
 movistar.es#%#//scriptlet('trusted-click-element', 'button[aria-label="Configurar/rechazar cookies"]')
 moyo.ua##.popupbanners
@@ -27818,7 +27823,6 @@ ozon.ru#$?#.mobile > div.modal-mask:has(> div.modal-wrapper > div.modal-containe
 ozon.ru#?#.layout-page > div:not([class]):has(> div > button + svg + p > a[href^="https://docs.ozon.ru/common/pravila"])
 ozyurtgazetesi.com,bolgegazetesi.com###kodac
 p-town.dmm.com##.adleft
-pabrikarang.com,allaboutshaving.kr,animeindia.in,codedosa.com,my-expert.ru#$#.unselectable { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 pabrikarang.com,genuineactivator.com,now.rememberapp.co.kr,melodelaa.link,asus-zenfone.com,techieway.blogspot.com,chronologia.pl#%#//scriptlet('abort-current-inline-script', 'document.onselectstart')
 pabrikarang.com,novatoscans.top,senpaiediciones.com,truelovejapan.com,neo-blood.co.jp,machow2.com,rawneix.in,mangacrab.com,metalnaveia66.com,bollywoodhindi.in,kdramasurdu.net,theturtleislandnews.com,audiotools.in,audiobookcup.com,lapandilladelarejilla.es,7misr4day.com,michaelemad.com,lazytranslations.com,wartaterkini.news,foxaholic.com,koreanaddict.net,jstranslations1.com,baltasar5010purohentai.com,clockks.com,iptv4best.com,reinodekovel.com,elektrikmen.com,world4.eu,activationkeys.co,samuraiscan.com#%#//scriptlet('abort-on-property-read', 'disable_copy')
 pacesuite.com###notification-cont
@@ -32032,6 +32036,7 @@ seomagnifier.com#%#//scriptlet("prevent-setTimeout", "xdBlockEnabled", "100")
 seonews.ru##.blog-company-branding
 seonews.ru##.sidebar > div.index-banner-wrapper
 seonews.ru##.sub-mailing-bg
+sepe.gob.es##.js-cookies-banner
 sephora.pl#$##cookies_block ~ .bandeBody[style^="top:"] { top: 0!important; }
 serato.com###cookie-info-banner
 sercedziecka.org.pl#$##cooModal { display: none !important; }
@@ -35555,6 +35560,7 @@ themillionroses.com##.cokkie-banner
 themontynews.org##div[data-hook="wix-app-banner"]
 themorningsun.com##div[data-display-type="info-box"][class$="Mg2-bottom-left"]
 themoscowtimes.com##.contribute-bar
+themoscowtimes.com##.newsletterbanner
 themoscowtimes.com#%#//scriptlet('prevent-setTimeout', 'Cookie.get("contribute-modal')
 themoscowtimes.com,moscowtimes.*##.sidebar__section + hr.mb-2
 themoscowtimes.com,moscowtimes.*##.social-follow
@@ -39172,6 +39178,7 @@ wikimediafoundation.org##.wp-block-group__inner-container > div.double-heading
 wikimediafoundation.org##.wp-block-group__inner-container > div.double-heading + div.is-layout-flex form.mailchimp-subscribe__form
 wikipedia.org###frb-inline
 wikipedia.org###frb-nag
+wikipedia.org###wmde-banner-app
 wikipedia.org##.cn-fundraising
 wikipedia.org##.cnotice
 wikipedia.org##.mw-dismissable-notice
