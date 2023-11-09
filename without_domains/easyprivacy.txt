@@ -246,6 +246,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /adb1.gif?
 /addLinkerEvents-ga.js
 /addLinkerEvents-std.js
+/addLinkerEvents.js
 /adds/counter.js
 /adf-tm-base-min.js
 /adlogger.php
@@ -363,7 +364,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /api-insights/log?
 /api/adplogger/*
 /api/cmp_tracker|
-/api/event-rfkj/*
 /api/ipv4check?
 /api/log-visit
 /api/log?
@@ -543,6 +543,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /collect/pv?
 /collect/sdk?$domain=~iugu.com
 /collect/view?
+/collect/view_count?
 /collect?data=
 /collect?r=
 /collect?tid=
@@ -583,7 +584,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /counter5.min.js
 /counter?action=
 /counter?id=
-/counter_1.php
 /countly.js
 /countly.min.js
 /cp.gap.com/o/*$image
@@ -644,7 +644,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /eloqua.js
 /elqcfg.min.js
 /email-pixel?
-/email.t.*/o/*$image
 /email/open?
 /email/track/*$image
 /email_open_log_
@@ -814,6 +813,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /global_analytics/s_code.js
 /global_tracking.js
 /goAnalytics.js
+/google-analyticator/*
 /google-analytics/*$domain=~stackexchange.com|~superuser.com
 /google-nielsen-analytics.js
 /google/analytics.js
@@ -963,6 +963,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /liferay-analytics-processor.js
 /lightspeed_tracker.js
 /link-tracker?*&l=open&
+/link.email.usmagazine.com/img/*$image
 /link.morningbrew.com/img/*.gif
 /link.oneplus.com/mo$image
 /link_track.js
@@ -1001,6 +1002,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /log?count=
 /log?data=
 /log?documentUrl=
+/log?event=
 /log?format=
 /log?id=
 /log?method=
@@ -1105,6 +1107,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /newslink.reuters.com/img/*$image
 /nielsen.js
 /nlogger.js
+/notifications.google.com/g/img/*$image
 /notifications.googleapis.com/email/t/*
 /notifications/beacon/*
 /np?log=
@@ -1337,7 +1340,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /rtracker/ofs.rtt.js
 /rudder-analytics.js
 /rudder-analytics.min.js
-/rum-telemetry/*
+/rum-collector/*
 /rum.gif?
 /rum.min.js
 /rum/events
@@ -1479,7 +1482,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /strpixel.png?
 /submission/pageview
 /sw/analytics.js
-/swell-ct-ad-data
 /swell-ct-pv^
 /swlapi/stats|
 /t.gif?
@@ -1595,10 +1597,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /trackingheader.js
 /trackit.php?
 /trackjs.$domain=~trackjs.com
+/tracklib.min.js
 /tracklog.
 /trackpageview.js
 /trackpageview.php
 /trackpixel?
+/trackui.min.js
 /traffic-source-cookie.min.js
 /transparent1x1.gif
 /transparent1x1.png
@@ -1673,7 +1677,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /visit-tag?
 /visit.gif?
 /visit/log.js?
-/visit?id=
 /visit_log.js
 /visitcounter.do
 /visitcounter.js
@@ -1804,6 +1807,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ?action=statsjs&
 ?action=track_visitor&
 ?action=tracking_script
+?event=impressions&
 ?event=pageview&
 ?event=performancelogger:
 ?local_ga_js=
@@ -1924,8 +1928,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||google-analytics.com/analytics.js$domain=beinsports.com|brooklinen.com|carnesvizzera.ch|cmoa.jp|enmotive.com|healthrangerstore.com|hobbyhall.fi|infoconso-multimedia.fr|jackbox.tv|k2radio.com|koel.com|kowb1290.com|ligtv.com.tr|meritonsuites.com.au|nabortu.ru|news.gamme.com.tw|novatv.bg|papajohns.com|poiskstroek.ru|rzd.ru|saturn.at|schweizerfleisch.ch|skaties.lv|stressless.com|teddyfood.com|tracking.narvar.com|tradera.com|tribuna.com|truwin.com|tuasaude.com|tv3play.no|unicef.de|viandesuisse.ch|vox.de|westernunion.com|worldsbiggestpacman.com|xxl.se
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
 @@||googleoptimize.com/optimize.js$domain=binglee.com.au|grasshopper.com|in.bookmyshow.com|inquirer.com|investing.com|lacomer.com.mx|lodgecastiron.com|tentree.ca|virginmedia.com
-@@||googletagmanager.com/gtag/js$domain=academy.com|acornonline.com|afisha.timepad.ru|aliexpress.com|carhartt-wip.com|cbslocal.com|cmoa.jp|devclass.com|dholic.co.jp|ejgiftcards.com|enmotive.com|factory.pixiv.net|game.anymanager.io|herculesstands.com|honeystinger.com|hostingvergelijker.nl|inforesist.org|kawasaki.com|liene-life.com|livongo.com|m.putlocker.how|mediaite.com|mirrativ.com|modehasen.de|montcopa.org|nihontsushin.com|oko.sh|panflix.com.br|papajohns.com|radiosarajevo.ba|rintraccialamiaspedizione.it|schwab.com|seatmaps.com|starblast.io|timparty.tim.it|toptal.com|virginmedia.com|virginplus.ca|winefolly.com|winhappy.com|xl-bygg.no|zf1.tohoku-epco.co.jp
-@@||googletagmanager.com/gtm.js$domain=3djuegosguias.com|3djuegospc.com|acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|afisha.timepad.ru|aliexpress.com|animeanime.jp|anond.hatelabo.jp|applesfera.com|aruba.it|arvopaperi.fi|atptour.com|autobild.de|autorevue.cz|axeptio.eu|backcountry.com|bbcgoodfood.com|benesse-style-care.co.jp|besplatka.ua|beterbed.nl|betten.de|binglee.com.au|book.impress.co.jp|bsa-whitelabel.com|bunte.de|bybit.com|bybitglobal.com|capital.it|carcareplus.jp|carhartt-wip.com|casa.it|ccleaner.com|cdek.ru|cdon.fi|chipotle.com|chronopost.fr|cinemacafe.net|clickup.com|cmoa.jp|como.fi|complex.com|compradiccion.com|computerbild.de|coolermaster.com|costco.co.jp|crello.com|cyclestyle.net|cyclingnews.com|cypress.io|dazeddigital.com|deejay.it|dengekionline.com|dholic.co.jp|directoalpaladar.com|dlsite.com|dmv.ca.gov|doodle.com|dropps.com|e15.cz|easternbank.com|edwardjones.com|elnuevodia.com|enmotive.com|episodi.fi|eprice.it|ergotron.com|espinof.com|euronics.it|expressvpn.com|fandom.com|feex.co.il|festoolusa.com|finanzen.at|finanzen.ch|finanzen.net|flytap.com|focus.de|formula1.com|fortress.com.hk|fortune.com|freenet-funk.de|fum.fi|gamebusiness.jp|gamespark.jp|genbeta.com|glamusha.ru|gorillamind.com|grandhood.dk|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|hatenacorp.jp|headlightrevolution.com|herculesstands.com|hobbyhall.fi|hostingvergelijker.nl|houseofbilocca.com|idealo.at|idealo.de|iexprofs.nl|iltalehti.fi|independent.co.uk|inferno.fi|inside-games.jp|insiderstore.com.br|iphoneitalia.com|jalan.net|jn.pt|join.kazm.com|journaldunet.com|jreastmall.com|junonline.jp|kakuyomu.jp|karriere.at|kedronparkhotel.com.au|komputronik.pl|konami.com|la7.it|larousse.fr|lastampa.it|lecker.de|level.travel|lift.co.za|linternaute.com|lippu.fi|luko.eu|m1.com|m2o.it|mainichi.jp|makitani.net|mangaseek.net|mcgeeandco.com|mecindo.no|mediamarkt.nl|mediuutiset.fi|mercell.com|meritonsuites.com.au|mikrobitti.fi|mirapodo.de|mobilmania.cz|montcopa.org|mycar-life.com|mysmartprice.com|nap-camp.com|netcombo.com.br|newscafe.ne.jp|nflgamepass.com|nielsendodgechryslerjeepram.com|nihontsushin.com|nordvpn.com|nourison.com|oakandfort.com|odia.ig.com.br|oetker-shop.de|okwave.jp|olx.ro|onlineshop.ocn.ne.jp|papajohns.com|pccomponentes.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|poprosa.com|post.ch|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|radiko.jp|radio-canada.ca|radiorur.de|rbbtoday.com|reanimal.jp|resemom.jp|response.jp|rocketnews24.com|rtl.de|rumba.fi|runescape.com|rustih.ru|sanwacompany.co.jp|saraiva.com.br|saturn.at|savethechildren.it|scan.netsecurity.ne.jp|sciencesetavenir.fr|scotsman.com|soranews24.com|soundguys.com|soundi.fi|spektrum.de|sport-wear.com.ua|sport1.de|sportmaster.ru|spyder7.com|stage.parco.jp|store-jp.nintendo.com|stressless.com|subscribe.greenbuildingadvisor.com|superesportes.com.br|support.brother.com|support.creative.com|swarajyamag.com|swb.de|talent.lowes.com|talouselama.fi|teddyfood.com|tekniikkatalous.fi|telia.no|theretrofitsource.com|tide.com|tilt.fi|tivi.fi|tn.com.ar|topper.com.br|toyota-forklifts.se|trademe.co.nz|tradera.com|trendencias.com|trendenciashombre.com|tribuna.com|tugatech.com.pt|tumi.com|tv-asahi.co.jp|type.jp|uclabruins.com|unieuro.it|uniqlo.com|upc.pl|upwork.com|uqr.to|veho.fi|vidaextra.com|video.repubblica.it|vip.de|virginmedia.com|vitonica.com|viviennewestwood-tokyo.com|vox.de|vtvgo.vn|wamiz.com|wowma.jp|www.kauppalehti.fi|www.nicovideo.jp|www.uusisuomi.fi|xatakamovil.com|xxl.se|ymobile.jp|youpouch.com|zakzak.co.jp|zazzle.com|zennioptical.com|zf1.tohoku-epco.co.jp|zinio.com|zive.cz|zozo.jp
+@@||googletagmanager.com/gtag/js$domain=academy.com|acornonline.com|afisha.timepad.ru|aliexpress.com|carhartt-wip.com|cbslocal.com|cmoa.jp|devclass.com|dholic.co.jp|ejgiftcards.com|enmotive.com|factory.pixiv.net|game.anymanager.io|herculesstands.com|honeystinger.com|hostingvergelijker.nl|inforesist.org|kawasaki.com|liene-life.com|livongo.com|m.putlocker.how|mediaite.com|mirrativ.com|modehasen.de|montcopa.org|nihontsushin.com|oko.sh|panflix.com.br|papajohns.com|radiosarajevo.ba|rintraccialamiaspedizione.it|schwab.com|seatmaps.com|skylar.com|starblast.io|timparty.tim.it|toptal.com|virginmedia.com|virginplus.ca|winefolly.com|winhappy.com|xl-bygg.no|zf1.tohoku-epco.co.jp
+@@||googletagmanager.com/gtm.js$domain=3djuegosguias.com|3djuegospc.com|acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|afisha.timepad.ru|aliexpress.com|animeanime.jp|anond.hatelabo.jp|applesfera.com|aruba.it|arvopaperi.fi|atptour.com|autobild.de|autorevue.cz|axeptio.eu|backcountry.com|bbcgoodfood.com|benesse-style-care.co.jp|besplatka.ua|beterbed.nl|betten.de|binglee.com.au|book.impress.co.jp|bsa-whitelabel.com|bunte.de|bybit.com|bybitglobal.com|capital.it|carcareplus.jp|carhartt-wip.com|casa.it|ccleaner.com|cdek.ru|cdon.fi|chipotle.com|chronopost.fr|cinemacafe.net|clickup.com|cmoa.jp|como.fi|complex.com|compradiccion.com|computerbild.de|coolermaster.com|costco.co.jp|crello.com|cyclestyle.net|cyclingnews.com|cypress.io|dazeddigital.com|deejay.it|dengekionline.com|dholic.co.jp|directoalpaladar.com|dlsite.com|dmv.ca.gov|doodle.com|dropps.com|e15.cz|easternbank.com|edwardjones.com|elnuevodia.com|enmotive.com|episodi.fi|eprice.it|ergotron.com|espinof.com|euronics.it|expressvpn.com|fandom.com|feex.co.il|festoolusa.com|finanzen.at|finanzen.ch|finanzen.net|flytap.com|focus.de|formula1.com|fortress.com.hk|fortune.com|freenet-funk.de|fum.fi|gamebusiness.jp|gamespark.jp|genbeta.com|glamusha.ru|gorillamind.com|grandhood.dk|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|hatenacorp.jp|headlightrevolution.com|herculesstands.com|hobbyhall.fi|hostingvergelijker.nl|houseofbilocca.com|idealo.at|idealo.de|iexprofs.nl|iltalehti.fi|independent.co.uk|inferno.fi|inside-games.jp|insiderstore.com.br|iphoneitalia.com|jalan.net|jn.pt|join.kazm.com|journaldunet.com|jreastmall.com|junonline.jp|kakuyomu.jp|karriere.at|kedronparkhotel.com.au|komputronik.pl|konami.com|la7.it|larousse.fr|lastampa.it|lecker.de|level.travel|lift.co.za|linternaute.com|lippu.fi|luko.eu|m1.com|m2o.it|mainichi.jp|makitani.net|mangaseek.net|mcgeeandco.com|mecindo.no|mediamarkt.nl|mediuutiset.fi|mercell.com|meritonsuites.com.au|mikrobitti.fi|mirapodo.de|mobilmania.cz|montcopa.org|mycar-life.com|mysmartprice.com|nap-camp.com|netcombo.com.br|newscafe.ne.jp|nflgamepass.com|nielsendodgechryslerjeepram.com|nihontsushin.com|nordvpn.com|nourison.com|oakandfort.com|odia.ig.com.br|oetker-shop.de|okwave.jp|olx.ro|onlineshop.ocn.ne.jp|papajohns.com|pccomponentes.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|poprosa.com|post.ch|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|radiko.jp|radio-canada.ca|radiorur.de|rbbtoday.com|reanimal.jp|resemom.jp|response.jp|rocketnews24.com|rtl.de|rumba.fi|runescape.com|rustih.ru|sanwacompany.co.jp|saraiva.com.br|saturn.at|savethechildren.it|scan.netsecurity.ne.jp|sciencesetavenir.fr|scotsman.com|soranews24.com|soundguys.com|soundi.fi|spektrum.de|sport-wear.com.ua|sport1.de|sportmaster.ru|spyder7.com|stage.parco.jp|store-jp.nintendo.com|stressless.com|subscribe.greenbuildingadvisor.com|superesportes.com.br|support.brother.com|support.creative.com|swarajyamag.com|swb.de|talent.lowes.com|talouselama.fi|teddyfood.com|tekniikkatalous.fi|telia.no|theretrofitsource.com|tide.com|tilt.fi|tivi.fi|tn.com.ar|topper.com.br|toyota-forklifts.se|trademe.co.nz|tradera.com|trendencias.com|trendenciashombre.com|tribuna.com|tugatech.com.pt|tumi.com|tv-asahi.co.jp|type.jp|uclabruins.com|unieuro.it|uniqlo.com|upc.pl|upwork.com|uqr.to|veho.fi|vidaextra.com|video.repubblica.it|vip.de|virginmedia.com|vitonica.com|viviennewestwood-tokyo.com|vox.de|vtvgo.vn|wamiz.com|watsons.com.tr|wowma.jp|www.kauppalehti.fi|www.nicovideo.jp|www.uusisuomi.fi|xatakamovil.com|xxl.se|ymobile.jp|youpouch.com|zakzak.co.jp|zazzle.com|zennioptical.com|zf1.tohoku-epco.co.jp|zinio.com|zive.cz|zozo.jp
+@@||groupbycloud.com/gb-tracker-client-3.min.js$domain=officedepot.co.cr
 @@||gs.statcounter.com/chart.php$script,third-party
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||gsuite.tools/js/gtag.js$script,~third-party
@@ -1951,7 +1956,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||kameleoon.io/geolocation^$domain=welt.de
 @@||kameleoon.io/ip^$domain=welt.de
 @@||kaptcha.com/collect/sdk?$domain=palmettostatearmory.com|wyze.com
-@@||komas19.xyz/cdn-cgi/apps/$script,~third-party
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
 @@||leanplum.com^$domain=arkadium.com
 @@||lenovo.com/_ui/desktop/common/js/AdobeAnalyticsEvent.js$script,~third-party
@@ -1967,7 +1971,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||mapquestapi.com/logger/$domain=hertz.com
 @@||maptiles.ping-admin.ru^$image,domain=ping-admin.com
 @@||matomo.miraheze.org/matomo.js$script,~third-party
-@@||maxmind.com^*/geoip2.js$domain=bandai-hobby.net|boostedboards.com|donorschoose.org|driftinnovation.com|fallout4.com|ibanez.com|instamed.com|metronews.ca|mtv.com.lb|runningheroes.com|teslamotors.com
 @@||mclo.gs/js/logview.js$~third-party
 @@||merlincdn.net^*/common/images/spacer.gif$image,domain=turkcell.com.tr
 @@||mlbstatic.com/mlb.com/adobe-analytics/$script,domain=mlb.com
@@ -2244,6 +2247,7 @@ omni.soundestlink.com$image
 ||adobe.io/system/log
 ||adobe.io/web/v1/metrics
 ||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
+||adoberesources.net^$third-party,domain=~adobe.com
 ||adobetag.com^$third-party
 ||adobetarget.com^$third-party
 ||adop.cc^$third-party
@@ -2321,7 +2325,7 @@ omni.soundestlink.com$image
 ||airpr.com^$third-party
 ||airserve.net^$third-party
 ||airtable.com/internal/
-||airtel.in/analytics/
+||airtel.in/analytics/pixel?
 ||aiv-delivery.net/Events/
 ||aiv-delivery.net/v1/ReportEvent
 ||aivalabs.com^$third-party
@@ -2384,7 +2388,6 @@ omni.soundestlink.com$image
 ||amunx.de^$third-party
 ||analitits.com^$third-party
 ||analitycs.net^$third-party
-||analytic.rocks^$third-party
 ||analytically.net^$third-party
 ||analytics-api.dvdfab.
 ||analytics-cdiscount.com^$third-party
@@ -2397,7 +2400,6 @@ omni.soundestlink.com$image
 ||analytics.ticketmaster.
 ||analyticsip.net^$third-party
 ||analyzz.com^$third-party
-||anametrix.com^$third-party
 ||anametrix.net^$third-party
 ||ancestry.com/core.js
 ||ancestrycdn.com/tao/at/
@@ -2552,6 +2554,7 @@ omni.soundestlink.com$image
 ||bamgrid.com/telemetry
 ||banggood.com/collectBanner?
 ||banggood.com/collectException
+||bankinter.com/res/img/documento_cargado.gif?
 ||bankofamerica.com/cookie-id.js
 ||baptisttop1000.com^$third-party
 ||baqend.com/v1/rum/$third-party
@@ -2623,7 +2626,6 @@ omni.soundestlink.com$image
 ||bizseasky.com/tracker/
 ||bizspring.net^$third-party
 ||bjcathay.com^$third-party
-||blisspointmedia.com^$third-party
 ||blockdetector.org^$third-party
 ||blockmetrics.com^$third-party
 ||blog-stat.com^$third-party
@@ -2885,6 +2887,7 @@ omni.soundestlink.com$image
 ||compteur-gratuit.org^$third-party
 ||compteur.cc^$third-party
 ||compteur.com^$third-party
+||concert.io/lookup/
 ||conductrics.com^$third-party
 ||conductrics.net^$third-party
 ||config-security.com/event
@@ -3008,7 +3011,6 @@ omni.soundestlink.com$image
 ||dailymotion.com/logger/
 ||danorenius.com^$third-party
 ||dashboard.nowdialogue.com/api/events/
-||data-dynamic.net^$third-party
 ||data.hicloud.com^$third-party
 ||data.tm-awx.com/smile-web-v2/
 ||data.tm-awx.com/smile-web.min.js
@@ -3101,8 +3103,10 @@ omni.soundestlink.com$image
 ||dmm.com/imp?
 ||dmpprof.com^$third-party
 ||dmtag.jp^$third-party
+||dmtgvn.com/wrapper/js/common-engine.js$domain=rt.com
 ||dmxleo.com^$third-party
 ||dnevnik.si/tracker/
+||dnnapi.com/analytics/
 ||doceree.com^$third-party
 ||docodoco.jp^$third-party
 ||docomo.ne.jp/scripts/retargeting/retargeting.js
@@ -3229,6 +3233,7 @@ omni.soundestlink.com$image
 ||enter-system.com^$third-party
 ||enticelabs.com^$third-party
 ||enviou.com.br^$third-party
+||envoke.com^$third-party
 ||epimg.net/js/gdt/
 ||epochtimes.de/mp/track/
 ||equirodi.*/addstat.php
@@ -3272,7 +3277,6 @@ omni.soundestlink.com$image
 ||evorra.net^$third-party
 ||evs.sgmt.loom.com^$script
 ||evyy.net^$third-party
-||ew3.io^$third-party
 ||exactag.com^$third-party
 ||exacttarget.com^$~subdocument,third-party
 ||exapxl.de^$third-party
@@ -3359,6 +3363,7 @@ omni.soundestlink.com$image
 ||flixsyndication.net^$third-party
 ||flocktory.com^$third-party
 ||flurry.com^$third-party
+||flux-cdn.com/client/ukiuki/flux_wikiwiki_AS_TM_AT.min.js
 ||flx1.com^$third-party
 ||flxpxl.com^$third-party
 ||flyingpt.com^$third-party
@@ -3563,7 +3568,6 @@ omni.soundestlink.com$image
 ||goodreads.com/metrics_logging_batched
 ||goodreads.com/report_metric
 ||goodreads.com/track/
-||google-analytics.com/analytics.js$domain=notebookcheck.com
 ||google-analytics.com^$third-party
 ||google.*/url?$ping
 ||google.com/analytics/$third-party
@@ -3579,7 +3583,6 @@ omni.soundestlink.com$image
 ||gooo.al^$third-party
 ||gopjn.com^$third-party
 ||goprediction.com^$third-party
-||gostats.cn^$third-party
 ||gostats.com^$third-party
 ||gostats.org^$third-party
 ||gostats.pl^$third-party
@@ -3790,6 +3793,7 @@ omni.soundestlink.com$image
 ||innogamescdn.com/media/js/metrics-
 ||inpwrd.com^$third-party
 ||inside-graph.com^$third-party
+||insideevs.com/analytics.js
 ||insiderdata360online.com/service/platform.js
 ||insight.rapid7.com^$third-party
 ||insightgrit.com^$third-party
@@ -3860,6 +3864,7 @@ omni.soundestlink.com$image
 ||italiaonline.it/script/iol-body.js
 ||itc.cn/pv/
 ||iterable.com/analytics.js
+||itop.cz^$third-party
 ||itrac.it^$third-party
 ||itracker360.com^$third-party
 ||itracmediav4.com^$third-party
@@ -4043,6 +4048,7 @@ omni.soundestlink.com$image
 ||linktr.ee/events
 ||linkwi.se^$third-party
 ||linkwithin.com/pixel.png
+||linkxchanger.com^$third-party
 ||linximpulse.net/impulse/
 ||litix.io^$third-party
 ||littlebigsnake.com/event?
@@ -4200,6 +4206,7 @@ omni.soundestlink.com$image
 ||mercadoclics.com^$third-party
 ||mercedes-benz.com/datadog-
 ||mercent.com^$third-party
+||merklesearch.com/merkle_track.js
 ||merriam-webster.com/lapi/v1/mwol-search/stats/lookup
 ||messenger.com/ajax/bnzai?
 ||metalyzer.com^$third-party
@@ -4225,6 +4232,7 @@ omni.soundestlink.com$image
 ||midas-i.com^$third-party
 ||mieru-ca.com^$third-party
 ||mindtake.com^$third-party
+||minero.cc^$third-party
 ||minescripts.info^$third-party
 ||minkatu.com^$third-party
 ||minkou.jp/js/tracking.js
@@ -4359,7 +4367,6 @@ omni.soundestlink.com$image
 ||neowin.net/ws/$websocket
 ||nerohut.com^$third-party
 ||net-filter.com^$third-party
-||net-parade.it/tracker/
 ||net-tracker.notolytix.com^$third-party
 ||netaffiliation.com^$script,third-party
 ||netagent.cz^$third-party
@@ -4478,6 +4485,7 @@ omni.soundestlink.com$image
 ||onet.pl/eclk/
 ||onet.pl^*/tags?
 ||onetag-sys.com^$third-party
+||onetag.io^$third-party
 ||onetrust.com^$ping
 ||ongsono.com^$third-party
 ||oniad.com^$third-party
@@ -4603,7 +4611,6 @@ omni.soundestlink.com$image
 ||perljs.com^$third-party
 ||permutive.com^$third-party
 ||persianstat.com^$third-party
-||personaclick.com^$third-party
 ||personyze.com^$third-party
 ||petametrics.com^$image,third-party
 ||pghub.io^$third-party
@@ -4742,7 +4749,6 @@ omni.soundestlink.com$image
 ||ptengine.com^$third-party
 ||ptengine.jp^$third-party
 ||ptztvpremium.com^$third-party
-||pubdream.com^$third-party
 ||pubexchange.com^$third-party
 ||public.cobrowse.oraclecloud.com/rely/storage/
 ||publicbroadcasting.net/analytics/
@@ -5179,7 +5185,6 @@ omni.soundestlink.com$image
 ||sitetistik.com^$third-party
 ||sitetracker.com^$third-party
 ||sjv.io^$third-party
-||skechers.com/dL6GOSf9/init.js
 ||skplanet.com/pixel?
 ||skroutza.skroutz.gr/skroutza.min.js
 ||skyglue.com^$third-party
@@ -5524,7 +5529,6 @@ omni.soundestlink.com$image
 ||toyota.com/analytics/
 ||tp88trk.com^$third-party
 ||tra.scds.pmdstatic.net/sourcepoint/
-||tracc.it^$third-party
 ||tracdelight.com^$third-party
 ||tracdelight.io^$third-party
 ||trace.events^$third-party
@@ -5639,6 +5643,7 @@ omni.soundestlink.com$image
 ||u-on.eu^$third-party
 ||u5e.com^$third-party
 ||uadx.com^$third-party
+||uai.com.br^*/analytics.js
 ||uapoisk.net^$third-party
 ||uarating.com^$third-party
 ||uber.com/_events
@@ -5766,6 +5771,7 @@ omni.soundestlink.com$image
 ||visitorqueue.com^$third-party
 ||visitortracklog.com^$third-party
 ||visitorville.com^$third-party
+||visits.lt^$third-party
 ||visitstreamer.com^$third-party
 ||visualdna.com^$third-party
 ||visualrevenue.com^$third-party
@@ -5964,7 +5970,6 @@ omni.soundestlink.com$image
 ||xapkgame.com^$third-party
 ||xcar.com.cn/exp/
 ||xclaimwords.net^$third-party
-||xcounter.ch^$third-party
 ||xdisctracking.pw^$third-party
 ||xero.com/api/events/
 ||xfinity.com/event/
