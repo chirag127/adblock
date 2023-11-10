@@ -195,6 +195,9 @@ inman.com##div.content-wrap > div:not([class]):style(margin: 5% !important)
 interestingengineering.com##+js(ra, class, div[class*="Product_makeBlur__"])
 interestingengineering.com##div#paywall-div
 ipsoa.it##+js(ra, style, div.paywall)
+italian.tech,moda.it##+js(ra, style, div#article-body, stay)
+italian.tech,moda.it##^div#ph-paywall
+italian.tech,moda.it##div#ph-paywall
 japantimes.co.jp##+js(cookie-remover, /xbc/)
 journaldemontreal.com##+js(rc, composer-content, div.article-main-txt.composer-content)
 journaldequebec.com##+js(rc, composer-content, div.article-main-txt.composer-content)
@@ -223,8 +226,6 @@ lejdd.fr,parismatch.com,public.fr###poool-container,#poool-widget-content,#poool
 lejdd.fr,parismatch.com,public.fr##+js(ra, data-poool-mode, .cnt[data-poool-mode="hide"])
 lepetitjournal.net##+js(rc, excerpt, div.excerpt)
 lepetitjournal.net##.message-restricted-woocommerce
-lescienze.it##+js(ra, hidden|style, .detail_body[hidden])
-lescienze.it##.paywall-adagio,#detail-body-paywall,.shade
 letelegramme.fr##+js(rc, tlg-paywalled, div.tlg-paywalled)
 livelaw.in##+js(rc, hide, div.paywall-content.hide)
 livelaw.in##+js(rc, restricted_message, div.restricted_message)
@@ -497,7 +498,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||rugbypass.com/plus/$inline-script
 ||schwaebische-post.de/sub/js/pc-offer-west.js$script,~third-party
 ||scientificamerican.com/api/tinypass.min.js$script,~third-party
-||scripts.repubblica.it/pw/pw.js$script,domain=lescienze.it|italian.tech
+||scripts.repubblica.it/pw/pw.js$script,domain=italian.tech|moda.it
 ||seattletimes.com/wp-content/*/st-advertising-bundle.js$script,~third-party
 ||seattletimes.com/wp-content/*/st-user-messaging-main-bundle.js$script,~third-party
 ||shrm.org/*/js/paywall*.js$script,~third-party
