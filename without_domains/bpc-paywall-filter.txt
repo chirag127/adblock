@@ -37,6 +37,8 @@ al-monitor.com##div.memo--callout--wrapper
 alternatives-economiques.fr###temp-paywall
 alternatives-economiques.fr##+js(ra, style, div[data-ae-poool], stay)
 ambito.com##+js(cookie-remover, TDNotesRead)
+amboss.com##+js(cookie-remover, ssobma)
+amboss.com##div#optly-remaining-articles-banner,div[class^="InfoBanner_InfoBanner"]
 amp.bnd.com,amp.charlotteobserver.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 amp.bnd.com,amp.charlotteobserver.com,amp.fresnobee.com,amp.kansas.com,amp.kansascity.com,amp.kentucky.com,amp.mcclatchydc.com,amp.miamiherald.com,amp.newsobserver.com,amp.sacbee.com,amp.star-telegram.com,amp.thestate.com,amp.tri-cityherald.com##[subscriptions-section="content-not-granted"]
 amp.brisbanetimes.com.au,amp.smh.com.au,amp.theage.com.au,amp.watoday.com.au##+js(ra, subscriptions-section, [subscriptions-section="content"])
@@ -141,8 +143,6 @@ divisare.com##+js(ra, style, body[style], stay)
 divisare.com##div.blocker
 dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,rnd.de,siegener-zeitung.de,sn-online.de,waz-online.de##+js(set, Fusion.globalContent.isPaid, false)
 dominionpost.com##+js(rc, entry-content, article>div.entry-content)
-doorbraak.be###aanbod-nieuwe-abonnee, #excerpt-inhoud-abo
-doorbraak.be##+js(ra, style, #plus-inhoud)
 eastwest.eu###testo_articolo > p, #testo_articolo > h3
 eastwest.eu##+js(ra, style, .paywall)
 eastwest.eu##+js(rc, paywall, .paywall)
@@ -158,6 +158,7 @@ eltiempo.com##+js(rc, modulos, div.modulos)
 em.com.br##+js(rc, compress-text, .div.compress-text)
 enotes.com##+js(ra, class, div[class^="_"])
 enotes.com##section.c-cta-section
+enr.com##+js(cookie-remover, esessionid)
 espresso.repubblica.it##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
@@ -198,7 +199,7 @@ ipsoa.it##+js(ra, style, div.paywall)
 italian.tech,moda.it##+js(ra, style, div#article-body, stay)
 italian.tech,moda.it##^div#ph-paywall
 italian.tech,moda.it##div#ph-paywall
-japantimes.co.jp##+js(cookie-remover, /xbc/)
+japantimes.co.jp##+js(cookie-remover, xbc)
 jornaljoca.com.br##+js(acis, $, paywall)
 journaldemontreal.com##+js(rc, composer-content, div.article-main-txt.composer-content)
 journaldequebec.com##+js(rc, composer-content, div.article-main-txt.composer-content)
@@ -259,7 +260,7 @@ newsday.com##+js(ra, class, html[class])
 nrc.nl##+js(cookie-remover, counter)
 nrc.nl##div[id$="modal__overlay"],div.header__subscribe-bar,div.banner
 nu.nl##+js(rc, authorized-content, div.authorized-content)
-nu.nl##.login-wall
+nu.nl##article#LOGIN
 nw.de##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 nw.de##div.paywallOverlay
 nwzonline.de,shz.de,svz.de##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
@@ -270,7 +271,7 @@ nytimes.com##+js(json-prune-fetch-response, data.user)
 nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div.expanded-dock
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
 odt.co.nz##+js(ra, property, div[property="content:encoded"])
-onet.pl##+js(cookie-remover, /xbc/)
+onet.pl##+js(cookie-remover, /^xbc/)
 paloaltoonline.com##+js(cookie-remover, /^/)
 philosophynow.org##+js(cookie-remover, /^/)
 popbitch.com##+js(ra, class, div[class*="-premium"])
@@ -422,6 +423,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
 ||emol.cl/assets/js/merPramV2.js$script,domain=lasegunda.com
 ||emol.cl/assets/js/vendor/modal.js$script,domain=lasegunda.com
+||enr.com/paywall/evercookie_get.js$script,~third-party
 ||ensighten.com/*/Bootstrap.js$script,third-party
 ||epoch.org.il$inline-script
 ||epochbase.com/rules/get$xmlhttprequest,third-party
@@ -437,6 +439,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||folha.uol.com.br/paywall/js/$script,~third-party
 ||foreignaffairs.com/modules/custom/fa_paywall_js/js/paywall.js$script,~third-party
 ||foreignaffairs.com/sites/default/files/css/css_VQZ*.css$stylesheet,~third-party
+||freiepresse.de/*-artikel$inline-script
 ||ftm.eu/js/routing$script,~third-party
 ||ftm.nl/js/routing$script,~third-party
 ||gestion.pe/pf/dist/engine/react.js$script,~third-party
