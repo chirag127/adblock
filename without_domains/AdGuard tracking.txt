@@ -482,10 +482,10 @@ $cookie=yotpo_pixel
 /\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{25,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
-/\/[a-z0-9]{12}\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+/\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
-/^https?:\/\/[0-9a-z]{11,12}\.[^\/]*\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+/^https?:\/\/[0-9a-z]{11,13}\.[^\/]*\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{91,106}$/$match-case,script,~third-party
 /_/api/v2/analytics/?
 /_CPiX/art
 /__Analytics-Start?url=
@@ -1683,6 +1683,7 @@ $cookie=yotpo_pixel
 @@||gizmodo.com/x-kinja-static/assets/new-client/*~slideshowPermalinkPage~trackers.
 @@||gj.mmstat.com/aliyun.$domain=work.aliyun.com
 @@||global.fncstatic.com/static/isa/app/lib/VisitorAPI.js$domain=video.foxnews.com|video.foxbusiness.com
+@@||global.ketchcdn.com/web/$domain=forbes.com
 @@||globalnews.ca/b/ss/
 @@||globecharge.com/images/ping.gif?
 @@||go.com/stat/dolwebanalytics.js
@@ -2499,7 +2500,6 @@ $cookie=yotpo_pixel
 @@||livenation.122.2o7.net/b/ss/$domain=oss.ticketmaster.com
 @@||lk.rt.ru/ruxitagentjs_*.js$domain=lk.rt.ru
 @@||lloydstsb.com/it/xslt/touchclarity/omtr_tc.js
-@@||lms.ev.org.br/mpls/WebAds/
 @@||load.sumome.com/$domain=deekit.com
 @@||loadus.exelator.com/load/?p=$script,domain=rrstar.com
 @@||log.mmstat.com/eg.js$domain=youku.tv
@@ -18608,6 +18608,7 @@ znak.com##.relap
 ||analy1.dtnnetwork.be^$third-party
 ||analysis.fi^$third-party
 ||analysis.polarisoffice.com
+||analysis.wangtwothree.com^$third-party
 ||analytics-api.dvdfab.
 ||analytics-cms.whitebeard.me/js/
 ||analytics.*.*/*.php
