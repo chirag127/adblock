@@ -280,6 +280,8 @@ $cookie=outbrain_cid_fetch
 $cookie=pbjs-unifiedid
 $cookie=permutive-id
 $cookie=permutive-session
+$cookie=pixlee_analytics_cookie
+$cookie=pixlee_analytics_cookie_legacy
 $cookie=pnespsdk_ssn
 $cookie=pnespsdk_visitor
 $cookie=pubmaticuid
@@ -525,7 +527,7 @@ $cookie=yotpo_pixel
 /analyticstracking.js
 /antanalysis.min.js
 /antnest/NTM-$script
-/api/analytics$domain=hotmediahub.com|teralink.me|teraearn.com|terashare.me
+/api/analytics$domain=hotmediahub.com|teralink.me|teraearn.com|terashare.me|fansonlinehub.com
 /api/bfb_write_log
 /api/events|$domain=boticario.com.br|livehdcams.com|pornhublive.com|hog.tv|eudora.com.br|belezanaweb.com.br|vult.com.br|quemdisseberenice.com.br
 /api/increment-pv$xmlhttprequest
@@ -2872,6 +2874,7 @@ $cookie=yotpo_pixel
 @@||secure-it.imrworldwide.com/novms/js/2/ggcmb390.js$domain=tv.liberoquotidiano.it
 @@||secure.info.seek.com/b/ss/
 @@||secure.quantserve.com/quant.js$domain=fruitlab.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=alternativeto.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=chelseafc.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=yorkshirepost.co.uk
@@ -3285,6 +3288,7 @@ albany.townsquarenewsletters.com$image
 alertas.emails.crcmg.org.br$image
 alerts.dmgt.com$image
 alternative.me,justjaredjr.com,r-graph-gallery.com#%#//scriptlet('remove-attr', 'onclick', 'a[href][onclick*="getOutboundLink"]')
+alternativeto.net#%#//scriptlet('prevent-element-src-loading', 'script', 'doubleclick.net')
 amazon.com%2Fgp%2Fr.html%3FC%3D*%26ref_%3Dpe_*_open$image
 amazon.com/gp/r.html?C=*&ref_=pe_*_open$image
 analytics.hadley.edu$image
@@ -18431,6 +18435,7 @@ znak.com##.relap
 ||adku.com^$third-party
 ||adlc-exchange.toast.com/sendid?sid=
 ||admantx.com^$third-party
+||admatrix.jp^$third-party
 ||admdspc.com^$third-party
 ||adme.media/metric-collector
 ||admeo.ru^$third-party
@@ -18825,6 +18830,7 @@ znak.com##.relap
 ||artfut.com^$redirect=nooptext,important
 ||artfut.com^$third-party
 ||articulture.org/_t/
+||arttrk.com/pixel/
 ||as.uncn.jp/uwt/$script,redirect=noopjs,domain=nissan.co.jp
 ||asahibeer.co.jp/tracking.js
 ||asistanaliz.com/api/hit/
@@ -20072,6 +20078,7 @@ znak.com##.relap
 ||dropbox.com/log/
 ||dropbox.com/web_timing_log
 ||dsmmadvantage.com^$third-party
+||dsp.logly.co.jp^$third-party
 ||dsparking.com^$third-party
 ||dsply.com^$third-party
 ||dtc-v6t.com^$third-party
@@ -20645,6 +20652,7 @@ znak.com##.relap
 ||github.com/_stats
 ||github.com/hydro_browser_events
 ||github.com/notifications/beacon/$important
+||gitlab.com/assets/webpack/analytics.*.js
 ||gitpod.io/api/collect-data
 ||gixmo.dk^$third-party
 ||gizmodo.com/x-kinja-static/assets/*/trackers.
@@ -21452,6 +21460,7 @@ znak.com##.relap
 ||kameleoon.com^$third-party
 ||kameleoon.eu^$third-party
 ||kampyle.com^$third-party
+||kanagawa-u.ac.jp/assets/inc/googleAnalytics
 ||kantartns.lt^$third-party
 ||kapi-office.yiche.com/apm_collect
 ||karelcapek.co.jp/Scripts/tracker.js
@@ -21823,6 +21832,7 @@ znak.com##.relap
 ||mdjonline.com/shared-content/art/stats/common/tracker.js
 ||mdotlabs.com^$third-party
 ||me-gay.com/analytics.js
+||meanlytics.com^$third-party
 ||measure.ly^$third-party
 ||measuread.com^$third-party
 ||measuremap.com^$third-party
@@ -22196,6 +22206,7 @@ znak.com##.relap
 ||nicovideo.jp/api/counter/
 ||nicovideo.jp/api/tkas_video_impression
 ||niftymaps.com^$third-party
+||nihon-u.ac.jp/*/js/ga.js
 ||nik.io^$third-party
 ||nikaraw.com/load_adb
 ||nike.com*/trackingConfig?
@@ -23116,6 +23127,7 @@ znak.com##.relap
 ||sailthru.com/horizon/track?*http$image,domain=bookriot.com
 ||sailthru.com^$third-party
 ||saint.to/api/stats.php?ping=
+||saitama-u.ac.jp/common/js/analytics.js
 ||sajari.com^$third-party
 ||salecycle.com^$third-party
 ||salescs.com/liveagent/scripts/track.js
@@ -23613,6 +23625,7 @@ znak.com##.relap
 ||static.iqiyi.com/js/pingback/
 ||static.iris.informa.com/widgets/*/iris-t.js
 ||static.iyzipay.com/buyer-protection/assets/js/analytics.js
+||static.jobrapido.com/public/tracking/
 ||static.karte.io^$third-party
 ||static.krone.at/wcm/donau/extern/anti_adblocker/check.js
 ||static.me.me/static/versions/js/external/google_analytics-*.js
@@ -24027,6 +24040,7 @@ znak.com##.relap
 ||tns-gallup.dk^$third-party
 ||to.getnitropack.com^$third-party
 ||toecircle.com^$third-party
+||toho-u.ac.jp/common/js/ga_tracking.js
 ||toldyouso.lol^$all
 ||toldyouso.pics^$all
 ||tom.itv.com/itv/count/*
