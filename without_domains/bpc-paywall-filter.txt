@@ -51,7 +51,7 @@ amp.sacbee.com##+js(ra, subscriptions-action, div[subscriptions-action][subscrip
 amp.scmp.com##div[id^="default-meter-page-views"]
 amp.usatoday.com,digiday.com,inc42.com,indianexpress.com,indiatoday.in,mid-day.com,newsday.com,seekingalpha.com,telegraph.co.uk##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 apollo-magazine.com##+js(cookie-remover, blaize_session)
-apollo-magazine.com,spectator.co.uk###subscribe-ribbon
+apollo-magazine.com,spectator.co.uk###subscribe-ribbon,div.ad-slot
 architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newyorker.com,vanityfair.com,vogue.com,wired.com##+js(cookie-remover, /pay_ent_/)
 architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newyorker.com,vanityfair.com,vogue.com,wired.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newyorker.com,vanityfair.com,vogue.com,wired.com##[subscriptions-section="content-not-granted"]
@@ -80,7 +80,6 @@ bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesternda
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##+js(rc, subscriber-hider, .subscriber-hider)
 bendigoadvertiser.com.au,bordermail.com.au,canberratimes.com.au,centralwesterndaily.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,northerndailyleader.com.au,standard.net.au,theadvocate.com.au,thecourier.com.au,westernadvocate.com.au##div.blocker,.story-generic__iframe,div.transition-all,div[id^="headlessui-dialog"]
 bienpublic.com,dna.fr,estrepublicain.fr,lalsace.fr,ledauphine.com,lejsl.com,leprogres.fr,republicain-lorrain.fr##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-birdwatchingdaily.com,digitalphotopro.com,dpmag.com,jazztimes.com,outdoorphotographer.com,planeandpilotmag.com,writermag.com##+js(cookie-remover, /^article_/)
 bisnow.com##+js(ra, style, div.story-container > p[style], stay)
 bisnow.com##div.storyLogin
 bizwest.com##+js(ra, class, div.fp-content)
@@ -90,6 +89,7 @@ bloomberg.com##+js(set-local-storage-item, history, $remove$)
 bloomberg.com##div[id^="fortress-"]
 bloombergadria.com##+js(ra, style, article[style])
 brainly.com,brainly.com.br##+js(aopr, localStorage)
+brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
 cen.acs.org##+js(cookie-remover, cenLoginP)
 cen.acs.org##.meteredBar
 centrepresseaveyron.fr,ladepeche.fr,lindependant.fr,midi-olympique.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr##+js(ra, subscriptions-section, [subscriptions-section="content"])
@@ -248,6 +248,9 @@ modernhealthcare.com##+js(rc, sponsored-article, div.sponsored-article)
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, id, div#article-teaser)
 monacomatin.mc,nicematin.com,varmatin.com##div[class^="ad-slot-"],div#poool-widget-content,div[class*="Rhoo"]
+museumsassociation.org##+js(ra, style, body[style], stay)
+museumsassociation.org##+js(rc, paywall, body.paywall)
+museumsassociation.org##div#paywall-wrapper,div.advertising
 mv-voice.com##+js(cookie-remover, /^/)
 nacion.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
 nacion.com##div.post
