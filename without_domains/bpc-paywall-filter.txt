@@ -158,7 +158,6 @@ em.com.br##+js(rc, compress-text, .div.compress-text)
 enotes.com##+js(ra, class, div[class^="_"])
 enotes.com##section.c-cta-section
 enr.com##+js(cookie-remover, esessionid)
-espresso.repubblica.it##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
 etc.se##div[class$="-ad"]
@@ -187,6 +186,7 @@ hindustantimes.com##+js(rc, freemiumText, .freemiumText)
 hindustantimes.com##+js(rc, open-popup, body.open-popup)
 hindustantimes.com##.freemium-card,.closeStory
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
+ilsecoloxix.it,repubblica.it,lastampa.it##+js(cookie-remover, blaize_session)
 indianexpress.com##+js(ra, style, div#pcl-rest-content[style])
 inkl.com##+js(ra, class, div.paywall)
 inkl.com##div.gradient-container
@@ -215,8 +215,6 @@ labusinessjournal.com###css-only-modals
 labusinessjournal.com##+js(cookie-remover, /^/)
 lanacion.com.ar##+js(aopr, localStorage)
 lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
-lastampa.it##+js(cookie-remover, blaize_session)
-lastampa.it##aside#widgetDP,div[id^="adv"]
 lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit,div.ad-div
 lavoz.com.ar##.wrapperblock
 ledevoir.com##+js(cookie-remover, pw6)
@@ -284,6 +282,7 @@ profil.at##+js(ra, class|style, div.paywall)
 profil.at##div#cfs-paywall-container
 psypost.org##+js(cookie-remover, issuem_lp)
 realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
+repubblica.it,lastampa.it##aside#widgetDP,div[id^="adv"]
 revistaoeste.com##+js(rc, expandable, div.expandable)
 revistaoeste.com##+js(rc, hidden, div.hidden[data-url])
 revistaoeste.com##div.is-locked,div.subscribe-panel
@@ -506,6 +505,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||piano.io/xbuilder/experience/execute$xmlhttprequest,third-party
 ||poool.fr^$third-party
 ||qiota.com^$xmlhttprequest,third-party
+||repubblica.it/*/news/$inline-script
 ||reuters.com/arc/subs/p.min.js$script,~third-party
 ||reuters.com/pf/resources/dist/reuters/js/index.js$script,~third-party
 ||revistaoeste.com/wp-content/*/js/app.*.js$script,~third-party
