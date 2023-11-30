@@ -195,6 +195,8 @@ $cookie=actppresence
 $cookie=ad-id
 $cookie=adEdition
 $cookie=adcloud
+$cookie=adrcid
+$cookie=adrdel
 $cookie=advcake_click_id
 $cookie=advcake_session_id
 $cookie=advcake_track_url
@@ -223,7 +225,7 @@ $cookie=camps,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomani
 $cookie=clRequestId
 $cookie=clVisitorId
 $cookie=compass_uid
-$cookie=cqcid
+$cookie=cqcid,domain=~nintendo.com
 $cookie=cric_adid,domain=gazeta.pl|sport.pl|tokfm.pl
 $cookie=cric_pubid,domain=gazeta.pl|sport.pl|tokfm.pl
 $cookie=cto_bidid
@@ -728,7 +730,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /mendelstats.
 /metrics/log-
 /metrika/*.png?x=
-/mihoyo-analysis/*$domain=~hoyoverse.com
 /mip-stats-cnzz/*
 /mistats/*
 /mms/get_site_js?*abp=
@@ -976,6 +977,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 33mail.com/page/opened$image
 3dnews.ru##a[href^="http://metrika.yandex.ru/"]
 4esnok.by###text-17
+4players.de#@#.AdSense
 6play.fr#%#//scriptlet('set-local-storage-item', 'gdprAdTargeting', 'false')
 6play.fr#%#//scriptlet('set-local-storage-item', 'gdprMultiDeviceMatching', 'false')
 6play.fr#%#//scriptlet('set-local-storage-item', 'gdprPersonalization', 'false')
@@ -2704,6 +2706,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||pastebin.com/etc/geo.php?
 @@||patrick-wied.at/static/heatmapjs/src/heatmap.js
 @@||pccomponentes.tt.omtrdc.net/rest/v*/delivery?$domain=pccomponentes.com
+@@||pcgames.de/webservices/remoteModulesTracker.php
 @@||pcworldcommunication.*.sc.omtrdc.net/b/ss/
 @@||pcworldcommunication.d2.sc.omtrdc.net/b/ss/$domain=techhive.com
 @@||pdrnetwork.112.2o7.net/b/ss/pdrnetworkpdrnetprod/
@@ -19643,6 +19646,8 @@ sparkmail.thecrescentatred.com$image
 sparkmail.whitebox.realestate$image
 sparkmail.yerbabuenaislandsf.com$image
 specialcom.net#?##sidebar > div.widget:has(span#openstat1)
+spletnik.ru#%#//scriptlet('set-local-storage-item', '/^_ym/', '$remove$')
+spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
 spmailtechnol.com$image
 sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 sportschau.de#%#//scriptlet('set-constant', 'mediaTrackingOff', 'true')
@@ -19983,6 +19988,8 @@ znak.com##.relap
 ||199.19.203.46/js
 ||1dmp.io^$third-party
 ||1freecounter.com^$third-party
+||1password.com/gtag-production.*.js
+||1password.com/js/analytics.*.js
 ||1pel.com^$third-party
 ||2-ip.online/sbar/$third-party
 ||200stran.ru^$third-party
@@ -21366,8 +21373,8 @@ znak.com##.relap
 ||computerbase.de/api/consent-analytics
 ||computerbase.de/api/nlytcs
 ||computerbase.de/api/stats?
+||computerbase.de/nlytc
 ||computerbase.de/nlytcs
-||computerbase.de/nlytcx
 ||comunidade.globalmediagroup.pt//tracker/tracker.ashx
 ||comvel.media/etc/designs/comvel/clientlibs/tracking
 ||con.arbeitsagentur.de/prod/matomo/
@@ -21403,7 +21410,6 @@ znak.com##.relap
 ||contemporaryceremonies.ca^$third-party
 ||content.garena.com/shopee/track_config/
 ||content.mql5.com/tr?
-||content.viralize.tv/track/
 ||contentexchange.me^$third-party
 ||contentinsights.com^$third-party
 ||contents-tracking.beop.io^$third-party
@@ -21834,6 +21840,7 @@ znak.com##.relap
 ||dropbox.com/el/?b=open:
 ||dropbox.com/jse
 ||dropbox.com/log/
+||dropbox.com/pithos/*ux_analytics$script
 ||dropbox.com/web_timing_log
 ||dropboxstatic.com/static/metaserver/static/js/ux_analytics/
 ||dsmmadvantage.com^$third-party
@@ -22326,6 +22333,8 @@ znak.com##.relap
 ||gallupnet.fi^$third-party
 ||galottery.com^$cookie=1P_JAR
 ||galottery.com^$cookie=NID
+||game-i.daa.jp/skin/analytics.php
+||game-i.daa.jp/skin/jquery.iframetracker.min.js
 ||gamejolt.com/tick/
 ||gamerant.com/strpixel.png
 ||gamerch.com/s3-assets/library/js/fingerprint2.min.js$script,redirect=noopjs,important
@@ -23657,6 +23666,8 @@ znak.com##.relap
 ||mercadoclics.com^$third-party
 ||mercent.com^$third-party
 ||merkur.de/_cua.html
+||merkur.de/bi/dev/
+||merkur.de/bi/doop/
 ||merlininkazani.com/sayac
 ||meta.ua/f_new.asp?g=
 ||metalyzer.com^$third-party
@@ -24172,6 +24183,7 @@ znak.com##.relap
 ||p.rst.im/q/www.googletagmanager.com/gtag/js?id=
 ||p.sfx.ms/is/invis.gif
 ||p.tinynewsfeed.com^$third-party
+||p.typekit.net/p.gif
 ||pa-oa.com^$third-party
 ||pa.7w.ro/js/trk.js
 ||page-hit.de^$third-party
@@ -25657,7 +25669,7 @@ znak.com##.relap
 ||tags.globo.com/utag/globo/*/prod/utag.js
 ||tags.news.com.au^$~script
 ||tags.soloway.ru^$third-party
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org
 ||tags.tiqcdn.com/utag/*/utag.v.js
 ||tagsrvcs.com^$third-party
@@ -26268,6 +26280,8 @@ znak.com##.relap
 ||vinsight.de^$third-party
 ||vinub.com^$third-party
 ||viously.com/*/mt?
+||viralize.tv/t-bid-done/$image
+||viralize.tv/track/
 ||viralninjas.com^$third-party
 ||virool.com^$third-party
 ||virtualcarshop.jp/js/ga.js

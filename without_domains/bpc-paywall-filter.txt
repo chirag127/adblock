@@ -124,7 +124,6 @@ csmonitor.com##+js(aopr, localStorage)
 csmonitor.com##.paywall
 curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
 dailywire.com###post-body-text > div > div:style(height: auto !important;)
-defector.com##+js(cookie-remover, lede_defector_user)
 defector.com##div[class^="ContentGate_wrapper__"]
 denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,twincities.com##[subscriptions-section="content-not-granted"]
@@ -136,8 +135,6 @@ diariocorreo.pe,elcomercio.pe,gestion.pe##+js(ra, class|style, .paywall)
 diariocorreo.pe,elcomercio.pe,gestion.pe##+js(rc, story-contents--fade, p.story-contents--fade)
 diariocorreo.pe,elcomercio.pe,gestion.pe##div[class^="content_gpt"]
 diariosur.es,diariovasco.com,elcomercio.es,elcorreo.com,eldiariomontanes.es,elnortedecastilla.es,hoy.es,ideal.es,larioja.com,lasprovincias.es,laverdad.es,lavozdigital.es##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-digital.lasegunda.com##+js(rc, lessreadmore, article.lessreadmore, stay)
-digital.lasegunda.com##div[id*="bt_readmore_"]
 divisare.com##+js(ra, style, body[style], stay)
 divisare.com##div.blocker
 dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,rnd.de,siegener-zeitung.de,sn-online.de,waz-online.de##+js(set, Fusion.globalContent.isPaid, false)
@@ -152,6 +149,8 @@ elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--cl
 elespanol.com##div.full-suscriptor-container
 elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style])
 elfinancierocr.com##div.post
+elmercurio.com,lasegunda.com##+js(rc, lessreadmore, article.lessreadmore, stay)
+elmercurio.com,lasegunda.com##div[id*="bt_readmore_"]
 elpais.com##^div#ctn_freemium_article,div#ctn_premium_article
 eltiempo.com##+js(rc, modulos, div.modulos)
 em.com.br##+js(rc, compress-text, .div.compress-text)
@@ -164,6 +163,7 @@ etc.se##div[class$="-ad"]
 euobserver.com##+js(rc, show, div.membership-upsell.show)
 european-rubber-journal.com##+js(rc, truncated, div.truncated)
 european-rubber-journal.com##div.article-overlay,div.gradient
+expressandstar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
 financialexpress.com##+js(rc, paywall, .paywall)
@@ -298,6 +298,7 @@ scmp.com##+js(ra, class, div.paywalled-content)
 scmp.com##+js(ra, class, section[data-qa="ContentBody-ContentBodyContainer"][class], stay)
 scmp.com##div[data-qa*="AdSlot"],div.adblock-message
 scotsman.com##+js(ra, class, div.premium)
+shropshirestar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
 slideshare.net##+js(aopr, localStorage)
 slideshare.net##+js(rc, limit-overlay, .limit-overlay)
 sofrep.com##+js(cookie-remover, sofrep_news_ids)
@@ -387,6 +388,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||artsprofessional.co.uk/*/js/content_paywall.js$script,~third-party
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
 ||assets.guim.co.uk/assets/SignInGate*.js$script,domain=theguardian.com
+||australvaldivia.cl/impresa/*/assets/vendor.js$script,~third-party
 ||auto-motor-und-sport.de/thenewsbar/static/pw.js$script,~third-party
 ||automobilwoche.de/sites/camw/files/js/js_wB7*.js$script,~third-party
 ||axate.io$script,third-party
@@ -420,17 +422,20 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||corprensa.com/la-prensa/evolok/$script,domain=prensa.com
 ||corriereobjects.it/*/js/_paywall.sjs$script,domain=corriere.it
 ||crusoe.com.br/assets/js/swg-wallcontent-crusoe.js$script,~third-party
+||defector.com/_next/static/chunks/pages/_sites/%5BsiteSlug%5D/%5B*.js$script,~third-party
 ||diariocorreo.pe/pf/dist/engine/react.js$script,~third-party
 ||dn.se/check-paywall-v2.js,~third-party
 ||dominionpost.com/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 ||editorialedomani.it/pelcro.js$script,~third-party
 ||elcomercio.pe/pf/dist/engine/react.js$script,~third-party
+||elmercurio.com/assets/js/merPramV2.js$script,~third-party
+||elmercurio.com/assets/js/vendor/modal.js$script,~third-party
 ||elobservador.com.uy/shares$xmlhttprequest,~third-party
 ||elpais.com.uy/user/authStatus$script,~third-party
 ||elpais.com/arc/subs/p.min.js$script,~third-party
 ||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
-||emol.cl/assets/js/merPramV2.js$script,domain=lasegunda.com
-||emol.cl/assets/js/vendor/modal.js$script,domain=lasegunda.com
+||emol.cl/assets/js/merPramV2.js$script,domain=elmercurio.com|lasegunda.com
+||emol.cl/assets/js/vendor/modal.js$script,domain=elmercurio.com|lasegunda.com
 ||enr.com/paywall/evercookie_get.js$script,~third-party
 ||ensighten.com/*/Bootstrap.js$script,third-party
 ||epoch.org.il$inline-script
@@ -480,6 +485,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||loader-cdn.azureedge.net^$third-party
 ||loader.masthead.me^$script,domain=centralmaine.com|pressherald.com|sunjournal.com
 ||medscapestatic.com/*/medscape-library.js$script,domain=medscape.com
+||mercuriovalpo.cl/impresa/*/assets/vendor.js$script,~third-party
 ||meter-svc.nytimes.com/meter.js$xmlhttprequest,~third-party
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
 ||meter.in.bonhill.pbc.io/api/views$xmlhttprequest,domain=investmentnews.com
@@ -498,6 +504,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||odt.co.nz/bwtw/scripts/tw.js$script,~third-party
 ||olytics.omeda.com^$third-party
 ||onecount.net^$third-party
+||pasedigital.cl/API/User/Status$script,domain=australvaldivia.cl|mercuriovalpo.cl
 ||paywall.correiodopovo.com.br$script,~third-party
 ||paywall.fewcents.co/static/js/paywall.js
 ||paywall.folha.uol.com.br^$script,~third-party
