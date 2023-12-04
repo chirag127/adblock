@@ -3217,8 +3217,11 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 @@||cinemaxx.de/assets/js/adblock_detection/adsense.js
 @@||clickio.mgr.consensu.org^$domain=ilfattoquotidiano.it
 @@||clickiocmp.com/*/cmp/vendor-list.json$xmlhttprequest,domain=highlights.legaseriea.it
+@@||clickiocmp.com/*/consent_*.js$domain=calciomercato.com
 @@||clickiocmp.com/*/consent_*.js$domain=highlights.legaseriea.it
+@@||clickiocmp.com/*/vendor-list.json$xmlhttprequest,domain=calciomercato.com
 @@||client.axept.io/*.json$domain=welcometothejungle.com
+@@||client.crisp.chat^$domain=journey.cloud
 @@||client.crisp.chat^$domain=support.aftership.com
 @@||cloudfront.net/*/latest/cmp_shim.js$domain=macworld.com
 @@||cloudfront.net/a/ads/ad-block/ad/adblocker.js$domain=ispot.tv
@@ -3280,10 +3283,12 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 @@||computerbase.de/img/ads/120x600.png
 @@||computeruniverse.ru/lib/ads.js
 @@||comunio.de/scripts/advertising/adInit*
+@@||config.*.usercentrics.eu/gvl/*/*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
 @@||config.eu.usercentrics.eu/gvl/v3/en.json$domain=wetter.com
 @@||consensu.org^$app=Solitaire.exe
 @@||consensu.org^$domain=beachcam.meo.pt
 @@||consensu.org^$domain=ghacks.net|sourceforge.net|globalplayer.com
+@@||consent-api.service.consent.usercentrics.eu/consent/$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
 @@||consent-api.service.consent.usercentrics.eu/consent/uw/1$domain=video.prosieben.de
 @@||consent.cmp.oath.com^$script,domain=express.co.uk
 @@||consent.cookiebot.com/*/cc.js
@@ -6959,6 +6964,7 @@ babista.de#%#//scriptlet('set-local-storage-item', 'entd:newsletter-layer', 'emp
 babupc.com##body > div[id][class][style*="width:"][style*="height:"][style*="padding-bottom:"][style*="padding-right:"]
 baby-born.com##zapf-cookie-banner
 baby-calendar.jp##.box-side-bana
+baby-calendar.jp##.col-md-6 > a[href^="https://baby-calendar.onelink.me/"][target="_blank"] > img
 baby-calendar.jp##.floating_btn
 baby-calendar.jp##a[href^="https://itunes.apple.com/jp/app"]
 baby-calendar.jp#$##modal_scrollView { display: none !important; }
@@ -7802,6 +7808,7 @@ bilgicik.com#$#.modal-backdrop { display: none!important; }
 bilgicik.com#$#body { overflow: visible!important; }
 bilgidehasi.com###rs_container
 bilia.no###acceptcookies
+bilibili.com##.__adblockhidden
 bilibili.com##.login-panel-popover
 bilibili.com##.login-tip
 bilibili.com##.lt-row > .lt-col > .vip-login-tip
@@ -9272,6 +9279,7 @@ calciomercato.com###notification-message-team
 calciomercato.com#$##modal-club-selector { display: none !important; }
 calciomercato.com#$#.no-scroll { overflow: visible !important; }
 calciomercato.com,guidingtech.com##.join-newsletter
+calciomercato.com,highlights.legaseriea.it#%#//scriptlet('trusted-click-element', '#cl-consent button[data-role="b_decline"]')
 calcmaps.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 calcsbox.com###noticeWindow
 calculator-online.net#?#.col:has(> div > a[title="TDEE Calculator App"])
@@ -9626,6 +9634,9 @@ cbsnews.com#@##onetrust-consent-sdk
 cbssports.com##.Newsletter-container
 cbssports.com##div[data-component="marketingSlider"]
 cbssports.com#$#.VideoHero--sticky { position: static !important; }
+cbssports.com#%#//scriptlet('set-constant', 'loadAdmiral', 'noopFunc')
+cbssports.com,visualcapitalist.com,news8000.com,kxly.com,thethings.com,gamerant.com,koamnewsnow.com,gfinityesports.com,dualshockers.com,insider-gaming.com,pocketnow.com,howtogeek.com,ktvz.com,247sports.com,movieweb.com,givemesport.com,xda-developers.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,androidpolice.com,cbr.com,epicstream.com,digitalmusicnews.com##body > script ~ div:not([class]):not([id]) > style + div[class]
+cbssports.com,visualcapitalist.com,news8000.com,kxly.com,thethings.com,koamnewsnow.com,gfinityesports.com,dualshockers.com,insider-gaming.com,thenerdstash.com,pocketnow.com,ktvz.com,247sports.com,movieweb.com,realclearpolitics.com,givemesport.com,xda-developers.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,androidpolice.com,cbr.com#%#//scriptlet('prevent-addEventListener', 'error', 'admiral')
 cbtnuggets.com##.main-react-app > main + section > footer + section
 cc-fan.ru,cn-fan.ru,fox-fan.ru,cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv###Shop
 cc.com#@#.plainAd
@@ -15831,11 +15842,13 @@ freshnrebel.com##.cookie-permission-footer
 freshplaza.com#?#body > div[style].grey_background:has(.yes_subscribe)
 freshplaza.de##.grey_background
 fresnobee.com,kansascity.com###story-cta-widget
+fressay.co.jp##.topic-text > p > a[href="https://www.fressay.co.jp/app_lp/"]
 fressay.co.jp##a[href="http://fressay.co.jp/card/index.html"]
 fressnapf.de#$#.cookie-banner { display: none !important; }
 fressnapf.de#$#body { overflow: visible !important; }
 fressnapf.de#@##cookie-banner
 fressnapf.de#@#.cookie-banner:not(body):not(html)
+freundin.de###abtestHeaderBannerCTA
 freundin.de#?##__next div[class]:has(> div[class] > div[class] > form)
 freundin.de,utopia.de,mein-schoener-garten.de,eveningnews24.co.uk,rollingstone.de,eatsmarter.de,inside-digital.de,vrt.be,manager-magazin.de,whats-on-netflix.com#$#.sp-message-open { overflow-y: visible !important; position: static !important; margin-top: 0 !important; }
 freundin.de,utopia.de,mein-schoener-garten.de,eveningnews24.co.uk,rollingstone.de,eatsmarter.de,inside-digital.de,vrt.be,manager-magazin.de,whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !important; position: static !important; margin-top: 0 !important; }
@@ -18148,7 +18161,6 @@ hidromek.com.tr##.cookie-notification-es
 hidromelphilipmead.com.br##.btn-whatsapp
 highlandsenergi.com##.woocommerce-store-notice
 highlight-led.de###PrivacyCategoryAlert
-highlights.legaseriea.it#%#//scriptlet('trusted-click-element', '#cl-consent button[data-role="b_decline"]')
 highload.today#?#.popup-bottom:has(> .container .popup-bottom-social)
 highlysensitiverefuge.com#$#.cp-popup-container { display: none !important; }
 highlysensitiverefuge.com#$#html.cp-disable-scroll { overflow: visible !important; }
@@ -19280,6 +19292,7 @@ inews.hket.com##.subscription-box-background
 inews.hket.com##p > a[href^="https://dynamic.hket.com/article/Rbkv"] > span
 inews.id##.box-gnews
 inews.zoombangla.com##.code-block + div[class]:has(> blockquote > strong > a[href^="https://news.google.com/publications/"])
+infidrive.net#%#//scriptlet('adjust-setTimeout', '-1', '*', '0.001')
 infinisg8.com###masklayer
 infinisg8.com##.popup_img
 infinite.red##.container > div[data-w-id][class="modal-temp__card"]
@@ -21486,7 +21499,6 @@ krupp-krankenhaus.de,encoreungateau.com###ct-ultimate-gdpr-cookie-popup
 krv.de,archiv.cdu.de##.ubg-cookies-banner
 krystalhosting.com,krystal.uk##.crumbs-banner
 ksdk.com,boredpanda.com,sidereel.com,primagames.com,antyradio.pl,nypost.com,allmusic.com,visualcapitalist.com,kxly.com,thethings.com,applevalleynewsnow.com,minecraft-schematics.com,koamnewsnow.com,insider-gaming.com,ktvz.com,movieweb.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,cbr.com,kare11.com,calculator-online.net,givemesport.com,milestomemories.com,epicstream.com,radiozet.pl,charlieintel.com,momtastic.com,stealthoptional.com,sherdog.com,timesofisrael.com,gfinityesports.com,teknolojioku.com,siliconera.com,c-span.org,news8000.com,twinfinite.net,pwinsider.com,pastes.io,cheatsheet.com,sportscasting.com,wnd.com,deseret.com,pocketnow.com,10play.com.au,knowyourmeme.com,titantv.com,hfboards.com,comingsoon.net,playstationlifestyle.net,worldpopulationreview.com,nationalreview.com,wrestlezone.com,dualshockers.com,thethaiger.com,worldtravelguide.net,sportskeeda.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', '/admiral|String\.fromCharCode\(97,( )*?100,( )*?109,( )*?105,( )*?114,( )*?97,( )*?108\)|a%64%6d%69%72%61%6c|adm%69%72%61l/')
-ksdk.com,slashgear.com,sidereel.com,primagames.com,delmarvanow.com,gfinityesports.com,kooora.com,realclearpolitics.com,calculator-online.net,givemesport.com,reuters.com,ranker.com,milestomemories.com,epicstream.com,worldhistory.org,radiozet.pl,momtastic.com,recordnet.com,citizen-times.com,tennessean.com,clarionledger.com,phillyburbs.com,usatoday.com,wrestlinginc.com,videogamer.com,motorbiscuit.com,grandprix247.com,familyminded.com,xcalibrscans.com,cbsnews.com,finviz.com,ign.com,workandmoney.com,today.com,rottentomatoes.com,walterfootball.com,dotesports.com,boredpanda.com,cleveland.com#%#//scriptlet("set-constant", "admiral", "noopFunc")
 ksiegaimion.com##.eucl
 kskmse.de,sparkasse-freiburg.de,sparkasse-oberlausitz-niederschlesien.de,sparkasse-allgaeu.de,bw-bank.de,sparkasse-hagenherdecke.de,foerde-sparkasse.de##.if6_eprivacy
 ksl.com##.emailSignup
@@ -23548,7 +23560,6 @@ mainichi.jp##.popuppanel4
 mainichi.jp##div[id^="pi-"][id$="-article-slidein"]
 mainpost.de#%#//scriptlet('prevent-setTimeout', '"none"===window.getComputedStyle')
 mainpost.de,abendzeitung-muenchen.de###webpush-app
-mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,totallygamergirl.com,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
 maisesports.com.br#%#//scriptlet('set-local-storage-item', '@maisesport:cookies', 'true')
 maisgasolina.com#?#.banner > a[href^="https://play.google.com/store/apps/"]
 maisonapart.com###accept-top
@@ -25250,6 +25261,7 @@ moovitapp.com##.moovit-banner
 moovitapp.com##.qr-code-wrapper
 moovitapp.com##mv-cookie-banner
 moovitapp.com##mv-mobile-app-cta
+moovitapp.com##mv-side-navigation div[itemtype="http://schema.org/MobileApplication"]
 mopub.com,twitter.com##.u12-data-protection-notice
 moqups.com##div[class^="prompt"]
 moqups.com,x.gd##.notice
@@ -26437,6 +26449,7 @@ news.com.au##.vms-sticky-close
 news.cookpad.com##a[href="https://line.me/R/ti/p/%40oa-cookpadnews"]
 news.day.az##.join-channels-wrapper
 news.de###nllayer-container
+news.de,mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,totallygamergirl.com,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
 news.dtkt.ua###trial-subscribe-widget
 news.dtkt.ua##.weekly-news
 news.finance.ua##div[aria-label*="subscription"]
@@ -27656,6 +27669,10 @@ onlimegames.ru##.js-subscribe-modal
 online-audio-converter.com,online-video-cutter.com,video-converter.com,convert.io,extract.me,online-voice-recorder.com,audio-joiner.com,pdf.io,webcamera.io,mp3cut.net,123apps.com###allapps-extension-popup
 online-bloknot.ru##.hung-2
 online-convert.com##.extension-container
+online-fix.me#$#div.quote a.btn { pointer-events: auto !important; }
+online-fix.me#%#//scriptlet('adjust-setTimeout', 'timer', '1000', '0.02')
+online-fix.me#%#//scriptlet('prevent-setTimeout', '/[a-w0-9]{12,}/')
+online-fix.me#?#.sidebar > div.sidebar-block:contains(Adblock)
 online-life.cc###top-line
 online-life.cc##div[class="pull-left"][style="margin-left: 5px;"]
 online-stopwatch.com##.premiumShow
@@ -30677,6 +30694,8 @@ rbc.ru##.social-onboarding-place__inner
 rbc.ru##.subscribe-infographic
 rbc.ru##a[data-yandex-show="block_newsfeed_show"]
 rbc.ru#$?##js_col_left > div.l-sticky:has(> div.g-relative > div.live-tv) { position: static !important; }
+rbc.ru#$?##popmechanic-snippet { display: none !important; }
+rbc.ru#$?#.popmechanic-disable-scroll { overflow: auto !important; }
 rbc.ru,sravni.ru,price.ua##.subscription-popup
 rbc.ua##.telegram-link
 rbc.ua##a[href="https://t.me/RBC_ua_news"]
@@ -32413,6 +32432,8 @@ series.az#%#//scriptlet('set-local-storage-item', 'sub_telegram', 'true')
 series.movie##.notice
 seriesgato.tv,sportstream.tv##body > div[style^="z-index: 99999999; width: 100%; height: 100%;"]
 seriesgratis.biz,texture-packs.com,liveworksheets.com#%#//scriptlet('remove-attr', 'oncontextmenu', 'body')
+seriouseats.com#$#.campaign-dialog { display: none !important; }
+seriouseats.com#$#body { overflow: auto !important; }
 serokell.io,mirtesen.ru##.blog-post__subscribe
 serpadres.es##.content_contrib_out
 serpstat.com##.gdpr-tab
@@ -32755,6 +32776,7 @@ shz.de##.span1 > [id="10590226"].teaser-topic
 si.com##.m-flex-nav--left-engagement
 si.com##.m-flex-nav--right-engagement
 si.com#?#.is-sidebar > div > .m-card-panel--item > .m-custom-component:has(> div[style] > a[href*="si.com/"][href$="/newsletters"])
+si.com,ksdk.com,slashgear.com,sidereel.com,primagames.com,delmarvanow.com,gfinityesports.com,kooora.com,realclearpolitics.com,calculator-online.net,givemesport.com,reuters.com,ranker.com,milestomemories.com,epicstream.com,worldhistory.org,radiozet.pl,momtastic.com,recordnet.com,citizen-times.com,tennessean.com,clarionledger.com,phillyburbs.com,usatoday.com,wrestlinginc.com,videogamer.com,motorbiscuit.com,grandprix247.com,familyminded.com,xcalibrscans.com,cbsnews.com,finviz.com,ign.com,workandmoney.com,today.com,rottentomatoes.com,walterfootball.com,dotesports.com,boredpanda.com,cleveland.com#%#//scriptlet("set-constant", "admiral", "noopFunc")
 si.com,thestreet.com###customComponent-1
 sia.ru###right_fixed_block
 siamsport.co.th###popup-ss
@@ -34874,6 +34896,7 @@ tani6torico.com,servicebund.com,negocio.site,car2go.com,business.site###cookieDi
 tanierejsowanie.pl##.polityka_prywatnosciWrapper
 tanke-guenstig.de###article-66 > .ce_form
 tanke-guenstig.de##.mod_subscribe.block
+tankionline.com##.cookies-ru
 tankionline.com,easycosmetic.de##.footer-cookies
 tannheimertal.com#$#.cc-window-backdrop { display: none !important; }
 tannheimertal.com#$#.cc-window[aria-label="cookieconsent"] { display: none !important; }
@@ -38565,8 +38588,6 @@ visualcapitalist.com###wpforms-widget-5
 visualcapitalist.com##.vc-subscribe-post
 visualcapitalist.com##.widget_mc4wp_widget
 visualcapitalist.com##a[href="https://www.visualcapitalist.com/subscribe/"] > img
-visualcapitalist.com,news8000.com,kxly.com,thethings.com,gamerant.com,koamnewsnow.com,gfinityesports.com,dualshockers.com,insider-gaming.com,pocketnow.com,howtogeek.com,ktvz.com,247sports.com,movieweb.com,givemesport.com,xda-developers.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,androidpolice.com,cbr.com,epicstream.com,digitalmusicnews.com##body > script ~ div:not([class]):not([id]) > style + div[class]
-visualcapitalist.com,news8000.com,kxly.com,thethings.com,koamnewsnow.com,gfinityesports.com,dualshockers.com,insider-gaming.com,thenerdstash.com,pocketnow.com,ktvz.com,247sports.com,movieweb.com,realclearpolitics.com,givemesport.com,xda-developers.com,collider.com,pocket-lint.com,hotcars.com,topspeed.com,thegamer.com,makeuseof.com,screenrant.com,androidpolice.com,cbr.com#%#//scriptlet('prevent-addEventListener', 'error', 'admiral')
 visualstudio.microsoft.com###vscom-modal-surveypopup
 visvitalisbg.com##.bottom-freezed-bar
 vitacig.eu.com##.vctheme-cookies-popup
@@ -42119,6 +42140,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||deviantart.com/*/?realEstateId=
 ||deviants.com/sw.js
 ||device-api.indigitall.com^$third-party
+||dewdroplagoon.com^$third-party
 ||dfiles.eu/pay/virgopass
 ||dgpcdn.org^$third-party
 ||dictionary.university/*/cookiewarning/cookiewarning-nosql.js.php
@@ -43707,6 +43729,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||purchacade.info^$third-party
 ||purchasesuggestion.com^$third-party
 ||purechat.com^$third-party
+||purposepipe.com^$third-party
 ||puscomosca.com^$third-party
 ||push-ad.com^$third-party
 ||push-centr.com^$third-party
