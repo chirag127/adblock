@@ -58,6 +58,7 @@ architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newy
 arkansasonline.com##+js(cookie-remover, blaize_session)
 artforum.com##+js(cookie-remover, /^/)
 artnet.com##div.article-body:style(display:block !important;)
+artnet.com##div[id^="issuem-leaky-paywall-"]
 artnet.com,barrons.com,billboard.com,bloombergquint.com,bostonglobe.com,dallasnews.com,fortune.com,latimes.com,marketwatch.com,sandiegouniontribune.com,scmp.com,sportico.com,staradvertiser.com,theathletic.com,voguebusiness.com,wsj.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 artnet.com,barrons.com,billboard.com,bloombergquint.com,bostonglobe.com,dallasnews.com,fortune.com,latimes.com,marketwatch.com,sandiegouniontribune.com,scmp.com,sportico.com,staradvertiser.com,theathletic.com,voguebusiness.com,wsj.com##[subscriptions-section="content-not-granted"]
 artsenkrant.com##+js(ra, class, div.article-body > div)
@@ -121,6 +122,7 @@ corriere.it,ilfattoquotidiano.it,ilfoglio.it##[subscriptions-section="content-no
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##+js(ra, subscriptions-section, [subscriptions-section="content"])
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##[subscriptions-section="content-not-granted"]
 corrieredellosport.it##+js(cookie-remover, /paywall_articles/)
+crikey.com.au##+js(cookie-remover, blaize_session)
 crusoe.com.br##div#gpt-leaderboard,div.ads_desktop,div.catchment-box
 csmonitor.com##+js(aopr, localStorage)
 csmonitor.com##.paywall
@@ -175,6 +177,8 @@ foreignaffairs.com##.paywall,.loading-indicator,.messages--container--bottom
 foreignpolicy.com##+js(rc, content-gated, div.content-gated.content-gated--main-article)
 foreignpolicy.com##div.content-ungated
 fortune.com##+js(ra, class, div.paywallActive)
+foxnews.com##+js(ra, class, div[class*="gated-overlay"])
+foxnews.com##div.article-gating-wrapper
 ftm.eu,ftm.nl##div.banner-pp,a.readmore
 gadget.pico.tools##+js(json-prune, locked)
 gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##+js(cookie-remover, /__mtr$/)
