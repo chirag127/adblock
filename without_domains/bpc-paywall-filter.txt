@@ -214,7 +214,9 @@ krautreporter.de##+js(rc, json-ld-paywall-marker, .json-ld-paywall-marker, stay)
 krautreporter.de##.js-article-paywall,.js-paywall-divider,#steady-checkout
 kunststoffe.de,qz-online.de##+js(ra, style, div[style^="filter: blur"], stay)
 kunststoffe.de,qz-online.de##dialog#paywall-dialog
-kurier.at##+js(rc, plusContent, .plusContent, stay)
+kurier.at##+js(ra, style, .ng-star-inserted[style="display: none;"], stay)
+kurier.at##+js(rc, plusContent, div.plusContent, stay)
+kurier.at##div#view-offer,app-paywall,adfullbanner,outbrain
 labusinessjournal.com###css-only-modals
 labusinessjournal.com##+js(cookie-remover, /^/)
 lanacion.com.ar##+js(aopr, localStorage)
