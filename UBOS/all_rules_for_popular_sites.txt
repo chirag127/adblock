@@ -1186,9 +1186,6 @@ bing.com##.b_ad:style(position: absolute !important; top: -9999px !important;)
 bing.com##.pa_sb:style(position: absolute !important; top: -9999px !important;)
 bing.com##.b_restorableLink:remove()
 bing.com##.tob_calcontainer > .slide:has(.rtb_ad_caritem_mvtr)
-bing.com##[mv-data^="Ads"]:has([href*="aclick"]):upward(.b_overlay)
-bing.com###pole:has-text(/Ads|Anzeigen/)
-bing.com##.ra_car_label:has-text(/Ads|Anzeigen/)
 bing.com,msn.com##+js(cookie-remover, MicrosoftApplicationsTelemetryDeviceId)
 bing.com#@#a[href*="/aclick?ld="]
 bing.com##.ins_exp.vsp
@@ -2900,6 +2897,7 @@ $removeparam=asc_refurl,domain=aboutamazon.com|amazon.*|amzn.to
 $removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to
 @@||ws-na.assoc-amazon.com^$image,domain=4tests.com
 @@||ssl-images-amazon.com/*/satelliteLib-$script,domain=audible.*
+/web-vitals.$script,redirect-rule=noopjs,domain=amazon.com
 amazon.com###nav-upnav
 amazon.ca,amazon.co.uk,amazon.com,amazon.com.au###nav-upnav[style]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.es,amazon.fr,amazon.in,amazon.nl,amazon.sg##.maple-banner
