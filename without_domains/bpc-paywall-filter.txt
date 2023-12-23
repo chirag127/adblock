@@ -10,6 +10,7 @@
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
 /loader-wp/*/loader.min.js$script,~third-party,domain=denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
+/paywall/evercookie_get.js$script,~third-party
 /shared-content/art/tncms/api/access.*.js$script,~third-party
 /sub/js/pc-offer-west.js$script,~third-party
 /temptation/resolve$xmlhttprequest,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
@@ -161,7 +162,6 @@ eltiempo.com##+js(rc, modulos, div.modulos)
 em.com.br##+js(rc, compress-text, .div.compress-text)
 enotes.com##+js(ra, class, div[class^="_"])
 enotes.com##section.c-cta-section
-enr.com##+js(cookie-remover, esessionid)
 etc.se##+js(ra, class, div.bg-gradient-white, stay)
 etc.se##+js(ra, class, div.paywalled, stay)
 etc.se##div[class$="-ad"]
@@ -176,8 +176,6 @@ financialexpress.com##div.pcl-wrap
 forbes.com##+js(ra, class, body[class], stay)
 foreignaffairs.com##.article-dropcap:style(height: auto !important;)
 foreignaffairs.com##.paywall,.loading-indicator,.messages--container--bottom
-foreignpolicy.com##+js(rc, content-gated, div.content-gated.content-gated--main-article)
-foreignpolicy.com##div.content-ungated
 fortune.com##+js(ra, class, div.paywallActive)
 foxnews.com##+js(ra, class, div[class*="gated-overlay"])
 foxnews.com##div.article-gating-wrapper
@@ -445,7 +443,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||eltribuno.com/scripts/Bellhop/dist/bellhop.min.js$script,~third-party
 ||emol.cl/assets/js/merPramV2.js$script,domain=elmercurio.com|lasegunda.com
 ||emol.cl/assets/js/vendor/modal.js$script,domain=elmercurio.com|lasegunda.com
-||enr.com/paywall/evercookie_get.js$script,~third-party
 ||ensighten.com/*/Bootstrap.js$script,third-party
 ||epoch.org.il$inline-script
 ||epochbase.com/rules/get$xmlhttprequest,third-party
