@@ -190,8 +190,9 @@ heatmap.news##+js(cookie-remover, /^freePosts/)
 hindustantimes.com##+js(rc, freemiumText, .freemiumText)
 hindustantimes.com##+js(rc, open-popup, body.open-popup)
 hindustantimes.com##.freemium-card,.closeStory
+huffingtonpost.it,ilsecoloxix.it,repubblica.it,lastampa.it##+js(cookie-remover, blaize_session)
+huffingtonpost.it,repubblica.it,lastampa.it##aside#widgetDP,div[id^="adv"]
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-ilsecoloxix.it,repubblica.it,lastampa.it##+js(cookie-remover, blaize_session)
 indianexpress.com##+js(ra, style, div#pcl-rest-content[style])
 inkl.com##+js(ra, class, div.paywall)
 inkl.com##div.gradient-container
@@ -289,7 +290,6 @@ profil.at##+js(ra, class|style, div.paywall)
 profil.at##div#cfs-paywall-container
 psypost.org##+js(cookie-remover, issuem_lp)
 realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
-repubblica.it,lastampa.it##aside#widgetDP,div[id^="adv"]
 revistaoeste.com##+js(rc, expandable, div.expandable)
 revistaoeste.com##+js(rc, hidden, div.hidden[data-url])
 revistaoeste.com##div.is-locked,div.subscribe-panel
@@ -467,6 +467,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||harpers.org/wp-content/themes/timber/static/js/modal*.js
 ||heraldo.es/noticias/$inline-script
 ||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
+||huffingtonpost.it/*/news/$inline-script
 ||inc42.com/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 ||indianexpress.com/*/indianexpress/js/evolok/*.js$script,~third-party
 ||indianexpress.com/*/indianexpress/min/premiumContent.js$script,~third-party
