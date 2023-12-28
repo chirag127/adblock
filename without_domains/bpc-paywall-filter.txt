@@ -15,6 +15,7 @@
 /sub/js/pc-offer-west.js$script,~third-party
 /temptation/resolve$xmlhttprequest,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
 /wp-content/*/ev-em.min.js$script,~third-party
+/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 /zephr/feature$xmlhttprequest,~third-party
 20minutes.fr##+js(rc, qiota_reserve, div.qiota_reserve)
 360dx.com,adage.com,autonews.com,chicagobusiness.com,crainscleveland.com,crainsdetroit.com,crainsnewyork.com,genomeweb.com,modernhealthcare.com,plasticsnews.com,precisionmedicineonline.com,rubbernews.com,sustainableplastics.com,tirebusiness.com,utech-polyurethane.com##+js(ra, class, body[class])
@@ -22,7 +23,7 @@
 @@||cdn.ampproject.org/*/amp-access-$script,domain=cambridge.org|cmjornal.pt
 @@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
 @@||nationalreview.com^
-@@||piano.io^$domain=asia.nikkei.com|hbr.org|japantimes.co.jp|kurier.at|onet.pl
+@@||piano.io^$domain=asia.nikkei.com|businessinsider.com.pl|hbr.org|japantimes.co.jp|kurier.at|onet.pl
 @@||sdk.privacy-center.org/*/loader.js$script,third-party
 aaii.com##+js(rc, fadeout, .fadeout)
 aaii.com##.greybox-signup
@@ -93,6 +94,8 @@ bloomberg.com##div[id^="fortress-"]
 bloombergadria.com##+js(ra, style, article[style])
 brainly.com,brainly.com.br##+js(aopr, localStorage)
 brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
+businessinsider.com.pl##+js(cookie-remover, xbc)
+businessinsider.com.pl##div#content-premium-offer
 cen.acs.org##+js(cookie-remover, cenLoginP)
 cen.acs.org##.meteredBar
 centrepresseaveyron.fr,ladepeche.fr,lindependant.fr,midi-olympique.fr,midilibre.fr,nrpyrenees.fr,petitbleu.fr##+js(ra, subscriptions-section, [subscriptions-section="content"])
@@ -144,7 +147,7 @@ diariosur.es,diariovasco.com,elcomercio.es,elcorreo.com,eldiariomontanes.es,elno
 divisare.com##+js(ra, style, body[style], stay)
 divisare.com##div.blocker
 dnn.de,gnz.de,goettinger-tageblatt.de,haz.de,kn-online.de,landeszeitung.de,ln-online.de,lvz.de,maz-online.de,neuepresse.de,op-marburg.de,ostsee-zeitung.de,paz-online.de,rnd.de,siegener-zeitung.de,sn-online.de,waz-online.de##+js(set, Fusion.globalContent.isPaid, false)
-dominionpost.com##+js(rc, entry-content, article>div.entry-content)
+dominionpost.com##+js(rc, entry-content, article > div.entry-content)
 eastwest.eu###testo_articolo > p, #testo_articolo > h3
 eastwest.eu##+js(ra, style, .paywall)
 eastwest.eu##+js(rc, paywall, .paywall)
@@ -193,6 +196,7 @@ hindustantimes.com##.freemium-card,.closeStory
 huffingtonpost.it,ilsecoloxix.it,repubblica.it,lastampa.it##+js(cookie-remover, blaize_session)
 huffingtonpost.it,repubblica.it,lastampa.it##aside#widgetDP,div[id^="adv"]
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
+inc42.com##+js(ra, class, div.single-post-content)
 indianexpress.com##+js(ra, style, div#pcl-rest-content[style])
 inkl.com##+js(ra, class, div.paywall)
 inkl.com##div.gradient-container
@@ -249,7 +253,7 @@ marketnews.com##+js(ra, class, div.body-description)
 medscape.com##.AdUnit,div[id^="ads-"]
 meritnation.com##+js(rc, maxHeight75px, div.exp_content.maxHeight75px)
 meritnation.com##.view-full-answer 
-mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content>div.tdb-block-inner)
+mexiconewsdaily.com##+js(rc, tdb-block-inner, body.single div.td-post-content > div.tdb-block-inner)
 modernhealthcare.com##+js(rc, sponsored-article, div.sponsored-article)
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, id, div#article-teaser)
@@ -324,8 +328,8 @@ stateaffairs.com##+js(rc, access-restricted, body.access-restricted)
 stateaffairs.com##div.c-memberships-message
 strangematters.coop##+js(cookie-remover, pmpro_lpv_count)
 studocu.com##.page-content:style(filter: none !important; user-select: unset !important)
-studocu.com##.pf>:not(.page-content)
-studocu.com##button[data-test-selector^="preview-banner-"]:upward(#document-wrapper>div)
+studocu.com##.pf > :not(.page-content)
+studocu.com##button[data-test-selector^="preview-banner-"]:upward(#document-wrapper > div)
 sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##+js(rc, visible-premium, div.visible-premium)
 sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##div.article-premium-footer,div.footer-premium,div.article-body-wrapper.visible-not-premium,div.pub,div.ph-easy-subscription
 suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured)
@@ -344,6 +348,7 @@ theathletic.com##div[id^="slideup-"],div[id*="overlay"],div:empty:not([data-rjs]
 theatlantic.com##+js(cookie-remover, articleViews)
 theatlantic.com##aside#paywall,div[class^="LostInventoryMessage_"]
 theatlantic.com##img[class*="Image_lazy__"]:style(opacity: 1 !important)
+thecountersignal.com##+js(ra, class, body.single div.elementor-widget-container)
 thediplomat.com##+js(rc, dpl-preview, article.dpl-preview, stay)
 thegardenisland.com###single-login-box,#single-excerpt
 thegardenisland.com##+js(ra, style, #single-paywall)
@@ -432,7 +437,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||crusoe.com.br/assets/js/swg-wallcontent-crusoe.js$script,~third-party
 ||diariocorreo.pe/pf/dist/engine/react.js$script,~third-party
 ||dn.se/check-paywall-v2.js,~third-party
-||dominionpost.com/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 ||editorialedomani.it/pelcro.js$script,~third-party
 ||elcomercio.pe/pf/dist/engine/react.js$script,~third-party
 ||elmercurio.com/assets/js/merPramV2.js$script,~third-party
@@ -468,7 +472,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||heraldo.es/noticias/$inline-script
 ||hilltimes.com/*/js/loadingoverlay/loadingoverlay.min.js$script,~third-party
 ||huffingtonpost.it/*/news/$inline-script
-||inc42.com/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 ||indianexpress.com/*/indianexpress/js/evolok/*.js$script,~third-party
 ||indianexpress.com/*/indianexpress/min/premiumContent.js$script,~third-party
 ||internazionale.it/templates_js_ajax.inc.php$xmlhttprequest,~third-party
@@ -497,7 +500,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||meter-svc.nytimes.com/meter.js$xmlhttprequest,~third-party
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
 ||meter.in.bonhill.pbc.io/api/views$xmlhttprequest,domain=investmentnews.com
-||mexiconewsdaily.com/wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 ||moscout.com$inline-script
 ||mwcm.nyt.com/$script,domain=nytimes.com
 ||ndcmediagroep.nl/js/evolok/$script,third-party
