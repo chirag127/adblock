@@ -430,12 +430,12 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 .com/?rb=$xmlhttprequest
 .com/_t/open/$image
 .com/a.gif?
+.com/api/stats?t=$xmlhttprequest,ping
 .com/b.gif?
 .com/c.gif?
 .com/cct?
 .com/i.gif?
 .com/s.gif?
-.com/stats?t=$xmlhttprequest
 .com/v.gif?
 .com/vanity/?
 .de/pt.gif?type=
@@ -461,7 +461,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 .microsoft.*/broker.js$domain=~technet.microsoft.com
 .microsoft.com/trans_pixel.
 .microsoft.com/wupixel/
-.net/stats?t=$xmlhttprequest
+.net/api/stats?t=$xmlhttprequest,ping
 .php?p=stats$domain=ahwaktv.tv
 .providesupport.com/cmd/*?ps_t=
 .pulse-stat.com$image
@@ -1008,6 +1008,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 6play.fr#%#//scriptlet('set-local-storage-item', 'gdprUserHasInteracted', '0')
 6play.fr#%#//scriptlet('set-local-storage-item', 'localDeviceId', '0')
 9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co#%#AG_onLoad(function(){const a=document.createElement("div");document.documentElement.appendChild(a),setTimeout(()=>{a&&a.remove()},100)});
+://*.*$permissions=join-ad-interest-group=()\, run-ad-auction=()\, browsing-topics=()
 ://analytics.*/collect
 ://b.*/vanity/?
 ://ct1.*.com/sc/
@@ -2366,7 +2367,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$script,domain=cmoa.jp
 @@||googletagmanager.com/gtm.js$script,domain=dpoint.jp
 @@||googletagmanager.com/gtm.js$script,domain=girlsnews.tv
-@@||googletagmanager.com/gtm.js$script,domain=insideevs.com
 @@||googletagmanager.com/gtm.js$script,domain=junonline.jp
 @@||googletagmanager.com/gtm.js$script,domain=kanaloco.jp
 @@||googletagmanager.com/gtm.js$script,domain=maidonanews.jp
@@ -2871,6 +2871,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||s1.daumcdn.net/svc/original/U03/cssjs/userAgent$domain=tistory.com
 @@||s1973398186.t.eloqua.com/e/er?
 @@||s79.research.de.com/bb-mx/prime$domain=joyn.de
+@@||sb.scorecardresearch.com/*/streamingtag_plugin_jwplayer.js$domain=nbcsports.com
 @@||sb.scorecardresearch.com/beacon.js$domain=animalplanet.com
 @@||sb.scorecardresearch.com/beacon.js$domain=discovery.com
 @@||sb.scorecardresearch.com/beacon.js$domain=hurriyet.com.tr
@@ -27342,6 +27343,7 @@ myfirstcomp.ru#?#.tm-sidebar-b > div.uk-panel:has(script[src^="https://adcounter
 n-tv.de#%#AG_onLoad(function(){setTimeout(function(){var a=document.querySelector("#playerwrapper");if(a&&1>=a.childElementCount&&"function"===typeof startNtvVideoplayerNew)try{startNtvVideoplayerNew($("#playerwrapper"))}catch(b){}},1E3)});
 naranga.spring-green.com$image
 national.townsquarenewsletters.com$image
+nbcsports.com#%#//scriptlet('prevent-element-src-loading', 'script', 'sb.scorecardresearch.com')
 nethunt.com/api/v1/track/email/$image
 nettiauto.com#%#//scriptlet("set-constant", "listingGoogleEETracking", "noopFunc")
 newidea.e.aremedia.com.au$image
@@ -29031,6 +29033,8 @@ znak.com##.relap
 ||bridge-ashiato.appspot.com/beacon/
 ||bridgevine.com^$third-party
 ||brightcove.com/1pix.gif
+||brightdata.com^$third-party
+||brightdata.de^$third-party
 ||brightedge.com^$third-party
 ||brilig.com^$third-party
 ||brille24.de/fileadmin/tracking
@@ -33090,6 +33094,7 @@ znak.com##.relap
 ||sayutracking.co.uk^$third-party
 ||sayyac.com^$third-party
 ||sayyac.net^$third-party
+||sb.scorecardresearch.com/*/streamingtag_plugin_jwplayer.js$script,redirect=noopjs,domain=nbcsports.com
 ||sb.scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js$script,redirect=noopjs,domain=indiatoday.in,important
 ||sbazar.cz/*/hit|$xmlhttprequest
 ||sbc.digitalocean.com/s.js
@@ -34240,6 +34245,7 @@ znak.com##.relap
 ||tvid.in/sdk/loader.js
 ||tvigle.ru/track/
 ||tvn.pl/sweqevub.js
+||tvnoviny.sk^$cookie=MS_PPID
 ||tvsquared.com/tv2track$third-party
 ||twc.net/device/ovp/logger?
 ||twcount.com^$third-party
