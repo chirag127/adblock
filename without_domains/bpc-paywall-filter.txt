@@ -26,7 +26,7 @@
 @@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
 @@||nationalreview.com^
 @@||piano.io^$domain=asia.nikkei.com|businessinsider.com.pl|hbr.org|japantimes.co.jp|kurier.at|onet.pl
-@@||sdk.privacy-center.org/*/loader.js$script,third-party
+@@||sdk.privacy-center.org^$script,third-party
 aaii.com##+js(rc, fadeout, .fadeout)
 aaii.com##.greybox-signup
 aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled)
@@ -302,6 +302,9 @@ realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
 revistaoeste.com##+js(rc, expandable, div.expandable)
 revistaoeste.com##+js(rc, hidden, div.hidden[data-url])
 revistaoeste.com##div.is-locked,div.subscribe-panel
+rockdelux.com##+js(ra, class|style, body, stay)
+rockdelux.com##+js(ra, style, div#body, stay)
+rockdelux.com##div.bg-paywall
 rugbypass.com##+js(rc, fade, .fade)
 rugbypass.com##+js(rc, premium-fold-bottom, .premium-fold-bottom)
 rugbypass.com##.plus-article-offer
