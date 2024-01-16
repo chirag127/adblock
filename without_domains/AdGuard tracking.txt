@@ -402,8 +402,12 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 &action=js_stats&
 -ajax.php?action=ajax-hits-counter-
 -asset-tag.
+-config.sensic.net/3pc.html
+-config.sensic.net/s2s-web.js
+-config.sensic.net/sui.js
 -launches.appsflyersdk.com^
 -pcre-js-gen.herokuapp.com/tracking-event|
+-s2s.sensic.net^
 -spiky.clevertap-prod.com^
 -spiky.clevertap-prod.com^$third-party
 -telemetry.officeapps.live.com.mcas.ms^
@@ -1013,12 +1017,14 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 ://analytics.*/collect
 ://b.*/vanity/?
+://coomer.su/$xmlhttprequest,method=patch|post
 ://ct1.*.com/sc/
 ://ct1.*.jp/sc/
 ://ct2.*.com/sc/
 ://ct2.*.jp/sc/
 ://datalayer-*.sky.com^$domain=sky.com
 ://gtrack.*.com/dye?
+://kemono.su/$xmlhttprequest,method=patch|post
 ://l.*/script.php?i=$script,~third-party
 ://ply.*/?v=$image,third-party
 ://r.i.ua^
@@ -1441,6 +1447,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||cdn.taboola.com^$domain=msnbc.com
 @@||cdn.tagcommander.com/1491/tc_LaboutiqueLaPoste_6.js$domain=laposte.fr
 @@||cdn.tagcommander.com/cmp-api/cmp.js$domain=tf1.fr
+@@||cdn.tagcommander.com^$domain=secure.galerieslafayette.com
 @@||cdn.trackjs.com/agent/v*/latest/t.js$domain=adshnk.com|adshrink.it
 @@||cdn.trackjs.com/releases/current/tracker.js$domain=express.com
 @@||cdn.tt.omtrdc.net/cdn/target.js
@@ -1531,6 +1538,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||conversion.im/images/icons/google-analytics.png
 @@||convertexperiments.com/js/*.js$domain=platform.autods.com
 @@||convertexperiments.com^$domain=skratchlabs.com
+@@||coomer.su/.well-known/ddos-guard/mark/|
 @@||coremetrics.com/eluminate.js
 @@||cot.priceminister.com/res/static/*/xtcore.js
 @@||cqcounter.com^$domain=cqcounter.com
@@ -1593,7 +1601,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||dcinfos.abtasty.com/geolocAndWeather.php^$domain=tf1.fr
 @@||dcinside.com$cookie=_ga
 @@||dd6zx4ibq538k.cloudfront.net/static/images/$domain=tkmaxx.com
-@@||de-config.sensic.net/sui-connector.js$domain=sportschau.de
 @@||deals.nextag.com^*/ClickTracker.jsp
 @@||debenhams.com/foresee/foresee-trigger.js
 @@||dell.com^$cookie=/^AMCVS?_.*AdobeOrg/
@@ -2163,6 +2170,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$domain=game8.jp
 @@||googletagmanager.com/gtm.js$domain=gamepix.com
 @@||googletagmanager.com/gtm.js$domain=gazin.com.br
+@@||googletagmanager.com/gtm.js$domain=gelocal.it
 @@||googletagmanager.com/gtm.js$domain=gfn.ru
 @@||googletagmanager.com/gtm.js$domain=givingfuel.com|regfox.com|ticketspice.com|redpodium.com
 @@||googletagmanager.com/gtm.js$domain=glamusha.ru
@@ -2176,6 +2184,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$domain=hub.docker.com
 @@||googletagmanager.com/gtm.js$domain=huffingtonpost.it
 @@||googletagmanager.com/gtm.js$domain=hyponamiru.cz
+@@||googletagmanager.com/gtm.js$domain=ilsecoloxix.it
 @@||googletagmanager.com/gtm.js$domain=iltalehti.fi
 @@||googletagmanager.com/gtm.js$domain=imgur.com
 @@||googletagmanager.com/gtm.js$domain=incehesap.com
@@ -2527,6 +2536,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||karte.io/libs/tracker.$domain=zf1.tohoku-epco.co.jp
 @@||karte.io/libs/tracker.$domain=zozo.jp
 @@||kaspersky.co$content
+@@||kemono.su/.well-known/ddos-guard/mark/|
 @@||kentucky.com/mistats/finalizestats.js
 @@||kiplinger.112.2o7.net^
 @@||klaviyo.com/ajax/subscriptions/subscribe$domain=productionmusiclive.com
@@ -3163,7 +3173,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||ue.flipboard.com/usage?data=
 @@||ugdturner.com/xd.sjs$domain=nba.com
 @@||ugdturner.com/xd.sjs$domain=tbs.com
-@@||uid.mavencoalition.io^$domain=thestreet.com|reelrundown.com|owlcation.com
 @@||uim.tifbs.net/js/*.js$domain=web.de|gmx.net|gmx.ch|gmx.at
 @@||uim.tifbs.net/js/3423.js$domain=top.de
 @@||uim.tifbs.net/js/7732.js$domain=gewinnspiel.gmx.de|gewinnspiel.web.de
@@ -3670,7 +3679,6 @@ content.mail.duurzaamgebouwd.nl$image
 continentseven.com##.gaoop
 contracts.delivra.com$image
 conversions.appsflyersdk.com^
-coomer.su,kemono.su#%#//scriptlet('prevent-xhr', 'method:POST')
 correo.cesa.edu.co$image
 correo.happycustomer.io$image
 correo.ubilab.me$image
@@ -31161,7 +31169,7 @@ znak.com##.relap
 ||assets-jpcust.jwpsrv.com/*/ping.js
 ||assets-prod.sumo.prod.webservices.mozgcp.net/static/gtm-snippet.
 ||assets.adobedtm.com^$app=com.aa.android
-||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com
+||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com
 ||assets.adsttc.com/insights/form-funnel.min.js
 ||assets.adsttc.com/insights/tracker.js
 ||assets.alicdn.com/g/alilog/aplus_plugin_xwj/index.js
@@ -33137,6 +33145,8 @@ znak.com##.relap
 ||googletagmanager.com/gtag/js?id=$script,redirect=googletagmanager-gtm,domain=inforesist.org,important
 ||googletagmanager.com/gtag/js?id=$script,redirect=noopjs,domain=health.confused.com
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=cashconverters.com.au,important
+||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=gelocal.it
+||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=ilsecoloxix.it
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,domain=orami.co.id,important
 ||googletagmanager.com/gtm.js$script,redirect=google-analytics,important,domain=m2o.it|deejay.it|capital.it
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=ads.spotify.com
@@ -35414,6 +35424,7 @@ znak.com##.relap
 ||rnengage.com^$third-party
 ||rng-snp-003.com^$third-party
 ||rnlabs.com^$third-party
+||roadster.com/roadster_dealer_analytics
 ||rob.megaopen.ru^$third-party
 ||robert.golem.de/g/collect
 ||rocket.ivi.ru/event/
@@ -35631,7 +35642,6 @@ znak.com##.relap
 ||sendtonews.com/stn_trk.gif?
 ||sendtraffic.com^$third-party
 ||senmanga.com^$cookie=sen_manga_session
-||sensic.net^$third-party
 ||sensor.org.ua^$third-party
 ||sensorsdata.cn^$third-party
 ||sentifi.com^$third-party
@@ -36747,7 +36757,6 @@ znak.com##.relap
 ||ui-portal.de/pos-cdn/tracklib/
 ||ui-portal.de/prompt/permission/latest/tracking.min.js
 ||uid.mavencoalition.io^$cookie
-||uid.mavencoalition.io^$xmlhttprequest,redirect=noopjson
 ||uim.tifbs.net/js/*.js$script,redirect=noopjs,domain=web.de|gmx.net|gmx.ch|gmx.at
 ||uim.tifbs.net^$third-party
 ||ujm.hansel.io^$third-party
