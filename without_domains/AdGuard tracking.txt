@@ -1035,6 +1035,10 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 ://wa.*/s?$image
 @@.2o7.net/$domain=today.com
 @@.googleadservices.*.js$domain=ponominalu.ru
+@@/^https:\/\/coomer\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
+@@/^https:\/\/kemono\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
 @@/adrum.js$domain=usbank.com
 @@/cdn-cgi/pe/bag2?*google-analytics.com%2Fanalytics.js$domain=amypink.de|biznews.com|cryptospot.me|dailycaller.com|droid-life.com|forwardprogressives.com|fpif.org|fullpotentialma.com|geekzone.co.nz|goldsday.com|hoyentec.com|imageupload.co.uk|is-arquitectura.es|lazygamer.net|lingholic.com|mmanews.com|nehandaradio.com|nmac.to|orain.org|tvunblock.com|unilad.co.uk|xrussianteens.com|youngcons.com
 @@/cdn-cgi/pe/bag2?*googleadservices.com$domain=droid-life.com
@@ -3081,6 +3085,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||tag.aticdn.net/*/smarttag.js$domain=rte.ie
 @@||tag.aticdn.net/*/smarttag.js$domain=uktvplay.uktv.co.uk
 @@||tag.aticdn.net/piano-analytics.js$domain=cerbahealthcare.it
+@@||tag.aticdn.net/piano-analytics.js$domain=choisirleservicepublic.gouv.fr
 @@||tag.aticdn.net/piano-analytics.js$domain=futura-sciences.com
 @@||tag.aticdn.net/piano-analytics.js$domain=yourstory.com
 @@||tag.perfectaudience.com/serve/*.js$domain=asana.com
@@ -32129,6 +32134,7 @@ znak.com##.relap
 ||ctags.cn^$third-party
 ||ctnsnet.com^$third-party
 ||ctv.by/sites/default/files/googleanalytics/analytics.js
+||cue.search.naver.com/api/*/log/
 ||cultofmac.com/presslabs.js
 ||cuntador.com^$third-party
 ||curalate.com^$third-party
@@ -32717,6 +32723,7 @@ znak.com##.relap
 ||fandommetrics.com^$third-party
 ||fanp.me/*/silveregg_tracking.html
 ||fanplayr.com^$third-party
+||fap.bar/a.js
 ||fashionbykakao.com/api/*/tr?
 ||fast-thinking.co.uk^$third-party
 ||fast.a.klaviyo.com/media/js/analytics/klaviyo_analytics.js
@@ -35839,6 +35846,8 @@ znak.com##.relap
 ||smutty.com/ajax/trcking/
 ||snanews.de/js/sw/analytics.js
 ||snap-api.arkoselabs.com/metrics/
+||snapchat.com/report-metrics/
+||snapchat.com/web-analytics
 ||sniperlog.ru^$third-party
 ||sniphub.com^$third-party
 ||snoobi.com^$third-party
@@ -37035,7 +37044,6 @@ znak.com##.relap
 ||web-stat.com^$third-party
 ||web-stat.net^$third-party
 ||web-visor.com^$third-party
-||web.snapchat.com/web-analytics-
 ||web.snrbox.com/*?tracker=
 ||web.snrbox.com/tck/$domain=komputronik.pl
 ||web.snrbox.com/tck/$xmlhttprequest,redirect=nooptext

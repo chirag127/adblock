@@ -20,6 +20,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 -didomi.js
 -track-email-open?
 -track-inview.
+-tracking-pixel.
 -universal-analytics/
 .EventTracking.
 .acemlna.com/Prod/link-tracker?$image
@@ -59,6 +60,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .gif?Log=
 .gif?stat=open
 .google-analytics.com/
+.informz.net/z/$image
 .innologica.com/t/
 .intercom-mail.com/via/$image
 .inxmail-commerce.com/tracking/$image
@@ -220,6 +222,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /_ga?send&
 /_ga?sponsor_pixel=
 /_hcms/perf
+/_lib/ga.js
 /_stat/log/*
 /_tracking/*
 /_vercel/insights/script.js
@@ -572,6 +575,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /duel-analytics.js
 /dwanalytics-
 /dynaTraceMonitor?
+/dynamic.ziftsolutions.com/*
 /dynamicyield/*
 /e.customeriomail.com/e/o/*$image
 /e.gif?
@@ -669,6 +673,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /fpcookie?
 /fpcount.exe
 /fprnt.min.js
+/fptrk.min.js
 /fpv2.js
 /friendbuy.min.js
 /frontend-gtag.js
@@ -699,7 +704,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ga_tracking.js
 /gaaddons.js
 /gaaddons_univ.js
-/gaclicktracking-universal.js
 /gajs/analytics.js
 /ganalytics.js
 /gapro.js
@@ -1525,6 +1529,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ://beacon.*/track
 ://blue.*/script.js
 ://client.rum.
+://cmpworker.
 ://collector.*/event
 ://coomer.su^$xmlhttprequest,method=patch|post
 ://elqtrk.
@@ -1561,6 +1566,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ?logType=trackEvent&
 ?pageviews=$third-party
 ?type=pageview&
+@@/^https:\/\/coomer\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post
+@@/^https:\/\/kemono\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xmlhttprequest,~third-party,match-case,method=post
 @@rutracker.*/tracker.php?
 @@||account.adobe.com/newrelic.js$~third-party
 @@||accounts.intuit.com/fe_logger?$~third-party
@@ -1638,6 +1647,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cpt-static.gannettdigital.com/universal-web-client/master/latest/elements/vendor/adobe/app-measurement.html$xmlhttprequest
 @@||cpt-static.gannettdigital.com/universal-web-client/master/latest/elements/vendor/adobe/visitor-api.html$xmlhttprequest
 @@||cqcounter.com^$domain=cqcounter.com
+@@||creditas.cz/cb/public/assets/SmartTag-$script,~third-party
 @@||criteo.net/js/ld/publishertag.js$domain=novayagazeta.ru
 @@||cults3d.com/packs/js/quantcast-$~third-party
 @@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|handelsblatt.com|mainichi.jp|marketwatch.com|tarzanweb.jp|tn.com.ar|wpb.shueisha.co.jp|wsj.com
@@ -1672,6 +1682,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||h.imedia.cz/js/cmp2/scmp.js$domain=seznam.cz
 @@||hit.interia.pl/iwa_core$script,~third-party
 @@||hlidacstatu.cz/scripts/highcharts-6/modules/heatmap.js
+@@||hobbyking.com^*/gtm.js$script,~third-party
 @@||identity.mparticle.com^$xmlhttprequest
 @@||ikea.com^*/analyticsEvent.$script,~third-party
 @@||imgur.com/min/px.js$~third-party
@@ -1783,7 +1794,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||ssl.pstatic.net/sstatic/sdyn.js$script,domain=search.naver.com
 @@||startribune.com/analytics-assets/sitecatalyst/appmeasurement.js$~third-party
 @@||statcounter.com/css/packed/statcounter-$stylesheet,~third-party
-@@||statcounter.com/js/fusioncharts.js
 @@||statcounter.com/js/packed/statcounter-$script,~third-party
 @@||static.amazon.jobs/assets/analytics-$script,domain=amazon.jobs
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
@@ -1931,6 +1941,7 @@ img.promio-connect.com$image
 ||acs86.com^$third-party
 ||acsbap.com^$third-party
 ||acstat.com^$third-party
+||active.com/ig.track.js
 ||activeconversion.com^$third-party
 ||activemeter.com^$third-party
 ||activengage.com/overwatch/
@@ -2015,7 +2026,6 @@ img.promio-connect.com$image
 ||adxadtracker.com^$third-party
 ||adxcel-ec2.com^$third-party
 ||adxvip.com^$third-party
-||aemet.es/js/stats.js
 ||aerzteblatt.de/inc/js/ga4.js
 ||aff-handler.com^$third-party
 ||affilae.com^$third-party
@@ -2140,7 +2150,6 @@ img.promio-connect.com$image
 ||apartmenttherapy.com/jAYekY18/init.js
 ||apester.com/cookie/bundle.js
 ||api-iam.intercom.io/messenger/web/metrics
-||api-router.kaspersky-labs.com/logger2/metrics/
 ||api-v3.findify.io/v3/feedback
 ||api.all-internet.jp^$third-party
 ||api.baomoi.com^$image
@@ -2153,13 +2162,13 @@ img.promio-connect.com$image
 ||apicit.net^$third-party
 ||apkonline.ru^$third-party
 ||apm-engine.meteor.com^$third-party,xmlhttprequest
+||apollofind.com^$third-party
 ||app.box.com/app-api/split-proxy/api/metrics
 ||app.box.com/gen204
 ||app.carnow.com/dealers/track_visitor
 ||app.chat.xiaomi.net^$third-party
 ||app.link/_r?$script,third-party
 ||app.posthog.com/static/array.js
-||app.posthog.com/static/recorder-v2.js
 ||appboycdn.com^$third-party
 ||appcast.io^$third-party
 ||appdynamics.com^$third-party
@@ -2252,6 +2261,7 @@ img.promio-connect.com$image
 ||b1js.com^$third-party
 ||b2c.com^$third-party
 ||b2w.io/event/
+||b8cdn.com/assets/v1/analytics-
 ||babator.com^$third-party
 ||backcountry.com/api/log
 ||baidu.com/api/bidder/
@@ -2382,6 +2392,7 @@ img.promio-connect.com$image
 ||booking.com/navigation_times
 ||booking.com/sendlayoutevents
 ||bookoffonline.co.jp/files/tracking/
+||booktopia.com.au/Ns7aBMIv/init.js
 ||botman.ninja^$third-party
 ||botscanner.com^$third-party
 ||botsvisit.com^$third-party
@@ -2549,7 +2560,6 @@ img.promio-connect.com$image
 ||clicksagent.com^$third-party
 ||clickshift.com^$third-party
 ||clicktale.net^$third-party
-||clicktime.symantec.com^$script,third-party
 ||clicktracks.com^$third-party
 ||clickzs.com^$third-party
 ||clickzzs.nl^$third-party
@@ -2651,6 +2661,7 @@ img.promio-connect.com$image
 ||convertcart.com^$third-party
 ||convertexperiments.com^$third-party
 ||convertflow.co^*/visitors/
+||convertkit.com^*/visit
 ||convertro.com^$third-party
 ||cookiescript.info^$third-party
 ||cooladata.com^$third-party
@@ -2714,6 +2725,7 @@ img.promio-connect.com$image
 ||ctrmi.cn/t/
 ||cts.businesswire.com^$third-party
 ||cts.vresp.com^$third-party
+||cue.search.naver.com/api/*/log/
 ||culturaltracking.ru^$third-party
 ||curalate.com^$third-party
 ||custom.search.yahoo.co.jp/images/window/*.gif
@@ -2826,6 +2838,7 @@ img.promio-connect.com$image
 ||dl8.me^$third-party
 ||dmanalytics1.com^$third-party
 ||dmcdn.net/behavior/
+||dmdi.pl^$third-party
 ||dmm.com/analytics/
 ||dmm.com/imp?
 ||dmpprof.com^$third-party
@@ -2903,6 +2916,7 @@ img.promio-connect.com$image
 ||eastmoney.com/usercollect/
 ||eastmoney.com/web/prd/jump_tracker.js
 ||easy-hit-counters.com^$third-party
+||easy.lv^$third-party
 ||easycounter.com^$third-party
 ||easydmp.net/collect_
 ||easydmp.net/etag.
@@ -3116,7 +3130,6 @@ img.promio-connect.com$image
 ||fout.jp^$third-party
 ||foxpush.com^$third-party
 ||foxpush.net^$third-party
-||foxsports.com.au/akam/
 ||fpjs.io^$third-party
 ||fpt.shop/fa_tracking.js
 ||fraud0.com^$third-party
@@ -3484,6 +3497,7 @@ img.promio-connect.com$image
 ||impression.link^$third-party
 ||impressionmedia.cz/statistics/
 ||imtwjwoasak.com^$third-party
+||inboxtag.com^$third-party
 ||incentivesnetwork.net^$third-party
 ||incomaker.com//tracking/
 ||indeed.com/cmp/_rpc/flog
@@ -3515,6 +3529,7 @@ img.promio-connect.com$image
 ||inq.com/tagserver/logging/logline
 ||inside-graph.com^$third-party
 ||insideevs.com/analytics.js
+||insiderdata360online.com/service/platform.js
 ||insight.rapid7.com^$third-party
 ||insightgrit.com^$third-party
 ||insitemetrics.com^$third-party
@@ -3537,6 +3552,7 @@ img.promio-connect.com$image
 ||intensedebate.com/remotevisit.php?
 ||interactive-circle.jp^$third-party
 ||interakt.ru^$third-party
+||interfax.ru/cnt/
 ||intergid.ru^$third-party
 ||investingchannel.com^$third-party
 ||invitemedia.com^$third-party
@@ -3552,6 +3568,7 @@ img.promio-connect.com$image
 ||iolam.it/service/trk
 ||iovation.com^$third-party
 ||ip-label.net^$third-party
+||ip-tracker.org^$third-party
 ||ip2c.org^$third-party
 ||ip2location.com^$third-party
 ||ip2map.com^$third-party
@@ -3671,7 +3688,6 @@ img.promio-connect.com$image
 ||kochava.com/track/$third-party
 ||koddi.com^$third-party
 ||koji-analytics.com^$third-party
-||kokos.click^$third-party
 ||kommersant.uk/banner_stats
 ||komoot.*/api/t/event
 ||kompass.com/logAdvertisements
@@ -4090,6 +4106,7 @@ img.promio-connect.com$image
 ||newrelic.com^$third-party
 ||newrrb.bid^$third-party
 ||news.banggood.com/mo/$image,third-party
+||newser.com/utility.aspx?
 ||newsnationnow.com/yZuPxxW0/init.js
 ||newzit.com/setABframe.html
 ||nexstardigital.net/segment.js
@@ -4567,6 +4584,7 @@ img.promio-connect.com$image
 ||reachsocket.com^$third-party
 ||reactful.com^$third-party
 ||readcube.com/assets/track_
+||readertracking.com^$third-party
 ||readnotify.com^$third-party
 ||realist.gen.tr^$third-party
 ||reallyfreegeoip.org^$third-party
@@ -4663,7 +4681,6 @@ img.promio-connect.com$image
 ||roblox.com/_/_/1px.gif
 ||roblox.com/report
 ||roblox.com/www/e.png?
-||roeye.com^$third-party
 ||roeyecdn.com^$third-party
 ||roia.biz^$third-party
 ||roiservice.com^$third-party
@@ -5083,7 +5100,6 @@ img.promio-connect.com$image
 ||taobao.com/tracker.
 ||tapad.com^$third-party
 ||tapeantiads.com/stat/
-||tapenoads.com/stat/
 ||tapfiliate.com^$third-party
 ||taplytics.com^$third-party
 ||taps.io^$third-party
@@ -5323,7 +5339,6 @@ img.promio-connect.com$image
 ||tyxo.com^$third-party
 ||u-on.eu^$third-party
 ||u5e.com^$third-party
-||uadx.com^$third-party
 ||uai.com.br^*/analytics.js
 ||uapoisk.net^$third-party
 ||uarating.com^$third-party
@@ -5384,7 +5399,6 @@ img.promio-connect.com$image
 ||user-clicks.com^$third-party
 ||usercentrics.eu/session/$image
 ||userdive.com^$third-party
-||usermaven.com^$third-party
 ||userneeds.dk^$third-party
 ||userreplay.net^$third-party
 ||userreport.com^$third-party
@@ -5519,6 +5533,7 @@ img.promio-connect.com$image
 ||webads.eu^$third-party
 ||webcompteur.com^$third-party
 ||webcounter.ws^$third-party
+||webd-assets.cdn4dd.com/s.js$domain=doordash.com
 ||webedia.fr/js/gs.js
 ||webengage.co^$third-party
 ||webengage.com^$third-party
@@ -5546,6 +5561,7 @@ img.promio-connect.com$image
 ||websitewelcome.com^$third-party
 ||webspectator.com^$third-party
 ||webstat.com^$third-party
+||webstat.se^$third-party
 ||webstatistika.lv^$third-party
 ||webstats4u.com^$third-party
 ||webtemsilcisi.com^$third-party
