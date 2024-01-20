@@ -1,6 +1,6 @@
 
 .com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|rubbernews.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
-.com/_assets/jam/journey-data.js$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
+.com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
 .com/journey/compiler/build-*.js$script,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|wired.com
 .com/script.js$script,~third-party,domain=bostonherald.com|denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
 .com/script.js$script,~third-party,domain=ctpost.com|expressnews.com|houstonchronicle.com|nhregister.com|sfchronicle.com|timesunion.com
@@ -296,8 +296,10 @@ popbitch.com##+js(ra, class, div[class*="-premium"])
 profi.de,topagrar.at,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style])
 profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
 profil.at##+js(ra, class|style, div.paywall)
-profil.at##div#cfs-paywall-container
+profil.at##div#cfs-paywall-container,div.consentOverlay
 psypost.org##+js(cookie-remover, issuem_lp)
+publishersweekly.com##+js(ra,class|style,div#contentdiv.loggedInOnly,stay)
+publishersweekly.com##div#contentdiv.loggedOutOnly
 realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
 revistaoeste.com##+js(rc, expandable, div.expandable)
 revistaoeste.com##+js(rc, hidden, div.hidden[data-url])
