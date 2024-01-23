@@ -35,7 +35,6 @@ aap.thestreet.com##+js(rc, is-paywalled, body.is-paywalled)
 abc##div.ev-em-modal,span.mega-superior
 abc.es##+js(ra, id, body#top)
 abc.es,amp.elperiodico.com,cmjornal.pt,eldiario.es,elpais.com,estadao.com.br,record.pt,sabado.pt##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
-abril.com.br##+js(ra, class|srcset, img.jetpack-lazy-image[srcset])
 accountingtoday.com,americanbanker.com,benefitnews.com,bondbuyer.com,dig-in.com,financial-planning.com,nationalmortgagenews.com##+js(set, contentGating.ungate, true)
 adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##+js(ra, subscriptions-section, [subscriptions-section="content"])
 adelaidenow.com.au,cairnspost.com.au,codesports.com.au,couriermail.com.au,dailytelegraph.com.au,geelongadvertiser.com.au,goldcoastbulletin.com.au,heraldsun.com.au,ntnews.com.au,theaustralian.com.au,thechronicle.com.au,themercury.com.au,townsvillebulletin.com.au,weeklytimesnow.com.au##[subscriptions-section="content-not-granted"]
@@ -175,6 +174,7 @@ etc.se##div[class$="-ad"]
 euobserver.com##+js(rc, show, div.membership-upsell.show)
 european-rubber-journal.com##+js(rc, truncated, div.truncated)
 european-rubber-journal.com##div.article-overlay,div.gradient
+exame.com##+js(set-local-storage-item, pywllcount, $remove$)
 expressandstar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
@@ -400,7 +400,7 @@ yorkshirepost.co.uk##+js(ra, class, div.premium)
 zvw.de##+js(rc, paywall, .paywall)
 zvw.de##.nfy-products-teaser,.nfy-banner
 ||20minutes.fr/v-ajax/subscribe-modal$xmlhttprequest,~third-party
-||abril.com.br/*/*-*-*-*$inline-script
+||abril.com.br/*/abril-paywall/$script,~third-party
 ||account.brandonsun.com/api/v*/auth/identify$xmlhttprequest,~third-party
 ||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
 ||ajc.com/prod/ajc/loader.min.js$script,~third-party
@@ -470,7 +470,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||ev.lavanguardia.com$xmlhttprequest,~third-party
 ||eviemagazine.com/api/trpc/post.paywall$xmlhttprequest,~third-party
 ||evolok.net^$third-party
-||exame.com/*/js/pywll-dyn.js$script,~third-party
 ||financialexpress.com/*/min/premiumStoryContent.js$script,~third-party
 ||flowerstreatment.com^$third-party
 ||folha.uol.com.br/paywall/js/$script,~third-party
@@ -492,6 +491,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||irishexaminer.com/pu_examiner/scripts/engage/$script,~third-party
 ||irishnews.com/*/js/bundle.js$script,~third-party
 ||irishnews.com/*/js/mpppaywall.js$script,~third-party
+||jornaldocomercio.com/*/json/paywall.json$xmlhttprequest,~third-party
 ||jpost.com/js/js_article.min.js$script,~third-party
 ||js.matheranalytics.com^$script,third-party
 ||js.pelcro.com^$script,third-party
@@ -527,10 +527,11 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||odt.co.nz/bwtw/scripts/tw.js$script,~third-party
 ||olytics.omeda.com^$third-party
 ||onecount.net^$third-party
+||opovo.com.br/*/js/auth/auth_new_menu.min.js$script,~third-party
 ||pasedigital.cl/API/User/Status$script,domain=australvaldivia.cl|mercuriovalpo.cl
 ||paywall.correiodopovo.com.br$script,~third-party
 ||paywall.fewcents.co/static/js/paywall.js
-||paywall.folha.uol.com.br^$script,~third-party
+||paywall.folha.uol.com.br^$script,xmlhttprequest,~third-party
 ||pebmed.com.br/wp-content/*/paywall/dist/js/app.js$script,~third-party
 ||philanthropy.com/script.js$script,~third-party
 ||piano.io/xbuilder/experience/execute$xmlhttprequest,third-party
