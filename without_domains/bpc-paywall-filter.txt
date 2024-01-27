@@ -14,7 +14,6 @@
 /\.vn\.at\/.+\/\d{4}\//$inline-script
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
-/magazine/page-*.js$script,~third-party,domain=haaretz.com|haaretz.co.il|themarker.com
 /paywall/evercookie_get.js$script,~third-party
 /shared-content/art/tncms/api/access.*.js$script,~third-party
 /sub/js/pc-offer-west.js$script,~third-party
@@ -296,6 +295,8 @@ odt.co.nz##+js(ra, property, div[property="content:encoded"])
 onet.pl##+js(cookie-remover, /^xbc/)
 paloaltoonline.com##+js(cookie-remover, /^/)
 philosophynow.org##+js(cookie-remover, /^/)
+piratewires.com##+js(ra, class, div[class*="article_articleRestricted_"], stay)
+piratewires.com##div[class^="fixedOverlay"]
 popbitch.com##+js(ra, class, div[class*="-premium"])
 profi.de,topagrar.com,wochenblatt.com##+js(ra, class|style, div.paywall-full-content[style])
 profi.de,wochenblatt.com##div.m-paywall__textFadeOut,div[id^="paymentprocess-"]
