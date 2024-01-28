@@ -174,7 +174,7 @@ euobserver.com##+js(rc, show, div.membership-upsell.show)
 european-rubber-journal.com##+js(rc, truncated, div.truncated)
 european-rubber-journal.com##div.article-overlay,div.gradient
 exame.com##+js(set-local-storage-item, pywllcount, $remove$)
-expressandstar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
+expressandstar.com,shropshirestar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
 fieldandstream.com##+js(ra, class, html[class])
 fieldandstream.com##div[class^="mailmunch-"]
 financialexpress.com##+js(rc, paywall, .paywall)
@@ -190,6 +190,7 @@ gadget.pico.tools##+js(json-prune, locked)
 gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##+js(cookie-remover, /__mtr$/)
 gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##div.MuiSnackbar-root
 groene.nl##+js(cookie-remover, rlist)
+haaretz.com,haaretz.co.il,themarker.com##+js(aeld, load, hblocked)
 harpers.org##+js(cookie-remover, hr_session)
 hcn.org##+js(ra, content, meta[name="UID"])
 heatmap.news##+js(cookie-remover, /^freePosts/)
@@ -324,7 +325,6 @@ scmp.com##+js(ra, class, div.paywalled-content)
 scmp.com##+js(ra, class, section[data-qa="ContentBody-ContentBodyContainer"][class], stay)
 scmp.com##div[data-qa*="AdSlot"],div.adblock-message
 scotsman.com##+js(ra, class, div.premium)
-shropshirestar.com##+js(set, window.Fusion.globalContent.paywallStatus, false)
 slideshare.net##+js(aopr, localStorage)
 slideshare.net##+js(rc, limit-overlay, .limit-overlay)
 sofrep.com##+js(cookie-remover, sofrep_news_ids)
@@ -348,6 +348,9 @@ strangematters.coop##+js(cookie-remover, pmpro_lpv_count)
 studocu.com##.page-content:style(filter: none !important; user-select: unset !important)
 studocu.com##.pf > :not(.page-content)
 studocu.com##button[data-test-selector^="preview-banner-"]:upward(#document-wrapper > div)
+study.com##+js(ra, class, div.faded-content)
+study.com##+js(ra, class, div.hidden[ng-non-bindable])
+study.com##div.article-cutoff-div
 sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##+js(rc, visible-premium, div.visible-premium)
 sudouest.fr,charentelibre.fr,larepubliquedespyrenees.fr##div.article-premium-footer,div.footer-premium,div.article-body-wrapper.visible-not-premium,div.pub,div.ph-easy-subscription
 suomensotilas.fi##+js(rc, epfl-pw-obscured, div.epfl-pw-obscured)
@@ -569,6 +572,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||theepochtimes.com/rules/get$xmlhttprequest,~third-party
 ||theglobeandmail.com/pf/dist/engine/react.js$script,~third-party
 ||theintercept.com/api/tinypass.min.js$script,~third-party
+||thenationalpulse.com/wp-content/*/assets/js/national-pulse.js$script,~third-party
 ||thenewatlantis.com/*/thenewatlantis/js/donate.js$script,~third-party
 ||thenewatlantis.com/*/thenewatlantis/js/gate.js$script,~third-party
 ||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,~third-party
