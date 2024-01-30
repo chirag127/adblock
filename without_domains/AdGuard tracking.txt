@@ -964,6 +964,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /w.gif?
 /w_js.php|$script,~third-party
 /watch.*.js?key=*&kw=*&refer=
+/webAnalytics/*$xmlhttprequest,script
 /webservices/remoteModulesTracker.php
 /webtrack.js
 /webtracking.min.js
@@ -1165,14 +1166,12 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||aolcdn.com/omniunih.js$domain=autoblog.com|autos.aol.com|engadget.com|mapquest.com|video.aol.com|www.aol.com
 @@||aolcdn.com/omniunih_int.js$domain=autoblog.com
 @@||aolcdn.com^*/beacon.min.js$domain=autoblog.com|dailyfinance.com
-@@||api-js.datadome.co/js/|$xmlhttprequest,domain=auth.garena.com
 @@||api.branch.io$app=com.zingat.emlak
 @@||api.branch.io/*/event^$app=com.banggood.client
 @@||api.branch.io/*/url$app=com.banggood.client
 @@||api.chartbeat.com^script,domain=financialpost.com|wcpo.com|couriermail.com.au|betabeat.com
 @@||api.curalate.com^$domain=potterybarn.com
-@@||api.cxense.com/document/search?$domain=itmedia.co.jp
-@@||api.cxense.com/document/search?$script,domain=tv-tokyo.co.jp
+@@||api.cxense.com/document/search?
 @@||api.cxense.com/persisted/execute$domain=nippon.com
 @@||api.cxense.com/public/widget/$domain=allgemeine-zeitung.de|buerstaedter-zeitung.de|lampertheimer-zeitung.de|echo-online.de|main-spitze.de|wiesbadener-kurier.de|wormser-zeitung.de|mittelhessen.de
 @@||api.cxense.com/public/widget/$domain=cdn.cxpublic.com
@@ -1610,8 +1609,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||datadoghq-browser-agent.com/datadog-rum-v*.js$domain=voici.fr|gala.fr
 @@||datadoghq-browser-agent.com/datadog-rum.js$domain=notonthehighstreet.com
 @@||datadoghq-browser-agent.com^$script,domain=hungryroot.com
-@@||datadome.co/js/$xmlhttprequest,domain=sso.garena.com
-@@||datadome.co/tags.js$domain=sso.garena.com
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=disney.*
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=fivethirtyeight.com
 @@||dcf.espn.com/TWDC-DTCI/prod/code/$script,domain=disney.*
@@ -2146,6 +2143,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$domain=buhitter.com
 @@||googletagmanager.com/gtm.js$domain=bunte.de|stiefelparadies.de
 @@||googletagmanager.com/gtm.js$domain=cabinet.planetakino.ua
+@@||googletagmanager.com/gtm.js$domain=caminteresse.fr
 @@||googletagmanager.com/gtm.js$domain=capital.fr
 @@||googletagmanager.com/gtm.js$domain=carsmile.pl
 @@||googletagmanager.com/gtm.js$domain=cashconverters.com.au
@@ -2209,6 +2207,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$domain=ilsecoloxix.it
 @@||googletagmanager.com/gtm.js$domain=iltalehti.fi
 @@||googletagmanager.com/gtm.js$domain=imgur.com
+@@||googletagmanager.com/gtm.js$domain=immobilier.lefigaro.fr
 @@||googletagmanager.com/gtm.js$domain=incehesap.com
 @@||googletagmanager.com/gtm.js$domain=independent.co.uk
 @@||googletagmanager.com/gtm.js$domain=info.lifecell.ua
@@ -2538,9 +2537,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||js.agkn.com/prod/v0/tag.js$domain=netd.com
 @@||js.appboycdn.com/web-sdk/*/appboy.min.js$domain=equinox.com
 @@||js.appboycdn.com/web-sdk/*/appboy.min.js$domain=learning.edx.org
-@@||js.datadome.co/tags.js$domain=account.samsung.com
-@@||js.datadome.co/tags.js$domain=auth.garena.com
-@@||js.datadome.co/tags.js^$domain=hermes.com
 @@||js.dmtry.com/channel.js$domain=zillow.com
 @@||js.monitor.azure.com/scripts/$script,domain=genya.it
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=mediastream.microsoft.com
@@ -33066,7 +33062,6 @@ znak.com##.relap
 ||api*.ipify.org/?format=
 ||api-cf.affirm.com/api/v*/session/touch_track
 ||api-esp.piano.io/onsite/recdata/id/
-||api-js.datadome.co/js/
 ||api-js.mixpanel.com/engage/?
 ||api-js.mixpanel.com/track/?
 ||api-onedio-lambda-production.onedio.com/srv/counters/
@@ -33991,8 +33986,6 @@ znak.com##.relap
 ||collect.feefo.com^$third-party
 ||collectfasttracks.com^$third-party
 ||collections.mp.microsoft.com/*/collections/query
-||collector-*.px-cdn.net^$third-party
-||collector-*.pxchk.net^$third-party
 ||collector.getyourguide.com^$third-party
 ||collector.hamsterix.
 ||collector.mediator.media^$third-party
@@ -34303,7 +34296,6 @@ znak.com##.relap
 ||databrain.com^$third-party
 ||datacaciques.com^$third-party
 ||datadoghq-browser-agent.com^$third-party
-||datadome.co^$third-party
 ||datafeedfile.com^$third-party
 ||datalytics.utair.io^$ping
 ||datam.com^$third-party
@@ -35672,6 +35664,7 @@ znak.com##.relap
 ||inews.name/top.php
 ||inferclick.com^$third-party
 ||infinigraph.com^$third-party
+||infinity-tracking.com^$third-party
 ||infinity-tracking.net^$third-party
 ||inflectionpointmedia.com^$third-party
 ||influ2.com/tracker?
@@ -35852,6 +35845,7 @@ znak.com##.relap
 ||jiankongbao.com^$third-party
 ||jianshu.com/asimov/ab_test/info$xmlhttprequest,redirect=nooptext,important
 ||jimdo.com/app/tracking/common/index/
+||jins.com/*/ga.js
 ||jirafe.com^$third-party
 ||jixie.io^$third-party
 ||joinmy.site^$all
@@ -36533,7 +36527,6 @@ znak.com##.relap
 ||myhome.nifty.com/column/js/tracking.js
 ||myhome.nifty.com/smp/js/trackPageview.js
 ||mynewcounter.com^$third-party
-||mynewsmedia.co/*/linkpage/ads_stats_controller.php
 ||myntelligence.com^$third-party
 ||myomnistar.com^$third-party
 ||mypagerank.net^$third-party
@@ -38641,6 +38634,7 @@ znak.com##.relap
 ||tracker.metricool.com^$third-party
 ||tracker.thinkermail.com^$third-party
 ||trackerhqu.com^$third-party
+||trackerscript.sqreemtech.com^$third-party
 ||trackersimulator.org^$third-party
 ||tracking-sap.frodx.com^$third-party
 ||tracking.adweb.co.kr^$third-party

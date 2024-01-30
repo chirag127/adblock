@@ -4,12 +4,12 @@
 .com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|rubbernews.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
 .com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
 .com/journey/compiler/build-*.js$script,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|wired.com
-.com/script.js$script,~third-party,domain=bostonherald.com|denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
-.com/script.js$script,~third-party,domain=ctpost.com|expressnews.com|houstonchronicle.com|nhregister.com|sfchronicle.com|timesunion.com
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
+.com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=bostonherald.com|denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
 .de/thenewsbar/static/pw.js$script,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
 .nl/_/zh/worker$xmlhttprequest,~third-party
+/[a-z]{1}\d{2,3}\.\w+\.(co(m|\.uk)|net|org)\/script\.js/$script,~third-party
 /\.(femmesdaujourdhui|flair|knack|levif|libelle)\.be\/.+\/((\w)+(\-)+){3,}/$inline-script
 /\.vn\.at\/.+\/\d{4}\//$inline-script
 /c/assets/pigeon.js$script,~third-party
@@ -190,7 +190,6 @@ gadget.pico.tools##+js(json-prune, locked)
 gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##+js(cookie-remover, /__mtr$/)
 gazzettadimodena.it,gazzettadireggio.it,iltirreno.it,lanuovaferrara.it,lanuovasardegna.it##div.MuiSnackbar-root
 groene.nl##+js(cookie-remover, rlist)
-haaretz.com,haaretz.co.il,themarker.com##+js(aeld, load, hblocked)
 harpers.org##+js(cookie-remover, hr_session)
 hcn.org##+js(ra, content, meta[name="UID"])
 heatmap.news##+js(cookie-remover, /^freePosts/)
@@ -440,7 +439,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||cdn.wyleex.com/lavoz/pw.min.js$script,domain=lavoz.com.ar
 ||cedscdn.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
 ||cedsdigital.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
-||chronicle.com/script.js$script,~third-party
 ||clarin.com/js/meter*.js$script,~third-party
 ||clicrbs.com.br/paywall-api/count/$xmlhttprequest,~third-party
 ||cloudfront.net/embed/widget/subx*.js$script,domain=curbed.com|grubstreet.com|nymag.com|thecut.com|vulture.com
@@ -523,7 +521,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||newbostonpost.com/*/paywall/js/main.js$script,~third-party
 ||newsmemory.com?meter$third-party
 ||newstatesman.com/*/nsmg-evolok-paywall/*.js$script,~third-party
-||nola.com/script.js$script,~third-party
 ||nrc.nl/paywall-api/api/zephr$xmlhttprequest,~third-party
 ||nybooks.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
 ||nytimes.com/graphql/v2$xmlhttprequest,~third-party
@@ -537,7 +534,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||paywall.fewcents.co/static/js/paywall.js
 ||paywall.folha.uol.com.br^$script,xmlhttprequest,~third-party
 ||pebmed.com.br/wp-content/*/paywall/dist/js/app.js$script,~third-party
-||philanthropy.com/script.js$script,~third-party
 ||piano.io/xbuilder/experience/execute$xmlhttprequest,third-party
 ||poool.fr^$third-party
 ||qiota.com^$xmlhttprequest,third-party
@@ -556,7 +552,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||smartwall.theglobeandmail.com^$xmlhttprequest,~third-party
 ||spectrejournal.com/wp-content/plugins/elementor/*/dialog.min.js$script,~third-party
 ||spglobal.com$inline-script
-||spglobal.com/script.js$script,~third-party
 ||steadyhq.com^$script,third-party
 ||subscription-static-global.nhst.tech$script,domain=europower.no|fiskeribladet.no|intrafish.com|intrafish.no|rechargenews.com|tradewindsnews.com|upstreamonline.com
 ||subscriptioninsider.com$inline-script
@@ -565,7 +560,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||temptation.*/temptation.js$script,~third-party,domain=ad.nl|bd.nl|bndestem.nl|destentor.nl|ed.nl|gelderlander.nl|pzc.nl|tubantia.nl
 ||temptation.*/temptation.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
 ||texasmonthly.com/script.js$script,~third-party
-||theadvocate.com/script.js$script,~third-party
 ||theartnewspaper.com/_next/static/chunks/pages/access-allowed-*.js$script,~third-party
 ||theatlantic.com/_next/static/chunks/pages/*/archive/$script,~third-party
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/$script,~third-party
@@ -578,7 +572,6 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,~third-party
 ||timeshighereducation.com/sites/default/files/*/js__*.js$script,~third-party
 ||topagrar.com/*/news/$inline-script
-||tribdss.com^$third-party
 ||tuttosport.com/_next/static/chunks/pages/news/%5B*.js$script,~third-party
 ||wallkit.net/js/$script,third-party
 ||washingtonpost.com/tetro/metering/evaluate$xmlhttprequest,~third-party
