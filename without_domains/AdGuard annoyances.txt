@@ -3045,6 +3045,7 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=idmobile.co.uk
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=insideevs.*
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=larousse.fr
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=mcdonalds.com
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=mtvuutiset.fi
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=sn.at
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=tripadvisor.*
@@ -3075,7 +3076,6 @@ $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 @@||cdn.cookielaw.org^$domain=reuters.com
 @@||cdn.cookielaw.org^$domain=rockpapershotgun.com
 @@||cdn.cookielaw.org^$domain=rp-online.de
-@@||cdn.cookielaw.org^$domain=rtlxl.nl
 @@||cdn.cookielaw.org^$domain=signature.mcdonalds.de
 @@||cdn.cookielaw.org^$domain=surfer.com
 @@||cdn.cookielaw.org^$domain=tvn24.pl
@@ -7945,7 +7945,7 @@ binekarac.vw.com.tr##.vw_js_cookie_eu_policy
 bing.com###b_context #waitListDefault
 bing.com###b_notificationContainer_bop
 bing.com###b_opalpers
-bing.com###b_results > li.b_ans.b_top
+bing.com###b_results > li.b_top:has(> div#encycloCanvas > div.en_wrapNext > div.ency_imageContainer > a[href^="https://www.microsoft.com/rewards/spotify-premium-offer?"])
 bing.com###bnp_hfly
 bing.com###bnp_rich_div
 bing.com###bnp_ttc_div
@@ -8948,9 +8948,6 @@ bremerhaven.de#$#.cookie-banner ~ div.modal-backdrop { display: none !important;
 bremerhaven.de#$#.cookie-banner:not(body):not(html) { display: none !important; }
 bremerhaven.de#$#body { overflow: auto !important; }
 bremerhaven.de#@#.cookie-banner:not(body):not(html)
-bremischevb.de#$#.cookie-consent-is-active { position: static !important; }
-bremischevb.de#$#.darken-layer { display: none !important; }
-bremischevb.de#$#.lightbox--cookie-consent { display: none !important; }
 brestcity.com##.BlockR2 td > a[href="https://t.me/brestcity"]
 brestcity.com##.BlockR2 td > a[href="https://www.instagram.com/brestcity_news/"]
 brestcity.com#%#AG_onLoad(function(){var el = document.querySelector('.pageviews-placeholder + br');if(el&&el.nextSibling&&el.nextSibling.textContent.includes('Подпишитесь на')){el.nextSibling.remove();}});
@@ -9511,6 +9508,7 @@ canalplus.com#%#//scriptlet('set-cookie', 'statsAllowed', 'false')
 canalpluskuchnia.pl#?#aside.is--lockedPosition:has(> .m-CookieBanner)
 canaltech.com.br##.lead-ofertas
 canarias7.es##.voc-select-tooltip
+canarias7.es#%#//scriptlet('trusted-click-element', '#redesignCmpWrapper a[href^="https://www.canarias7.es/"]')
 canarymedia.com##aside.col-span-12 > .h-full > div[class*="bg-yellow-"]:has(> .hs-sidebar-form)
 canberratimes.com.au###metered-banner
 canberratimes.com.au###story-body + div.w-full > div[class^="mx-auto max-w"]
@@ -10087,9 +10085,7 @@ chosun.com#$#body { position: static !important; }
 chosun.com#$#div[class^="paywall-"] { display: none !important; }
 chplatan.pl#%#//scriptlet('set-local-storage-item', 'cookies', 'true')
 chplatan.pl#%#//scriptlet('set-local-storage-item', 'enableAllCookies', 'false')
-christianbook.com#$?#body > style { remove: true; }
-christianbook.com#%#AG_onLoad(function() { var el=document.querySelector('button[id="cookie-consent"]'); if(el) el.click(); });
-christianbook.com#?##cookie
+christianbook.com#%#//scriptlet('trusted-click-element', '#cookie-consent')
 christianbook.com#@##cookie-consent
 christianbook.com#@##cookie-content
 christianity.com##.newsletter-390
@@ -10414,7 +10410,6 @@ cmoa.jp##.cam_term_area
 cmp-cdn.golem.de#%#//scriptlet('trusted-click-element', 'button[title^="Zustimmen"]')
 cmp-consent-tool.privacymanager.io#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button#save div.action-wrapper'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 cmp-sp.maz-online.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var b=new MutationObserver(function(){var c=document.querySelector('button[title^="Einstellungen"]');setTimeout(function(){var a=document.querySelectorAll(".page-action");a[0]&&a[0].click()},300);setTimeout(function(){var a=document.querySelector(".is-checked");a&&(a.click(),(a=document.querySelector('button[title^="Speichern"]'))&&a.click())},300);c&&(b.disconnect(),c.click())});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
-cmp-sp.reisereporter.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,1,0,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelectorAll('.page-action'); c[0]&&c[0].click();},300);setTimeout(function(){var d=document.querySelector('.is-checked'); d.click();},800); var f=document.querySelector('button.no-children[path="\[0,2,0,0\]"]'); setTimeout(function(){f&&f.click();},500);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 cmp-sp.rnd.de#%#//scriptlet('trusted-click-element', 'button[aria-label*="und weiter"]')
 cmp-sp.waz-online.de#%#//scriptlet('trusted-click-element', 'button[title="Akzeptieren und weiter"]')
 cmp.bike-bild.de,cmp.autobild.de#%#//scriptlet('trusted-click-element', 'button[title="Alle akzeptieren"]')
@@ -10422,15 +10417,11 @@ cmp.bunte.de,cmp.bz-berlin.de,cmp.fitbook.de,sourcepoint.n-tv.de#%#//scriptlet('
 cmp.chip.de#%#//scriptlet('trusted-click-element', '.sp_choice_type_9:not(.last-focusable-el)')
 cmp.computerbild.de,cmp-sp.siegener-zeitung.de,cmp-sp.sportbuzzer.de#%#//scriptlet('trusted-click-element', 'button[title^="Alle akzeptieren"]')
 cmp.fitforfun.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button[title="Akzeptieren"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
-cmp.fitforfun.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){var b=document.querySelector('button[path="[0,3,0]"]'),c=document.querySelector('div[aria-label="Anbieter"]'),e=document.querySelector('.pm-type-toggle > div:nth-child(2)');b&&b.click();c&&c.click();setTimeout(function(){var d=document.querySelectorAll('span.off');d.forEach(function(d){d&&d.click()}),1E4});e&&e.click();var f=document.querySelectorAll('span.off');f.forEach(function(f){f&&f.click()});var a=document.querySelector('button[path="[0,3]"]');a&&a.click()});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cmp.focus.de,spcmp.woxikon.de#%#//scriptlet('trusted-click-element', 'button[title="Akzeptieren"]')
 cmp.motorsport-magazin.com#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[title="Consent & continue"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cmp.petbook.de,cmp.travelbook.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {setTimeout(function() {var g=document.querySelector('button[title="Einstellungen oder ablehnen" i]');b.disconnect();g&&g.click();},800);setTimeout(function(){var c = document.querySelectorAll(".page-action"); c[0]&&c[0].click();}, 300); setTimeout(function(){ var d = document.querySelectorAll(".is-checked"); d.forEach(function(d) { d.click();});}, 300); setTimeout(function() {var e = document.querySelector("button[title='ablehnen wie ausgewählt' i]");e&&e.click();}, 300);});b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
-cmp.tag24.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1,0\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtiges Interesse"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('.checked'),f=document.querySelector('button[aria-label="Einstellung speichern"]');d.forEach(function(){d.click();});f&&f.click()},800)});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-cmp.techbook.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button[title="Alle akzeptieren"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 cmp.tvspielfilm.de,consent.spielaffe.de,consent.giga.de,tvtoday.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Akzeptieren" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cmp.utopia.de#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector('button[title="Einstellungen"]'),c=document.querySelector('button[aria-label="Auswahl speichern"]');b&&b.click();c&&(a.disconnect(),setTimeout(function(){c.click()},1E3))});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
-cmp.utopia.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Zustimmen" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cmp.vg.no#%#//scriptlet('trusted-click-element', '.btns-container > button[title="Tilpass"]')
 cmp.vg.no#%#//scriptlet('trusted-click-element', '.message-row > button[title="Avvis alle"]', '', '2000')
 cmp2.bild.de#%#AG_onLoad(function(){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title="Alle akzeptieren"]'); b&&b.click();},1E3); });g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},2E4)});
@@ -10438,11 +10429,6 @@ cmp2.pcwelt.de,consent2.ksta.de#%#AG_onLoad(function(){if(window.location.href.i
 cmpsp.autobild.es#%#//scriptlet('trusted-click-element', 'button[title^="Aceptar"]')
 cmpsp.eurogamer.de,privacy.lecker.de,privacy.caravaning.de#%#//scriptlet('trusted-click-element', 'button[aria-label="Akzeptieren und weiter"]')
 cmpsp.vg247.com,cmpsp.eurogamer.net#%#//scriptlet('trusted-click-element', 'button[title^="Accept"]')
-cmpv2.berliner-kurier.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[title="Zustimmen"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-cmpv2.hitc.com#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[aria-label^="AGREE"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-cmpv2.hitc.com,cmpv2.dualshockers.com#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[title^="Agree" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-cmpv2.networkworld.com#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[title^="I Agree"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-cmpv2.standard.co.uk,cmpv2.independent.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('.message-component > button[title^="Agree" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cmpv2.techadvisor.com#%#//scriptlet('trusted-click-element', '.message-component > button[aria-label^="I Agree"]')
 cn.bing.com###id_qrcode_popup_positioner
 cn.kayak.com#$#body { overflow: auto !important; }
@@ -10788,7 +10774,7 @@ computer.org##.generalContent p[style^="text-align: center; color:"] > a[href^="
 computer.org##.landingHeaderActions > a[href*="/subscribe-digital"]
 computer.org#?#.landingHeaderActions > a[href*="/subscribe-digital"]:only-child:upward(1)
 computerbase.de##.pro-box
-computerbase.de#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed") || -1==document.cookie.indexOf("consent") ){var a=new MutationObserver(function(){var b=document.querySelector("dialog.js-consent"),d=document.querySelector("body.consent-dialog-open");c=document.querySelector(".consent__options .js-consent-accept-button");b&&d&&c&&(a.disconnect(),c.click(),d.classList.remove("accept-cookies-button"),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+computerbase.de#%#//scriptlet('trusted-click-element', '#cookie-consent-button')
 computerbild.de###newsletter-teaser-widget
 computerbild.de##.newsletterteaser
 computerbild.de##div[id^="newsletterOverlay"]
@@ -10854,7 +10840,6 @@ conseil-national.medecin.fr#%#//scriptlet('remove-attr', 'style', 'html[style]')
 consent-cdn.zeit.de#%#(function(){if(!document.cookie.includes('euconsent-v2') || window.location.href.includes('consent-cdn.zeit.de')){var a=new MutationObserver(function(){var b=document.querySelector('button.message-button');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}})();
 consent.apotheken-umschau.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title="Ich stimme allem zu"]');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 consent.faz.net#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title="EINVERSTANDEN"]');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-consent.faz.net,consent-cdn.sueddeutsche.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var c=new MutationObserver(function(){var a=document.querySelector('button[title="Einstellungen"i]:not([class*="-hidden"])'),b=document.querySelector('button[title="Auswahl Speichern" i]');a&&a.click();b&&b.click()});c.observe(document,{childList:!0,subtree:!0});setTimeout(function(){c.disconnect()},1E4)}});
 consent.google.*#%#AG_onLoad(function(){if(window.location.href.includes("consent.google.")){var a=document.querySelector('form[action^="https://consent.google."][action$="/s"]')||document.querySelector('form[action^="https://consent.google."][action$="/save"]');if(a)a.submit();else{var b=new MutationObserver(function(){a&&(b.disconnect(),a.submit())});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}}});
 consent.helpster.de,baseendpoint.stern.de,baseendpoint.urbia.de,cmptcf2.rheinpfalz.de,cmp-sp.paz-online.de,cmp-sp.ln-online.de,baseendpoint.schoener-wohnen.de,baseendpoint.gala.de,sourcepoint.rtl2.de,cmp-sp.sn-online.de,cmp-sp.goettinger-tageblatt.de,cmp-sp.ostsee-zeitung.de,cmp-sp.dnn.de,cmp-sp.sportbuzzer.de,cmp-sp.rnd.de,cmp-sp.haz.de#%#//scriptlet('trusted-click-element', 'button[title^="Zustimmen"], button[title^="Alle akzeptieren" i]')
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
@@ -11866,6 +11851,7 @@ dedeman.ro##.cookie-bar-wrap
 dedeman.ro##.cookies-notification-bar
 dedicatedbrand.com##.modal--newsletter
 deeeep.io###play-store-container
+deepbits.com,webtv.sk,teksavvy.com,info.cz,figliedisancamillo.it,nzip.cz,packtpub.com,auxologico.it,reteimprese.it,ininal.com,wasgehtapp.de,stocksy.com,flowforge.com,zeno.fm,spielregeln-spielanleitungen.de,boardgamegeek.com###cc--main
 deepdotweb.com##.feedburner-email-subscription
 deepfakeporn.net##.notice
 deepfakeporn.net##.sponsor
@@ -13210,7 +13196,6 @@ e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,i.pl,stro
 e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,i.pl,stronazdrowia.pl,naszahistoria.pl,regiodom.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl##.atomsVideoPlayerDailymotion.js-sticky
 e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,i.pl,stronazdrowia.pl,naszahistoria.pl,regiodom.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl##.dailymotion-player.js-sticky
 e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,i.pl,stronazdrowia.pl,naszahistoria.pl,regiodom.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl##.video > .youtube.js-sticky
-e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,stronazdrowia.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gra.pl,gs24.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var b=new MutationObserver(function(){if("object"===typeof Didomi){var a,c=document.querySelector('button#didomi-notice-agree-button');c&&(null===(a=Didomi)||void 0===a?0:a.setUserAgreeToAll)&&(b.disconnect(),c.click())}});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,stronazdrowia.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gratka.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl###cross-dialog
 e-ogrodek.pl,gra.pl,stronakuchni.pl,stronapodrozy.pl,strefaedukacji.pl,stronazdrowia.pl,naszahistoria.pl,regiodom.pl,dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gra.pl,gs24.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl#$#html > body.didomi-popup-open { overflow: auto !important; }
 e-ohaka.com##.blk_cta
@@ -13609,7 +13594,6 @@ eiga.com###video_ad
 eiga.com##.area-unext
 eiga.com##.cmnBnrBox
 eiga.com##.header-pure-banner
-eigene-ip.de#%#AG_onLoad(function(){if(!document.cookie.includes("consent")){var a=document.querySelector(".flex > button#accept");a&&a.click()}});
 eigo.plus###text-21
 eigo.plus###text-27
 eigo.plus###widget-fixed-footer
@@ -14294,7 +14278,7 @@ etsy.com###web2app-drawer
 etsy.com###web2app-shophome
 etsy.com##div[data-etsy-promo-cookie-expires]
 etsy.com##div[data-gdpr-consent-prompt]
-etsy.com#%#AG_onLoad(function(){setTimeout(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=document.querySelector("button[data-gdpr-single-choice-accept]");a&&a.click()}},300);});
+etsy.com#%#//scriptlet('trusted-click-element', 'button[data-gdpr-single-choice-accept]', '', '300')
 etsy.com#?#.responsive-listing-grid > li:has( > div > a div > .ad-iindicator)
 ettoday.net##.et_push_notification
 ettoday.net#?#.inner > div.block:has(> div.sidebar-hot-express)
@@ -15721,7 +15705,6 @@ forklog.com##.terms_popup
 forklog.com##div[class^="subscribe_blk"]
 formiche.net##.wrapallwowpopup
 forms.app#%#//scriptlet('trusted-set-local-storage-item', 'lastOpenedPopup-newYears', '$currentDate$')
-formula1.com#%#AG_onLoad(function(){if(!document.cookie.includes("cmapi_cookie_privacy")){var a=new MutationObserver(function(){var b=document.querySelector("#cookie-banner"),c=document.querySelector("#cookie-banner button#truste-consent-button");b&&c&&(a.disconnect(),b.style="display: none !important;",c.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 formula1.com,amp.n-tv.de###cookie-banner
 formulare-bfinv.de###datenschutz
 formulatv.com##.share_email
@@ -16717,7 +16700,6 @@ gdetraffic.com##.post-footer
 gdfreak.xyz#%#//scriptlet("adjust-setInterval", "sec--", "", "0.02")
 gdpi.hitbullseye.com##.Ash-Img-popup
 gdpi.hitbullseye.com##.header_add
-gdpr-consent-tool.privacymanager.io#%#AG_onLoad(function(){var c=/^https?:\/\/(www\.)?(omroepwest\.nl|wienerin\.at)\//.test(document.referrer);if(window.self!==window.top&&c){var a=new MutationObserver(function(){var b=document.querySelector("a.accept-all");b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 gdpr-consent-tool.privacymanager.io#%#AG_onLoad(function(){var c=/^https?:\/\/(www\.)?weeronline\.nl\//.test(document.referrer);if(window.self!==window.top&&c){var a=new MutationObserver(function(){var b=document.querySelector('button.action-button[aria-label^="Accepteer alle"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 gds.it###oggiinedicola
 ge-soku.com###custom_html-35
@@ -16883,7 +16865,6 @@ gentosha-go.com##.side-banner
 gentosha-go.com##img[src^="https://ggo.ismcdn.jp/common/ggo/images/v1/mailmagazine-banner-blue"]
 gentosha-go.com#?#article ~ div[style]#fortop:contains(メルマガ会員)
 gentside.com,bold.dk,saechsische.de,schwarzwaelder-bote.de#%#//scriptlet('remove-class', 'sp-message-open', 'html')
-gentside.com,consent-manager.ft.com,cmp.chip.de,cmpv2.pcworld.com,baseendpoint.brigitte.de,thepopverse.com,cmpv2.netdoktor.ch,cmp.videogameschronicle.com,cmp.svd.se,cmpsp.gamesindustry.biz,cmp.omni.se,lbc.co.uk,eurogamer.pl,cmpsp.computerhoy.com,cmp.dpgmedia.be,consent.yorkshirepost.co.uk,stuttgarter-nachrichten.de,consent.formula1.com,sp-spiegel-de.spiegel.de,sourcepoint.tvnow.de,privacy.menshealth.de,baseendpoint.urbia.de,cmp.utopia.de,baseendpoint.vip.de,cdn.privacy-mgmt.com,cmp-sp.lvz.de,cmp2.macwelt.de,cmp2.pcwelt.de,cmp.travelbook.de,cmp.petbook.de,consent.gamingbible.com#%#//scriptlet('trusted-click-element', 'button.sp_choice_type_11')
 gentside.com,maxisciences.com##.invite-popin#newsletter-invite
 gentside.de##body .post-actions > .button-subscribe
 genuineactivator.com,lapandilladelarejilla.es#$?#head > style:contains(.unselectable) { remove: true; }
@@ -17275,10 +17256,9 @@ gmanetwork.com##.ivs-floating-widget
 gmod.fusion-rp.ru##.uix_welcomeSection
 gmotech.jp###bannerParts
 gmx.at,gmx.net,web.de##atl-third-party-dialog
-gmx.ch,plus.gmx.at,plus.gmx.net,plus.web.de#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector("button.close-layer");b && b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 gmx.co.uk#@##onetrust-consent-sdk
-gmx.co.uk,plus.mail.com,plus.gmx.com#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector("button#onetrust-pc-btn-handler");b && b.click(); setTimeout(function() { var c = document.querySelector("button.save-preference-btn-handler.onetrust-close-btn-handler"); c&& c.click();}, 300);});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 gmx.com#@##onetrust-consent-sdk
+gmx.com,plus.mail.com,hollywoodreporter.com,bonava.lv,eu.patagonia.com,metro.tv,discoverychannel.pl,tlcpolska.pl,tvnstyle.pl,tvn7.pl,tvnturbo.pl,tvnfabula.pl,hgtv.pl,foodnetwork.pl,travelchanneltv.pl,ttv.pl,kanald.ro,timeextension.com,purexbox.com,pushsquare.com,mytim.tim.it,everyeye.it,realsimple.com,eatingwell.com,motor1.com,larousse.fr,giantbomb.com,mtvuutiset.fi,tvnturbo.pl,elle.com,a1.ro,authentication.nutmeg.com#%#//scriptlet('trusted-click-element', '#onetrust-accept-btn-handler')
 gmx.com,truma.com,gmx.at##.mod-cookielayer
 gmx.net###promoline
 gmx.net###topper
@@ -17292,7 +17272,6 @@ gnavi.co.jp###js-app
 gnavi.co.jp##.hatena-module-body .hatena-fotolife[alt][width]
 gnavi.co.jp##.p-appli
 gnavi.co.jp##.under-pager-edit-area a[href^="https://play.google.com/store"]
-gnc.com,movavi.com##.privacy-policy-popup
 gns3.com#%#//scriptlet('set-local-storage-item', 'user-has-accepted-cookies', 'true')
 go.chatwork.com##.floating-banner
 go.cnn.com##.cnn-toasts > li[ng-repeat="toast in toasts track by $index"]
@@ -17651,7 +17630,6 @@ gptgo.ai##.main-page-wrapper > center > a[href*="apps"]
 gptgo.ai#?#.results-content > div.chatgpt > center > a[href*="apps"]
 gptoday.net##.webpush_popup
 gputracker.eu#%#//scriptlet("abort-current-inline-script", "$", "can_show_ads")
-gq-magazine.co.uk#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[id="onetrust-accept-btn-handler"]'); if(el) { el.click(); } }, 800); });
 gq-magazine.co.uk#@##onetrust-consent-sdk
 gq.com##.consumer-marketing-unit--cm-footer
 gq.com##.journey-unit__container > div[class^="InContentWrapper"]
@@ -18471,7 +18449,6 @@ hidemy.name,uprightpose.com###gdpr-block
 hidemyna.me#$##top-menu { top: 0px!important; }
 hidemyna.me#$#.main-download-popup { display: none!important; }
 hidemyna.me#$?##content-section > header:not(:has(> *)) { display: none!important; }
-hideout.co#%#//scriptlet('trusted-click-element', '#qc-cmp2-container button[mode="primary"]')
 hidive.com###msgSlideUpBG
 hidive.com###siteMsgSlideUpBG
 hidromek.com.tr##.cookie-notification-es
@@ -18672,7 +18649,6 @@ hollywoodmask.com###newletter-popup
 hollywoodreporter.com##.email-subscribe-holder
 hollywoodreporter.com##div[class="jw-wrapper jw-reset"][style="will-change: auto; width: 100%; max-width: 400px;"]
 hollywoodreporter.com#@##onetrust-consent-sdk
-hollywoodreporter.com,bonava.lv,eu.patagonia.com,metro.tv,discoverychannel.pl,tlcpolska.pl,tvnstyle.pl,tvn7.pl,tvnturbo.pl,tvnfabula.pl,hgtv.pl,foodnetwork.pl,travelchanneltv.pl,ttv.pl,kanald.ro,timeextension.com,purexbox.com,pushsquare.com,mytim.tim.it,everyeye.it,realsimple.com,eatingwell.com,motor1.com,larousse.fr,giantbomb.com,mtvuutiset.fi,tvnturbo.pl,elle.com,a1.ro,authentication.nutmeg.com#%#//scriptlet('trusted-click-element', '#onetrust-accept-btn-handler')
 holod.media###engb
 holod.media##.nl-inline
 holod.media##.support-block
@@ -19635,7 +19611,7 @@ inebrya.it###pett_cookie_banner
 inews.co.uk###piano-inline-footer
 inews.co.uk##.inews__email-signup
 inews.co.uk##div[data-project="mol-fe-cmp"] > div[class^="tooltip"]
-inews.co.uk#%#AG_onLoad(function() {var g = new MutationObserver(function() {var b = document.querySelector("button.level1PrimaryButton-0-0-5");b && (b.click(), g.disconnect())});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 2E4)});
+inews.co.uk#%#//scriptlet('trusted-click-element', 'button.level1PrimaryButton-0-0-4')
 inews.hket.com##.subscription-box-background
 inews.hket.com##p > a[href^="https://dynamic.hket.com/article/Rbkv"] > span
 inews.id##.box-gnews
@@ -20726,7 +20702,6 @@ jobs.ch#?#div[class*="CookieBanner__"]:only-child:upward(1)
 jobs.concentrix.com,careers.microsoft.com,footlocker.com##.ph-cookie-popup-v2-default-default
 jobs.cz,prace.cz#$##cc_div { display: none !important; }
 jobs.cz,prace.cz#$#html.force--consent.show--consent:not(#style_important) { overflow: auto !important; }
-jobs.golem.de#%#AG_onLoad(function() {if (!document.cookie.includes("jwconsent")) {var g = new MutationObserver(function() {var b = document.querySelector('span.jwtpl-jmpt-btCookieNoticeAgreeAll');b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 jobseeker.com#%#//scriptlet('set-cookie-reload', 'cookieConsentGiven', '1')
 jobthai.com#%#//scriptlet('set-local-storage-item', 'website-visit-date', '1')
 jobup.ch##div[aria-controls="job-ad"] > div[class^="Div-sc-"]:has(> div#job_alert_switch-trigger)
@@ -22239,6 +22214,7 @@ lascimmiapensa.com##.brid-sticky
 lasestrellas.tv#%#//scriptlet('set-cookie', '_tvsPrivacy', 'true')
 lasprovincias.es##.voc-animated-modal-bottom.voc-animated-modal-bottom--bg-onplus
 lasprovincias.es#@##didomi-notice
+lasprovincias.es,programme-television.org,cnews.fr,boursorama.com,marianne.net,ouest-france.fr,jeanmarcmorandini.com,publicsenat.fr,dna.fr,bfmtv.com,sudinfo.be,europe1.fr,public.fr,rtl.be,rfi.fr,kurier.at,telegraaf.nl,marmiton.org,reviewingthebrew.com,jaysjournal.com,leboncoin.fr,engadget.com,reignoftroy.com,actu.fr,elconfidencial.com,rtl.lu#%#//scriptlet('trusted-click-element', '#didomi-notice-agree-button')
 lass-dich-nieder.de###id-cookie-layer
 last.fm##.chartlist-break
 last.fm##.join-cta.link-block
@@ -24310,7 +24286,6 @@ markushaenni.com#$#body.show-dpbanner { overflow: auto !important; }
 marmaray.gov.tr#@##cookie-law-info-bar
 marmiton.org#?#div[data-ad-sticky-reference] > div[class^="RCP__sc-"] > div[class^="RCP__sc-"]:contains(ou sur Amazon.fr)
 marmiton.org#?#div[data-ad-sticky-reference] > div[class^="RCP__sc-"] > div[class^="RCP__sc-"]:has(> div.MuiPaper-rounded > button:contains(Commandez vos ingrédients))
-marmiton.org,reviewingthebrew.com,jaysjournal.com,leboncoin.fr,engadget.com,reignoftroy.com,actu.fr,elconfidencial.com,rtl.lu#%#//scriptlet('trusted-click-element', '#didomi-notice-agree-button')
 marquiz.ru#?#.w-layout-grid > div[id]:has(> a.go-to-telegram)
 marriedgames.com.br##.gdpr_approve
 marriedgames.com.br##.mdl_container
@@ -24974,7 +24949,6 @@ meshinews.blog.jp##div[class^="mainrss"]
 mesosphere.com##.subscribe-post.js-subscriber-cookie
 mess-y.com,biz-journal.jp##.sns_apuri > a[href="http://www.cyzo.com/i/cyzoapp/"]
 messagebird.com##div[data-framer-name="First Visit"]
-messenger.com#%#AG_onLoad(function(){setTimeout(function(){if(document.querySelector("body.hasCookieBanner")&&""===document.cookie){var a=document.querySelector('body.hasCookieBanner div[class][data-testid="cookie-policy-dialog"] button[data-cookiebanner="accept_button"]');a&&a.click()}},300)});
 messenger.com,facebook.com#%#//scriptlet("remove-class", "_31e", "body > ._li")
 mesta.net#@##onetrust-consent-sdk
 mesta.net,ryobitools.eu#%#AG_onLoad(function(){if(!document.cookie.includes('OptanonAlertBoxClosed')){var g=new MutationObserver(function(){var b=document.querySelector('button[id="onetrust-accept-btn-handler"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
@@ -29725,13 +29699,14 @@ pluralsight.com###site-promo
 pluralsight.com##.cookie-notification-wrapper
 plus-plus.tv#%#//scriptlet('remove-class', 'show-cookies', 'body#page-plusplus')
 plus.espn.com##.popup-container
-plus.gmx.fr#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {setTimeout(function(){var b = document.querySelector("button.banner-close-button");b && b.click();},500);});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 4E4)}});
+plus.gmx.net#%#//scriptlet('trusted-click-element', '#save-all-conditionally')
 plus.net##.cf__main-block
 plus.net#%#document.cookie = 'storagePreferences={"necessary":true,"anonymous analytics":false,"performance":false,"essential functional":true,"identifiable analytics":false,"tailoring":false,"non-essential functional":true,"marketing":false};path=/;domain=.plus.net;expires=' + Date() + ';';
 plus.nhk.jp##.hls-player_message
 plus.pl###rodo-popup-container
 plus.pl##.modal-overlay
 plus.pl##app-root div.shellContainer.showit
+plus.web.de,plus.gmx.net#%#//scriptlet('trusted-click-element', '#save-all-pur')
 plus500.com###cookiesPolicyDisclaimer
 plus500.com#$##cookiesModal { display: none !important; }
 plus500.com#$#.modal-backdrop { display: none !important; }
@@ -31825,7 +31800,6 @@ reyher.de,treppenarte.de,alphatec-systeme.de,hornbach.at,hornbach.ch,hornbach.de
 reyna-anime.com#%#!function(){if(-1<window.location.href.indexOf("/#")){var a=location.href.split("/#");if(a&&a[1])try{window.location=atob(a[1])}catch(b){}}}();
 rezence.com#%#//scriptlet("adjust-setInterval", "counter", "2000", "0.02")
 rfc-partners.co.jp,jp-news.mercari.com,magazine.steadyjapan.com##.bfb_imgBanner
-rfi.fr,kurier.at,telegraaf.nl#%#//scriptlet('trusted-click-element', '#didomi-notice-agree-button')
 rfs.ru##.cookie-notation
 rg.ru##.b-favourites-sources__list
 rg.ru##.b-subs-ads
@@ -32135,25 +32109,19 @@ rtbf.be#?#.rs_skip > div.container > div.rounded:contains(newsletter)
 rtde.life##.notification-bell
 rtinsights.com##.subscribe-sidebar
 rtl-living.de,rtl.de##.dnt__container
-rtl.be,canarias7.es,index.hr,public.fr,europe1.fr,sudinfo.be,bfmtv.com,dna.fr,publicsenat.fr,jeanmarcmorandini.com,ouest-france.fr,marianne.net,boursorama.com,cnews.fr,programme-television.org,dn.se,lasprovincias.es#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var b=new MutationObserver(function(){if("object"===typeof Didomi){var a,c=document.querySelector('button#didomi-notice-agree-button');c&&(null===(a=Didomi)||void 0===a?0:a.setUserAgreeToAll)&&(b.disconnect(),c.click())}});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
-rtl.de#$#div[id^="sp_message_"] { display: none !important; }
-rtl.de#$#html.sp-message-open { overflow: visible !important; position: static !important; margin-top: 0!important; }
-rtl.de#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[title="Alle akzeptieren"]'); if(el) { el.click(); } }, 1000); });
 rtl.de#?#div[class]:has( > .placeholder + div[class] > .opinary-widget-embed)
 rtl.fr##.cnil-banner-v2
 rtl.hr###sdgdpr_modal_wrapper
 rtl.hr,diggysadventure.com###gdpr-modal
 rtl.hu##.adblock-confirm
 rtl.hu##.newsletter-modal
-rtl.nl,rtlxl.nl##div#rtl-cookie-notification
+rtl.nl##div#rtl-cookie-notification
 rtl2.de#$#.campaign-overlay { display: none !important; }
 rtl2.de#$#body { overflow: auto !important; }
 rtlmost.hu#%#(function(){try{"undefined"==typeof localStorage||localStorage.getItem("termsUnderstood")||localStorage.setItem("gdprUserHasInteracted",Date.now())}catch(a){}})();
 rtlnieuws.nl##.adb-warning
 rtlplay.be#@##onetrust-banner-sdk
 rtlplay.be#@##onetrust-consent-sdk
-rtlxl.nl#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-accept-btn-handler");b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
-rtlxl.nl#@##onetrust-consent-sdk
 rtlz.nl#%#var cw;Object.defineProperty(window,"cookieWallSettings",{get:function(){return cw},set:function(a){document.cookie="rtlcookieconsent="+a.version.toString()+";";cw=a}});
 rtp.pt###rtpprivacycontent
 rtraveler.ru##.notification--cookies
@@ -32450,7 +32418,6 @@ samsoe.com#$#.cookie-modal-container { display: none!important; }
 samsoe.com#$#.modal-backdrop { display: none!important; }
 samsoe.com#$#body { overflow: visible!important; }
 samsonite.at#%#//scriptlet('set-cookie-reload', 'cookiesAccepted', '1')
-samsonite.es#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('.cookie-consent-overlay__actions > a.btn--primary'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 samsung.com##.chats
 samsung.com##.cm-cookie-geo > .cm-cookie-geo__msg
 samsung.com##.cm-cookie-geo__msg-wrap
@@ -33445,7 +33412,6 @@ sierratradingpost.com#$##emailLightBox { display:none!important; }
 sierratradingpost.com#$#.modal-backdrop { display:none!important; }
 sierratradingpost.com#$#.modal-open { overflow:visible!important; }
 sift.com##.homepage-popup-outer
-signature.mcdonalds.de#%#AG_onLoad(function(){setTimeout(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=document.querySelector(".optanon-allow-all.accept-cookies-button");a&&a.click()}},300);});
 signinapp.com##.cookie-banner + div.bg-black
 signupgenius.com##.sug-notice--privacy
 signupgenius.com#$#.ads.ad.adsbox.ad-placement.carbon-ads { display: block !important; }
@@ -34117,7 +34083,6 @@ son-video.com##body > div#SVDv3_cookie
 son-video.com##div[data-context="cookies-banner"]
 sondakika.com###web_push_notif_perm
 sondakika.com##.detay-verisi-b
-sondakika.com#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[aria-label="Do not consent"]'); if(el) { el.click(); } }, 1000); });
 sondakika23.com#?#.flex:has(> a[href^="https://news.google.com/publications/"])
 songkick.com##.get-mobile-app-button
 songsterr.com###app > aside#promo
@@ -34191,7 +34156,6 @@ sourceforge.net#%#//scriptlet("set-constant", "window.cmpmngr.setConsentViaBtn",
 sourceforge.net#?#article.main-content > div.m-kmu:has(.subscribe-tagline)
 sourcepoint.lbc.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var a=new MutationObserver(function(){var b=document.querySelector('button[title="ACCEPT"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},2E4)}});
 sourcepoint.theguardian.com#%#(function(){if(window.location.href.includes("consentUUID")){var a=new MutationObserver(function(){var b=document.querySelector('button[title^="Yes, I\u2019m happy"], .message-component > .message-component.sp_choice_type_11');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}})();
-sourcepoint.wetter.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title*="Einstellungen"]');b&&b.click();},1000);setTimeout(function(){var c=document.querySelectorAll('.page-action'); c[0]&&c[0].click();},500);setTimeout(function(){var d=document.querySelectorAll('.is-checked'); if(d.length>0){d[0].click();}},500); var f=document.querySelector('button[title="Auswahl speichern""]'); setTimeout(function(){f&&f.click();},900);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},10E4)}});
 sourcepointcmp.bloomberg.*#%#(function(){if(!document.cookie.includes("euconsent-v2")){const b=new MutationObserver(function(){const a=document.querySelector(".message-component > :is(button[title^=\"Yes\"], button[title=\"\u540C\u610F\u3059\u308B\"])");a&&(b.disconnect(),a.click())});b.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){b.disconnect()},1E4)}})();
 souschef.co.uk,usharbors.com,domain-status.com,netdoktor.de,toolslib.net##.cc-floating
 sousede.cz#%#//scriptlet('trusted-set-cookie-reload', 'cookieConsent', 'eyJhbmFseXRpY3MiOmZhbHNlLCJwZXJmb3JtYW5jZSI6ZmFsc2V9')
@@ -35465,7 +35429,6 @@ t.pia.jp###tg_pia-adFloating
 t20worldcup.com,justwatch.com,flvto.biz##.mobile-banner
 t24.com.tr#%#//scriptlet('set-constant', 'Object.prototype.autoplay', '0')
 t2mio.com###t2meucookielaw
-t3.com,livescience.com,independentespanol.com,gamesradar.com#%#AG_onLoad(function() {var g = new MutationObserver(function() {var b = document.querySelector('.qc-cmp2-summary-buttons > button[mode="primary"]');b && (g.disconnect(),b.click())});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 3E4)});
 t3n.de##.ab-notice
 t3n.de##.c-cookienotice
 t3n.de##.c-native-newsletterbox
@@ -35791,6 +35754,7 @@ techbone.de,techbone.net#$##cookie_banner { display: none !important; }
 techbone.de,techbone.net#$##cookie_banner ~ div.modal-backdrop { display: none !important; }
 techbone.de,techbone.net#$#body { overflow: auto !important; padding-right: 0 !important; }
 techbone.net#@##cookie_banner
+techbook.de,rtl.de,cmp-sp.reisereporter.de,independentespanol.com,berliner-kurier.de,networkworld.com,standard.co.uk,independent.co.uk,gentside.com,consent-manager.ft.com,cmp.chip.de,cmpv2.pcworld.com,baseendpoint.brigitte.de,thepopverse.com,cmpv2.netdoktor.ch,cmp.videogameschronicle.com,cmp.svd.se,cmpsp.gamesindustry.biz,cmp.omni.se,lbc.co.uk,eurogamer.pl,cmpsp.computerhoy.com,cmp.dpgmedia.be,consent.yorkshirepost.co.uk,stuttgarter-nachrichten.de,consent.formula1.com,sp-spiegel-de.spiegel.de,sourcepoint.tvnow.de,privacy.menshealth.de,baseendpoint.urbia.de,cmp.utopia.de,baseendpoint.vip.de,cdn.privacy-mgmt.com,cmp-sp.lvz.de,cmp2.macwelt.de,cmp2.pcwelt.de,cmp.travelbook.de,cmp.petbook.de,consent.gamingbible.com#%#//scriptlet('trusted-click-element', 'button.sp_choice_type_11')
 techboyz.xyz#%#//scriptlet("adjust-setInterval", "_0x", "*", "0.02")
 techcommunity.microsoft.com##.ui-dialog:has(.survey-prompt-dialog)
 techcommunity.microsoft.com##.ui-widget-overlay
@@ -37850,7 +37814,6 @@ tripoto.com#%#//scriptlet('set-cookie', '__TRAVEL_QUIZ__', 'true')
 triumph-cpn.com##.campaignBnr
 trivagin.pl#$#.cookies-cont { display: none !important; }
 trivagin.pl#$#html { overflow: visible !important; }
-trixie.de#%#AG_onLoad(function() {if (!document.cookie.includes("trixieWebshopCookieEinstellungen")) {var g = new MutationObserver(function() {var b = document.querySelector(".cookie_accept_button");b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 trixie.de#@#.cookie_accept
 trizer.pl##.ft__cookies
 troisdorf.de,pirmasens.de,speyer.de,skoda.com.tr##.cookie-consent-dialogue
@@ -38121,7 +38084,6 @@ tutsplus.com##.weekly-digest-subscription
 tuttitalia.it,nonsolocap.it###cookieChoiceBdrop
 tuttosport.com##div[class^="Header_containerToast__"]
 tuttosport.com#%#//scriptlet('remove-attr', 'class', '#videoFloat[class^="VideoFloat_videofloat-floating__"]')
-tuttosport.com#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var b=new MutationObserver(function(){if("object"===typeof Didomi){var a,c=document.querySelector('button#didomi-notice-agree-button');c&&(null===(a=Didomi)||void 0===a?0:a.setUserAgreeToAll)&&(b.disconnect(),c.click())}});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 tuttosport.com#@##didomi-notice
 tuttotech.net,tuttoandroid.net###notifiche-manager.modal-notifiche
 tutu.ru##.b-mobile_apps
@@ -39126,9 +39088,9 @@ vgtime.com##.vg_download_app
 vgtimes.ru##.login > span.create_acc
 vgtimes.ru##.write_gr
 vh-polska.pl###cookies__new
-vi.nl#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector('.qc-cmp2-summary-buttons > button[mode="primary"]');b && b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 vi.nl#@#.cookie-consent
 vi.nl#@#[class*="cookie-"]
+vi.nl,hideout.co#%#//scriptlet('trusted-click-element', '#qc-cmp2-container button[mode="primary"]')
 via.tt.se##div[class^="footer__notification styledBarNotification__BarNotificationOverlay-sc-"]
 viabcp.com#$#.bcp_politica_uso_cookieAdobe { display: none !important; }
 viabcp.com#$#body { overflow: auto !important; }
@@ -39368,6 +39330,8 @@ vitra.com##a[class^="footerCookieSettings_"]
 vitra.com#?#body > .ReactModalPortal:has(> .ReactModal__Overlay > .ReactModal__Content .modal__content > .consent__snipped)
 vitra.com#?#body > div:not([id]):not([class]):has(> div.modal__wrapper)
 vitra.com.tr##.kvkk-modal-container
+viture.com,gnc.com,movavi.com##.privacy-policy-popup
+viture.com,vpntesting.com,magilev.by,bobruisk.ru###subscribe-popup
 vitvesti.by##.btn-primary[href][rel="noreferrer"]
 vitvesti.by##a[href^="https://news.google.com/"] > img
 viu.com###cookie_consent_box
@@ -39604,7 +39568,6 @@ vpnpro.com#$#.modal-backdrop { display: none!important; }
 vpnpro.com#$#.providerModal { display: none!important; }
 vpnpro.com#$#body { overflow: visible!important; padding-right: 0!important; }
 vpnranks.com###hb-strip
-vpntesting.com,magilev.by,bobruisk.ru###subscribe-popup
 vportal.ctu.cz#%#//scriptlet('trusted-set-cookie-reload', 'AppAnalytic', 'off')
 vpoxod.ru##.cookie-agree-wrapper
 vprok.ru##.fo-cookies-policy
@@ -39624,7 +39587,9 @@ vrchat.com##div[aria-label*="COOKIE WARNING"]
 vrcmods.com###showfreemethod
 vrcmods.com#%#//scriptlet("adjust-setInterval", "timePassed", "", "0.02")
 vrcmods.com#%#//scriptlet('prevent-element-src-loading', 'script', 'cdn.ad.plus')
-vrhs.de#%#AG_onLoad(function() {if (!document.cookie.includes("cookieConsent")) {var g = new MutationObserver(function() {var b = document.querySelector('.cookie-consent .cookie-consent__settings ~ button[type="submit"]');b && b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
+vreg.de,bremischevb.de#$#.cookie-consent-is-active { position: static !important; }
+vreg.de,bremischevb.de#$#.darken-layer { display: none !important; }
+vreg.de,bremischevb.de#$#.lightbox--cookie-consent { display: none !important; }
 vrn.de###vrn-cookie
 vroid.com##div[class^="GDPR__Container"]
 vroomly.com#%#//scriptlet('set-cookie', 'cookie_consent', '1')
@@ -40083,7 +40048,6 @@ weber-products.de##body [id^="viucom-cookie-"]
 webex.com##.cookie-manage-body
 webfail.com###wfPrivacyNotice
 webfail.com#%#//scriptlet('trusted-click-element', '.cmptxt_btn_yes')
-webfail.com#%#AG_onLoad(function(){if(!document.cookie.includes("__cmpconsent")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('#cmpbntnotxt');if(b){b.click();};},300);setTimeout(function(){var c=document.querySelectorAll('tr:not(.cmpvenditem) .cmptogglespan');c[0]&&c[0].click();c[1]&&c[1].click(); var d=document.querySelector('.cmpboxbtns > .cmpboxbtnyes'); d&&d.click();},300);}); setTimeout(function(){var e=document.querySelector(".cmplazycb input"); e&&e.click(); var f=document.querySelector(".cmpboxbtnyes"); f&&f.click();},1000); g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 webfleet.com#$##cookieconsent { display: none!important; }
 webfleet.com#$#body { overflow: auto!important; }
 webfleet.com#@##cookieconsent
@@ -40146,7 +40110,6 @@ webtoons.com#%#//scriptlet('remove-attr', 'onselectstart|ondragstart|oncontextme
 webtous.ru,zeropark.com,hackware.ru,fosspost.org###custom_html-9
 webtrack.dhlglobalmail.com#$#body { overflow: auto !important; }
 webtrack.dhlglobalmail.com#$#div[role="presentation"] { display: none !important; }
-webtv.sk,teksavvy.com,info.cz,figliedisancamillo.it,nzip.cz,packtpub.com,auxologico.it,reteimprese.it,ininal.com,wasgehtapp.de,stocksy.com,flowforge.com,zeno.fm,spielregeln-spielanleitungen.de,boardgamegeek.com###cc--main
 webtv.stofa.dk#?##root > div[class^="backdrop__BackdropRoot-"]:has(> div[class^="cookie-banner_"])
 webukatu.com##.c-fixed-nav
 webukatu.com##.c-footer-panel-modalGroup
@@ -41574,7 +41537,6 @@ zdrowie.pap.pl##.dialog-off-canvas-main-canvas > a[href="/newsletter/form"][clas
 ze.tt##.grid-box-app_store
 ze.tt##.ph-app-banner-in-content
 ze.tt##.store-links
-ze.tt#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector(".ph-button-submit");b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 zealy.io###chakra-toast-manager-bottom-right
 zeberka.pl,kozaczek.pl,papilot.pl#%#//scriptlet('set-constant', 'Object.prototype.stickyEnabled', 'false')
 zebra.cn,sanook.com,inexchange.se##.consentBanner
@@ -45890,7 +45852,7 @@ zzz.com.ua##body > div[style="text-align:center;font-size:11px;font-family:arial
 ||zurich.it/*/cookies/cookies.js
 ||zviazda.by/banners/padpiska202025.jpg
 ||zvzda.substack.com/embed
-~1login.wp.pl,~pilot.wp.pl,abczdrowie.pl,dobreprogramy.pl,wp.pl,pudelek.pl,pysznosci.pl,jastrzabpost.pl,money.pl#%#//scriptlet("prevent-addEventListener", "openFloatingPlayer", "FloatingPlayer")
+~1login.wp.pl,~pilot.wp.pl,abczdrowie.pl,dobreprogramy.pl,wp.pl,pudelek.pl,pysznosci.pl,jastrzabpost.pl,money.pl,o2.pl#%#//scriptlet("prevent-addEventListener", "openFloatingPlayer", "FloatingPlayer")
 ~civey.com##iframe[src^="https://widget.civey.com"]
 ~connect.deezer.com,deezer.com###modal_login
 ~forum.golem.de,golem.de#$?#li[style="display: none !important;"] + li { border-top: none !important; }
