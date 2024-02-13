@@ -26,7 +26,7 @@
 @@||cdn.ampproject.org/*/amp-access-$script,domain=cambridge.org|cmjornal.pt
 @@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
 @@||nationalreview.com$script,xmlhttprequest,~third-party
-@@||piano.io^$domain=asia.nikkei.com|businessinsider.com.pl|hbr.org|japantimes.co.jp|kurier.at|onet.pl
+@@||piano.io^$domain=asia.nikkei.com|businessinsider.com.pl|hbr.org|japantimes.co.jp|onet.pl
 @@||sdk.privacy-center.org^$script,third-party
 aaii.com##+js(rc, fadeout, .fadeout)
 aaii.com##.greybox-signup
@@ -228,9 +228,8 @@ krautreporter.de##+js(rc, json-ld-paywall-marker, .json-ld-paywall-marker, stay)
 krautreporter.de##.js-article-paywall,.js-paywall-divider,#steady-checkout
 kunststoffe.de,qz-online.de##+js(ra, style, div[style^="filter: blur"], stay)
 kunststoffe.de,qz-online.de##dialog#paywall-dialog
-kurier.at##+js(ra, style, .ng-star-inserted[style="display: none;"], stay)
-kurier.at##+js(rc, plusContent, div.plusContent, stay)
-kurier.at##div#view-offer,app-paywall,adfullbanner,outbrain
+kurier.at##+js(ra, class|style, div.paywall)
+kurier.at##div#cfs-paywall-container
 labusinessjournal.com###css-only-modals
 labusinessjournal.com##+js(cookie-remover, /^/)
 lanacion.com.ar##+js(aopr, localStorage)
@@ -441,6 +440,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||cdn.loeildelaphotographie.com/wp-content/*/hague-child/js/script-$script,~third-party
 ||cdn.piano.io/api/tinypass.min.js$script,domain=clicrbs.com.br
 ||cdn.registerdisney.go.com$script,domain=nationalgeographic.com
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=kurier.at
 ||cdn.wyleex.com/elcronista/pw.min.js$script,domain=cronista.com
 ||cdn.wyleex.com/lavoz/pw.min.js$script,domain=lavoz.com.ar
 ||cedscdn.it/*/PaywallMeter.js$script,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|quotidianodipuglia.it
