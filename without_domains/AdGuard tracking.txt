@@ -521,7 +521,6 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
-/^https?:\/\/(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[^\/]*\/[a-zA-Z0-9\/\+\-]{80,106}$/$match-case,script,~third-party
 /_/api/v2/analytics/?
 /_CPiX/art
 /__Analytics-Start?url=
@@ -713,6 +712,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /google_tag/*$script
 /gscounters.
 /gtm-*.js$domain=livingtraditionally.com|myhealthgazette.com|koinbulteni.com|teknop.net
+/gtm.js?id=GTM-
 /gv-analytics/*
 /hawkeye.js
 /hawklinks.js
@@ -1040,11 +1040,13 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 ://ct2.*.com/sc/
 ://ct2.*.jp/sc/
 ://datalayer-*.sky.com^$domain=sky.com
+://gtm.*.js?id=GTM-
 ://gtrack.*.com/dye?
 ://kemono.su/$xmlhttprequest,method=patch|post
 ://l.*/script.php?i=$script,~third-party
 ://ply.*/?v=$image,third-party
 ://r.i.ua^
+://tagging.*.js?id=GTM-
 ://top.*/count/cnt.php?
 ://tracker.*/events-tracker/
 ://tru.am^$third-party
@@ -1052,12 +1054,12 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 ://wa.*/s?$image
 @@.2o7.net/$domain=today.com
 @@.googleadservices.*.js$domain=ponominalu.ru
-@@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[0-9A-Z_a-z]+\/\d+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
-@@/^https:\/\/kemono\.su\/api\/v1\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/user\/[0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/creator\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
+@@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+\/\d+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
+@@/^https:\/\/kemono\.su\/api\/v1\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/creator\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[.0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[.0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=kemono.su
 @@/adrum.js$domain=usbank.com
 @@/cdn-cgi/pe/bag2?*google-analytics.com%2Fanalytics.js$domain=amypink.de|biznews.com|cryptospot.me|dailycaller.com|droid-life.com|forwardprogressives.com|fpif.org|fullpotentialma.com|geekzone.co.nz|goldsday.com|hoyentec.com|imageupload.co.uk|is-arquitectura.es|lazygamer.net|lingholic.com|mmanews.com|nehandaradio.com|nmac.to|orain.org|tvunblock.com|unilad.co.uk|xrussianteens.com|youngcons.com
 @@/cdn-cgi/pe/bag2?*googleadservices.com$domain=droid-life.com
@@ -41145,6 +41147,7 @@ znak.com##.relap
 ||d2nq0f8d9ofdwv.cloudfront.net/track.js
 ||d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js
 ||d34gglw95p9zsk.cloudfront.net/clipkit_assets/beacon-*.js
+||d38tudgzjt8cbb.cloudfront.net/log.gif?
 ||d395ev7kdef0wl.cloudfront.net/a.gif?
 ||d3fdp2ho8z9fyl.cloudfront.net/tracker.min.js
 ||d3jaymjyiads5d.cloudfront.net/tracker.js
@@ -44630,6 +44633,7 @@ znak.com##.relap
 ||shopifysvc.com/performance
 ||shoplytics.com^$third-party
 ||shopnetic.com^$third-party
+||show.revico.jp/providejs/revico_tracking.js
 ||showstopped.com/owa/log.php
 ||shrekis.life^$all
 ||shrinktheweb.com^$third-party
