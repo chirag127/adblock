@@ -2,7 +2,6 @@
 ##+js(rc, didomi-popup-open, body.didomi-popup-open)
 .com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|rubbernews.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
 .com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
-.com/journey/compiler/build-*.js$script,~third-party,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.com|voguebusiness.com|wired.com
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=bostonherald.com|denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
@@ -13,6 +12,7 @@
 /\.vn\.at\/.+\/\d{4}\//$inline-script
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
+/journey/compiler/build-*.js$script,~third-party,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
 /paywall/evercookie_get.js$script,~third-party
 /shared-content/art/tncms/api/access.*.js$script,~third-party
 /sub/js/pc-offer-west.js$script,~third-party
@@ -57,7 +57,6 @@ amp.scmp.com##div[id^="default-meter-page-views"]
 amp.usatoday.com,digiday.com,inc42.com,indianexpress.com,indiatoday.in,mid-day.com,newsday.com,seekingalpha.com,telegraph.co.uk##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 apollo-magazine.com##+js(cookie-remover, blaize_session)
 apollo-magazine.com,spectator.co.uk###subscribe-ribbon,div.ad-slot
-architecturaldigest.com,bonappetit.com,cntraveler.com,epicurious.com,gq.com,newyorker.com,vanityfair.com,vogue.com,wired.com##+js(cookie-remover, /pay_ent_/)
 arkansasonline.com##+js(cookie-remover, blaize_session)
 artforum.com##+js(cookie-remover, /^/)
 artnet.com##div.article-body:style(display:block !important;)
