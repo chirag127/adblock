@@ -163,7 +163,8 @@ elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style])
 elfinancierocr.com##div.post
 elmercurio.com,lasegunda.com##+js(rc, lessreadmore, article.lessreadmore, stay)
 elmercurio.com,lasegunda.com##div[id*="bt_readmore_"]
-elpais.com##^div#ctn_freemium_article,div#ctn_premium_article
+elpais.com##div#ctn_freemium_article:remove()
+elpais.com##div#ctn_premium_article:remove()
 eltiempo.com##+js(rc, modulos, div.modulos)
 em.com.br##+js(rc, compress-text, .div.compress-text)
 enotes.com##+js(ra, class, div[class^="_"])
@@ -217,8 +218,7 @@ interestingengineering.com##+js(ra, class, div[class*="Product_makeBlur__"])
 interestingengineering.com##div#paywall-div
 ipsoa.it##+js(ra, style, div.paywall)
 italian.tech,moda.it##+js(ra, style, div#article-body, stay)
-italian.tech,moda.it##^div#ph-paywall
-italian.tech,moda.it##div#ph-paywall
+italian.tech,moda.it##div#ph-paywall:remove()
 japantimes.co.jp##+js(cookie-remover, xbc)
 jornaljoca.com.br##+js(acis, $, paywall)
 journaldemontreal.com,journaldequebec.com##+js(rc, composer-content, div.article-main-txt.composer-content)
