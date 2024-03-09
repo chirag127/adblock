@@ -6,7 +6,7 @@
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
 .com/wp-content/plugins/loader-wp/static/loader.min.js$script,~third-party,domain=bostonherald.com|denverpost.com|eastbaytimes.com|mercurynews.com|ocregister.com|pressenterprise.com|twincities.com
-.de/thenewsbar/static/pw.js$script,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
+.de/thenewsbar/config/$xmlhttprequest,~third-party,domain=aerokurier.de|auto-motor-und-sport.de|flugrevue.de|motorradonline.de|womenshealth.de
 .nl/_/zh/worker$xmlhttprequest,~third-party
 /[a-z]{1}\d{2,3}\.\w+\.(co(m|\.uk)|net|org)\/script\.js/$script,~third-party
 /\.(femmesdaujourdhui|flair|knack|levif|libelle)\.be\/.+\/((\w)+(\-)+){3,}/$inline-script
@@ -386,7 +386,7 @@ theneweuropean.co.uk##+js(ra, data-show-has-access, div[data-show-has-access])
 theneweuropean.co.uk##div[data-show-fade-on-noaccess],div[data-show-subs-blocked]
 thepointmag.com##+js(cookie-remover, monthly_history)
 thepointmag.com##div.overlay,div#tpopup-
-thequint.com##+js(ra, class, div#story-body-wrapper, stay)
+thequint.com##+js(ra, class|style, div#story-body-wrapper, stay)
 thequint.com##div.zsqcu
 thesaturdaypaper.com.au##+js(cookie-remover, /^/)
 thesaturdaypaper.com.au##div.paywall-hard-always-show
