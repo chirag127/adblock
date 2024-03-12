@@ -524,7 +524,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_]+){1,3}$/$domain=coupang.com,xmlhttprequest,method=post
+/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /_/api/v2/analytics/?
@@ -1696,6 +1696,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||esprit.de^*/webtrekk.js
 @@||esprit.de^*/webtrekk_conf.js
 @@||ethn.io/*.js$domain=medicare.gov
+@@||eu.spgo.io/*~/aaa$~image
 @@||eum-blue-saas.instana.io^$app=com.kaufland.Kaufland
 @@||euronewsgroup.demdex.net/event?d_event=$~third-party
 @@||ev.tpocdm.com^$xmlhttprequest,domain=wowma.jp
@@ -2219,6 +2220,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||googletagmanager.com/gtm.js$domain=info.lifecell.ua
 @@||googletagmanager.com/gtm.js$domain=infoq.com
 @@||googletagmanager.com/gtm.js$domain=iphoneitalia.com
+@@||googletagmanager.com/gtm.js$domain=irishtimes.com
 @@||googletagmanager.com/gtm.js$domain=isunfar.com.tw
 @@||googletagmanager.com/gtm.js$domain=itv.com
 @@||googletagmanager.com/gtm.js$domain=jalan.net
@@ -2949,6 +2951,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||scdn.cxense.com/cx.js$domain=wsj.com
 @@||scorecardresearch.com$domain=bt.com
 @@||scorecardresearch.com/beacon.js$domain=agame.com|allrecipes.com|apl.tv|babycenter.com|cbc.ca|deviantart.com|fastcompany.com|firstwefeast.com|hitfix.com|laptopmag.com|last.fm|linkinpark.com|mainstreet.com|ning.com|ouramazingplanet.com|outsideonline.com|plixi.com|radaronline.com|salon.com|thedailybeast.com|thinkatheist.com
+@@||scorecardresearch.com/beacon.js$domain=ofiii.com
 @@||scorecardresearch.com/beacon.js$domain=spielen.com
 @@||scorecardresearch.com/crossdomain.xml$domain=web.de
 @@||scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js$domain=indiatoday.in
@@ -47099,6 +47102,8 @@ link.discovery.com$image
 link.disneydining.com$image
 link.disneyfanatic.com$image
 link.disneytips.com$image
+link.dissh.com%2Fmo%2F$image
+link.dissh.com/mo/$image
 link.diynetwork.com$image
 link.dl-online.com$image
 link.doandroidsdance.com$image
@@ -49156,6 +49161,8 @@ nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInter
 o.news.getflow.com$image
 oceans-nadia.com##.gtm-bnr-rensai
 offers.mrtoys.com.au$image
+ofiii.com#%#//scriptlet('set-constant', 'COMSCORE', 'emptyObj')
+ofiii.com#%#//scriptlet('set-constant', 'COMSCORE.beacon', 'noopFunc')
 okazuch.site###custom_html-30
 omeclk.com$image
 omni.soundestlink.com$image
@@ -55133,6 +55140,7 @@ znak.com##.relap
 ||science.ytn.co.kr/_comm/clog.php
 ||sciencerevenue.com^$third-party
 ||scinable.net/access?vid=
+||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch-beacon,domain=ofiii.com
 ||scorecardresearch.com^$domain=cnet.com,important
 ||scorecardresearch.com^$third-party
 ||scounter.rambler.ru^$third-party
@@ -55493,6 +55501,7 @@ znak.com##.relap
 ||spot.im/analytics/analytics.js
 ||spot.im/api/tracker/
 ||spotify.com/ads/
+||spotify.com/gabo-receiver-service/public/*/events
 ||spox.com/pub/js/track.js
 ||spring-tns.net^$third-party
 ||spring.de^$third-party

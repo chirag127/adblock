@@ -67,6 +67,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .keap-link004.com/$image
 .keap-link005.com/$image
 .keap-link006.com/$image
+.keap-link007.com/$image
 .keap-link008.com/$image
 .keap-link009.com/$image
 .keap-link010.com/$image
@@ -279,6 +280,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /analytics-minimal-v4.js
 /analytics-ping.js
 /analytics-secure.js
+/analytics-tracker/*
 /analytics-tracking.js
 /analytics.*/ping/?
 /analytics.*/track
@@ -313,6 +315,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /analyticsjs.js
 /analyticstracking.js
 /anclytic-ajax.html
+/anclytic.htm
 /anonymous_user_guid.gif?
 /ap.lijit.com/*
 /api-analytics.
@@ -321,7 +324,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /api/event-rfkj/*
 /api/ipv4check?
 /api/log-visit
-/api/log?
 /api/metrics/collect
 /api/pageview?
 /api/ping?$~xmlhttprequest
@@ -1143,6 +1145,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /sa.gif?
 /satismeter.js
 /scribd_events?
+/script.tagged-events.outbound-links.js
 /script/pixel.js
 /scripts/clickjs.php
 /scripts/track_visit.php?
@@ -1362,6 +1365,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /trk.*/impression/*
 /trk.gif?
 /trk.php?
+/trk2.*/open?$image
 /trk?t=$image
 /tynt.js
 /u.gif?
@@ -1504,6 +1508,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ://matomo.$domain=~matomo.org
 ://parcel-api.delivery-status.*/open/$image
 ://piwik.$domain=~matomo.org|~piwik.pro
+://segment-api.
 ://segment-cdn.
 ://track.*/collect
 ://track.*/dye
@@ -1599,7 +1604,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cohesionapps.com/cohesion/$domain=bankrate.com|frontier.com
 @@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
 @@||collector.appconsent.io/hello$domain=lachainemeteo.com|lefigaro.fr
-@@||commerce.adobe.io^$xmlhttprequest,domain=superbrightleds.com
 @@||community.brave.com/t/$xmlhttprequest
 @@||content.gap.com/fp/check.js$script,domain=oldnavy.gap.com
 @@||content.gap.com/fp/tags.js$script,domain=oldnavy.gap.com
@@ -1667,6 +1671,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||kaptcha.com/collect/sdk?$domain=palmettostatearmory.com|wyze.com
 @@||kemono.su/.well-known/ddos-guard/mark/|
 @@||komplett.no/gtm.js$script,~third-party
+@@||kozkutak.hu/getdata.php?v*=pageview$~third-party
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
 @@||leanplum.com^$domain=arkadium.com
 @@||lenovo.com/_ui/desktop/common/js/AdobeAnalyticsEvent.js$script,~third-party
@@ -1705,6 +1710,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||omtrdc.net/rest/$xmlhttprequest
 @@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=absa.co.za|att.com|pnc.com|vodafone.it
 @@||online-metrix.net^$script,domain=eki-net.com
+@@||online.mps-gba.de/praeludium/$script,domain=auto-motor-und-sport.de|caravaning.de|motorradonline.de
 @@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||p.typekit.net/p.css$stylesheet,domain=athleticpropulsionlabs.com|browserstack.com|bungie.net|business.untappd.com|robertsspaceindustries.com
 @@||p11.techlab-cdn.com^$domain=wizzair.com
@@ -1772,7 +1778,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||technical-service.net^$xmlhttprequest,domain=n-tv.de|rtl.de|vip.de
 @@||tm.jsuol.com.br/uoltm.js$script,domain=uol.com.br
 @@||tms.oracle.com/main/prod/utag.sync.js$~third-party
-@@||tntdrama.com/modules/custom/ten_video/js/analytics_v2.js$~third-party
 @@||toggo.de/static/js/sourcepoint.js$domain=toggo.de
 @@||tra.scds.pmdstatic.net/sourcepoint/$domain=businessinsider.fr|capital.fr|voici.fr
 @@||traceparts.com/lib/piano-analytics/piano-analytics.js$script,~third-party
@@ -1794,6 +1799,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
 @@||www.statcounter.com/images/$image,third-party
 @@||wwwimage-tve.cbsstatic.com^
+@@||yandex.ru/metrika/tag.js$script,domain=kuchenland.ru
 @@||yandex.ru/metrika/watch.js$domain=alean.ru|anoncer.net|nabortu.ru|samozapis-spb.ru|tv.yandex.ru|tvrain.ru
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 _WebVitalsReporter_
@@ -1936,6 +1942,7 @@ omni.soundestlink.com$image
 ||admaster.com.cn^$third-party
 ||admatrix.jp^$third-party
 ||adme.media/metric-collector
+||admeira.ch^$third-party
 ||admetric.io^$third-party
 ||admile.ru^$third-party
 ||admo.tv^$third-party
@@ -2001,6 +2008,7 @@ omni.soundestlink.com$image
 ||affinitymatrix.com^$third-party
 ||affirm.com/api/v2/cookie_sent
 ||affirm.com/api/v2/session/touch_track
+||affistats.com^$third-party
 ||afi-b.com^$third-party
 ||afsanalytics.com^$third-party
 ||afterpay.com^*/v1/event
@@ -2653,6 +2661,7 @@ omni.soundestlink.com$image
 ||countercity.net^$third-party
 ||countergeo.com^$third-party
 ||counters4u.com^$third-party
+||counterserver.de^$third-party
 ||counterstation.de^$third-party
 ||counterstatistik.de^$third-party
 ||counti.de^$third-party
@@ -2940,6 +2949,7 @@ omni.soundestlink.com$image
 ||enhance.com^$third-party
 ||enhencer.com^$third-party
 ||eniro.com/pixel/
+||enquisite.com^$third-party
 ||ensighten.com^$third-party
 ||enviou.com.br^$third-party
 ||epimg.net/js/gdt/
@@ -3061,6 +3071,7 @@ omni.soundestlink.com$image
 ||flipkart.com/api/3/data/collector/
 ||flipp.com/beacons
 ||flixcar.com/*/tracking/
+||flixcar.com/gvid
 ||flixcart.com/px/gNtTli3A/init.js
 ||flixsyndication.net^$third-party
 ||flocktory.com^$third-party
@@ -3242,6 +3253,7 @@ omni.soundestlink.com$image
 ||globes.co.il/shared/s.ashx?
 ||glomex.com^$ping
 ||gml-grp.com^*&affid=$subdocument,third-party
+||gmodmp.jp^$third-party
 ||gmossp-sp.jp^$third-party
 ||gmx.net/monitoring/
 ||gnavi.co.jp/analysis/
@@ -3324,6 +3336,7 @@ omni.soundestlink.com$image
 ||hariken.co^$third-party
 ||harryrosen.com/analytics/
 ||hatarako.net/api/recommend/analyze_logger
+||hatena.ne.jp/api/log?
 ||hatmiso.net^$third-party
 ||havasedge.com^$third-party
 ||hbwrapper.com^$third-party
@@ -3385,6 +3398,7 @@ omni.soundestlink.com$image
 ||hotpads.com/xOR1K5b6/init.js
 ||hotrank.com.tw^$third-party
 ||houzz.com/hsc/aetrk/
+||houzz.com/j/ajax/client-error-light?
 ||howsmyssl.com^$third-party
 ||hqq.ac/cdn-cgi/trace
 ||hqq.to/cdn-cgi/trace
@@ -3610,6 +3624,7 @@ omni.soundestlink.com$image
 ||keymetric.net^$third-party
 ||keytiles.com^$third-party
 ||keywee.co^$third-party
+||kgoma.com/v1/stat/
 ||khamsat.com/ajax/account_stats?
 ||kickfire.com^$third-party
 ||kickstarter.com/Uy3R669N/init.js
@@ -4033,6 +4048,7 @@ omni.soundestlink.com$image
 ||netmng.com^$third-party
 ||netmonitor.fi^$third-party
 ||netreviews.eu/index.php?action=act_access&$third-party
+||netu.ac/cdn-cgi/trace
 ||netuplayer.top/cdn-cgi/trace
 ||netvigie.com^$third-party
 ||netzwelt.de/log?
@@ -4958,6 +4974,7 @@ omni.soundestlink.com$image
 ||stats4all.com^$third-party
 ||stats4free.de^$third-party
 ||stats4u.net^$third-party
+||statsig.com^$third-party
 ||statsigapi.net^$third-party
 ||statssheet.com^$third-party
 ||stattooz.com^$third-party
@@ -5318,6 +5335,7 @@ omni.soundestlink.com$image
 ||uralweb.ru^$third-party
 ||uriports.com/reports/$third-party
 ||urldefense.com^$image,third-party
+||usabilitytools.com^$third-party
 ||usabilla.com^$third-party
 ||usage.seibert-media.io^$third-party
 ||useinsider.com^$third-party
@@ -5499,6 +5517,7 @@ omni.soundestlink.com$image
 ||webtuna.com^$third-party
 ||webturn.ru^$third-party
 ||webutation.net/js/load_badge.js
+||webvisor.ru^$third-party
 ||wecount4u.com^$third-party
 ||weglot.com/pageviews?
 ||weibo.cn/h5logs/
@@ -5510,6 +5529,7 @@ omni.soundestlink.com$image
 ||wellsfargo.com/jenny/
 ||wellsfargo.com/tracking/
 ||wfinterface.com/tracking/$domain=wellsfargo.com
+||wfla.com/CvbtpUrj/init.js
 ||whale.camera^$third-party
 ||whattomine.com/stats
 ||wheredoyoucomefrom.ovh^$third-party

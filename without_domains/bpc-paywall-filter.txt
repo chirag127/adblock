@@ -12,6 +12,7 @@
 /\.(femmesdaujourdhui|flair|knack|levif|libelle)\.be\/.+\/((\w)+(\-)+){3,}/$inline-script
 /\.vn\.at\/.+\/\d{4}\//$inline-script
 /\/epoch\.org\.il\/.+\/\d{5,}\//$inline-script
+/\/observador\.pt\/(\d{4}|especiais|opiniao)\//$inline-script
 /c/assets/pigeon.js$script,~third-party
 /evolok/*/ev-widgets.min.js$script,~third-party
 /journey/compiler/build-*.js$script,~third-party,domain=architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
@@ -255,8 +256,9 @@ loebclassics.com##+js(cookie-remover, /^/)
 loeildelaphotographie.com##+js(ra, class, .paywall)
 loeildelaphotographie.com##+js(ra, style, img[style*="blur"])
 loeildelaphotographie.com##.premium-pic-box,.membership-promo-container,.login_form_litle
+lydogbillede.dk,lydogbilde.no##+js(ra, style, div#MoreLink_content-container[style])
 lydogbillede.dk,lydogbilde.no##+js(rc, thecontent, div.thecontent)
-lydogbillede.dk,lydogbilde.no##div.paywallbox
+lydogbillede.dk,lydogbilde.no##div.paywallbox,div#MoreLink_fade-out-div
 magazine.atavist.com##+js(aopr, localStorage)
 marketnews.com##+js(ra, class, div.body-description)
 medscape.com##.AdUnit,div[id^="ads-"]
@@ -267,7 +269,6 @@ modernhealthcare.com##+js(rc, sponsored-article, div.sponsored-article)
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, amp-access-hide, [amp-access][amp-access-hide])
 monacomatin.mc,nicematin.com,varmatin.com##+js(ra, id, div#article-teaser)
 monacomatin.mc,nicematin.com,varmatin.com##div[class^="ad-slot-"],div#poool-widget-content,div[class*="Rhoo"]
-muensterschezeitung.de,westfalen-blatt.de,wn.de##main.fp-article-paywall-dialog
 museumsassociation.org##+js(ra, style, body[style], stay)
 museumsassociation.org##+js(rc, paywall, body.paywall)
 museumsassociation.org##div#paywall-wrapper,div.advertising
