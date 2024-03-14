@@ -5,6 +5,9 @@ without_domains folder.
 from typing import Dict, List
 
 import requests
+import os
+import sys
+import glob
 
 
 def get_rules(url):
@@ -68,6 +71,30 @@ def save_rules(name: str, rules_list: list) -> None:
         file.write("\n".join(rules_list))
 
 
+def makeAllListForWithoutDomains() -> None:
+
+    # /workspaces/adblock/without_domains
+    all_files = glob.glob("without_domains/*.txt")
+
+    # remove the all.txt file and .py file
+    all_files = [x for x in all_files if not x.endswith("all.txt")]
+    all_files = [x for x in all_files if not x.endswith(".py")]
+
+
+
+
+    with open("without_domains/all.txt", "w", encoding="utf8") as file:
+
+        file.write("! Description: It contains all list without domains\n")
+        file.write("! Expires: 1 hours\n")
+        file.write("! Homepage: https://github.com/chirag127/adblock/\n")
+        file.write("! Title: Chirag's without domains list\n")
+
+        for file_name in all_files:
+            with open(file_name, "r", encoding="utf8") as f:
+                file.write(f.read())
+                file.write("\n")
+
 def main() -> None:
     """
     Main function.
@@ -97,4 +124,16 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+
+    if not os.path.exists("without_domains"):
+        os.makedirs("without_domains")
+
+
+    try:
+        makeAllListForWithoutDomains()
+        main()
+    except Exception as e:
+        print(e)
+        sys.exit(1)
+    else:
+        sys.exit(0)
