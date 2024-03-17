@@ -198,6 +198,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /VisitorIdentification.js
 /WebAnalytics.$domain=~webanalytics.italia.it
 /Web_JS_Stats.js
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,third-party
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 /^https?:\/\/tmx\.(td|tdbank)\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com|tdbank.com
 /_/api/v2/analytics/?
@@ -714,6 +715,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /getlog.gif
 /gingeranalytics.min.js
 /global/analytics/*
+/global/tracker.js
 /global_tracking.js
 /google/analytics.js
 /googleAnalytics4.js
@@ -820,6 +822,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /koko-analytics-collect.php
 /koko-analytics/assets/dist/js/*script.js
 /krux-sass-helper.js
+/lead-tracking.min.js
 /leadtag.js
 /lhnhelpouttab-current.min.js
 /lib/analytics.js
@@ -898,6 +901,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /logjs.php
 /logs/report_js_error
 /logstats.php
+/logviewedpage?
 /loi/imp?
 /ls.gif?
 /ls.php?t=
@@ -1377,6 +1381,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /tracklib.min.js
 /trackpixel?
 /trackvisit?
+/traffic-source-cookie.min.js
 /trans_pixel.asp
 /transparent1x1.gif
 /transparent_pixel.gif
@@ -1462,6 +1467,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /webdig_test.js
 /webmonitor/collect/badjs.json
 /webstat.js
+/webstats.js
 /webtrack.js
 /webtracker.dll
 /webtracking/*$~subdocument,domain=~wwwapps.ups.com
@@ -1586,6 +1592,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||analytics.analytics-egain.com/onetag/$script,domain=boohoo.com|digikey.at|digikey.be|digikey.bg|digikey.ca|digikey.ch|digikey.cn|digikey.co.il|digikey.co.nz|digikey.co.th|digikey.co.uk|digikey.co.za|digikey.com|digikey.com.au|digikey.com.br|digikey.com.mx|digikey.cz|digikey.de|digikey.dk|digikey.ee|digikey.es|digikey.fi|digikey.fr|digikey.gr|digikey.hk|digikey.hu|digikey.ie|digikey.in|digikey.it|digikey.jp|digikey.kr|digikey.lt|digikey.lu|digikey.lv|digikey.my|digikey.nl|digikey.no|digikey.ph|digikey.pl|digikey.pt|digikey.ro|digikey.se|digikey.sg|digikey.si|digikey.sk|digikey.tw
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
+@@||api-v4.trbo.com/r.php?$script,domain=blau.de
 @@||api.babbel.io/gamma/v1/$ping,domain=babbel.com
 @@||api.enthusiastgaming.net^$xmlhttprequest,domain=diep.io
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
@@ -1694,6 +1701,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||kameleoon.io/ip^$domain=welt.de
 @@||kaptcha.com/collect/sdk?$domain=palmettostatearmory.com|wyze.com
 @@||kemono.su/.well-known/ddos-guard/mark/|
+@@||kilimall.co.ke/sensorsdata.min.js$~third-party
+@@||kilimall.co.tz/sensorsdata.min.js$~third-party
 @@||komplett.no/gtm.js$script,~third-party
 @@||kozkutak.hu/getdata.php?v*=pageview$~third-party
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
@@ -1715,6 +1724,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||merlincdn.net^*/common/images/spacer.gif$image,domain=turkcell.com.tr
 @@||mlbstatic.com/mlb.com/adobe-analytics/$script,domain=mlb.com
 @@||mmstat.com/eg.js$script,domain=aliexpress.com
+@@||mopar.com/moparsvc/mopar-analytics-state$~third-party
 @@||mozu.com^*/monetate.js$script,domain=acehardware.com
 @@||mparticle.com/js/v2/*/mparticle.js$script,domain=bk.com|cnbc.com|gymshark.com|motortrendondemand.com
 @@||mpsnare.iesnare.com^$script,domain=citi.com|citibank.com|jbhifi.com.au|login.skype.com|oreillyauto.com|power.fi|princessauto.com|ringcentral.com|screwfix.com|usbank.com|verkkokauppa.com|vitacost.com|westernunion.com
@@ -1813,6 +1823,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||track.adform.net/serving/scripts/trackpoint$script,domain=sky.it
 @@||trackjs.com/agent/$script,domain=delta.com
 @@||trackonomics.net/client/$script,domain=popsugar.com
+@@||trbo.com/plugin/trbo_$script,domain=blau.de
 @@||trustcommander.net/iab-tcfapi/tcfapi.js$script,domain=tf1info.fr
 @@||tunein.com/api/v1/comscore$~third-party
 @@||twitter.com/oct.js$domain=jp.square-enix.com
@@ -1825,6 +1836,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||widget.fitanalytics.com/widget.js$script,domain=pullandbear.com
 @@||widget.myrentacar.me^$script,subdocument
 @@||widget.trustpilot.com/bootstrap/$script,domain=amartfurniture.com.au|exodus.co.uk|imyfone.com
+@@||wpfc.ml/b.gif$image,domain=holybooks.com
 @@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
 @@||www.statcounter.com/images/$image,third-party
 @@||wwwimage-tve.cbsstatic.com^
@@ -1848,6 +1860,7 @@ omni.soundestlink.com$image
 |http://r.i.ua^
 |https://a.pr-cy.ru^$third-party
 |https://r.i.ua^
+||100widgets.com^$third-party
 ||1024tera.com/api/analytics?
 ||11st.co.kr/st/
 ||123compteur.com^$third-party
@@ -1911,7 +1924,6 @@ omni.soundestlink.com$image
 ||aan.amazon.com^$third-party
 ||aawsat.com/pageview/
 ||abadis.ir/ajaxcmd/setvisit/
-||abadis.ir/ajaxcmd/stat/
 ||abcnews.com/assets/dtci/js/abcnews_visitorId.js
 ||abcnews.com/assets/dtci/js/at.js
 ||abcompteur.com^$third-party
@@ -3575,6 +3587,7 @@ omni.soundestlink.com$image
 ||interakt.ru^$third-party
 ||interfax.ru/cnt/
 ||intergid.ru^$third-party
+||interhits.de^$third-party
 ||investingchannel.com^$third-party
 ||invitemedia.com^$third-party
 ||invitereferrals.com^$third-party
@@ -4064,8 +4077,6 @@ omni.soundestlink.com$image
 ||naj.sk^$third-party
 ||najva.com^$third-party
 ||namethatporn.com/assets/imgs/1x1.gif
-||namnak.com/act/stats.json
-||namnak.com/ga.js
 ||narkive.com/ajax/TelemV2?
 ||native.ai^$third-party
 ||natpal.com^$third-party
@@ -4160,6 +4171,7 @@ omni.soundestlink.com$image
 ||nsaudience.pl^$third-party
 ||nsg.symantec.com^$third-party
 ||nuggad.net^$third-party
+||nullitics.com^$third-party
 ||numerino.cz^$third-party
 ||nvidia.partners/telemetry/
 ||nyltx.com^$third-party
@@ -4203,6 +4215,7 @@ omni.soundestlink.com$image
 ||onecount.net/onecount/oc_track/
 ||onefeed.co.uk^$third-party
 ||onelink.me^$image,script,third-party
+||onesignal.com/api/v*/apps/
 ||onesignal.com/api/v1/sync/
 ||onesignal.com/sdks/OneSignalSDKStyles
 ||onesignal.com/sdks/OneSignalSDKWorker
@@ -4860,6 +4873,7 @@ omni.soundestlink.com$image
 ||signifyd.com^$third-party
 ||silvergames.com/div/g.php?
 ||silverpop.com^$third-party
+||silverpush.co^$third-party
 ||simility.com^$third-party
 ||simonsignal.com^$third-party
 ||simpleanalytics.io^$third-party
@@ -4869,6 +4883,7 @@ omni.soundestlink.com$image
 ||simpli.fi^$third-party
 ||simplymeasured.com^$third-party
 ||sina.com.cn/view?
+||sinajs.cn/open/analytics/
 ||sinajs.cn/open/api/js/wb.js
 ||singlefeed.com^$third-party
 ||sinonimos.com.br/hits.php
@@ -5046,6 +5061,7 @@ omni.soundestlink.com$image
 ||stattooz.com^$third-party
 ||stattrax.com^$third-party
 ||statun.com^$third-party
+||stealth.nl^$third-party
 ||steamchina.com/events/
 ||steelhousemedia.com^$third-party
 ||stellaservice.com^$third-party
@@ -5116,6 +5132,7 @@ omni.soundestlink.com$image
 ||t.id.net/log
 ||t.paypal.com^$image
 ||t.powerreviews.com^$third-party
+||ta.sbird.xyz^$third-party
 ||taboola.com/libtrc/
 ||tag4arm.com^$third-party
 ||tagcommander.com^$third-party
@@ -5218,6 +5235,7 @@ omni.soundestlink.com$image
 ||toast.com/sendid?
 ||tongjiniao.com^$third-party
 ||top-bloggers.com^$third-party
+||top-ro.ro^$third-party
 ||top.lv^$third-party
 ||top10sportsites.com^$third-party
 ||topblogarea.com^$third-party
@@ -5691,6 +5709,7 @@ omni.soundestlink.com$image
 ||xhamsterlive.com/pixel/
 ||xhcdn.com/js/*.track.min.js
 ||xhit.com^$third-party
+||xiaohongshu.com/api/collect
 ||xiaohongshu.com/api/v2/collect
 ||xiaomi.com/js/mstr.js?
 ||xing.com/logjam/
