@@ -218,6 +218,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /_stat/log/*
 /_tracking/*
 /_vercel/insights/script.js
+/_vercel/speed-insights/script.js
 /_visitcount?
 /a.gif?
 /a/performance_timing/*
@@ -749,6 +750,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /hawkeye.js
 /hawklinks.js
 /hc/activity
+/hg?hc=&hb=*&vjs=
 /histats.js
 /hit-counter.
 /hit.php?
@@ -1076,6 +1078,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /pointeur.gif?
 /post.pinterest.com/q/*$image
 /ppms.js
+/pr.php?
 /printpixel.js
 /prnx_track.js
 /probance_tracker-min.js
@@ -1279,6 +1282,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /stats?object
 /stats?referer=
 /statscollector.
+/stdlog?
 /storeAdvImpression.jsp
 /storefront.google-analytics-4.min.js
 /streamsense.min.js
@@ -1574,6 +1578,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[.0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xmlhttprequest,~third-party,match-case,method=post
 @@rutracker.*/tracker.php?
 @@||account.adobe.com/newrelic.js$~third-party
+@@||accounts.intuit.com/fe_logger?$~third-party
 @@||addthis.com/js/*/addthis_widget.js$script,domain=stagecoachbus.com
 @@||adnz.co/header.js?adTagId=$domain=finanzen.ch
 @@||adobedc.demdex.net/ee/v1/identity/$xmlhttprequest,domain=cibc.com
@@ -2172,6 +2177,7 @@ omni.soundestlink.com$image
 ||api.all-internet.jp^$third-party
 ||api.baomoi.com^$image
 ||api.channel.io/*/events
+||api.country.is^$third-party
 ||api.ffm.to/sl/e/$image
 ||api.iris.tv/update
 ||api.litres.ru/tracker/
@@ -2184,6 +2190,7 @@ omni.soundestlink.com$image
 ||apibaza.com/pixel/
 ||apicit.net^$third-party
 ||apkonline.ru^$third-party
+||apolloprogram.io^$third-party
 ||app.box.com/app-api/split-proxy/api/metrics
 ||app.box.com/gen204
 ||app.carnow.com/dealers/track_visitor
@@ -2280,6 +2287,7 @@ omni.soundestlink.com$image
 ||b2w.io/event/
 ||ba-bamail.com/handlers/stats.ashx
 ||babator.com^$third-party
+||backend.academy.cs.cmu.edu/api/v0/track/
 ||backend.verbolia.com/content/js/velw.min.js
 ||baidu.com/api/bidder/
 ||baidu.com/h.js?
@@ -2703,6 +2711,7 @@ omni.soundestlink.com$image
 ||countby.com^$third-party
 ||counter-go.de^$third-party
 ||counter-gratis.com^$third-party
+||counter-kostenlos.net^$third-party
 ||counter.de^$third-party
 ||counter.dev^$third-party
 ||counter.gd^$third-party
@@ -2942,6 +2951,7 @@ omni.soundestlink.com$image
 ||e-referrer.com^$third-party
 ||e-webtrack.net^$third-party
 ||e.m6web.fr/events
+||e.used.ca/event
 ||e.zg-api.com/event$domain=zillow.com
 ||e2ma.net/track/
 ||eacla.com^$third-party
@@ -3064,6 +3074,7 @@ omni.soundestlink.com$image
 ||expert.nl/daix.js
 ||exponea.com^$third-party
 ||exposebox.com^$third-party
+||expressnews.com/413gkwMT/init.js
 ||extole.com^$third-party
 ||extole.io/core.js
 ||extrawatch.com^$third-party
@@ -3253,6 +3264,7 @@ omni.soundestlink.com$image
 ||genieessp.jp^$third-party
 ||genieesspv.jp^$third-party
 ||geniuslinkcdn.com^$third-party
+||geo-targetly.com^$third-party
 ||geobytes.com^$third-party
 ||geoip-db.com^$third-party
 ||geoiplookup.io^$third-party
@@ -3392,6 +3404,7 @@ omni.soundestlink.com$image
 ||gwmtracking.com^$third-party
 ||gyro-n.com^$third-party
 ||h-cast.jp^$third-party
+||hacksplaining.com/track
 ||hadronid.net^$third-party
 ||halifax-online.co.uk/scripts/16c9d93d/
 ||haloscan.com^$third-party
@@ -3494,6 +3507,7 @@ omni.soundestlink.com$image
 ||i2ad.jp^$third-party
 ||i2i.jp^$third-party
 ||iadvize.com/collector/
+||ianimes.org/img/tracker.gif
 ||ib-ibi.com^$third-party
 ||ibeat-analytics.com^$third-party
 ||ibm.com/analytics/build/bluemix-analytics.min.js
@@ -3900,6 +3914,7 @@ omni.soundestlink.com$image
 ||maropost.com^$third-party
 ||marsflag.com/mf2file/site/ext/tr.js
 ||masterstats.com^$third-party
+||mat6tube.com/stats
 ||mateti.net^$third-party
 ||mathtag.com^$third-party
 ||matomo.cloud^$third-party
@@ -3993,6 +4008,7 @@ omni.soundestlink.com$image
 ||mobylog.jp^$third-party
 ||mochibot.com^$third-party
 ||moengage.com^$third-party
+||mon-pagerank.com^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||monetate.net^$third-party
@@ -4177,6 +4193,7 @@ omni.soundestlink.com$image
 ||nyltx.com^$third-party
 ||nyt.com/ads/tpc-check.html$domain=nytimes.com
 ||nytimes.com/v1/purr-cache
+||nyxcosmetics.com/IZ/PXLZNv2dn4/init.js
 ||o-s.io^$third-party
 ||oadz.com^$third-party
 ||obozrevatel.com/pixel.png
@@ -4786,6 +4803,7 @@ omni.soundestlink.com$image
 ||sealserver.trustwave.com^$third-party
 ||search.aol.com/beacon/
 ||search.brave.com/api/feedback$~third-party
+||search.ch/audit/
 ||searchenginejournal.com/xcs0MhRsfxHG.js
 ||searchignite.com^$third-party
 ||secure.trust-guard.com^$third-party
@@ -4814,6 +4832,7 @@ omni.soundestlink.com$image
 ||semantiqo.com^$third-party
 ||semasio.net^$third-party
 ||sematext.com^$third-party
+||semtracker.de^$third-party
 ||sendpulse.com^$third-party
 ||sendtonews.com/stn_trk.gif?
 ||sensic.net^$third-party
@@ -5002,6 +5021,7 @@ omni.soundestlink.com$image
 ||spirit.com/kp4CLSb5/init.js
 ||splitbee.io^$third-party
 ||splunkcloud.com/services/collector/
+||spot.im/v1.0.0/conversation/realtime/read
 ||spring-tns.net^$third-party
 ||springmetrics.com^$third-party
 ||spylog.com^$third-party
@@ -5575,6 +5595,7 @@ omni.soundestlink.com$image
 ||webmeter.ws^$third-party
 ||webmine.cz^$third-party
 ||webminepool.com^$third-party
+||webmining.co^$third-party
 ||weborama.com^$third-party
 ||weborama.design^$third-party
 ||webprospector.de^$third-party
@@ -5698,6 +5719,7 @@ omni.soundestlink.com$image
 ||wywy.com^$third-party
 ||wzrkt.com^$third-party
 ||x-stat.de^$third-party
+||x-traceur.com^$third-party
 ||xapi.ozon.ru^$ping
 ||xapkgame.com^$third-party
 ||xcar.com.cn/exp/
