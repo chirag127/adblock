@@ -526,9 +526,10 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post
+/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_-]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mlbpark.donga.com
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
+/^https:\/\/www\.lowes\.com\/[a-zA-Z0-9-_]+\/[a-z]+\/[a-zA-Z0-9-_]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+$/$domain=lowes.com,xmlhttprequest,method=post
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /_/api/v2/analytics/?
 /_CPiX/art
@@ -928,6 +929,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /tns-counter.js
 /top-10-tracker.min.js
 /track-internal-links.js$domain=balkangunlugu.com.tr
+/track.gif?t=
 /track.php?
 /track/impressions?
 /track/open.php?u=$image
@@ -2859,6 +2861,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||query1.petametrics.com/*&sdk=bc-jsonp$domain=lanacion.com.ar
 @@||query1.petametrics.com/*&sdk=bc-jsonp$domain=ranker.com
 @@||r10s.jp/com/img/home/t.gif?$domain=24.rakuten.co.jp
+@@||rackcdn.com/stf.js$domain=20min.ch
 @@||radio.com/player/javascript/tracking.js$domain=player.radio.com
 @@||raiffeisen.at^*/Logger.js
 @@||randomhouse.com/book/css/certona.css
@@ -38573,6 +38576,10 @@ znak.com##.relap
 ||api.socialmart.ru/analytics.php
 ||api.solvvy.com/v1/pixels/track
 ||api.taboola.com/2.0/json/*/recommendations.$redirect=nooptext,domain=azby.fmworld.net
+||api.target.com/consumers/*/ingest/web/eventstream
+||api.target.com/consumers/*/ttms/events
+||api.target.com/firefly_events/*/events/
+||api.target.com/rum_analytics/
 ||api.tatadigital.com/analytics-engine/
 ||api.teester.com/data/collect
 ||api.testbook.com/api/*/popup
@@ -39866,6 +39873,7 @@ znak.com##.relap
 ||dogannet.tv/q/s/stats
 ||dojomojo.ninja^$third-party
 ||dojq4kt8ws9iq.cloudfront.net/js/analytics.js
+||dollartree.com/ccstoreui/*/analytics/
 ||domatv.dnevnik.hr/bin/usrtrck-new.php
 ||domodomain.com^$third-party
 ||doomna.com^$third-party
@@ -39912,6 +39920,9 @@ znak.com##.relap
 ||dropbox.com/pithos/*ux_analytics$script
 ||dropbox.com/web_timing_log
 ||dropboxstatic.com/static/metaserver/static/js/ux_analytics/
+||drugs.com/*/js/module/log.js$script,redirect=noopjs
+||drugs.com/api/log/
+||drugs.com/api/log/$xmlhttprequest,redirect-rule=noopjson
 ||dsmmadvantage.com^$third-party
 ||dsp.logly.co.jp^$third-party
 ||dsparking.com^$third-party
@@ -40146,6 +40157,7 @@ znak.com##.relap
 ||expedia.nl/trvl-px/
 ||experianmarketingservices.digital^$third-party
 ||experianmatch.info^$third-party
+||experiences.wyng.com/api/*/event-api/events
 ||expert.it/js/omni/tracking/
 ||explore-123.com^$third-party
 ||explore.agilent.com^$badfilter
@@ -40919,6 +40931,7 @@ znak.com##.relap
 ||husfly.com^$third-party
 ||hwp.com.tr/zrzga.js
 ||hwpub.com^$third-party
+||hwupgrade.it^$cookie=bblastvisit
 ||hxtrack.com^$third-party
 ||hybrid.ai^$third-party
 ||hyfntrak.com^$third-party
@@ -41080,6 +41093,8 @@ znak.com##.relap
 ||infusionsoft.com/app/webTracking/getTrackingCode
 ||ing.com.tr/assets/scripts/dataroid.websdk-
 ||ingest.make.rvapps.io^$domain=zdnet.com
+||ingest.make.rvohealth.com/v*/t|
+||ingest.make.rvohealth.com/v*/t|$xmlhttprequest,redirect-rule=noopjson
 ||ingestion.sportskeeda.com/logviewedpage
 ||ingress.pressreader.com/services/track
 ||inimbus.com.au^$third-party
@@ -41381,6 +41396,7 @@ znak.com##.relap
 ||kqzyfj.com^$third-party
 ||kraken.com/analytics
 ||kraken.com/js/sift.min.js
+||kroger.com/clickstream/
 ||krone.at/hps/data/test/md_track.php
 ||krxd.net^$third-party
 ||ksyrium0014.com^$third-party
@@ -41542,6 +41558,7 @@ znak.com##.relap
 ||losecounter.de^$third-party
 ||losstrack.com^$third-party
 ||low-ya.com/duplicate-ga-cookie
+||lowescdn.com/gauge/
 ||lp.tfd-corp.co.jp^$badfilter
 ||lp4.io^$third-party
 ||lporirxe.com^$third-party
@@ -42277,6 +42294,8 @@ znak.com##.relap
 ||patched.to^$cookie=mybb[threadread]
 ||patched.to^$cookie=sid
 ||pautina.net/images/$third-party
+||pavlov-prod.healthline.com/api/metrics|
+||pavlov-prod.healthline.com/api/metrics|$ping,redirect-rule=nooptext
 ||pay.yandex.ru/web/clck/click$xmlhttprequest,ping
 ||payments-amazon.com^*/analytics.js
 ||paypal.com/credit-presentment/log
@@ -43048,6 +43067,8 @@ znak.com##.relap
 ||sedotracker.de^$third-party
 ||seedtag.com^$third-party
 ||seehits.com^$third-party
+||segment-api.goodrx.com/v*/t|
+||segment-api.goodrx.com/v*/t|$xmlhttprequest,redirect-rule=noopjson
 ||segment.com^$third-party
 ||segment.io^$third-party
 ||segmenthub.com^$third-party
@@ -43727,7 +43748,7 @@ znak.com##.relap
 ||tags.globo.com/utag/globo/*/prod/utag.js
 ||tags.news.com.au^$~script
 ||tags.soloway.ru^$third-party
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org
 ||tags.tiqcdn.com/utag/*/utag.v.js
 ||tagsrvcs.com^$third-party
@@ -43754,6 +43775,7 @@ znak.com##.relap
 ||tapstat.ru^$third-party
 ||tapstream.com^$third-party
 ||taptap.*/webapiv2/log/
+||target.com/telemetry_data/
 ||target.mixi.media^$third-party
 ||targetfuel.com^$third-party
 ||targetman.ru^$third-party
