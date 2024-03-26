@@ -526,7 +526,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_-]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post
+/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_-]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_-]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post,match-case
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mlbpark.donga.com
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /^https:\/\/www\.lowes\.com\/[a-zA-Z0-9-_]+\/[a-z]+\/[a-zA-Z0-9-_]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+$/$domain=lowes.com,xmlhttprequest,method=post
@@ -2801,6 +2801,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 @@||pcworldcommunication.*.sc.omtrdc.net/b/ss/
 @@||pcworldcommunication.d2.sc.omtrdc.net/b/ss/$domain=techhive.com
 @@||pdrnetwork.112.2o7.net/b/ss/pdrnetworkpdrnetprod/
+@@||per*.segmentify.com^$app=com.carrefoursa.ecommerce
 @@||per*.segmentify.com^$domain=mediamarkt.com.tr
 @@||personaclick.com^$domain=skechers.com.tr
 @@||pillsbury.com/Shared/StarterKit/Javascript/UnicaTag.js
@@ -3363,6 +3364,7 @@ abp?type=js&session$domain=prosieben.de|sat1.de|kabeleins.de|sixx.de|prosiebenma
 account-email.bellmedia.ca$image
 accountkiller.com#%#window.ga = function(){var a = arguments[5];a&&a.hitCallback&&a.hitCallback();}
 ad.doubleclick.net*trackimp$image
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_tracking_protection
 ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
 adseek.site#$##primary { display: block !important; }
 ae.abbvie.com$image
@@ -38138,6 +38140,7 @@ znak.com##.relap
 ||activeconversion.com^$third-party
 ||activemeter.com^$third-party
 ||activeprospects.com^$third-party
+||activity-flow.vtex.com/af/af.js
 ||actnx.com^$third-party
 ||actonsoftware.com^$domain=~actonsoftware.com
 ||acuityplatform.com^$third-party
@@ -38435,6 +38438,7 @@ znak.com##.relap
 ||api.airfind.com/stats/
 ||api.all-internet.jp^$third-party
 ||api.atlassian.com/metal/ingest
+||api.auchan.fr/tracking/
 ||api.audio.com/analytics/event
 ||api.autopilothq.com^$third-party
 ||api.aws.mapquest.com/logger
@@ -41437,11 +41441,13 @@ znak.com##.relap
 ||livewebstats.dk^$third-party
 ||livinglanguage.com/content/_ui/js/View.Analytics.Controller.min.js
 ||livinglanguage.com/js/View.Analytics.
+||ljc.coupang.com^$app=com.coupang.mobile
 ||ljc.coupang.com^$redirect=nooptext
 ||lk.vectoranalytics.ru^$third-party
 ||lloogg.com^$third-party
 ||lndata.com^$third-party
 ||lngtd.com^$third-party
+||lnk.to/~/tr/
 ||load.sumome.com^$third-party
 ||localytics.com^$third-party
 ||lockview.cn^$third-party
@@ -42096,6 +42102,8 @@ znak.com##.relap
 ||onetag-sys.com^$third-party
 ||ongsono.com^$third-party
 ||online-metrix.net^$third-party
+||online.citysuper.com.hk/*/produce_batch|
+||online.citysuper.com.hk/*/produce_batch|$ping,redirect-rule=nooptext
 ||online.hentai-share.me/templates/anime-share2/js/liveinternet.js
 ||online.hentai-share.me/templates/anime-share2/js/metrika.js
 ||onliner.by/viewcounter/

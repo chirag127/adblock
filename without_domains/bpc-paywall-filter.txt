@@ -29,7 +29,7 @@
 @@||cdn.ampproject.org/*/amp-access-$script,domain=cambridge.org|cmjornal.pt
 @@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
 @@||nationalreview.com$script,xmlhttprequest,~third-party
-@@||piano.io^$domain=asia.nikkei.com|businessinsider.com.pl|hbr.org|japantimes.co.jp|newsweek.pl|onet.pl
+@@||piano.io^$domain=asia.nikkei.com|auto-swiat.pl|businessinsider.com.pl|forbes.pl|hbr.org|japantimes.co.jp|komputerswiat.pl|newsweek.pl|onet.pl
 @@||sdk.privacy-center.org^$script,third-party
 aaii.com##+js(rc, fadeout, .fadeout)
 aaii.com##.greybox-signup
@@ -299,6 +299,7 @@ nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div#dock-container
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
 odt.co.nz##+js(ra, property, div[property="content:encoded"])
 onet.pl##+js(cookie-remover, /^xbc/)
+onet.pl##+js(cookie-remover, xbc)
 paloaltoonline.com##+js(cookie-remover, /^/)
 philosophynow.org##+js(cookie-remover, /^/)
 piratewires.com##+js(ra, class, div[class*="article_articleRestricted_"], stay)
