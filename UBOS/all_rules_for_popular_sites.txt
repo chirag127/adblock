@@ -17,17 +17,26 @@ cuervotv.me,freetvspor.lol,furher.in,niaomea.me,yu2be.com,lulustream.com,omgflix
 hhdstreams.club,uhdstreams.club,9xmovies.app,toonily.com,kiminime.com,katmoviehd.nl,a2zapk.com,vidload.net,movies123.pics,nsfwyoutube.com,ckk.ai,adsafelink.com,isekaiscan.com,uppit.com,watchhowimetyourmother.online,kisstvshow.to,arabseed.tv,updatetribun.org,putlockers.co#%#//scriptlet("abort-on-property-read", "Object.prototype.Focm")
 ssyoutube.com#%#//scriptlet('prevent-window-open')
 mobileflasherbd.com#%#//scriptlet("prevent-window-open", "youtube.com")
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.playerConfig.ssapConfig', 'undefined')
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.playerConfig.ssapConfig.ssapPrerollEnabled', 'false')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.streamingData.serverAbrStreamingUrl', 'undefined')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.adPlacements', 'undefined')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.adSlots', 'undefined')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'ytInitialPlayerResponse.playerAds', 'undefined')
 youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', 'playerResponse.adPlacements', 'undefined')
-.com/watch?v=$xmlhttprequest,jsonprune=\$.playerConfig.ssapConfig,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+.com/watch?v=$replace=/"ssapPrerollEnabled":true/"ssapPrerollEnabled":false/,domain=www.youtube.com
+.com/watch?v=$replace=/"auxiliaryUi":\{"messageRenderers":\{"bkaEnforcementMessageViewModel.*?e\}\}\}\,//,domain=www.youtube.com
+.com/watch?v=$replace=/("trackingParam":"kx_fmPxhoPZR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{55}lLKPQ-SS"\})/\$1\$2/,domain=www.youtube.com
+.com/watch?v=$replace=/("trackingParam":"k5DfmPxhoXpR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{151}lLKPQGiS"\})/\$1\$2/,domain=www.youtube.com
+/youtubei/v*/player?$replace=/"ssapPrerollEnabled":true/"ssapPrerollEnabled":false/,domain=www.youtube.com
+/youtubei/v*/player?$replace=/"auxiliaryUi":\{"messageRenderers":\{"bkaEnforcementMessageViewModel.*?e\}\}\}\,//,domain=www.youtube.com
+/youtubei/v*/player?$replace=/("trackingParam":"kx_fmPxhoPZR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{55}lLKPQ-SS"\})/\$1\$2/,domain=www.youtube.com
+/youtubei/v*/player?$replace=/("trackingParam":"k5DfmPxhoXpR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{151}lLKPQGiS"\})/\$1\$2/,domain=www.youtube.com
+.com/playlist?list=$replace=/"ssapPrerollEnabled":true/"ssapPrerollEnabled":false/,domain=www.youtube.com
+.com/playlist?list=$replace=/"auxiliaryUi":\{"messageRenderers":\{"bkaEnforcementMessageViewModel.*?e\}\}\}\,//,domain=www.youtube.com
+.com/playlist?list=$replace=/("trackingParam":"kx_fmPxhoPZR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{55}lLKPQ-SS"\})/\$1\$2/,domain=www.youtube.com
+.com/playlist?list=$replace=/("trackingParam":"k5DfmPxhoXpR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{151}lLKPQGiS"\})/\$1\$2/,domain=www.youtube.com
 .com/watch?v=$xmlhttprequest,jsonprune=\$.streamingData.serverAbrStreamingUrl,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-/youtubei/v*/player?$jsonprune=\$.playerConfig.ssapConfig,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /youtubei/v*/player?$jsonprune=\$.streamingData.serverAbrStreamingUrl,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-.com/playlist?list=$jsonprune=\$.playerConfig.ssapConfig,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 .com/playlist?list=$jsonprune=\$.streamingData.serverAbrStreamingUrl,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 .com/watch?v=$xmlhttprequest,jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /youtubei/v*/player?$jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
@@ -41,10 +50,19 @@ youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-constant', '
 /youtubei/v*/player?$replace=/\"adSlots.*?\}\]\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 .com/watch?v=$replace=/\"playerAds.*?\}\}\]\,//,xmlhttprequest,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /youtubei/v*/player?$replace=/\"playerAds.*?\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+www.youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/"auxiliaryUi":\{"messageRenderers":\{"bkaEnforcementMessageViewModel.*?e\}\}\}\,/', '', 'player?')
+www.youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/("trackingParam":"kx_fmPxhoPZR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{55}lLKPQ-SS"\})/', '$1$2', 'player?')
+www.youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/("trackingParam":"k5DfmPxhoXpR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{151}lLKPQGiS"\})/', '$1$2', 'player?')
+www.youtube.com#%#//scriptlet('trusted-replace-xhr-response', '/"auxiliaryUi":\{"messageRenderers":\{"bkaEnforcementMessageViewModel.*?e\}\}\}\,/', '', '/playlist\?list=|player\?|watch\?v=/')
+www.youtube.com#%#//scriptlet('trusted-replace-xhr-response', '/("trackingParam":"kx_fmPxhoPZR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{55}lLKPQ-SS"\})/', '$1$2', '/playlist\?list=|player\?|watch\?v=/')
+www.youtube.com#%#//scriptlet('trusted-replace-xhr-response', '/("trackingParam":"k5DfmPxhoXpR)[-_0-9A-Za-z]{150}[-_0-9A-Za-z]+?([-_0-9A-Za-z]{151}lLKPQGiS"\})/', '$1$2', '/playlist\?list=|player\?|watch\?v=/')
 youtube.com#%#//scriptlet('trusted-replace-xhr-response', '/\"adPlacements.*?([A-Z]"\}|"\}{2,4})\}\]\,/', '', '/^(?!.*(\/\/tv\.youtube\.com)).*(playlist\?list=|player\?|watch\?v=)/')
 tv.youtube.com#%#//scriptlet('trusted-replace-xhr-response', '"adPlacements"', '"no_ads"', '/playlist\?list=|player\?|watch\?v=/')
-youtube.com#%#//scriptlet('json-prune', 'playerResponse.playerConfig.ssapConfig playerResponse.streamingData.serverAbrStreamingUrl playerConfig.ssapConfig streamingData.serverAbrStreamingUrl')
+youtube.com#%#//scriptlet('json-prune', 'playerResponse.streamingData.serverAbrStreamingUrl streamingData.serverAbrStreamingUrl')
+youtube.com#%#//scriptlet('trusted-replace-fetch-response', '"ssapPrerollEnabled":true', '"ssapPrerollEnabled":false', 'player?')
+youtube.com#%#//scriptlet('trusted-replace-xhr-response', '"ssapPrerollEnabled":true', '"ssapPrerollEnabled":false', 'player?')
 youtube.com#%#//scriptlet('trusted-replace-fetch-response', '/"adPlacements.*?([A-Z]"\}|"\}{2,4})\}\]\,/', '', 'player?')
+youtube.com#%#//scriptlet('trusted-replace-fetch-response', '"adSlots"', '"no_ads"', '/playlist\?list=|player\?|watch\?v=/')
 m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots')
 ||googlevideo.com/initplayback?source=youtube&*&c=TVHTML5&oad=$xmlhttprequest,domain=youtube.com
 [$path=/tv]youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/https:\/\/www\.youtube\.com\/s\/player\/.*\/tv-player-ias\.vflset\/tv-player-ias\.js:/')
@@ -1592,6 +1610,7 @@ twitter.com#?#section[aria-labelledby^="accessible-list"] div[style^="transform"
 twitter.com#?#section[aria-labelledby][role="region"] > div[aria-label] > div[style] > div[style^="transform: translate"] article[data-testid="tweet"]:has(> div[class] > div[class] > div[class] a[href^="/i/topics"][dir="auto"])
 gujaratexclusive.in##.td-post-content p > a[href^="https://twitter.com/"]
 sportarena.com###company-info > a[href="https://twitter.com/sportarenacom/"]
+twitter.com##div[data-testid="primaryColumn"] nav[aria-live][role="navigation"] + div[class]:has(> div > div[role="status"] > div > div > a[href="/i/premium_sign_up"][style^="text-overflow:"])
 analytics.twitter.com##.home-columns div[data-type="advertiser"]
 ||platform.twitter.com/js/timeline$domain=anbariloche.com.ar
 $removeparam=refsrc,domain=twitter.com|x.com
