@@ -287,6 +287,10 @@ nautil.us##+js(cookie-remover, /^(arc|sfa)$/)
 newoxfordreview.org##+js(rc, not-viewable, div.not-viewable)
 newrepublic.com##div.article-scheduled-modal
 newsday.com##+js(ra, class, html[class])
+newsweek.pl##+js(ra, class, div#contentPremiumPlaceholder[class])
+newsweek.pl##+js(ra, class, div.embed__mainVideoWrapper)
+newsweek.pl##+js(ra, class, div.videoPremiumWrapper)
+newsweek.pl##+js(ra, class|style, div.contentPremium[style])
 nrc.nl##+js(cookie-remover, counter)
 nrc.nl##div[id$="modal__overlay"],div.header__subscribe-bar,div.banner
 nu.nl##+js(rc, authorized-content, div.authorized-content)
@@ -298,6 +302,7 @@ nybooks.com##+js(rc, paywall-article, .paywall-article)
 nybooks.com##div.toast-cta
 nytimes.com##div[data-testid="inline-message"],div[id^="ad-"],div#dock-container,div.pz-ad-box
 nzherald.co.nz##+js(set, Fusion.globalContent.isPremium, false)
+nzz.ch,themarket.ch##+js(rc, nzzinteraction, .nzzinteraction)
 odt.co.nz##+js(ra, property, div[property="content:encoded"])
 onet.pl##+js(cookie-remover, /^xbc/)
 onet.pl##+js(cookie-remover, xbc)
@@ -593,6 +598,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||wbmdstatic.com/*/chunk-vendors.*.js$script,domain=medscape.com
 ||weborama.fr/js/$script,third-party
 ||wgchrrammzv.com/prod/ajc/loader.min.js$script,domain=dayton.com|daytondailynews.com|journal-news.com|springfieldnewssun.com
+||wiwo.de/js/*/wt.*.js$script,~third-party
 ||zeitzeichen.net/sites/default/files/js/js_*.js$script,~third-party
 ||zephr.com/zephr-browser/$third-party
 ||zephr.com/zephr/decide$xmlhttprequest,domain=ksta.de|rundschau-online.de
