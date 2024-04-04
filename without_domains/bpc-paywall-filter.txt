@@ -1,6 +1,6 @@
 
 ##+js(rc, didomi-popup-open, body.didomi-popup-open)
-.com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|rubbernews.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
+.com/*/js_$script,domain=360dx.com|adage.com|autonews.com|chicagobusiness.com|crainscleveland.com|crainsdetroit.com|crainsgrandrapids.com|crainsnewyork.com|genomeweb.com|modernhealthcare.com|plasticsnews.com|precisionmedicineonline.com|rubbernews.com|sustainableplastics.com|tirebusiness.com|utech-polyurethane.com
 .com/_assets/jam/$script,~third-party,domain=bicycling.com|cosmopolitan.com|countryliving.com|delish.com|elle.com|elledecor.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|menshealth.com|oprahdaily.com|popularmechanics.com|prevention.com|roadandtrack.com|runnersworld.com|townandcountrymag.com|womenshealthmag.com
 .com/static/js/dist/contentGate.bundle.js$script,~third-party,domain=cfo.com|pharmavoice.com|proformative.com|socialmediatoday.com
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
@@ -24,12 +24,13 @@
 /wp-content/plugins/leaky-paywall/js/leaky-paywall-cookie.js$script,~third-party
 /zephr/feature$xmlhttprequest
 20minutes.fr##+js(rc, qiota_reserve, div.qiota_reserve)
-360dx.com,adage.com,autonews.com,chicagobusiness.com,crainscleveland.com,crainsdetroit.com,crainsnewyork.com,genomeweb.com,modernhealthcare.com,plasticsnews.com,precisionmedicineonline.com,rubbernews.com,sustainableplastics.com,tirebusiness.com,utech-polyurethane.com##+js(ra, class, body[class])
+360dx.com,adage.com,autonews.com,chicagobusiness.com,crainscleveland.com,crainsdetroit.com,crainsgrandrapids.com,crainsnewyork.com,genomeweb.com,modernhealthcare.com,plasticsnews.com,precisionmedicineonline.com,rubbernews.com,sustainableplastics.com,tirebusiness.com,utech-polyurethane.com##+js(ra, class, body[class])
 @@/wrapperMessagingWithoutDetection.js$script,~third-party,domain=demorgen.be|flair.nl|humo.be|libelle.nl|margriet.nl|parool.nl|trouw.nl|volkskrant.nl
 @@cdn.cxense.com^$script,domain=bizjournals.com|journaldemontreal.com|journaldequebec.com|wsj.com
 @@||cdn.ampproject.org/*/amp-access-$script,domain=cambridge.org|cmjornal.pt
 @@||myprivacy-static.dpgmedia.net/consent.js$script,third-party
 @@||nationalreview.com$script,xmlhttprequest,~third-party
+@@||petametrics.com$script,domain=seekingalpha.com
 @@||piano.io^$domain=asia.nikkei.com|auto-swiat.pl|businessinsider.com.pl|forbes.pl|hbr.org|japantimes.co.jp|komputerswiat.pl|newsweek.pl|onet.pl
 @@||sdk.privacy-center.org^$script,third-party
 aaii.com##+js(rc, fadeout, .fadeout)
@@ -279,8 +280,8 @@ museumsassociation.org##div#paywall-wrapper,div.advertising
 mv-voice.com##+js(cookie-remover, /^/)
 nacion.com##+js(ra, style, div.article-body-wrapper__styled[style], stay)
 nacion.com##div.post
-narcity.com##+js(ra, style, div.body-description[style])
-narcity.com##div#login-wall,div#overlay
+narcity.com##+js(ra, style, div.body-description[style], stay)
+narcity.com##div#login-wall,div#overlay,div.brid-container,div.brandsnippet-article
 nation.africa##+js(rc, nmgp, .nmgp)
 nation.africa##div.modal
 nautil.us##+js(cookie-remover, /^(arc|sfa)$/)

@@ -526,7 +526,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 /\/-[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+\/[A-z0-9]+$/$domain=calvinklein.*,xmlhttprequest,script
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /\/js\/[a-z]{3}\d\.js$/$script,~third-party,domain=eegg.fun
-/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_-]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_-]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post,match-case
+/^https:\/\/(www|m)\.coupang\.com\/[A-Za-z0-9_]+\/[A-Za-z0-9_-]+\/[A-Za-z0-9_-]+\/[A-Za-z0-9_]+\/[A-Za-z0-9_]+(\/[A-Za-z0-9_-]+){0,5}$/$domain=coupang.com,xmlhttprequest,method=post,match-case
 /^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-|_){4,22}@latest\/dist\/script\.min\.js$/$domain=mlbpark.donga.com
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 /^https:\/\/www\.lowes\.com\/[a-zA-Z0-9-_]+\/[a-z]+\/[a-zA-Z0-9-_]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+$/$domain=lowes.com,xmlhttprequest,method=post
@@ -1063,6 +1063,7 @@ $domain=browserleaks.com|nzherald.co.nz,permissions=geolocation=()
 ://tru.am^$third-party
 ://vip.*/?pge=$image,third-party
 ://wa.*/s?$image
+@@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@.2o7.net/$domain=today.com
 @@.googleadservices.*.js$domain=ponominalu.ru
 @@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
@@ -3533,7 +3534,6 @@ barracuda.qof.happycustomer.io$image
 bauerworks.e.bauer-media.com.au$image
 bbcgoodfood.com#%#AG_onLoad((function(){const t=document.querySelector('script[src*="/gpt/tag/js/gpt.js"]');if(t)for(let e=0;e<3;e++){const e=document.createElement("script");t.parentNode.insertBefore(e,t)}}));
 bcnretail.com###_popIn_recommend
-beauty.ua##.footer-counters
 beautycrew.e.aremedia.com.au$image
 beautyheaven.e.aremedia.com.au$image
 bellemag.e.aremedia.com.au$image
@@ -35748,6 +35748,9 @@ eotrx.substackcdn.com$image
 epost.linasmatkasse.se$image
 ero-anime.net###top_area_under
 ero-anime.net#?##side_col #index_side_widget:has(.ninja-recommend-block)
+erostopics.net###custom_html-137
+erostopics.net###custom_html-81
+erostopics.net###related-box
 espreso.tv##.wrap-footer .counter
 esputnik.com%2Frepository%2Fapplications%2Fcommons%2Fhidden.png
 esputnik.com/repository/applications/commons/hidden.png
@@ -36182,8 +36185,7 @@ kartell.com#%#//scriptlet('prevent-element-src-loading', 'script', 'vivocha.js')
 kbjfree.com#%#//scriptlet('set-constant', 'plausible', 'noopFunc')
 kerch.com.ru##a[href^="http://www.kerch.net/counter/"]
 kino-zeit.de##.vgwort-metis-marker
-kinotan.ru##.counts
-kinotochka.club,legend.az##.counts
+kinotan.ru,kinotochka.club,legend.az##.counts
 kizi.com#%#window.google_trackConversion = function() {};
 kobe-np.co.jp#?#section.sec:has(> #piano_recs_inline_title)
 komachi.yomiuri.co.jp##._popIn_ranking_otekomachi
@@ -39568,7 +39570,7 @@ violationalert.squareup.com$image
 violationalert.stabila.com$image
 vip.mine.ubilab.me$image
 vippetcare.com#%#//scriptlet('prevent-fetch', 'www.yext-pixel.com')
-viva.ua##.footer-counters
+viva.ua,beauty.ua##.footer-counters
 vivi.tv#?#.section__inner:has(> #recommended-posts-result)
 vmail.eurofins-labazur-provence.ubilab.me$image
 vmail.happycustomer.io$image
@@ -44006,7 +44008,6 @@ znak.com##.relap
 ||permutive.com^$third-party
 ||persianstat.com^$third-party
 ||persianstat.ir^$third-party
-||personaclick.com^$third-party
 ||personyze.com^$third-party
 ||perzonalization.com^$third-party
 ||pes.itv.com/*/post/
@@ -44857,6 +44858,10 @@ znak.com##.relap
 ||silverpop.com^$third-party
 ||silverpush.co^$third-party
 ||sim-technik.de^*&uniqueTrackId=
+||similarweb.com/scripts/lite-app/client/dist/tracking.min.js
+||similarweb.com^$cookie=.DEVICETOKEN.SIMILARWEB.COM
+||similarweb.com^$cookie=cb_anonymous_id
+||similarweb.com^$cookie=sgID
 ||simonsignal.com^$third-party
 ||simpleanalyticscdn.com^$third-party
 ||simplehitcounter.com^$third-party
