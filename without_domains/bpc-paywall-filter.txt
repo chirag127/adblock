@@ -99,7 +99,7 @@ bloomberg.com##div[id^="fortress-"]
 bloombergadria.com##+js(ra, style, article[style])
 bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,twincities.com##+js(ra, subscriptions-section, [subscriptions-section="content"])
 bostonherald.com,denverpost.com,eastbaytimes.com,mercurynews.com,ocregister.com,pressenterprise.com,twincities.com##[subscriptions-section="content-not-granted"]
-brainly.com,brainly.com.br##+js(aopr, localStorage)
+brainly.com,brainly.com.br##+js(set-local-storage-item, /^/, $remove$)
 brusselstimes.com##+js(ra, style, div[style*="height: 0;"], stay)
 businessden.com##+js(ra, class, div.cp-paywall-user)
 businessden.com##div#copperpress-paywall
@@ -141,7 +141,7 @@ corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipu
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,quotidianodipuglia.it##[subscriptions-section="content-not-granted"]
 crikey.com.au,inc-aus.com,smartcompany.com.au##+js(cookie-remover, blaize_session)
 crusoe.com.br##div#gpt-leaderboard,div.ads_desktop,div.catchment-box
-csmonitor.com##+js(aopr, localStorage)
+csmonitor.com##+js(set-local-storage-item, /^/, $remove$)
 csmonitor.com##.paywall
 curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
 dagsavisen.no##+js(set, window.Fusion.globalContent.content_restrictions.content_code, 0)
@@ -165,7 +165,6 @@ eastwest.eu##+js(ra, style, .paywall)
 eastwest.eu##+js(rc, paywall, .paywall)
 eastwest.eu##.offerta_abbonamenti
 economist.com##div.paywall,body>style:remove()
-economist.com##html:style(overflow: auto !important;)
 elconfidencial.com##+js(rc, newsType__content--closed, div.newsType__content--closed)
 elespanol.com##div.full-suscriptor-container
 elfinancierocr.com##+js(ra, style, div.article-body-wrapper__styled[style])
@@ -242,8 +241,8 @@ kurier.at##+js(ra, class|style, div.paywall)
 kurier.at##div#cfs-paywall-container
 labusinessjournal.com###css-only-modals
 labusinessjournal.com##+js(cookie-remover, /^/)
-lanacion.com.ar##+js(aopr, localStorage)
 lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
+lanacion.com.ar##+js(set-local-storage-item, /^/, $remove$)
 lavanguardia.com,mundodeportivo.com##span.content-ad,span.hidden-ad,span.ad-unit,div.ad-div
 lavoz.com.ar##.wrapperblock
 ledevoir.com##+js(cookie-remover, pw6)
@@ -266,7 +265,7 @@ loeildelaphotographie.com##.premium-pic-box,.membership-promo-container,.login_f
 lydogbillede.dk,lydogbilde.no##+js(ra, style, div#MoreLink_content-container[style])
 lydogbillede.dk,lydogbilde.no##+js(rc, thecontent, div.thecontent)
 lydogbillede.dk,lydogbilde.no##div.paywallbox,div#MoreLink_fade-out-div
-magazine.atavist.com##+js(aopr, localStorage)
+magazine.atavist.com##+js(set-local-storage-item, /^/, $remove$)
 marketnews.com##+js(ra, class, div.body-description)
 medscape.com##.AdUnit,div[id^="ads-"]
 meritnation.com##+js(rc, maxHeight75px, div.exp_content.maxHeight75px)
@@ -342,8 +341,8 @@ scmp.com##+js(ra, class, div.paywalled-content)
 scmp.com##+js(ra, class, section[data-qa="ContentBody-ContentBodyContainer"][class], stay)
 scmp.com##div[data-qa*="AdSlot"],div.adblock-message
 scotsman.com##+js(ra, class, div.premium)
-slideshare.net##+js(aopr, localStorage)
 slideshare.net##+js(rc, limit-overlay, .limit-overlay)
+slideshare.net##+js(set-local-storage-item, /^/, $remove$)
 sofrep.com##+js(cookie-remover, sofrep_news_ids)
 sofrep.com##+js(ra, class, div.paywall)
 sofrep.com##+js(rc, fader, div.fader)
@@ -597,7 +596,7 @@ zvw.de##.nfy-products-teaser,.nfy-banner
 ||topagrar.com/*/news/$inline-script
 ||tuttosport.com/_next/static/chunks/pages/news/%5B*.js$script,~third-party
 ||wallkit.net/js/$script,third-party
-||washingtonpost.com/tetro/metering/evaluate$xmlhttprequest,~third-party
+||washingtonpost.com/subscribe/static/tetro-client/fusion/tetro.min.js$script,~third-party
 ||wbmdstatic.com/*/chunk-vendors.*.js$script,domain=medscape.com
 ||weborama.fr/js/$script,third-party
 ||wgchrrammzv.com/prod/ajc/loader.min.js$script,domain=dayton.com|daytondailynews.com|journal-news.com|springfieldnewssun.com
