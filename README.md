@@ -16,9 +16,9 @@ You can install the extension from [here](https://chrome.google.com/webstore/det
 
 ### Chirag's Lists
 
-#### Chirag's Anti Age Confirmations list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/adtl/ageconfirmation.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/chirag_annoyance_filters/AntiAgeConfirmations.txt)
+#### Chirag's Anti Age Confirmations list [Subscribe](https://subscribe.adblockplus.org/?location=https://github.com/chirag127/adblock/raw/main/chirag_annoyance_filters/AntiAgeConfirmations.txt) [Download](https://github.com/chirag127/adblock/raw/main/chirag_annoyance_filters/AntiAgeConfirmations.txt)
 
-#### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/chirag127/adblock/main/A.txt) [Download](https://raw.githubusercontent.com/chirag127/adblock/main/A.txt)
+#### Chirag's Annoyance list [Subscribe](https://subscribe.adblockplus.org/?location=https://github.com/chirag127/adblock/raw/main/A.txt) [Download](https://github.com/chirag127/adblock/raw/main/A.txt)
 
 #### Chirag's Anti Affiliate disclaimer list [Subscribe](https://subscribe.adblockplus.org/?location=https://github.com/chirag127/adblock/raw/main/chirag_annoyance_filters/AntiAffiliateDisclaimer.txt) [Download](https://github.com/chirag127/adblock/raw/main/chirag_annoyance_filters/AntiAffiliateDisclaimer.txt)
 
