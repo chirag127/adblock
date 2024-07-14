@@ -1069,6 +1069,7 @@ google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,
 analyticsindiamag.com#?#.elementor-section-content-middle[data-settings="{\"background_background\":\"classic\"}"]:-abp-has(a[href^="https://play.google.com/store/apps"])
 9to5google.com,9to5mac.com,dronedj.com,electrek.co###after_disclaimer_placement
 9to5google.com,9to5mac.com,9to5toys.com,dronedj.com,electrek.co,searchengineland.com,spaceexplored.com##.google-news-link
+psypost.org##[href^="https://news.google.com/publications/"]
 play.google.com###gb > div[style*="background-color"]
 google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk###taw > div > [data-ved]
 cloud.google.com##.devsite-snackbar-inner
@@ -1097,6 +1098,7 @@ bing.com#$?#.b_restorableLink { remove: true; }
 bing.com#%#//scriptlet('prevent-setInterval', 'logQueue', '10000')
 ||bing.com/api/$app=Skype.exe
 ||bing.com/retailexp/msn/api/*/trendingprods
+bing.com##.b_bza_pole
 bing.com##.b_ans:has([class^="xm_"][class*="_ansCont"])
 ||bing.com/api/*/mediation/clientauction
 offerup.com##a[href^="https://www.bing.com/aclick?"]
@@ -1469,7 +1471,7 @@ www.reddit.com##+js(rpnt, script, "outboundUrl", "outbound")
 www.reddit.com##+js(json-prune, data.*.elements.edges.[].node.outboundLink)
 www.reddit.com##+js(json-prune, data.children.[].data.outbound_link)
 ||redditstatic.com/shreddit/sentry-$domain=reddit.com
-www.reddit.com##+js(trusted-replace-outbound-text, JSON.stringify, '/^{"([a-z]{4})_token":"[^"]+","info":\[{.*"action_info":.*]}$/', '{"$1_token":"","info":[{"action_info":{"success":true,"trigger_type":"","page_type":""},"request":{"server_render_id":"","canonical_url":""},"screenview_id":"","screen":{"height":"","width":""},"adblock":{"enabled":false},"source":"global","action":"view","noun":"screen","referrer":{"url":"","domain":""},"client_timestamp":"","correlation_id":"","feed":{"correlation_id":""}}]}')
+www.reddit.com##+js(trusted-replace-outbound-text, JSON.stringify, '/^{"([^"]*token[^"]*)":"[0-9a-z]+","info":\[{.*"action_info":.*}]}$/', '{"$1":"","info":[{"action_info":{"success":true,"trigger_type":"","page_type":null},"request":{"server_render_id":"","canonical_url":""},"screenview_id":"","screen":{"height":"","width":""},"adblock":{"enabled":false},"source":"global","action":"view","noun":"screen","referrer":{"url":"","domain":""},"client_timestamp":"","correlation_id":""}]}')
 ||www.reddit.com/|$xhr,1p,method=post
 ||reddit.com^$removeparam=rdt,doc
 @@||gateway.reddit.com/desktopapi/*$xhr,1p
