@@ -182,6 +182,7 @@ youtube.com##.share-panel-services-container > div#share-services-container
 cumhuriyet.com.tr#?#article > section:has(> div[style] > a[href^="https://www.youtube.com/channel/"])
 m.ynet.co.il##iframe[src*=".youtube.com/subscribe_embed?"]
 ||www.youtube.com/@pengwincheat/$doc
+||www.youtube.com/@melonitysoft/$doc
 ||www.youtube.com/channel/UCS9ql1ylQmDx7o_6v15X7mw/$doc
 ||www.youtube.com/channel/UCEMJ0wTeQgvyyvQTil7tteQ/$doc
 ||www.youtube.com/channel/UCNLgP9j7dK6tvEiZC2wZp5Q/$doc
@@ -848,6 +849,7 @@ news.tvbs.com.tw#?#div[class^="newsdetail_"][class*="community"] ul > li:has(> a
 ||sites.google.com/view/flechh|$doc
 ||sites.google.com/view/kostsoft|$doc
 ||sites.google.com/view/ex1aucnh3r/$doc
+||sites.google.com/view/ex1aucnh3r1/$doc
 ||sites.google.com/view/nexol|$doc
 ||sites.google.com/mwhite55.appquestss.com/$doc
 ||sites.google.com/view/shinhan-fiinance/^$all,to=~shinhan.com.vn
@@ -1177,8 +1179,7 @@ bing.com#@?##b_results > li :-abp-has(span:-abp-contains(Ad))
 ||vanityassassinationsobbing.com^
 bing.com##.br-poleoffcarousel
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.c-thinbanner
-bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
-bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
+bing.com##.b_algo:has(p[class^="b_lineclamp2 b_algoSlug "])
 bing.com##.slide:has(.rtb_ad_caritem_mvtr)
 bing.com###bepfo.popup[style^="visibility: visible"]
 bing.com##.ad_sc
@@ -3119,6 +3120,7 @@ oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
 www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(json-prune, cuepointPlaylist)
 www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start), [value="Ad"], .mpd)
 ||fls-na.amazon.com/$xhr,redirect=noopjs,domain=imdb.com
+||amazon.com/gp/redirect.html?*&location=http$doc,urlskip=?location
 $removeparam=asc_campaign,domain=aboutamazon.com|amazon.*|amzn.to
 $removeparam=asc_refurl,domain=aboutamazon.com|amazon.*|amzn.to
 $removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to
