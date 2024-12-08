@@ -1288,6 +1288,7 @@ google.co.jp,search.yahoo.co.jp,bing.com,duckduckgo.com,google.*#@#a[href*="//b.
 bing.com##+js(href-sanitizer, a[href^="/rebates/welcome?url=http"], ?url)
 ||bing.com/ck/a*^u=a1aHR0c$doc,urlskip=/[?&]u=a1(aHR0c[^&#]+)/ -base64 +https
 ||bing.com/rebates/welcome?url=http$doc,urlskip=?url
+||bing.com/alink/link?url=http$doc,urlskip=?url
 bing.com,msn.com,web.skype.com##+js(cookie-remover, MicrosoftApplicationsTelemetryDeviceId)
 bing.com#@#a[href*="/aclick?ld="]
 bing.com##.ins_exp.vsp
