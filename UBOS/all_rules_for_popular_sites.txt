@@ -912,6 +912,7 @@ news.tvbs.com.tw#?#div[class^="newsdetail_"][class*="community"] ul > li:has(> a
 ||adservice.google.com/adsid/integrator.js$script,redirect=noopjs,domain=ultimateclassicrock.com
 *$frame,script,3p,denyallow=google.com|googleapis.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=savelink.site
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=lite-link.*
+*$script,3p,denyallow=google.com|gstatic.com,domain=lewdninja.com|new.lewd.ninja
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com,domain=miohentai.com
 *$script,3p,denyallow=google.com|gstatic.com,domain=iyotvideos.com|kaplog.com
 *$3p,script,denyallow=facebook.net|fbcdn.net|googleapis.com|google.com|gstatic.com|recaptcha.net|hcaptcha.com,domain=adcorto.*
@@ -1187,7 +1188,14 @@ bing.com#@?##b_results > li :-abp-has(span:-abp-contains(Ad))
 bing.com##.br-poleoffcarousel
 backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.c-thinbanner
 bing.com##.slide:has(.rtb_ad_caritem_mvtr)
-bing.com##li.b_algo:has(> [class="b_caption"] > p.b_overflow2)
+bing.com##li.b_algo:has(a[aria-label="Amazon"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="Best Buy"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="Booking.com"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="Trip.com"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="Tripadvisor"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="Walmart"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="eBay"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
+bing.com##li.b_algo:has(a[aria-label="eDreams"] .rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"])
 bing.com###bepfo.popup[style^="visibility: visible"]
 bing.com##.ad_sc
 bing.com##.b_ad
@@ -1629,7 +1637,7 @@ $script,third-party,denyallow=doodcdn.co|fastly.net|statically.io|sharecast.ws|b
 @@||bizpacreview.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com *.twitter.com *.spot.im
 @@||bigleaguepolitics.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com *.twitter.com *.spot.im
 @@||infowars.com^$csp=script-src 'self' *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com *.twitter.com *.spot.im
-twitter.com#@#iframe[width="100%"][height="120"]
+twitter.com#@#iframe[width="100%"][height="120"]:not([src*="bandcamp.com"])
 @@||twitter.com/i/videos/tweet/*?embed_$document
 @@||twitter.com$domain=bleacherreport.com
 @@||platform.twitter.com/$domain=discovery.com
@@ -2858,6 +2866,7 @@ tiktok.com###tiktok-share
 flytothesky.ru##div.textwidget > a[href="https://www.tiktok.com/@andynurrov"]
 ||korshoptiktok.com^$all,to=~tiktok.com
 ||tiktok-svip*.com^$all,to=~tiktok.com
+||r-tiktok.com^$all,to=~tiktok.com
 ||ads.tiktok.com/|$xhr,3p,redirect=noop.txt
 ||ads.tiktok.com^$badfilter
 @@||mcs-va.tiktok.com/v1/user/webid$xhr
@@ -3138,7 +3147,7 @@ hourei.net,ktgis.net,typepad.com,ntv.co.jp,isekai-museum.jp,phantom-world.com,sk
 ||cloudfront.net^*.mp3|$media,redirect=noopmp3-0.1s,domain=music.amazon.com|music.amazon.ca|music.amazon.co.uk|music.amazon.fr|music.amazon.de|music.amazon.it|music.amazon.es|music.amazon.co.jp|music.amazon.com.au|music.amazon.com.mx
 oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
 ||videorolls.row.aiv-cdn.net/*.mp4$media,redirect=noopmp3-0.1s,domain=amazon.com
-www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(json-prune, cuepointPlaylist)
+www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(json-prune, cuepointPlaylist vodPlaybackUrls.result.playbackUrls.cuepoints)
 www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start), [value="Ad"], .mpd)
 ||fls-na.amazon.com/$xhr,redirect=noopjs,domain=imdb.com
 ||amazon.com/gp/redirect.html?*&location=http$doc,urlskip=?location
