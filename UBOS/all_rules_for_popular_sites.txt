@@ -215,7 +215,6 @@ m.ynet.co.il##iframe[src*=".youtube.com/subscribe_embed?"]
 nsfwyoutube.com##pp
 *$xhr,3p,domain=nsfwyoutube.com
 ||m.youtube.com/*/ad.js$script
-||mp3juices.cc^$csp=default-src 'self' 'unsafe-inline' *.dropbox.com *.dropbox-dns.com *.gstatic.com *.googleapis.com *.google.com ytpp3.com *.youtube.com
 ||gospeljingle.com^$csp=default-src 'unsafe-inline' 'self' data: *.ytimg.com *.facebook.com *.google.com *.gstatic.com *.youtube.com *.googleapis.com *.wp.com *.gospeljingle.com *.googletagmanager.com
 ||ads.youtube.com/|$xhr,3p,redirect=noop.txt
 ||youtube.com/embed/$frame,domain=bestcash2020.com
@@ -313,7 +312,7 @@ rekidai-info.github.io#%#//scriptlet('trusted-create-element', 'body', 'iframe',
 techcyan.com#$#iframe[src^="https://www.google.com/recaptcha/"] { display: block !important; }
 @@||fundingchoicesmessages.google.com/f^$domain=adshnk.com
 @@||order-order.com/wp-content/themes/orderorder/admanager.google.com.js
-@@||cse.google.com/adsense/search/async-ads.js$domain=asiaon.top|asiaontop.com
+@@||cse.google.com/adsense/search/async-ads.js$domain=asiaon.top
 @@||google.com/pagead/|$xmlhttprequest,domain=hentaihaven.xxx
 @@||fundingchoicesmessages.google.com^$script,domain=soranews24.com
 ||fundingchoicesmessages.google.com^$script,redirect-rule=noopjs,domain=soranews24.com
@@ -972,7 +971,6 @@ news.tvbs.com.tw#?#div[class^="newsdetail_"][class*="community"] ul > li:has(> a
 *$script,3p,denyallow=cloudflare.com|gcdn.co|google.com|gstatic.com|videocdn.name,domain=hog.*
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com,domain=itsguider.com
 ||tvshows4mobile.org^$csp=script-src 'self' 'unsafe-eval' *.google.com
-||mp3juices.cc^$csp=default-src 'self' 'unsafe-inline' *.dropbox.com *.dropbox-dns.com *.gstatic.com *.googleapis.com *.google.com ytpp3.com *.youtube.com
 *$script,3p,denyallow=bootstrapcdn.com|google.com|googleapis.com|gstatic.com,domain=fx2.ink
 ||gospeljingle.com^$csp=default-src 'unsafe-inline' 'self' data: *.ytimg.com *.facebook.com *.google.com *.gstatic.com *.youtube.com *.googleapis.com *.wp.com *.gospeljingle.com *.googletagmanager.com
 ||krunkercentral.com^$csp=default-src 'unsafe-inline' 'self' *.google.com *.gstatic.com *.googleapis.com *.wp.com *.googletagmanager.com *.jquery.com
@@ -1065,8 +1063,6 @@ codesnse.com##[href^="https://play.google.com/"]
 *$frame,script,xhr,3p,denyallow=bootstrapcdn.com|cdn77.org|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|instagram.com|jquery.com|jsdelivr.net|jwpcdn.com|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wp.com|x.com,domain=btdb.*
 *$3p,denyallow=google.com|googleapis.com|gstatic.com,domain=uplinkto.*
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=miniurl.*
-*$frame,denyallow=google.com|hcaptcha.com,domain=shurt.pw
-*$script,3p,denyallow=google.com|gstatic.com|hcaptcha.com|jsdelivr.net|recaptcha.net,domain=shurt.pw
 *$script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=smoner.com
 docs.google.com##+js(no-xhr-if, method:POST url:/logImpressions)
 ||play.google.com/store/apps/*referrer$removeparam=referrer
