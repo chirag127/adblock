@@ -145,6 +145,7 @@ rexdl.com#?#.group center > h2 > p > button:has(> span > a[href^="https://www.yo
 lenta.ru#?#.b-box:has(> i > a[href^="https://www.youtube.com"])
 m.youtube.com#%#//scriptlet('trusted-click-element', '.ytm-bottom-sheet-overlay-renderer-container > .ytm-bottom-sheet-overlay-renderer-header[style*="m.youtube.com/static/open-app."] > ytm-button-renderer.icon-close button.yt-spec-button-shape-next', '', '2000')
 m.youtube.com##ytm-watch-metadata-app-promo-renderer
+||youtube.com/embed*&autoplay=1$domain=eluniversal.com.mx,important
 no-one-no.net##.article-body > blockquote + br + iframe[src^="https://www.youtube.com/embed/"]
 no-one-no.net##iframe[width="560"][height="315"][src^="https://www.youtube.com/embed/"]
 bipblog.com##iframe[src="https://www.youtube.com/embed/tagjNNdaD8o?si=J-LfNQ9hsKrVRUnA"]
@@ -1326,6 +1327,7 @@ bing.com##+js(href-sanitizer, body a[href^="/rebates/welcome?url=http"], ?url)
 ||bing.com/ck/a*^u=a1aHR0c$doc,urlskip=/[?&]u=a1(aHR0c[^&#]+)/ -safebase64
 ||bing.com/rebates/welcome?url=http$doc,urlskip=?url
 ||bing.com/alink/link?url=http$doc,urlskip=?url
+||bing.com/web/xlsc.aspx
 bing.com,msn.com,web.skype.com##+js(cookie-remover, MicrosoftApplicationsTelemetryDeviceId)
 bing.com#@#a[href*="/aclick?ld="]
 bing.com##.ins_exp.vsp
