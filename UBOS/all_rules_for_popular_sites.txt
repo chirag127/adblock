@@ -2740,7 +2740,7 @@ web.facebook.com,www.facebook.com##:matches-path(/marketplace/item) a[attributio
 facebook.com#@##fb_header
 facebook.com#@##share_feed
 facebook.com#@#.post-fb-like
-canva.com,facebook.com#@#.shareLink
+canva.com,edmtrain.com,facebook.com#@#.shareLink
 petsmart.com#@#a[href^="https://www.facebook.com/sharer/sharer.php"]
 @@||facebook.com^*/plugins/page.php?$domain=cieplikpodrozuje.pl|makulscy.com
 facebook.com##body:not([style^="margin-bottom"]) div[data-testid="cookie-policy-banner"]
@@ -2831,6 +2831,7 @@ magickum.com##.textwidget > a[href^="https://www.instagram.com/sonnik_magickum"]
 cartoonews.ru##.sideBar a[href="https://www.instagram.com/cartoonsubnews/"]
 ||instagram.com/p/*/embed/$domain=hotline.ua
 ||fr-instagram.com^$all
+||kkinstagram.com^$all
 *$script,3p,denyallow=cdn77.org|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|instagram.com|jquery.com|jsdelivr.net|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wp.com|x.com,domain=hdmovieplus.*
 *$script,3p,denyallow=cdn77.org|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|google.com|googleapis.com|gstatic.com|hwcdn.net|hcaptcha.com|instagram.com|jquery.com|jsdelivr.net|jwpcdn.com|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wankgod.com|wp.com|x.com,domain=xxgasm.com
 *$script,3p,denyallow=bootstrapcdn.com|cdn77.org|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|fluidplayer.com|google.com|googleapis.com|gstatic.com|hwcdn.net|hcaptcha.com|instagram.com|jquery.com|jsdelivr.net|jwpcdn.com|jwpsrv.com|plyr.io|twimg.com|twitter.com|recaptcha.net|wp.com|x.com,domain=xsober.com
@@ -2849,7 +2850,7 @@ $removeparam=igshid,domain=instagram.com|threads.net
 instagram.com#@#div[style="max-height: inherit; max-width: inherit;"]:has(span:has-text(Paid partnership with ))
 instagram.com#@?#article[role="presentation"] > div[style]:-abp-has(span:-abp-contains(/Anzeige|Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|விளம்பரதாரர்கள்|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/))
 instagram.com##.HoverCard
-x.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,temu.com##+js(aeld, mouseleave)
+x.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,aliexpress.us,temu.com##+js(aeld, mouseleave)
 ||badges.instagram.com^$third-party
 @@||instagram.com/p/$subdocument,third-party
 instagram.com##._he402
@@ -3186,9 +3187,6 @@ hourei.net,ktgis.net,typepad.com,ntv.co.jp,phantom-world.com,skymetweather.com,a
 dongknows.com##body > div > [href^="https://www.amazon.com/deals/"]
 dongknows.com##.dkt-amz-bottom > [href^="https://www.amazon.com/deals/"]
 oemdtc.com##[src^="https://cdn.flowdee.de/"], [href^="https://www.amazon.com/b"]
-||videorolls.row.aiv-cdn.net/*.mp4$media,redirect=noopmp3-0.1s,domain=amazon.com
-www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(json-prune, cuepointPlaylist vodPlaybackUrls.result.playbackUrls.cuepoints)
-www.amazon.co.jp,www.amazon.co.uk,www.amazon.com,www.amazon.de,www.primevideo.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start), [value="Ad"], .mpd)
 ||fls-na.amazon.com/$xhr,redirect=noopjs,domain=imdb.com
 ||amazon.com/gp/redirect.html?*&location=http$doc,urlskip=?location
 $removeparam=asc_campaign,to=aboutamazon.com|amazon.*|amzn.to
@@ -3201,6 +3199,7 @@ $removeparam=asc_source,to=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.
 /dp/*/ref=$doc,uritransform=/\/ref=[^\/?#]+//,to=www.amazon.*|www.amazon.ae|www.amazon.ca|www.amazon.cn|www.amazon.co.jp|www.amazon.co.uk|www.amazon.com|www.amazon.com.au|www.amazon.de|www.amazon.es|www.amazon.fr|www.amazon.in|www.amazon.nl|www.amazon.sg
 ||amazon.com/s/ref=$doc,uritransform=/\/ref=[^\/?#]+//
 /gp/*/ref=$doc,uritransform=/\/ref=[^\/?#]+//,to=www.amazon.*|www.amazon.ae|www.amazon.ca|www.amazon.cn|www.amazon.co.jp|www.amazon.co.uk|www.amazon.com|www.amazon.com.au|www.amazon.de|www.amazon.es|www.amazon.fr|www.amazon.in|www.amazon.nl|www.amazon.sg
+||amazon.com/1/action-impressions/
 @@||ws-na.assoc-amazon.com^$image,domain=4tests.com
 @@||ssl-images-amazon.com/*/satelliteLib-$script,domain=audible.*
 /web-vitals.$script,redirect=noopjs,domain=amazon.com
