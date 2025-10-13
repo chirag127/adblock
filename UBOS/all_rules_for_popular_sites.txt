@@ -173,6 +173,7 @@ youtube.com###ticker-content
 youtube.com#$##appbar-guide-menu { margin-top: 50px!important; }
 siliconera.com#%#//scriptlet('set-attr', 'iframe[data-src^="https://www.youtube.com/embed/"].lazy-loaded-embed', 'src', '[data-src]')
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1
+||youtube.com/shorts/$removeparam=si
 ://youtube.com/@*?si=$removeparam=si
 $removeparam=embeds_referring_euri,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 $removeparam=embeds_referring_origin,domain=youtubekids.com|youtube-nocookie.com|youtube.com
@@ -250,6 +251,7 @@ m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,y
 ||youtube.com/embed/*$domain=1shortlink.com
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
 ||youtube.com^$removeparam=pp
+||youtube.com/shorts/$doc,removeparam=si
 ://youtube.com/@*?si=$doc,removeparam=si
 ||youtube.com/redirect?*^q=http$urlskip=?q +https
 @@||youtube.com/yts/jsbin/*$script,domain=breathecast.com|classicalite.com|crossmap.com|hallels.com|newseveryday.com|returnofkings.com
@@ -305,6 +307,7 @@ google.com#?#header[id="hdr"] ~ div#main > div[class="ZINbbc xpd O9g5cc uUPGi"]:
 ||dns.google.com^$app=com.ss.android.ugc.aweme
 ||mail.google.com/mail/ads^
 ||fundingchoicesmessages.google.com^$domain=video.repubblica.it|br0wsers.com|mathsspot.com|now.gg|aranzulla.it|3bmeteo.com
+||dai.google.com/ondemand/hls/content/*/time-events.json$domain=play.aetv.com
 @@||fundingchoicesmessages.google.com^$domain=ytlarge.com
 @@||fundingchoicesmessages.google.com/i/$script,domain=fplstatistics.com
 ||fundingchoicesmessages.google.com/i/pub$script,redirect=noopjs,domain=now.gg|now.us
