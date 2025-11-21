@@ -1,6 +1,9 @@
+import os
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
-file_path = "best\\update_files\\make_param\\url.txt"
+
+# Use os.path.join for cross-platform compatibility
+file_path = os.path.join("python files", "make_param", "url.txt")
 
 file = open(file_path, "r")
 

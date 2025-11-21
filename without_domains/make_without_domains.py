@@ -16,9 +16,16 @@ def get_rules(url):
     :param url: The url of the rules.
     :return: A list of rules.
     """
-    response = requests.get(url, timeout=10)
-    if response.status_code == 200:
-        return response.text.splitlines()
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            return response.text.splitlines()
+        else:
+            print(f"Error fetching {url}: Status code {response.status_code}")
+            return []
+    except Exception as e:
+        print(f"Error fetching {url}: {e}")
+        return []
 
 
 def remove_domains(rules_list: List[str]) -> List[str]:
@@ -102,25 +109,65 @@ def main() -> None:
     :return: None
     """
 
+    # AdGuard Filters Registry URLs
+    # Source: https://adguard.com/kb/general/ad-filtering/adguard-filters/
     adguard_registry: str = (
         "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/"
     )
+
     urls: Dict[str, str] = {
-        "AdGuard tracking": adguard_registry + "filter_3_Spyware/filter.txt",
-        "AdGuard social": adguard_registry + "filter_4_Social/filter.txt",
-        "AdGuard annoyances": adguard_registry + "filter_14_Annoyances/filter.txt",
-        "easyprivacy": "https://filters.adtidy.org/extension/ublock"
-        + "/filters/118_optimized.txt",
-        "bpc-paywall-filter": "https://gitlab.com/magnolia1234/"
-        + "bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt",
+        # AdGuard Base filter - removes ads from English websites
+        "AdGuard Base": adguard_registry + "filter_2_Base/filter.txt",
+
+        # Tracking Protection filter - blocks online counters and web analytics
+        "AdGuard Tracking Protection": adguard_registry + "filter_3_Spyware/filter.txt",
+
+        # Social media filter - removes social media buttons and integrations
+        "AdGuard Social Media": adguard_registry + "filter_4_Social/filter.txt",
+
+        # Annoyances filter - blocks irritating elements on web pages
+        "AdGuard Annoyances": adguard_registry + "filter_14_Annoyances/filter.txt",
+
+        # Cookie Notices filter - blocks cookie notices
+        "AdGuard Cookie Notices": adguard_registry + "filter_18_Annoyances_Cookies/filter.txt",
+
+        # Popups filter - blocks all kinds of popups
+        "AdGuard Popups": adguard_registry + "filter_19_Annoyances_Popups/filter.txt",
+
+        # Mobile App Banners filter - blocks mobile app promotion banners
+        "AdGuard Mobile App Banners": adguard_registry + "filter_20_Annoyances_MobileApp/filter.txt",
+
+        # Other Annoyances filter - blocks other annoyances
+        "AdGuard Other Annoyances": adguard_registry + "filter_21_Annoyances_Other/filter.txt",
+
+        # Widgets filter - blocks third-party widgets
+        "AdGuard Widgets": adguard_registry + "filter_22_Annoyances_Widgets/filter.txt",
+
+        # URL Tracking filter - removes tracking parameters from URLs
+        "AdGuard URL Tracking": adguard_registry + "filter_17_TrackParam/filter.txt",
+
+        # Mobile ads filter - blocks ads on mobile devices
+        "AdGuard Mobile Ads": adguard_registry + "filter_11_Mobile/filter.txt",
+
+        # EasyPrivacy (optimized for uBlock)
+        "EasyPrivacy": "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
+
+        # Bypass Paywalls Clean filter - filters for news sites
+        # Source: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
+        "Bypass Paywalls Clean": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
     }
 
     for name, url in urls.items():
+        print(f"Processing {name}...")
         rules_list: List[str] = get_rules(url)
-        rules_list: List[str] = remove_domains(rules_list)
-        rules_list: List[str] = remove_duplicates(rules_list)
-        rules_list: List[str] = sort_list(rules_list)
-        save_rules(name, rules_list)
+        if rules_list:
+            rules_list: List[str] = remove_domains(rules_list)
+            rules_list: List[str] = remove_duplicates(rules_list)
+            rules_list: List[str] = sort_list(rules_list)
+            save_rules(name, rules_list)
+            print(f"Saved {len(rules_list)} rules for {name}")
+        else:
+            print(f"No rules found for {name}")
 
 
 if __name__ == "__main__":
@@ -130,8 +177,8 @@ if __name__ == "__main__":
 
 
     try:
-        makeAllListForWithoutDomains()
-        main()
+        main()  # Generate individual files first
+        makeAllListForWithoutDomains()  # Then combine them into all.txt
     except Exception as e:
         print(e)
         sys.exit(1)
