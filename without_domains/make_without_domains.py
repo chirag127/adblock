@@ -2,12 +2,11 @@
 without_domains folder.
 """
 
-from typing import Dict, List
-
-import requests
+import glob
 import os
 import sys
-import glob
+from typing import Dict, List
+import requests
 
 
 def get_rules(url):
@@ -20,10 +19,10 @@ def get_rules(url):
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
             return response.text.splitlines()
-        else:
-            print(f"Error fetching {url}: Status code {response.status_code}")
-            return []
-    except Exception as e:
+
+        print(f"Error fetching {url}: Status code {response.status_code}")
+        return []
+    except requests.RequestException as e:
         print(f"Error fetching {url}: {e}")
         return []
 
@@ -78,7 +77,10 @@ def save_rules(name: str, rules_list: list) -> None:
         file.write("\n".join(rules_list))
 
 
-def makeAllListForWithoutDomains() -> None:
+def make_all_list_for_without_domains() -> None:
+    """
+    Combines all generated lists into one file.
+    """
 
     # /workspaces/adblock/without_domains
     all_files = glob.glob("without_domains/*.txt")
@@ -86,9 +88,6 @@ def makeAllListForWithoutDomains() -> None:
     # remove the all.txt file and .py file
     all_files = [x for x in all_files if not x.endswith("all.txt")]
     all_files = [x for x in all_files if not x.endswith(".py")]
-
-
-
 
     with open("without_domains/all.txt", "w", encoding="utf8") as file:
 
@@ -135,7 +134,9 @@ def main() -> None:
         "AdGuard Popups": adguard_registry + "filter_19_Annoyances_Popups/filter.txt",
 
         # Mobile App Banners filter - blocks mobile app promotion banners
-        "AdGuard Mobile App Banners": adguard_registry + "filter_20_Annoyances_MobileApp/filter.txt",
+        "AdGuard Mobile App Banners": (
+            adguard_registry + "filter_20_Annoyances_MobileApp/filter.txt"
+        ),
 
         # Other Annoyances filter - blocks other annoyances
         "AdGuard Other Annoyances": adguard_registry + "filter_21_Annoyances_Other/filter.txt",
@@ -154,16 +155,17 @@ def main() -> None:
 
         # Bypass Paywalls Clean filter - filters for news sites
         # Source: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
+        # pylint: disable=line-too-long
         "Bypass Paywalls Clean": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
     }
 
     for name, url in urls.items():
         print(f"Processing {name}...")
-        rules_list: List[str] = get_rules(url)
+        rules_list = get_rules(url)
         if rules_list:
-            rules_list: List[str] = remove_domains(rules_list)
-            rules_list: List[str] = remove_duplicates(rules_list)
-            rules_list: List[str] = sort_list(rules_list)
+            rules_list = remove_domains(rules_list)
+            rules_list = remove_duplicates(rules_list)
+            rules_list = sort_list(rules_list)
             save_rules(name, rules_list)
             print(f"Saved {len(rules_list)} rules for {name}")
         else:
@@ -178,8 +180,8 @@ if __name__ == "__main__":
 
     try:
         main()  # Generate individual files first
-        makeAllListForWithoutDomains()  # Then combine them into all.txt
-    except Exception as e:
+        make_all_list_for_without_domains()  # Then combine them into all.txt
+    except Exception as e: # pylint: disable=broad-exception-caught
         print(e)
         sys.exit(1)
     else:

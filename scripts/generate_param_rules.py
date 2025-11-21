@@ -1,15 +1,19 @@
-import os
+"""
+This script generates rule parameters from a list of URLs.
+"""
 import pathlib
 from urllib.parse import urlparse, parse_qs
 
-def main():
-    # Configuration
-    ROOT_DIR = pathlib.Path('.')
-    SCRIPT_DIR = pathlib.Path('scripts')
-    URL_FILE = SCRIPT_DIR / 'url.txt'
-    # Change output to a specific file in chirag_annoyance_filters
-    TARGET_FILE = ROOT_DIR / 'chirag_annoyance_filters/AntiUrlTrackingParameter.txt'
+# Configuration
+ROOT_DIR = pathlib.Path('.')
+SCRIPT_DIR = pathlib.Path('scripts')
+URL_FILE = SCRIPT_DIR / 'url.txt'
+TARGET_FILE = ROOT_DIR / 'chirag_annoyance_filters/AntiUrlTrackingParameter.txt'
 
+def main():
+    """
+    Main function to process URLs and generate rules.
+    """
     if not URL_FILE.exists():
         # Check old location just in case
         old_url_file = pathlib.Path('python files/make_param/url.txt')
@@ -39,12 +43,12 @@ def main():
                 domain = parsed_url.netloc
                 query = parse_qs(parsed_url.query)
 
-                for key, value in query.items():
+                for key, _ in query.items():
                     # AdGuard syntax for removing param
                     rule = f"||{domain}^$removeparam={key}"
                     f.write(f"\n{rule}")
                     count += 1
-            except Exception as e:
+            except Exception as e: # pylint: disable=broad-exception-caught
                 print(f"Error processing URL {url}: {e}")
 
     # Clear the url file
