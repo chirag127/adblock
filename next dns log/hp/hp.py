@@ -1,12 +1,17 @@
+"""
+This script processes the raw.txt file and converts it to a hosts file format in hp.txt.
+"""
 import os
 
 # Use os.path.join for cross-platform compatibility
-raw_file = os.path.join("next dns log", "hp", "raw.txt")
-output_file = os.path.join("next dns log", "hp", "hp.txt")
+RAW_FILE = os.path.join("next dns log", "hp", "raw.txt")
+OUTPUT_FILE = os.path.join("next dns log", "hp", "hp.txt")
 
-with open(raw_file, "r") as f:
+with open(RAW_FILE, "r", encoding="utf-8") as f:
     lines = f.readlines()
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f_out:
     for line in lines:
-        with open(output_file, "a") as f1:
-            f1.write(f"0.0.0.0 {line}")
-            f1.write("\n")
+        line = line.strip()
+        if line:
+            f_out.write(f"0.0.0.0 {line}\n")
