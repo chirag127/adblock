@@ -12,6 +12,29 @@ The requirements to use these lists in chromium based desktop browser is that Ad
 
 You can install the extension from [here](https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg).
 
+## Maintenance
+
+To maintain and update the lists, use the scripts in the `scripts/` directory.
+
+### Updating and Sorting Filters
+
+Run `scripts/maintain.py` to sort all filter files, remove duplicates, and regenerate the aggregate `A.txt` list.
+
+```bash
+python3 scripts/maintain.py
+```
+
+### Generating Parameter Removal Rules
+
+To generate parameter removal rules from a list of URLs:
+1. Add URLs to `scripts/url.txt`.
+2. Run `scripts/generate_param_rules.py`.
+3. The rules will be appended to `chirag_annoyance_filters/AntiUrlTrackingParameter.txt`.
+
+```bash
+python3 scripts/generate_param_rules.py
+```
+
 ## Lists
 
 ### Chirag's Lists
