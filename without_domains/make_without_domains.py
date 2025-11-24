@@ -5,7 +5,7 @@ without_domains folder.
 import glob
 import os
 import sys
-from typing import Dict, List
+
 import requests
 
 
@@ -27,7 +27,7 @@ def get_rules(url):
         return []
 
 
-def remove_domains(rules_list: List[str]) -> List[str]:
+def remove_domains(rules_list: list[str]) -> list[str]:
     """
     Remove domains from the rules.
     :param rules_list: A list of rules.
@@ -90,16 +90,16 @@ def make_all_list_for_without_domains() -> None:
     all_files = [x for x in all_files if not x.endswith(".py")]
 
     with open("without_domains/all.txt", "w", encoding="utf8") as file:
-
         file.write("! Description: It contains all list without domains\n")
         file.write("! Expires: 1 hours\n")
         file.write("! Homepage: https://github.com/chirag127/adblock/\n")
         file.write("! Title: Chirag's without domains list\n")
 
         for file_name in all_files:
-            with open(file_name, "r", encoding="utf8") as f:
+            with open(file_name, encoding="utf8") as f:
                 file.write(f.read())
                 file.write("\n")
+
 
 def main() -> None:
     """
@@ -114,45 +114,35 @@ def main() -> None:
         "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/"
     )
 
-    urls: Dict[str, str] = {
+    urls: dict[str, str] = {
         # AdGuard Base filter - removes ads from English websites
         "AdGuard Base": adguard_registry + "filter_2_Base/filter.txt",
-
         # Tracking Protection filter - blocks online counters and web analytics
         "AdGuard Tracking Protection": adguard_registry + "filter_3_Spyware/filter.txt",
-
         # Social media filter - removes social media buttons and integrations
         "AdGuard Social Media": adguard_registry + "filter_4_Social/filter.txt",
-
         # Annoyances filter - blocks irritating elements on web pages
         "AdGuard Annoyances": adguard_registry + "filter_14_Annoyances/filter.txt",
-
         # Cookie Notices filter - blocks cookie notices
-        "AdGuard Cookie Notices": adguard_registry + "filter_18_Annoyances_Cookies/filter.txt",
-
+        "AdGuard Cookie Notices": adguard_registry
+        + "filter_18_Annoyances_Cookies/filter.txt",
         # Popups filter - blocks all kinds of popups
         "AdGuard Popups": adguard_registry + "filter_19_Annoyances_Popups/filter.txt",
-
         # Mobile App Banners filter - blocks mobile app promotion banners
         "AdGuard Mobile App Banners": (
             adguard_registry + "filter_20_Annoyances_MobileApp/filter.txt"
         ),
-
         # Other Annoyances filter - blocks other annoyances
-        "AdGuard Other Annoyances": adguard_registry + "filter_21_Annoyances_Other/filter.txt",
-
+        "AdGuard Other Annoyances": adguard_registry
+        + "filter_21_Annoyances_Other/filter.txt",
         # Widgets filter - blocks third-party widgets
         "AdGuard Widgets": adguard_registry + "filter_22_Annoyances_Widgets/filter.txt",
-
         # URL Tracking filter - removes tracking parameters from URLs
         "AdGuard URL Tracking": adguard_registry + "filter_17_TrackParam/filter.txt",
-
         # Mobile ads filter - blocks ads on mobile devices
         "AdGuard Mobile Ads": adguard_registry + "filter_11_Mobile/filter.txt",
-
         # EasyPrivacy (optimized for uBlock)
         "EasyPrivacy": "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
-
         # Bypass Paywalls Clean filter - filters for news sites
         # Source: https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters
         # pylint: disable=line-too-long
@@ -173,15 +163,13 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-
     if not os.path.exists("without_domains"):
         os.makedirs("without_domains")
-
 
     try:
         main()  # Generate individual files first
         make_all_list_for_without_domains()  # Then combine them into all.txt
-    except Exception as e: # pylint: disable=broad-exception-caught
+    except Exception as e:  # pylint: disable=broad-exception-caught
         print(e)
         sys.exit(1)
     else:

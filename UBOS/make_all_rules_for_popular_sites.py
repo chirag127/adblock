@@ -2,6 +2,7 @@
 This script downloads rules from various filter lists and extracts rules
 related to specific popular domains.
 """
+
 # pylint: disable=duplicate-code
 import requests
 

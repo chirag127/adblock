@@ -1,0 +1,43 @@
+# Ruff configuration file
+# See: https://docs.astral.sh/ruff/configuration/
+
+# Same as Black
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.10
+target-version = "py310"
+
+[lint]
+# Enable Pyflakes (`F`) and pycodestyle (`E`) codes by default
+# Also enable:
+# - isort (I) for import sorting
+# - pyupgrade (UP) for Python version upgrades
+# - flake8-bugbear (B) for common bugs
+# - flake8-simplify (SIM) for code simplification
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+# Ignore specific rules
+ignore = [
+    "E501",  # Line too long (handled by formatter)
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[format]
+# Like Black, use double quotes for strings
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs
+indent-style = "space"
+
+# Like Black, respect magic trailing commas
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending
+line-ending = "auto"

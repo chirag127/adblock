@@ -1,6 +1,7 @@
 """
 make files for each site with all the rules from all the lists
 """
+
 # pylint: disable=duplicate-code
 import requests
 
@@ -50,7 +51,6 @@ for domain in DOMAINS:
             if response.status_code == 200:
                 rules_list = response.text.splitlines()
                 for rule in rules_list:
-
                     if domain in rule and not rule.startswith("!"):
                         with open(file_name_domain, "a", encoding="utf8") as file:
                             file.write(rule + "\n")

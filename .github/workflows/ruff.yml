@@ -1,0 +1,40 @@
+name: Ruff Lint and Format
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    ruff:
+        name: Lint and Format with Ruff
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.10"
+
+            - name: Install Ruff
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install ruff
+
+            - name: Run Ruff Linter
+              run: |
+                  echo "Running Ruff linter..."
+                  ruff check . --output-format=github
+              continue-on-error: false
+
+            - name: Run Ruff Formatter Check
+              run: |
+                  echo "Checking code formatting..."
+                  ruff format --check --diff .
+              continue-on-error: false

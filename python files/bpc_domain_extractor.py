@@ -1,6 +1,8 @@
 import os
-import requests
 import re
+
+import requests
+
 
 def main():
     url = "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt"
@@ -43,6 +45,7 @@ def main():
             f.write(domain + "\n")
 
     print(f"Saved domains to {output_file}")
+
 
 if __name__ == "__main__":
     main()
