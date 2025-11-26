@@ -13,7 +13,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10.7"
+          python-version: "3.13"
 
       - name: install python packages
         run: |
@@ -21,8 +21,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: execute py script
-        # env:
-        #   SOME_SECRET: ${{ secrets.SOME_SECRET }}
         run: python UBOS/make_all_rules_for_popular_sites.py
 
       - name: commit files
