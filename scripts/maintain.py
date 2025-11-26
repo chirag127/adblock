@@ -30,7 +30,6 @@ def _is_payload(line):
     if any(x in line for x in ["##", "#$#", "#@#", "#%#", "#?#", "||"]):
         return True
     # Check for 'http'
-    # Careful with comments containing links "See https://..."
     # If ' ' is before 'http', likely comment.
     return ("http:" in line or "https:" in line) and " " not in line.split("http")[0]
 
