@@ -1,16 +1,40 @@
+import argparse
 import os
 import re
-import requests
-import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import sys
+
+import requests
 
 # Configuration
 TIMEOUT = 15
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 HEADERS = {"User-Agent": USER_AGENT}
-IGNORE_DIRS = {".git", ".github", ".vscode", "__pycache__", "node_modules", "venv", ".ruff_cache", "site-packages"}
-IGNORE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".ico", ".pyc", ".exe", ".dll", ".bin", ".zip", ".gz", ".pdf", ".svg"}
+IGNORE_DIRS = {
+    ".git",
+    ".github",
+    ".vscode",
+    "__pycache__",
+    "node_modules",
+    "venv",
+    ".ruff_cache",
+    "site-packages",
+}
+IGNORE_EXTS = {
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".ico",
+    ".pyc",
+    ".exe",
+    ".dll",
+    ".bin",
+    ".zip",
+    ".gz",
+    ".pdf",
+    ".svg",
+}
+
 
 def extract_urls_and_domains(text):
     """Extracts URLs and domains from text using regex."""
@@ -23,22 +47,25 @@ def extract_urls_and_domains(text):
 
     # Adblock syntax domains
     # ||example.com^ or ||example.com$
-    adblock_pattern = re.compile(r'\|\|([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(?:[\^\$]|$)')
+    adblock_pattern = re.compile(r"\|\|([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(?:[\^\$]|$)")
     for match in adblock_pattern.findall(text):
         urls.add(f"http://{match}")
 
     # domain=example.com
-    domain_param_pattern = re.compile(r'domain=([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})')
+    domain_param_pattern = re.compile(r"domain=([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})")
     for match in domain_param_pattern.findall(text):
         urls.add(f"http://{match}")
 
     return urls
 
+
 def check_url(url):
     """Checks if a URL is reachable. Returns (url, is_broken, status_code/error)."""
     try:
         # Some sites block HEAD, so we try HEAD first then GET
-        response = requests.head(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
+        response = requests.head(
+            url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True
+        )
 
         # If HEAD fails with 405 (Method Not Allowed) or 404/403, try GET to be sure
         # actually 404 on HEAD usually means 404 on GET, but 405/403/400 might be server quirks
@@ -59,10 +86,11 @@ def check_url(url):
     except Exception as e:
         return url, True, str(e)
 
+
 def process_file(filepath, dry_run=True):
     """Reads a file, checks URLs, and removes lines with broken URLs."""
     try:
-        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(filepath, encoding="utf-8", errors="ignore") as f:
             lines = f.readlines()
     except Exception as e:
         print(f"Error reading {filepath}: {e}")
@@ -112,7 +140,7 @@ def process_file(filepath, dry_run=True):
 
     if not dry_run and removed_count > 0:
         try:
-            with open(filepath, 'w', encoding='utf-8') as f:
+            with open(filepath, "w", encoding="utf-8") as f:
                 f.writelines(new_lines)
             print(f"  [REMOVED] {removed_count} lines from {filepath}")
         except Exception as e:
@@ -120,9 +148,14 @@ def process_file(filepath, dry_run=True):
 
     return removed_count
 
+
 def main():
     parser = argparse.ArgumentParser(description="Audit and remove obsolete URLs.")
-    parser.add_argument("--dry-run", action="store_true", help="Print what would be removed without doing it.")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print what would be removed without doing it.",
+    )
     parser.add_argument("--path", default=".", help="Root directory to scan.")
     args = parser.parse_args()
 
@@ -145,7 +178,10 @@ def main():
 
             total_removed += process_file(filepath, dry_run=args.dry_run)
 
-    print(f"\nTotal lines {'would be ' if args.dry_run else ''}removed: {total_removed}")
+    print(
+        f"\nTotal lines {'would be ' if args.dry_run else ''}removed: {total_removed}"
+    )
+
 
 if __name__ == "__main__":
     main()
