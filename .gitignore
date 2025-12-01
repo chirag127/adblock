@@ -1,41 +1,95 @@
-# Python Byte-Code Files
-*.pyc
+# Byte-compiled / optimized / C extensions
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# Virtual Environment Directories
-virtualenv/
-venv/
-.venv/
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Usually these files are created by pyinstaller, if you are using pyinstaller
+# build a executable, uncomment these lines
+# *.spec
+
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Tool-specific caches
+.ruff_cache/
+.mypy_cache/
+.pytype/
+
+# Virtual Environments
+.env
+.venv
 env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# IDE/Editor Specific
-.vscode/
+# Secrets and local configuration
+*.env
+secrets.yml
+
+# IDE / Editor configuration
 .idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 *.sublime-project
 *.sublime-workspace
 
-# Build Artifacts
-dist/
-build/
-*.egg-info/
-
-# Testing Artifacts
-.pytest_cache/
-
-# OS Generated Files
+# OS-generated files
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Secrets & Environment Variables (example)
-.env
-*.env.local
-*.env.development
-*.env.production
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Linting/Formatting Cache (Ruff/Biome)
-.ruff_cache/
-.biome/
-
-# Temporary Files
-*.tmp
+# Log files
 *.log
