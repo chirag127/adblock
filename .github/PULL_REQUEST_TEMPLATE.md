@@ -1,71 +1,56 @@
-# 🚀 Pull Request Template: Apex Integrity Check
+# 🚀 Pull Request Template
 
-**Branch:** `{{_target_branch}}` <- `{{head_ref}}`
+## 🎯 Objective
 
-## 1. Blurb: The 10-Second Summary (BLUF)
+Briefly describe the **purpose** of this pull request. What problem does it solve, or what feature does it introduce?
 
-*Concise description of what this PR does, why it was necessary, and its core impact.* (e.g., `fix: Resolves issue #42 by implementing exponential backoff for external API calls.`) 
+--- 
 
----
+## ✅ Checklist
 
-## 2. Type of Change (Select one or more)
+Before submitting, please ensure you have:
 
-- [ ] `breaking`: API change or major refactor that requires consumer updates.
-- [ ] `feat`: A new feature or capability.
-- [ ] `fix`: A bug fix (non-breaking).
-- [ ] `docs`: Documentation only changes.
-- [ ] `style`: Formatting, missing semicolons, code style fixes (managed by Biome/Ruff).
-- [ ] `refactor`: Code cleanup/restructuring without changing functionality.
-- [ ] `perf`: A code change that improves performance.
-- [ ] `test`: Adding missing tests or correcting existing tests.
-- [ ] `chore`: Maintenance tasks, build process, or dependency updates.
+* [ ] **Self-Reviewed:** I have thoroughly reviewed my own code.
+* [ ] **Clean Code:** My code adheres to the project's coding standards (SOLID, DRY, KISS, etc.).
+* [ ] **Tested:** All new and existing functionality is covered by comprehensive tests.
+* [ ] **Linted:** The code has been successfully linted and formatted.
+* [ ] **Documented:** Any new or modified public API, feature, or concept is documented.
+* [ ] **Updated README:** If applicable, the `README.md` has been updated to reflect changes.
+* [ ] **Conventional Commits:** My commit messages follow the Conventional Commits specification.
+* [ ] **Dependencies:** If new dependencies were added, they are necessary and justified.
 
----
+--- 
 
-## 3. Architectural Verification Checklist (Mandatory)
+## 💡 Description
 
-*Ensure this PR adheres to the **Apex Architectural Directives** defined in `AGENTS.md`.*
+Provide a more detailed explanation of the changes. This can include:
 
-- [ ] **SOLID Adherence:** Does this change respect SRP/OCP/etc.?
-- [ ] **CQS Enforced:** Are commands strictly modifying state and queries strictly retrieving data?
-- [ ] **Fail Fast:** Are inputs validated immediately? Are critical I/O wrapped in resilient error handlers?
-- [ ] **DRY Principle:** Have I avoided unnecessary code duplication?
-- [ ] **Testing Coverage:** Have I added/updated tests to cover all new/changed logic paths?
-- [ ] **Performance Intent:** If this is a performance change, is the complexity improved ($O(n)$ vs $O(n^2)$)?
-- [ ] **Security Scan:** Have I sanitized all external inputs (if applicable)?
+* **Motivation:** Why were these changes necessary?
+* **Approach:** How were the changes implemented?
+* **Screenshots/GIFs:** (Optional) For UI changes, visual aids are highly encouraged.
+* **Impact:** What is the potential impact of these changes?
 
----
+--- 
 
-## 4. Technical Details & Rationale
+## 🧪 Testing
 
-### A. The Why (Context)
-<!-- Explain the motivation behind this change. Reference the corresponding Issue/Ticket if available. -->
+Describe the tests that have been performed to validate these changes.
 
-### B. The How (Implementation Summary)
-<!-- Briefly describe the main classes, functions, or components modified and the pattern used (e.g., 'Implemented the Strategy Pattern for filter aggregation'). -->
+* **Unit Tests:** (e.g., `pytest`) Have new unit tests been added or existing ones updated? Please specify.
+* **Integration Tests:** (e.g., testing interactions between modules) Have integration tests been added or updated?
+* **Manual Testing:** (If applicable) Detail any manual testing steps performed.
 
-### C. Code Snippets (If necessary)
+--- 
 
-```python
-# Example of a critical change that needs review
-# Add the relevant code snippet here.
-```
+## 🔗 Related Issues
 
----
+If this PR addresses an existing issue, please link it here using keywords like `closes`, `fixes`, `resolves`.
 
-## 5. Pre-Merge Verification Checklist (Local Execution)
+Example:
+`closes #123`
 
-*Self-verification steps before requesting review.*
+--- 
 
-- [ ] **Linter Check:** `ruff check --fix .` passed with zero errors.
-- [ ] **Test Suite:** `pytest` executed successfully against the entire suite.
-- [ ] **Documentation Sync:** `README.md` and relevant docstrings updated for new features.
-- [ ] **Dependency Review:** No new major dependencies added without explicit security review.
+## 🌟 Thank You!
 
----
-
-## 6. Screenshots / Artifacts (If UI/Output Affected)
-
-<!-- Attach screenshots or relevant execution output if this change impacts command line output or generated files. -->
-
-**Reviewer Note:** Please focus review on sections [X] and [Y]. See commit `[HASH]` for the core logic change.
+Thank you for your contribution to this project!
