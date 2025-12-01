@@ -1,95 +1,37 @@
-# Byte-compiled / optimized / C extensions
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# C extensions
-*.so
+*.py[co]
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
 
 # Distribution / packaging
-.Python
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
-# PyInstaller
-# Usually these files are created by pyinstaller, if you are using pyinstaller
-# build a executable, uncomment these lines
-# *.spec
+# Virtual environments
+.venv/
+venv/
+env/
 
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
+# Test and coverage artifacts
+.pytest_cache/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+htmlcov/
 
-# Tool-specific caches
-.ruff_cache/
-.mypy_cache/
-.pytype/
-
-# Virtual Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Secrets and local configuration
-*.env
-secrets.yml
-
-# IDE / Editor configuration
+# IDE specific files
+.vscode/
 .idea/
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.sublime-project
-*.sublime-workspace
+*.iml
 
-# OS-generated files
-# macOS
+# Operating System files
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
-Desktop.ini
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Log files
+# Logs and other generated files
 *.log
+*.bak
+*.swp
