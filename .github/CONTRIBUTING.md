@@ -1,96 +1,117 @@
-# 🤝 Contributing to AdFilterCore-List-Management-Python-Lib
+# Contributing to AdGuard-FilterList-Manager-Python-Lib
 
-This repository adheres to the highest standards of software engineering, following the Apex Technical Authority mandate for Zero-Defect, Future-Proof code. We welcome contributions that uphold these principles.
+We welcome contributions to the AdGuard-FilterList-Manager-Python-Lib project! This project adheres to the Apex Technical Authority standards, prioritizing **Zero-Defect, High-Velocity, Future-Proof** development. Please review these guidelines to ensure your contributions align with our architectural principles and quality standards.
 
-## 1. CORE PRINCIPLES (The Apex Mandate)
+## 1. Code of Conduct
 
-All contributions must align with the following architectural tenets:
+This project follows the Contributor Covenant Code of Conduct (v2.1). By participating, you are expected to uphold this code. Please report unacceptable behavior to [your-contact-email@example.com](mailto:your-contact-email@example.com).
 
-*   **SOLID Compliance:** Adherence to Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles is mandatory for new features or substantial refactors.
-*   **Python Best Practices (PEP 8/9):** Strict adherence to Python standards, enforced by **Ruff** linting. Code must be clean, idiomatic, and self-documenting.
-*   **Test Coverage:** New features **MUST** be accompanied by comprehensive unit and integration tests achieving 100% path coverage for the modified logic.
-*   **Immutability & Predictability:** Favor pure functions over side effects. Filter list transformations must be deterministic.
+## 2. Contribution Workflow
 
-## 2. DEVELOPMENT ENVIRONMENT SETUP
+We use a standard GitHub workflow for contributions:
 
-To ensure consistency across contributor environments, use the following setup:
-
-1.  **Fork & Clone:** Fork the repository and clone your fork locally.
+1.  **Fork the Repository:** Create your own fork of the `AdGuard-FilterList-Manager-Python-Lib` repository.
+2.  **Clone Locally:** Clone your forked repository to your development machine.
     ```bash
-    git clone https://github.com/YOUR_USERNAME/AdFilterCore-List-Management-Python-Lib.git
-    cd AdFilterCore-List-Management-Python-Lib
+    git clone git@github.com:<your-username>/AdGuard-FilterList-Manager-Python-Lib.git
+    cd AdGuard-FilterList-Manager-Python-Lib
     ```
-
-2.  **Environment Management (using `uv`):** Create and activate a dedicated virtual environment.
+3.  **Create a New Branch:** Start a new feature branch for your contribution. Use descriptive names following Conventional Commits.
     ```bash
-    uv venv
-    source .venv/bin/activate  # Linux/macOS
-    .venv\Scripts\activate    # Windows
+    git checkout -b feat/your-feature-description
+    # or
+    git checkout -b fix/your-bug-fix-description
     ```
-
-3.  **Install Dependencies (Development & Testing):**
+4.  **Make Your Changes:** Implement your feature or bug fix, adhering to the project's architectural principles and coding standards.
+5.  **Test Your Changes:** Ensure all tests pass and new tests are added for any new functionality or bug fixes.
     ```bash
-    uv pip install -e .[dev]
-    ```
+    # Install dependencies
+    uv pip install -r requirements.txt
+    uv pip install -r requirements-dev.txt
 
-4.  **Pre-Commit Hooks (Mandatory):** Install pre-commit hooks managed by `pre-commit` to enforce formatting and basic linting before committing.
-    ```bash
-    pip install pre-commit
-    pre-commit install
-    ```
+    # Run linters and formatters
+    ruff check .
+    ruff format .
 
-## 3. THE CONTRIBUTION WORKFLOW
-
-Follow this sequence for all submissions:
-
-### A. Branching Strategy
-
-Create a feature or fix branch based on the latest `main` branch. Use **Conventional Commits**.
-
-*   **Feature:** `feat/short-description` (e.g., `feat/implement-geo-blocking-logic`)
-*   **Fix:** `fix/short-description` (e.g., `fix/crash-on-empty-datasource`)
-*   **Refactor:** `refactor/description`
-
-### B. Code Implementation & Verification
-
-1.  **Develop:** Implement your feature or fix, ensuring all new code is covered by tests.
-2.  **Format & Lint (Local Check):** Run the auto-fixers. This should pass before committing.
-    ```bash
-    ruff check --fix ./src
-    black ./src
-    ```
-3.  **Test Execution (Mandatory Gate):** All tests must pass successfully.
-    ```bash
+    # Run tests
     pytest
     ```
-4.  **Documentation:** Update `README.md` if the public API changes, and update internal documentation (docstrings) as necessary.
-
-### C. Commit and Pull Request (PR)
-
-1.  **Commit Locally:** Use the Conventional Commit format (e.g., `feat: add support for advanced wildcards in source ingestion`).
+6.  **Commit Your Changes:** Commit your changes using the Conventional Commits specification.
     ```bash
-    git add .
-    git commit -m "feat: Implemented deterministic deduplication algorithm for filter merging"
+    git commit -m "feat: Add new filter list sorting algorithm"
+    # or
+    git commit -m "fix: Resolve issue with dynamic list updates"
     ```
-2.  **Push:** Push your branch to your fork.
+7.  **Push to Your Fork:** Push your branch to your forked repository.
     ```bash
-    git push origin feat/deduplication-logic
+    git push origin feat/your-feature-description
     ```
-3.  **Open PR:** Create a Pull Request targeting the `main` branch of the upstream repository. Ensure you reference any associated issues using keywords (e.g., `Fixes #123`).
+8.  **Open a Pull Request:** Create a Pull Request (PR) from your branch to the `main` branch of the original `AdGuard-FilterList-Manager-Python-Lib` repository.
 
-## 4. PULL REQUEST TEMPLATE & REVIEW
+## 3. Development Environment Setup
 
-Your PR must be fully detailed. Use the provided `PULL_REQUEST_TEMPLATE.md` as a guide.
+To contribute, you'll need to set up your local development environment:
 
-**The Review Process:**
+1.  **Install Python:** Ensure you have Python 3.10+ installed.
+2.  **Install `uv`:** Install the `uv` package manager (recommended for speed and efficiency).
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+3.  **Clone Repository:** (As described above)
+4.  **Install Dependencies:** Use `uv` to install project and development dependencies.
+    ```bash
+    cd AdGuard-FilterList-Manager-Python-Lib
+    uv pip install -r requirements.txt
+    uv pip install -r requirements-dev.txt
+    ```
 
-*   All PRs trigger an automated CI/CD pipeline (`.github/workflows/ci.yml`). **Do not request a manual review until CI has passed.**
-*   Maintainers will review against the Apex standards (SOLID, Testing, Performance).
-*   Expect constructive feedback focused on architectural elegance and long-term maintainability.
+## 4. Coding Standards
 
-## 5. SECURITY AND DEPENDENCY MANAGEMENT
+All code must adhere to the Apex Technical Authority's coding standards:
 
-*   **Dependency Updates:** Do not manually bump versions in `pyproject.toml` unless strictly necessary. Rely on automated tooling (`renovate` or equivalent in CI) for routine dependency upgrades.
-*   **Security Disclosure:** If you discover a potential security vulnerability, follow the process outlined in `.github/SECURITY.md`. **Do not disclose publicly before coordination.**
+*   **Language:** Python 3.10+
+*   **Package Manager:** `uv`
+*   **Linter & Formatter:** `Ruff` (configured via `pyproject.toml`)
+*   **Testing Framework:** `Pytest`
+*   **Architectural Principles:** SOLID, DRY, KISS, CQS, 12-Factor App.
+*   **Code Style:** Strictly follow PEP 8, enforced by Ruff. Code must be self-documenting; avoid excessive comments.
+*   **Testing:** Every source file must have a corresponding test file in the `tests/` directory. Aim for 100% test coverage for all implemented features.
+*   **Security:** Sanitize all inputs. Follow OWASP Top 10 principles.
+*   **Error Handling:** Fail fast. Implement robust error handling and recovery mechanisms.
 
-Thank you for helping us maintain the integrity and performance of the AdFilterCore ecosystem!
+## 5. Pull Request Guidelines
+
+*   **Single Responsibility:** Each PR should ideally address a single feature, bug fix, or improvement.
+*   **Clear Description:** Provide a concise summary of the changes, the problem addressed, and the solution implemented. Link to any relevant issues.
+*   **Tests Included:** Ensure all new code is accompanied by comprehensive tests.
+*   **CI/CD Passes:** Your PR must pass all automated checks in the CI/CD pipeline (linting, formatting, testing).
+*   **Review:** Be prepared to engage with reviewers and make necessary adjustments.
+
+## 6. Project Structure & Architecture
+
+This project follows a modular structure optimized for maintainability and scalability. Key directories include:
+
+*   `src/` (or `app/`): Contains the core application logic, structured into modules and features.
+*   `tests/`: Houses all unit, integration, and end-to-end tests.
+*   `scripts/`: Utility scripts for management, maintenance, and automation.
+*   `docs/`: Project documentation (excluding README).
+
+We aim for a **Modular Monolith** architecture, where components are well-defined and loosely coupled, allowing for potential future migration to microservices if required.
+
+## 7. Reporting Issues
+
+If you encounter a bug or have a feature request, please open an issue on GitHub. Use the provided templates (`bug_report.md`) and provide as much detail as possible, including:
+
+*   A clear, concise description of the problem or feature.
+*   Steps to reproduce the bug.
+*   Expected behavior vs. Actual behavior.
+*   Relevant environment details (Python version, OS, etc.).
+*   Screenshots or error logs if applicable.
+
+## 8. Feature Requests
+
+For feature requests, please create an issue and describe the desired functionality. Explain the benefits and potential use cases. We will evaluate requests based on project goals and available resources.
+
+## 9. Star ⭐ this Repo
+
+If you find this project useful or are contributing, please consider starring the repository to show your support!
