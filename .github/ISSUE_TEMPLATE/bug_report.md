@@ -1,84 +1,45 @@
----
-name: Bug Report
-about: Report a bug or unexpected behavior
-title: "Bug: [Concise description of the issue]"
-labels: bug, triage
-assignees: ""
+# Bug Report
 
-body:
-  - type: markdown
-    attributes:
-      value: | # Use the following template to report a bug.
-        Thank you for contributing to **AdGuard-FilterList-Manager-Python-Lib**!
-        Please provide as much detail as possible to help us understand and fix the issue.
+Thank you for reporting a bug! Please provide as much detail as possible to help us diagnose and fix the issue.
 
-        **Apex Agent Directives:**
-        - **Stack:** Python (uv, Ruff, Pytest)
-        - **Architecture:** Modular Monolith / Microservices (or as appropriate)
-        - **Testing:** Pytest (Unit Tests)
-        - **Linting:** Ruff
+## 1. Summary
 
-        --- # END OF AGENT DIRECTIVES ---
+A concise, descriptive title for the bug.
 
-  - type: markdown
-    attributes:
-      value: | # If you have a Stack Overflow or similar question, please ask it [here](ADD_FORUM_LINK_HERE).
-        **BLUF:** Please describe the bug concisely.
+## 2. Environment Details
 
-  - type: input
-    id: environment
-    attributes:
-      label: "Environment"
-      description: "Which version of AdGuard-FilterList-Manager-Python-Lib are you using? What is your Python version? Any other relevant environment details?"
-      placeholder: "e.g., Python 3.12.0, AdGuard-FilterList-Manager-Python-Lib v1.2.3"
-    validations:
-      required: true
+*   **Operating System:**
+*   **Python Version:** (e.g., 3.10.12)
+*   **Library Version:** (If installed via pip, run `pip show adguard-filter-list-management-python-lib`)
+*   **Installation Method:** (e.g., `pip install`, from source)
 
-  - type: textarea
-    id: steps-to-reproduce
-    attributes:
-      label: "Steps to Reproduce"
-      description: "Provide a clear and concise sequence of steps to reproduce the bug."
-      placeholder: "1. Go to X
-2. Click on Y
-3. Observe Z"
-    validations:
-      required: true
+## 3. Steps to Reproduce
 
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: "Expected Behavior"
-      description: "What did you expect to happen?"
-      placeholder: "e.g., The list should be sorted alphabetically."
-    validations:
-      required: true
+1.  Describe the exact steps to reproduce the bug. Be specific.
+2.  If applicable, provide any relevant input data or configuration files.
 
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: "Actual Behavior"
-      description: "What actually happened? Include any error messages or stack traces."
-      placeholder: "e.g., The list remains unsorted, and an error is logged: ..."
-    validations:
-      required: true
+## 4. Expected Behavior
 
-  - type: textarea
-    id: screenshots-logs
-    attributes:
-      label: "Screenshots / Logs (Optional)"
-      description: "Add any relevant screenshots or logs that can help explain your problem."
-      placeholder: "(Attach files here)"
-    validations:
-      required: false
+What did you expect to happen?
 
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: "Additional Context (Optional)"
-      description: "Add any other context about the problem here. For example, specific filter lists affected, command-line arguments used, etc."
-      placeholder: "e.g., This bug only occurs when processing AdGuard DNS filter lists."
-    validations:
-      required: false
+## 5. Actual Behavior
 
----
+What actually happened? Include any error messages, stack traces, or unexpected output.
+
+
+# Paste any relevant output or stack traces here
+
+
+## 6. Screenshots or Visual Aids (Optional)
+
+If you have screenshots or a GIF demonstrating the bug, please attach them here.
+
+## 7. Additional Information (Optional)
+
+Any other context about the problem that might be helpful (e.g., specific filter lists affected, recent changes made, etc.).
+
+## AI Agent Directives Verification
+
+This issue report will be processed by AI agents. Ensure your report is clear and follows the established protocols. You can find the current directives at:
+
+[AI Agent Directives](https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib/blob/main/AGENTS.md)
