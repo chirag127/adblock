@@ -1,205 +1,216 @@
-# AdGuard-FilterList-Manager-Python-Lib: The Ultimate Ad Blocking Filter Management Suite
+# AdGuard FilterList Management Python Library
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your_username/AdGuard-FilterList-Manager-Python-Lib/ci.yml?branch=main&style=flat-square)](https://github.com/your_username/AdGuard-FilterList-Manager-Python-Lib/actions/workflows/ci.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/your_username/AdGuard-FilterList-Manager-Python-Lib?style=flat-square)](https://codecov.io/gh/your_username/AdGuard-FilterList-Manager-Python-Lib)
-[![Python Version](https://img.shields.io/pypi/pyversions/AdGuard-FilterList-Manager-Python-Lib.svg?style=flat-square)](https://pypi.org/project/AdGuard-FilterList-Manager-Python-Lib/)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgray.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Python%2CVite-blue.svg?style=flat-square)](https://www.python.org/)
+<p align="center">
+  <a href="https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib/actions/workflows/ci.yml">
+    <img src="https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib/actions/workflows/ci.yml/badge.svg?style=flat-square" alt="CI/CD Pipeline">
+  </a>
+  <a href="https://codecov.io/gh/chirag127/AdGuard-FilterList-Management-Python-Lib">
+    <img src="https://img.shields.io/codecov/c/github/chirag127/AdGuard-FilterList-Management-Python-Lib?style=flat-square&token=CODECOV_TOKEN_PLACEHOLDER" alt="Code Coverage">
+  </a>
+  <a href="https://github.com/astral-sh/uv">
+    <img src="https://img.shields.io/badge/tech-Python%20%7C%20Ruff%20%7C%20uv-blue?style=flat-square" alt="Tech Stack">
+  </a>
+  <a href="https://github.com/astral-sh/ruff">
+    <img src="https://img.shields.io/badge/linter-Ruff-blueviolet?style=flat-square" alt="Linter">
+  </a>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/github/license/chirag127/AdGuard-FilterList-Management-Python-Lib?style=flat-square" alt="License">
+  </a>
+  <a href="https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib/stargazers">
+    <img src="https://img.shields.io/github/stars/chirag127/AdGuard-FilterList-Management-Python-Lib?style=flat-square&logo=github" alt="GitHub Stars">
+  </a>
+</p>
 
---- 
+<p align="center">
+  <em>A high-performance Python library for creating, managing, and optimizing AdGuard filter lists. It automates rule generation, deduplication, and sorting to enhance ad and tracker blocking across all platforms, boosting privacy and security.</em>
+</p>
 
-## ✨ **Project Overview**
+<p align="center">
+  <a href="https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib/stargazers">
+    <img src="https://img.shields.io/badge/-Star%20%E2%AD%90%20this%20Repo-gray?style=for-the-badge&logo=github" alt="Star this Repo">
+  </a>
+</p>
 
-The **AdGuard-FilterList-Manager-Python-Lib** is a sophisticated, Python-based library designed to automate the creation, curation, and dynamic management of AdGuard filter lists. It empowers users and developers to maintain optimal ad, tracker, and annoyance blocking configurations with unparalleled efficiency and precision, ensuring enhanced privacy and performance across a multitude of platforms.
+---
 
---- 
+## Table of Contents
 
-## 🚀 **Key Features**
+- [✨ Features](#-features)
+- [🏗️ Architecture](#️-architecture)
+- [🚀 Quick Start](#-quick-start)
+- [🛠️ Development Setup](#️-development-setup)
+- [🤖 AI Agent Directives](#-ai-agent-directives)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-*   **Automated List Generation:** Scripted creation of new filter lists based on defined criteria.
-*   **Dynamic Sorting & Merging:** Intelligent algorithms for sorting, deduplicating, and merging filter entries.
-*   **Cross-Platform Compatibility:** Generates lists optimized for AdGuard Home, AdGuard Browser Extensions, and AdGuard for various operating systems.
-*   **Advanced Curation:** Tools for classifying and tagging filter rules (e.g., Annoyances, Trackers, Social Widgets).
-*   **Performance Optimization:** Techniques to minimize list size and parsing overhead.
-*   **Extensible Architecture:** Modular design allowing for easy integration of new features and list sources.
+---
 
---- 
+## ✨ Features
 
-## 📚 **Architecture**
+- **Automated Rule Processing:** Ingests multiple filter list sources (local or remote).
+- **High-Performance Deduplication:** Efficiently removes duplicate rules to minimize list size.
+- **Optimized Sorting:** Sorts rules for faster processing by AdGuard clients.
+- **Comment & Metadata Preservation:** Retains important comments and metadata from source files.
+- **Extensible Design:** Easily add custom processing or filtering steps.
+- **Scalable:** Built to handle millions of rules from dozens of sources without performance degradation.
 
-This project adheres to a modular architecture, leveraging Python's standard library and best practices for maintainability and scalability. The core components are designed around the principles of the **Apex Tech Toolchain (Scenario C)**.
+## 🏗️ Architecture
 
-```mermaid
-graph TD
-    A[Filter List Sources] --> B(Input Parser)
-    B --> C{Rule Preprocessor}
-    C --> D[Deduplication Engine]
-    D --> E[Sorting & Categorization]
-    E --> F{List Optimizer}
-    F --> G[Output Generator]
-    G --> H[AdGuard Filter Lists]
-    I(Management Scripts) --> B
-    I --> D
-    I --> E
-    I --> F
-```
+This project follows a clean, modular architecture, adhering to SOLID principles and strict separation of concerns. All source code is contained within the `src/` directory, and all tests are isolated in the `tests/` directory.
 
---- 
+sh
+.AdGuard-FilterList-Management-Python-Lib/
+├── .github/                  # GitHub Actions workflows & templates
+│   ├── workflows/ci.yml      # CI/CD pipeline
+│   └── ...
+├── src/
+│   └── adguard_filter_lib/   # Main library source code
+│       ├── __init__.py
+│       ├── manager.py          # Core FilterListManager class
+│       └── utils.py            # Helper functions
+├── tests/
+│   ├── unit/                 # Unit tests for isolated components
+│   └── integration/          # Integration tests for component interaction
+├── .gitignore
+├── LICENSE
+├── pyproject.toml            # Project metadata and dependencies (uv/ruff)
+└── README.md
 
-## 🛠️ **Getting Started**
 
-### 1. Installation
+## 🚀 Quick Start
 
-This library can be installed using `uv`, the ultra-fast Python package installer.
+Get started by installing the library and running a basic optimization task.
 
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+1.  **Installation (Requires Python 3.10+)**
 
-# Or for global installation
-# curl -LsSf https://astral.sh/uv/install.sh | sh -s -- --global
+    bash
+    # Coming soon to PyPI
+    pip install adguard-filter-lib
+    
 
-# Then install the library
-uv pip install AdGuard-FilterList-Manager-Python-Lib
-```
+2.  **Example Usage**
 
-### 2. Basic Usage
+    python
+    from adguard_filter_lib import FilterListManager
 
-```python
-from adguard_filter_manager import FilterListManager
+    # Define a list of source URLs
+    source_urls = [
+        "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt",
+        "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_English/filter.txt"
+    ]
 
-# Initialize the manager
-manager = FilterListManager()
+    # Initialize the manager
+    manager = FilterListManager(sources=source_urls)
 
-# Load rules from a file
-manager.load_rules_from_file('my_custom_rules.txt')
+    # Process and optimize the lists
+    print("Loading and parsing sources...")
+    manager.load_sources()
+    print(f"Initial rule count: {manager.rule_count}")
 
-# Add rules programmatically
-manager.add_rule('||example.com^')
-manager.add_rule('@@||example.com/tracker.js^$script')
+    print("Deduplicating rules...")
+    manager.deduplicate()
+    print(f"Rule count after deduplication: {manager.rule_count}")
 
-# Sort and deduplicate the rules
-manager.process_rules()
+    print("Sorting rules...")
+    manager.sort()
 
-# Save the processed list
-manager.save_to_file('processed_adguard_list.txt')
+    # Save the final, optimized list to a file
+    output_file = "optimized-adguard-list.txt"
+    manager.save_to_file(output_file)
 
-print("Filter list processed and saved successfully!")
-```
+    print(f"\n✅ Optimized list created at '{output_file}' with {manager.rule_count} unique rules.")
+    
 
-### 3. Management Scripts
+## 🛠️ Development Setup
 
-Run the provided Python scripts for advanced management tasks:
+To contribute to this project, follow these steps to set up your local development environment.
 
-```bash
-# Example: Generate a new list from multiple sources
-python scripts/generate_list.py --sources source1.txt source2.txt --output combined_list.txt
+1.  **Clone the Repository**
 
-# Example: Categorize rules in an existing list
-python scripts/categorize_rules.py --input existing_list.txt --output categorized_list.txt
-```
+    bash
+    git clone https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib.git
+    cd AdGuard-FilterList-Management-Python-Lib
+    
 
---- 
+2.  **Set up Virtual Environment & Install Dependencies using `uv`**
 
-## 📈 **Development Workflow**
+    bash
+    # Create a virtual environment
+    uv venv
 
-### 1. Setup
+    # Activate the environment
+    # On macOS/Linux
+    source .venv/bin/activate
+    # On Windows
+    .venv\Scripts\activate
 
-Clone the repository and set up the development environment using `uv`.
+    # Install dependencies from pyproject.toml
+    uv pip install -e .[dev]
+    
 
-```bash
-git clone https://github.com/your_username/AdGuard-FilterList-Manager-Python-Lib.git
-cd AdGuard-FilterList-Manager-Python-Lib
+3.  **Run Quality Checks & Tests**
 
-uv venv  # Create a virtual environment
-. .venv/bin/activate
-uv pip install -r requirements-dev.txt
-```
+    bash
+    # Format code with Ruff
+    ruff format .
 
-### 2. Running Linters & Formatters
+    # Lint code with Ruff
+    ruff check .
 
-This project uses **Ruff** for linting and formatting.
+    # Run tests with Pytest
+    pytest
+    
 
-```bash
-# Check for linting errors and formatting issues
-ruff check .
-
-# Automatically fix linting errors and format code
-ruff check --fix .
-```
-
-### 3. Running Tests
-
-Tests are written using **Pytest**.
-
-```bash
-# Run all tests
-pytest
-
-# Generate a coverage report
-pytest --cov=adguard_filter_manager
-```
-
-### 4. Building & Publishing
-
-To build the package for distribution:
-
-```bash
-python -m build
-```
-
-For publishing to PyPI (requires `twine` and account setup):
-
-```bash
-twine upload dist/*
-```
-
---- 
-
-## 🤖 **AI Agent Directives**
+## 🤖 AI Agent Directives
 
 <details>
-<summary>AI Agent Configuration</summary>
+<summary><strong>SYSTEM: APEX TECHNICAL AUTHORITY (DECEMBER 2025) - Agent Operating Instructions</strong></summary>
 
-This repository is managed using the **Apex Technical Authority** framework, adhering to **Late 2025 Standards**. The core technical stack is Python, managed by `uv`, linted and formatted by `Ruff`, and tested with `Pytest`.
+### 1. IDENTITY & PRIME DIRECTIVE
+**Role:** You are a Senior Principal Software Architect operating under the **Apex Technical Authority** protocol. Your function is to enhance and maintain this Python library to FAANG-level standards for 2026 and beyond.
+**Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
-**Key Principles:**
-*   **SOLID:** Enforced across all modules.
-*   **DRY:** Repetitive logic is automated.
-*   **CQS:** Methods are strictly Commands or Queries.
-*   **Zero Trust:** All external inputs and data are rigorously validated.
-*   **Fail Fast:** Errors are thrown immediately upon detection.
-*   **Green Software:** Emphasis on efficiency and minimal resource usage.
+### 2. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
+This project is classified as **SCENARIO C: DATA / SCRIPTS / AI (Python)**. You **MUST** adhere to this toolchain:
+- **Package/Environment Manager:** `uv` is the mandatory standard for speed and dependency resolution.
+- **Linter/Formatter:** `Ruff` is the exclusive tool for all linting and formatting. No other linters are permitted.
+- **Testing Framework:** `Pytest` is the sole framework for all unit, integration, and end-to-end tests.
+- **Architecture:** Maintain a Modular Monolith structure. Ensure new features are encapsulated and have clear interfaces.
 
-**Verification Commands:**
-*   **Lint/Format:** `ruff check --fix .`
-*   **Test:** `pytest`
-*   **Coverage:** `pytest --cov=adguard_filter_manager`
+### 3. RECURSIVE PERFECTION LOOP (THE "ZERO-ERROR" MANDATE)
+You must execute the following loop until the build is perfectly clean before committing:
+1.  **Analyze:** Scan the codebase for architectural deviations.
+2.  **Fix:** Apply fixes based on SOLID principles.
+3.  **Lint/Format:** Run `ruff format . && ruff check --fix .`.
+4.  **Test:** Run `pytest`.
+5.  **Decision Gate:** If errors/warnings exist, return to step 2. If clean, proceed to commit.
 
-**CI/CD Workflow:** Managed via `.github/workflows/ci.yml`.
+### 4. CORE ARCHITECTURAL PRINCIPLES
+- **SOLID MANDATE:** Enforce Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles rigourously.
+- **ROOT DIRECTORY HYGIENE:** The root is for configuration only (`pyproject.toml`, `README.md`). All Python source code resides in `src/`. All tests reside in `tests/`.
+- **CQS (Command-Query Separation):** Methods must either return a value (Query) or mutate state (Command), but not both.
 
-**Project Type:** Python Library.
+### 5. COMPREHENSIVE TESTING & VERIFICATION STRATEGY
+- **FOLDER SEPARATION PROTOCOL (STRICT):** The `src/` directory is a **Production-Only Zone**. It must contain **ZERO** test files. **ALL** verification code (unit tests, integration tests) must reside exclusively in `tests/`.
+- **COVERAGE MANDATE:** Strive for 90%+ branch coverage. All new code **MUST** be accompanied by tests.
+- **TESTING PYRAMID (F.I.R.S.T.):** Tests must be Fast, Isolated, and Repeatable.
 
-**AI Orchestration Model Preference (Fallback Cascade):**
-1.  `gemini-3-pro-preview`
-2.  `gemini-2.5-pro`
-3.  `gemini-2.5-flash`
-4.  `gemini-2.5-flash-lite-preview-09-2025`
-5.  `gemini-2.0-flash`
+### 6. DOCUMENTATION & VERSION CONTROL
+- **HERO-TIER README:** The README must be updated **IN THE SAME TURN** as any code changes affecting public APIs or setup steps.
+- **CONVENTIONAL COMMITS:** All commit messages **MUST** follow the Conventional Commits specification (e.g., `feat:`, `fix:`, `docs:`, `test:`).
+
+### 7. AUTOMATION SINGULARITY (GITHUB ACTIONS)
+All CI workflows must perform these checks. A Pull Request cannot be merged if any step fails.
+1.  **Integrity:** `ruff check .`
+2.  **Testing:** `pytest`
+3.  **Security:** `pip-audit`
 
 </details>
 
---- 
+## 🤝 Contributing
 
-## 📜 **License**
+Contributions are welcome! Please read the [Contributing Guidelines](./.github/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**. This means you are free to share and adapt the material for non-commercial purposes, provided you give appropriate credit, provide a link to the license, and indicate if changes were made.
+## 📜 License
 
-[Learn More](https://creativecommons.org/licenses/by-nc/4.0/)
-
---- 
-
-## 🙏 **Contributing**
-
-We welcome contributions to improve the **AdGuard-FilterList-Manager-Python-Lib**! Please refer to our [CONTRIBUTING.md](.github/CONTRIBUTING.md) for detailed guidelines on how to submit bug reports, feature requests, and pull requests.
-
-**Star ⭐ this Repo if you find it useful!**
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License** - see the [LICENSE](./LICENSE) file for details.
