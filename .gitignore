@@ -1,44 +1,41 @@
-# Python Environment & Caches
-# ---
-.venv/
-virtualenv/
-venv/
-env/
+# Python Byte-Code Files
 *.pyc
 __pycache__/
-*.egg-info/
-.mypy_cache/
 
-# Dependency Manager Artifacts (uv)
-# ---
-.uv/
-
-# Ruff (Linter) Artifacts
-# ---
-.ruff_cache/
-
-# Pytest Artifacts
-# ---
-.pytest_cache/
-htmlcov/
-.coverage
-
-# Build/Distribution Artifacts
-# ---
-dist/
-build/
-*.whl
-*.tar.gz
+# Virtual Environment Directories
+virtualenv/
+venv/
+.venv/
+env/
 
 # IDE/Editor Specific
-# ---
-# VS Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-
-# PyCharm
+.vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# MacOS
+# Build Artifacts
+dist/
+build/
+*.egg-info/
+
+# Testing Artifacts
+.pytest_cache/
+
+# OS Generated Files
 .DS_Store
+Thumbs.db
+
+# Secrets & Environment Variables (example)
+.env
+*.env.local
+*.env.development
+*.env.production
+
+# Linting/Formatting Cache (Ruff/Biome)
+.ruff_cache/
+.biome/
+
+# Temporary Files
+*.tmp
+*.log
