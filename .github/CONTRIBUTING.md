@@ -1,117 +1,83 @@
-# Contributing to AdGuard-FilterList-Manager-Python-Lib
+# 🤝 Contributing to AdGuard-FilterList-Management-Python-Lib
 
-We welcome contributions to the AdGuard-FilterList-Manager-Python-Lib project! This project adheres to the Apex Technical Authority standards, prioritizing **Zero-Defect, High-Velocity, Future-Proof** development. Please review these guidelines to ensure your contributions align with our architectural principles and quality standards.
+We welcome contributions to elevate this Python library for professional AdGuard filter list management. As an Apex Authority project, we adhere to **Zero-Defect, High-Velocity, Future-Proof** engineering standards, as detailed in our `AGENTS.md`.
 
-## 1. Code of Conduct
+## 1. CORE PRINCIPLES
 
-This project follows the Contributor Covenant Code of Conduct (v2.1). By participating, you are expected to uphold this code. Please report unacceptable behavior to [your-contact-email@example.com](mailto:your-contact-email@example.com).
+Before submitting, ensure your contributions align with the project's core architectural tenets:
 
-## 2. Contribution Workflow
+1.  **SOLID Compliance:** New features must demonstrate clear adherence to Single Responsibility and Open/Closed Principles.
+2.  **DRY Enforcement:** Avoid repetition. Refactor common logic into reusable utilities.
+3.  **YAGNI Precedent:** Only build what is explicitly needed now. Avoid premature generalization.
+4.  **Apex Toolchain Usage:** All development must utilize the mandated 2025/2026 Python stack: `uv` for dependency management, `Ruff` for linting/formatting, and `Pytest` for unit verification.
 
-We use a standard GitHub workflow for contributions:
+## 2. THE CONTRIBUTION WORKFLOW
 
-1.  **Fork the Repository:** Create your own fork of the `AdGuard-FilterList-Manager-Python-Lib` repository.
-2.  **Clone Locally:** Clone your forked repository to your development machine.
-    ```bash
-    git clone git@github.com:<your-username>/AdGuard-FilterList-Manager-Python-Lib.git
-    cd AdGuard-FilterList-Manager-Python-Lib
-    ```
-3.  **Create a New Branch:** Start a new feature branch for your contribution. Use descriptive names following Conventional Commits.
-    ```bash
-    git checkout -b feat/your-feature-description
-    # or
-    git checkout -b fix/your-bug-fix-description
-    ```
-4.  **Make Your Changes:** Implement your feature or bug fix, adhering to the project's architectural principles and coding standards.
-5.  **Test Your Changes:** Ensure all tests pass and new tests are added for any new functionality or bug fixes.
-    ```bash
-    # Install dependencies
-    uv pip install -r requirements.txt
-    uv pip install -r requirements-dev.txt
+Follow these steps for a smooth review process:
 
-    # Run linters and formatters
-    ruff check .
-    ruff format .
+### Step 1: Fork the Repository
 
-    # Run tests
-    pytest
-    ```
-6.  **Commit Your Changes:** Commit your changes using the Conventional Commits specification.
-    ```bash
-    git commit -m "feat: Add new filter list sorting algorithm"
-    # or
-    git commit -m "fix: Resolve issue with dynamic list updates"
-    ```
-7.  **Push to Your Fork:** Push your branch to your forked repository.
-    ```bash
-    git push origin feat/your-feature-description
-    ```
-8.  **Open a Pull Request:** Create a Pull Request (PR) from your branch to the `main` branch of the original `AdGuard-FilterList-Manager-Python-Lib` repository.
+Create your own fork of `chirag127/AdGuard-FilterList-Management-Python-Lib` to work in isolation.
 
-## 3. Development Environment Setup
+### Step 2: Clone and Configure
 
-To contribute, you'll need to set up your local development environment:
+Clone your fork locally and ensure your environment is set up according to development standards. Always work within a dedicated feature branch.
 
-1.  **Install Python:** Ensure you have Python 3.10+ installed.
-2.  **Install `uv`:** Install the `uv` package manager (recommended for speed and efficiency).
-    ```bash
-    curl -LsSf https://astral.sh/uv/install.sh | sh
-    ```
-3.  **Clone Repository:** (As described above)
-4.  **Install Dependencies:** Use `uv` to install project and development dependencies.
-    ```bash
-    cd AdGuard-FilterList-Manager-Python-Lib
-    uv pip install -r requirements.txt
-    uv pip install -r requirements-dev.txt
-    ```
+bash
+git clone https://github.com/YOUR_USERNAME/AdGuard-FilterList-Management-Python-Lib.git
+cd AdGuard-FilterList-Management-Python-Lib
 
-## 4. Coding Standards
+# Create and switch to a descriptive feature branch
+git checkout -b feature/descriptive-name-of-change
 
-All code must adhere to the Apex Technical Authority's coding standards:
+# Ensure environment is set up using uv
+python -m venv .venv
+# Assuming uv is installed globally or via pipx
+uv install -e .
 
-*   **Language:** Python 3.10+
-*   **Package Manager:** `uv`
-*   **Linter & Formatter:** `Ruff` (configured via `pyproject.toml`)
-*   **Testing Framework:** `Pytest`
-*   **Architectural Principles:** SOLID, DRY, KISS, CQS, 12-Factor App.
-*   **Code Style:** Strictly follow PEP 8, enforced by Ruff. Code must be self-documenting; avoid excessive comments.
-*   **Testing:** Every source file must have a corresponding test file in the `tests/` directory. Aim for 100% test coverage for all implemented features.
-*   **Security:** Sanitize all inputs. Follow OWASP Top 10 principles.
-*   **Error Handling:** Fail fast. Implement robust error handling and recovery mechanisms.
 
-## 5. Pull Request Guidelines
+### Step 3: Implement Changes
 
-*   **Single Responsibility:** Each PR should ideally address a single feature, bug fix, or improvement.
-*   **Clear Description:** Provide a concise summary of the changes, the problem addressed, and the solution implemented. Link to any relevant issues.
-*   **Tests Included:** Ensure all new code is accompanied by comprehensive tests.
-*   **CI/CD Passes:** Your PR must pass all automated checks in the CI/CD pipeline (linting, formatting, testing).
-*   **Review:** Be prepared to engage with reviewers and make necessary adjustments.
+Develop your feature or fix. Crucially, all new or modified code paths **MUST** be accompanied by corresponding **Pytest** unit tests that achieve high code coverage.
 
-## 6. Project Structure & Architecture
+### Step 4: Local Verification (The CI Pre-Flight Check)
 
-This project follows a modular structure optimized for maintainability and scalability. Key directories include:
+Before pushing, run the local verification suite. This simulates the GitHub Actions CI pipeline and ensures zero failures upon submission.
 
-*   `src/` (or `app/`): Contains the core application logic, structured into modules and features.
-*   `tests/`: Houses all unit, integration, and end-to-end tests.
-*   `scripts/`: Utility scripts for management, maintenance, and automation.
-*   `docs/`: Project documentation (excluding README).
+bash
+# Run linting and formatting check (Ruff)
+ruff check .
+ruff format --check .
 
-We aim for a **Modular Monolith** architecture, where components are well-defined and loosely coupled, allowing for potential future migration to microservices if required.
+# Run all unit tests (Pytest)
+pytest
 
-## 7. Reporting Issues
+# For comprehensive checks (optional, if required by existing CI)
+python -m mypy --strict
 
-If you encounter a bug or have a feature request, please open an issue on GitHub. Use the provided templates (`bug_report.md`) and provide as much detail as possible, including:
 
-*   A clear, concise description of the problem or feature.
-*   Steps to reproduce the bug.
-*   Expected behavior vs. Actual behavior.
-*   Relevant environment details (Python version, OS, etc.).
-*   Screenshots or error logs if applicable.
+### Step 5: Commit and Push
 
-## 8. Feature Requests
+Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for clear, atomic commits. Ensure the commit message clearly indicates the scope (e.g., `feat: add deduplication algorithm`, `fix: correct malformed whitelist handling`).
 
-For feature requests, please create an issue and describe the desired functionality. Explain the benefits and potential use cases. We will evaluate requests based on project goals and available resources.
+bash
+git add .
+git commit -m "type(scope): subject line"
+git push origin feature/descriptive-name-of-change
 
-## 9. Star ⭐ this Repo
 
-If you find this project useful or are contributing, please consider starring the repository to show your support!
+### Step 6: Open a Pull Request (PR)
+
+Navigate to the original repository (`https://github.com/chirag127/AdGuard-FilterList-Management-Python-Lib`) and open a new Pull Request from your branch against `main`.
+
+*   **Templates:** You **MUST** use the provided `PULL_REQUEST_TEMPLATE.md` to structure your description.
+*   **Verification:** The automated CI pipeline will run security scans, linting, and testing. Do not submit PRs that fail these automated checks.
+
+## 3. ISSUE REPORTING & SECURITY
+
+*   **Bugs:** Use the `bug_report.md` template within `.github/ISSUE_TEMPLATE/` for standardized reporting.
+*   **Security:** Report all potential vulnerabilities privately via the guidelines in `.github/SECURITY.md` before disclosing publicly.
+
+## 4. LICENSE ACKNOWLEDGEMENT
+
+By submitting code, you agree that your contributions are licensed under the terms specified in the repository's `LICENSE` file (**CC BY-NC 4.0**).
