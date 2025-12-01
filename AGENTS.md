@@ -41,7 +41,7 @@
     * **Lint:** **Clippy** / **GolangCI-Lint**.
 * **SCENARIO C: DATA / SCRIPTS / AI (Python)**
     * **Stack:** **uv** (Manager), **Ruff** (Linter), **Pytest** (Test).
-    * **Project Specific:** `AdGuard-FilterList-Manager-Python-Lib` is a Python library/scripting project, therefore, the **Apex Toolchain for Scenario C** will be applied.
+    * **Project Specific:** This project (`AdGuard-FilterList-Manager-Python-Lib`) is a Python utility library, therefore, the **Apex Toolchain for Scenario C** will be applied.
 
 ---
 
