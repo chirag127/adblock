@@ -1,65 +1,39 @@
-# 🛡️ Apex-AdBlock-Filterlist-Manager Security Policy
+# Security Policy
 
-At Apex Technical Authority, we prioritize the security and privacy of our users. This document outlines our security policy and procedures for reporting vulnerabilities in the `Apex-AdBlock-Filterlist-Manager` project.
+## Supported Versions
 
-## 🚨 Reporting a Vulnerability
+We actively support and patch the latest stable version of **AdGuard-FilterList-Manager-Python-Lib**. Older versions are not actively maintained and may contain unaddressed vulnerabilities.
 
-We appreciate the efforts of security researchers and the community in helping us maintain a secure environment. If you discover a security vulnerability within the `Apex-AdBlock-Filterlist-Manager` project, please report it to us as quickly as possible and in a responsible manner.
+## Reporting a Vulnerability
 
-**Please DO NOT open a public GitHub issue for security vulnerabilities.** Public disclosure of security issues can put all users at risk.
+We take security seriously. If you discover any security vulnerabilities, please report them responsibly. We will investigate and address all valid reports promptly.
 
-### How to Report:
+**DO NOT** open a public issue for security vulnerabilities. Instead, please:
 
-1.  **Email:** Send a detailed report to `security@apextechauthority.com` (placeholder - replace with actual security contact).
-2.  **Encryption (Optional but Recommended):** For sensitive information, you may encrypt your report using our PGP public key (see below).
+1.  **Email:** Send a detailed report to `security@example.com` (replace with actual security contact email).
+2.  **Subject Line:** Use the subject: `SECURITY Vulnerability Report - AdGuard-FilterList-Manager-Python-Lib`.
+3.  **Content:** Include the following in your report:
+    *   A clear description of the vulnerability.
+    *   Affected version(s) of the library.
+    *   Steps to reproduce the vulnerability.
+    *   Any recommended mitigation or fix.
+    *   (Optional) Proof-of-concept code.
 
-### Information to Include:
+We will acknowledge receipt of your report within **48 hours** and will provide an estimated timeline for resolution. We will also work with you to coordinate a public disclosure once a fix is available and deployed.
 
-To help us quickly understand and resolve the issue, please include the following in your report:
+## Vulnerability Disclosure Policy
 
-*   **Vulnerability Description:** A clear and concise description of the vulnerability.
-*   **Reproduction Steps:** Detailed steps to reproduce the vulnerability. This might include specific configurations, commands, or scenarios.
-*   **Impact:** Describe the potential impact of the vulnerability (e.g., data breach, denial of service, unauthorized access).
-*   **Affected Versions:** Specify which versions or components of `Apex-AdBlock-Filterlist-Manager` are affected.
-*   **Proof-of-Concept:** If possible, provide a proof-of-concept (PoC) code or demonstration.
-*   **Suggestions (Optional):** Any suggested remediations or fixes you may have.
+*   **Confidentiality:** All security reports will be handled with strict confidentiality.
+*   **No Harm:** Please do not exploit vulnerabilities in any way that could disrupt our services or impact users. Testing should be limited to identifying the vulnerability.
+*   **Acknowledgement:** We will publicly acknowledge responsible disclosure efforts by security researchers (if they agree).
 
-### Our Commitment:
+## Security Best Practices
 
-*   We commit to acknowledging your report within **24 hours**.
-*   We will provide regular updates on the progress of your report.
-*   We will notify you when the vulnerability has been patched and deployed.
-*   We will credit you publicly for your responsible disclosure (if you agree).
+As a library focused on managing filter lists, please adhere to the following when contributing or using this project:
 
-## 🔒 Security Policy
+*   **Input Validation:** Always validate and sanitize any external input used within scripts or configurations to prevent injection attacks.
+*   **Dependency Management:** Ensure all dependencies are kept up-to-date and are sourced from trusted repositories. Regularly audit dependencies for known vulnerabilities.
+*   **Code Review:** All code changes, especially those affecting security-sensitive areas, must undergo rigorous peer review.
+*   **Principle of Least Privilege:** Scripts and operations should run with the minimum necessary permissions.
 
-`Apex-AdBlock-Filterlist-Manager` is developed with a security-first mindset, adhering to modern DevSecOps principles and best practices. We perform continuous security reviews, dependency scanning, and enforce strict coding standards to minimize potential attack vectors.
-
-Our commitment extends to:
-
-*   **Data Integrity:** Ensuring the integrity and accuracy of the filter lists and management processes.
-*   **Vigilance:** Proactively monitoring for new threats and vulnerabilities in relevant technologies.
-*   **Transparency:** Maintaining clear communication about security updates and patches.
-
-## 📈 Supported Versions
-
-We understand the importance of maintaining security for our users. The `Apex-AdBlock-Filterlist-Manager` project actively supports the following branches for security updates:
-
-| Version/Branch | Status          | Notes                                     |
-| :------------- | :-------------- | :---------------------------------------- |
-| `main`         | **Actively Maintained** | Receives all security updates and patches. |
-
-We highly recommend that all users operate on the `main` branch or the latest stable release to ensure they receive the most current security enhancements and bug fixes.
-
-## 🔑 PGP Public Key
-
-For secure communication of sensitive vulnerability details, you may use our PGP public key. Please contact `security@apextechauthority.com` to request the latest PGP key, which will be provided securely to verified researchers.
-
-## 🙏 Best Practices for Users
-
-While we strive for the highest security standards, users also play a critical role in maintaining their own security. We recommend:
-
-*   **Keep Updated:** Regularly update `Apex-AdBlock-Filterlist-Manager` to the latest version to benefit from security patches.
-*   **Review Configurations:** Periodically review your filter list configurations and any custom rules you've implemented.
-*   **Source Verification:** Always verify the source of any third-party filter lists or scripts you integrate.
-*   **System Security:** Ensure your operating system and web browsers are kept up-to-date with the latest security patches.
+Thank you for helping us keep **AdGuard-FilterList-Manager-Python-Lib** secure.
